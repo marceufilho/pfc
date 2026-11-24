@@ -1,0 +1,146 @@
+[
+  {
+    "file": "pointer-arith.c",
+    "rule": "subset-pointer-arith",
+    "line": 2,
+    "column": 12
+  },
+  {
+    "file": "cast.c",
+    "rule": "subset-cast",
+    "line": 2,
+    "column": 12
+  },
+  {
+    "file": "recursion.c",
+    "rule": "subset-recursion",
+    "line": 2,
+    "column": 12
+  },
+  {
+    "file": "goto.c",
+    "rule": "subset-goto",
+    "line": 2,
+    "column": 5
+  },
+  {
+    "file": "break.c",
+    "rule": "subset-break",
+    "line": 3,
+    "column": 9
+  },
+  {
+    "file": "global-state.c",
+    "rule": "subset-global",
+    "line": 1,
+    "column": 6
+  },
+  {
+    "file": "float.c",
+    "rule": "subset-type",
+    "line": 2,
+    "column": 5
+  },
+  {
+    "file": "pointer.c",
+    "rule": "subset-ptrdecl",
+    "line": 1,
+    "column": 13
+  },
+  {
+    "file": "heap.c",
+    "rule": "subset-heap",
+    "line": 2,
+    "column": 12
+  },
+  {
+    "file": "continue.c",
+    "rule": "subset-continue",
+    "line": 3,
+    "column": 9
+  },
+  {
+    "file": "switch.c",
+    "rule": "subset-switch",
+    "line": 2,
+    "column": 5
+  },
+  {
+    "file": "unsigned.c",
+    "rule": "subset-type",
+    "line": 2,
+    "column": 5
+  },
+  {
+    "file": "bitwise.c",
+    "rule": "subset-operator",
+    "line": 2,
+    "column": 12
+  },
+  {
+    "file": "increment.c",
+    "rule": "subset-operator",
+    "line": 2,
+    "column": 5
+  },
+  {
+    "file": "static.c",
+    "rule": "subset-declaration",
+    "line": 2,
+    "column": 17
+  },
+  {
+    "file": "local-array.c",
+    "rule": "ir-local",
+    "line": 2,
+    "column": 10
+  },
+  {
+    "file": "missing-length.c",
+    "rule": "ir-array-length",
+    "line": 1,
+    "column": 6
+  },
+  {
+    "file": "uninitialized.c",
+    "rule": "ir-local",
+    "line": 2,
+    "column": 10
+  },
+  {
+    "file": "const-write.c",
+    "rule": "ir-const",
+    "line": 2,
+    "column": 5
+  },
+  {
+    "file": "varargs.c",
+    "rule": "subset-ellipsisparam",
+    "line": 1,
+    "column": 16
+  },
+  {
+    "file": "ternary.c",
+    "rule": "subset-ternaryop",
+    "line": 2,
+    "column": 12
+  },
+  {
+    "file": "struct.c",
+    "rule": "subset-struct",
+    "line": 2,
+    "column": 12
+  },
+  {
+    "file": "assignment-expression.c",
+    "rule": "ir-expression",
+    "line": 2,
+    "column": 13
+  },
+  {
+    "file": "unknown-call.c",
+    "rule": "subset-call",
+    "line": 2,
+    "column": 12
+  }
+]

@@ -1,0 +1,141 @@
+{
+  "columns": [
+    {
+      "allowed": null,
+      "name": "kernel",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "mode",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "site_id",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "kind",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "location",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "condition",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "recorded_removed",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "replayed_removed",
+      "nullable": true,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "obligation_ids",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "recorded_statuses",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "replayed_statuses",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "status_agreement",
+      "nullable": true,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "cited_in_c",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "c_identical",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "source_id_match",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "context_id",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "emitter",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "recorded_vc_model",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "recorded_solver_version",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "replay_solver_version",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "recorded_clang",
+      "nullable": false,
+      "type": "string"
+    }
+  ],
+  "provenance": [
+    "experiment",
+    "evidence_dir",
+    "tag",
+    "commit",
+    "seed",
+    "timestamp",
+    "vc_model",
+    "solver_version",
+    "clang"
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "experiment": "differential",
+  "kernels": {
+    "accumulate": {
+      "accepted": 1000,
+      "boundary": 10,
+      "drawn": 1011,
+      "failures": 0,
+      "passed": true,
+      "problem": null,
+      "proof_required_passed": true,
+      "rejections": {
+        "PreconditionViolated": 11
+      },
+      "retention": {
+        "checked": [],
+        "plain": [],
+        "verified": []
+      },
+      "rule_of_three": 0.0030303030303030303,
+      "seeded": 990,
+      "seeded_failures": 0,
+      "seeded_upper_bound": 0.0030214184956152135
+    },
+    "binary_search": {
+      "accepted": 1000,
+      "boundary": 10,
+      "drawn": 1005,
+      "failures": 0,
+      "passed": true,
+      "problem": null,
+      "proof_required_passed": true,
+      "rejections": {
+        "PreconditionViolated": 5
+      },
+      "retention": {
+        "checked": [],
+        "plain": [],
+        "verified": []
+      },
+      "rule_of_three": 0.0030303030303030303,
+      "seeded": 990,
+      "seeded_failures": 0,
+      "seeded_upper_bound": 0.0030214184956152135
+    },
+    "copy": {
+      "accepted": 1000,
+      "boundary": 10,
+      "drawn": 1025,
+      "failures": 0,
+      "passed": true,
+      "problem": null,
+      "proof_required_passed": true,
+      "rejections": {
+        "PreconditionViolated": 25
+      },
+      "retention": {
+        "checked": [],
+        "plain": [],
+        "verified": []
+      },
+      "rule_of_three": 0.0030303030303030303,
+      "seeded": 990,
+      "seeded_failures": 0,
+      "seeded_upper_bound": 0.0030214184956152135
+    },
+    "count": {
+      "accepted": 1000,
+      "boundary": 10,
+      "drawn": 1005,
+      "failures": 0,
+      "passed": true,
+      "problem": null,
+      "proof_required_passed": true,
+      "rejections": {
+        "PreconditionViolated": 5
+      },
+      "retention": {
+        "checked": [],
+        "plain": [],
+        "verified": []
+      },
+      "rule_of_three": 0.0030303030303030303,
+      "seeded": 990,
+      "seeded_failures": 0,
+      "seeded_upper_bound": 0.0030214184956152135
+    },
+    "dot": {
+      "accepted": 1000,
+      "boundary": 10,
+      "drawn": 1016,
+      "failures": 0,
+      "passed": true,
+      "problem": null,
+      "proof_required_passed": true,
+      "rejections": {
+        "PreconditionViolated": 16
+      },
+      "retention": {
+        "checked": [],
+        "plain": [],
+        "verified": []
+      },
+      "rule_of_three": 0.0030303030303030303,
+      "seeded": 990,
+      "seeded_failures": 0,
+      "seeded_upper_bound": 0.0030214184956152135
+    },
+    "fill": {
+      "accepted": 1000,
+      "boundary": 10,
+      "drawn": 1011,
+      "failures": 0,
+      "passed": true,
+      "problem": null,
+      "proof_required_passed": true,
+      "rejections": {
+        "PreconditionViolated": 11
+      },
+      "retention": {
+        "checked": [],
+        "plain": [],
+        "verified": []
+      },
+      "rule_of_three": 0.0030303030303030303,
+      "seeded": 990,
+      "seeded_failures": 0,
+      "seeded_upper_bound": 0.0030214184956152135
+    },
+    "find": {
+      "accepted": 1000,
+      "boundary": 10,
+      "drawn": 1005,
+      "failures": 0,
+      "passed": true,
+      "problem": null,
+      "proof_required_passed": true,
+      "rejections": {
+        "PreconditionViolated": 5
+      },
+      "retention": {
+        "checked": [],
+        "plain": [],
+        "verified": []
+      },
+      "rule_of_three": 0.0030303030303030303,
+      "seeded": 990,
+      "seeded_failures": 0,
+      "seeded_upper_bound": 0.0030214184956152135
+    },
+    "matvec": {
+      "accepted": 1000,
+      "boundary": 10,
+      "drawn": 1066,
+      "failures": 0,
+      "passed": true,
+      "problem": null,
+      "proof_required_passed": true,
+      "rejections": {
+        "PreconditionViolated": 66
+      },
+      "retention": {
+        "checked": [],
+        "plain": [],
+        "verified": []
+      },
+      "rule_of_three": 0.0030303030303030303,
+      "seeded": 990,
+      "seeded_failures": 0,
+      "seeded_upper_bound": 0.0030214184956152135
+    },
+    "prefix_sum": {
+      "accepted": 1000,
+      "boundary": 10,
+      "drawn": 1018,
+      "failures": 0,
+      "passed": true,
+      "problem": null,
+      "proof_required_passed": true,
+      "rejections": {
+        "PreconditionViolated": 18
+      },
+      "retention": {
+        "checked": [],
+        "plain": [],
+        "verified": []
+      },
+      "rule_of_three": 0.0030303030303030303,
+      "seeded": 990,
+      "seeded_failures": 0,
+      "seeded_upper_bound": 0.0030214184956152135
+    },
+    "replace": {
+      "accepted": 1000,
+      "boundary": 10,
+      "drawn": 1016,
+      "failures": 0,
+      "passed": true,
+      "problem": null,
+      "proof_required_passed": true,
+      "rejections": {
+        "PreconditionViolated": 16
+      },
+      "retention": {
+        "checked": [],
+        "plain": [],
+        "verified": []
+      },
+      "rule_of_three": 0.0030303030303030303,
+      "seeded": 990,
+      "seeded_failures": 0,
+      "seeded_upper_bound": 0.0030214184956152135
+    },
+    "reverse": {
+      "accepted": 1000,
+      "boundary": 10,
+      "drawn": 1018,
+      "failures": 0,
+      "passed": true,
+      "problem": null,
+      "proof_required_passed": true,
+      "rejections": {
+        "PreconditionViolated": 18
+      },
+      "retention": {
+        "checked": [],
+        "plain": [],
+        "verified": []
+      },
+      "rule_of_three": 0.0030303030303030303,
+      "seeded": 990,
+      "seeded_failures": 0,
+      "seeded_upper_bound": 0.0030214184956152135
+    },
+    "saxpy": {
+      "accepted": 1000,
+      "boundary": 10,
+      "drawn": 1023,
+      "failures": 0,
+      "passed": true,
+      "problem": null,
+      "proof_required_passed": true,
+      "rejections": {
+        "PreconditionViolated": 23
+      },
+      "retention": {
+        "checked": [],
+        "plain": [],
+        "verified": []
+      },
+      "rule_of_three": 0.0030303030303030303,
+      "seeded": 990,
+      "seeded_failures": 0,
+      "seeded_upper_bound": 0.0030214184956152135
+    },
+    "sum": {
+      "accepted": 1000,
+      "boundary": 10,
+      "drawn": 1018,
+      "failures": 0,
+      "passed": true,
+      "problem": null,
+      "proof_required_passed": true,
+      "rejections": {
+        "PreconditionViolated": 18
+      },
+      "retention": {
+        "checked": [],
+        "plain": [],
+        "verified": []
+      },
+      "rule_of_three": 0.0030303030303030303,
+      "seeded": 990,
+      "seeded_failures": 0,
+      "seeded_upper_bound": 0.0030214184956152135
+    },
+    "swap_ranges": {
+      "accepted": 1000,
+      "boundary": 10,
+      "drawn": 1025,
+      "failures": 0,
+      "passed": true,
+      "problem": null,
+      "proof_required_passed": true,
+      "rejections": {
+        "PreconditionViolated": 25
+      },
+      "retention": {
+        "checked": [],
+        "plain": [],
+        "verified": []
+      },
+      "rule_of_three": 0.0030303030303030303,
+      "seeded": 990,
+      "seeded_failures": 0,
+      "seeded_upper_bound": 0.0030214184956152135
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,671 @@
+{
+  "experiment": "houdini",
+  "family": "dynamic inference over loop-head states: `v == c`, `v == w + c`, `v == a*w + b` (a in {-2, -1, 2}), `c <= v`, `v <= c`, `v <= w + c` with observed extremes, `v == w + x`, `v == w - x`, `v == w * x`, and implications `cond => e` from call-free scalar branch conditions in the loop body (written as disjunctions); every literal of absolute value at most 8; at most 40 candidates per loop; 200 fuzz draws plus 200 profile draws when a profile binds; a loop with fewer than 20 observed head states gets no candidate",
+  "family_label": "b2",
+  "kernels": {
+    "zilu01": {
+      "accepted": true,
+      "candidates_initial": [
+        14
+      ],
+      "candidates_remaining": [
+        9
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((x == y) && (y == x)) && (1 <= x)) && ((1 <= y) && (0 <= steps))) && (((0 <= step) && (step <= (x - 1))) && ((step <= (y - 1)) && (step <= steps))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 227.0636219327571,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu02": {
+      "accepted": true,
+      "candidates_initial": [
+        10
+      ],
+      "candidates_remaining": [
+        3
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((1 <= l) && (1 <= i)) && (l <= i))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 89.18637497117743,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu04": {
+      "accepted": false,
+      "candidates_initial": [
+        12
+      ],
+      "candidates_remaining": [
+        3
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((0 <= j) && (1 <= n)) && (j <= n))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "insufficient",
+      "rounds": 3,
+      "solver_ms": 127.34555298811756,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu05": {
+      "accepted": true,
+      "candidates_initial": [
+        12
+      ],
+      "candidates_remaining": [
+        4
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((0 <= x) && (x <= y)) && ((x <= n) && (y <= n)))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 166.66306799743325,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu06": {
+      "accepted": false,
+      "candidates_initial": [
+        40
+      ],
+      "candidates_remaining": [
+        7
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((j == step) && (step == j)) && ((0 <= steps) && (0 <= j))) && (((0 <= step) && (j <= steps)) && (step <= steps)))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 5,
+      "rejection_class": "insufficient",
+      "rounds": 3,
+      "solver_ms": 907.3362519702641,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu08": {
+      "accepted": true,
+      "candidates_initial": [
+        9
+      ],
+      "candidates_remaining": [
+        5
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((0 <= n) && (0 <= sum)) && (0 <= i)) && ((i <= n) && (i <= (sum + 1))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 116.15009601518977,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu11": {
+      "accepted": true,
+      "candidates_initial": [
+        6
+      ],
+      "candidates_remaining": [
+        3
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((0 <= x) && (1 <= n)) && (x <= n))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 69.20787699345965,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu12": {
+      "accepted": true,
+      "candidates_initial": [
+        18
+      ],
+      "candidates_remaining": [
+        6
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((0 <= steps) && (0 <= step)) && (t <= y)) && (((step <= steps) && ((x > 0) || (y == t))) && ((x > 0) || (t == y))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 351.31273497245274,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu13": {
+      "accepted": true,
+      "candidates_initial": [
+        10
+      ],
+      "candidates_remaining": [
+        4
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((i == j) && (j == i)) && ((0 <= i) && (0 <= j)))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 95.86870900238864,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu14": {
+      "accepted": true,
+      "candidates_initial": [
+        2
+      ],
+      "candidates_remaining": [
+        1
+      ],
+      "errors": 0,
+      "invariants": [
+        "(0 <= i)"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 16.984785965178162,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu15": {
+      "accepted": false,
+      "candidates_initial": [
+        12
+      ],
+      "candidates_remaining": [
+        4
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((0 <= low) && (0 <= mid)) && ((1 <= high) && (mid <= (high - 1))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "insufficient",
+      "rounds": 2,
+      "solver_ms": 128.98771899926942,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu16": {
+      "accepted": false,
+      "candidates_initial": [
+        16
+      ],
+      "candidates_remaining": [
+        9
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((i == (step + 1)) && (step == (i - 1))) && (1 <= i)) && ((k <= 1) && (0 <= step))) && (((i <= (steps + 1)) && (k <= i)) && ((k <= (step + 1)) && (step <= steps))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "insufficient",
+      "rounds": 3,
+      "solver_ms": 260.4069519729819,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu17": {
+      "accepted": true,
+      "candidates_initial": [
+        12
+      ],
+      "candidates_remaining": [
+        4
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((i == k) && (k == i)) && ((0 <= i) && (0 <= k)))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 145.11873203446157,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu18": {
+      "accepted": true,
+      "candidates_initial": [
+        12
+      ],
+      "candidates_remaining": [
+        7
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((i == k) && (k == i)) && ((0 <= i) && (0 <= k))) && (((1 <= n) && (i <= n)) && (k <= n)))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 184.18982408184092,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu19": {
+      "accepted": true,
+      "candidates_initial": [
+        12
+      ],
+      "candidates_remaining": [
+        7
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((j == k) && (k == j)) && ((0 <= j) && (0 <= k))) && (((1 <= n) && (j <= n)) && (k <= n)))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 183.92672804475296,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu20": {
+      "accepted": true,
+      "candidates_initial": [
+        9
+      ],
+      "candidates_remaining": [
+        5
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((0 <= i) && (0 <= n)) && (0 <= sum)) && ((i <= n) && (i <= (sum + 1))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 120.87134292232804,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu22": {
+      "accepted": true,
+      "candidates_initial": [
+        16
+      ],
+      "candidates_remaining": [
+        10
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((y == step) && (step == y)) && (1 <= x)) && ((0 <= y) && (0 <= steps))) && ((((0 <= step) && (y <= x)) && (y <= steps)) && ((step <= x) && (step <= steps))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 255.06021900218911,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu23": {
+      "accepted": false,
+      "candidates_initial": [
+        4
+      ],
+      "candidates_remaining": [
+        4
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((j == (2 * i)) && (0 <= i)) && ((0 <= j) && (i <= j)))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "insufficient",
+      "rounds": 1,
+      "solver_ms": 29.687172995181754,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu24": {
+      "accepted": false,
+      "candidates_initial": [
+        12
+      ],
+      "candidates_remaining": [
+        4
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((0 <= i) && (0 <= n)) && ((i <= (n + 1)) && (k <= n)))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "insufficient",
+      "rounds": 2,
+      "solver_ms": 120.6248470407445,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu25": {
+      "accepted": false,
+      "candidates_initial": [
+        1
+      ],
+      "candidates_remaining": [
+        0
+      ],
+      "errors": 0,
+      "invariants": [
+        "1"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "insufficient",
+      "rounds": 2,
+      "solver_ms": 10.826131008798257,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu26": {
+      "accepted": true,
+      "candidates_initial": [
+        5
+      ],
+      "candidates_remaining": [
+        1
+      ],
+      "errors": 0,
+      "invariants": [
+        "(x <= y)"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 35.93303999514319,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu27": {
+      "accepted": false,
+      "candidates_initial": [
+        7
+      ],
+      "candidates_remaining": [
+        1
+      ],
+      "errors": 0,
+      "invariants": [
+        "(i <= j)"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "insufficient",
+      "rounds": 2,
+      "solver_ms": 58.295141003327444,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu29": {
+      "accepted": false,
+      "candidates_initial": [
+        3
+      ],
+      "candidates_remaining": [
+        0
+      ],
+      "errors": 0,
+      "invariants": [
+        "1"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "insufficient",
+      "rounds": 2,
+      "solver_ms": 18.598609982291237,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu30": {
+      "accepted": true,
+      "candidates_initial": [
+        16
+      ],
+      "candidates_remaining": [
+        5
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((x == y) && (y == x)) && (0 <= steps)) && ((0 <= step) && (step <= steps)))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 175.0125590042444,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu32": {
+      "accepted": true,
+      "candidates_initial": [
+        16
+      ],
+      "candidates_remaining": [
+        10
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((1 <= x) && (x <= 2)) && (0 <= steps)) && ((0 <= step) && (x <= (step + 2)))) && ((((step <= steps) && ((!(x == 1)) || (x == 1))) && ((x == 1) || (x == 2))) && (((!(x == 2)) || (x == 2)) && ((x == 2) || (x == 1)))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 549.3355520011391,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu33": {
+      "accepted": true,
+      "candidates_initial": [
+        1
+      ],
+      "candidates_remaining": [
+        1
+      ],
+      "errors": 0,
+      "invariants": [
+        "(0 <= x)"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 9.400401992024854,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu34": {
+      "accepted": true,
+      "candidates_initial": [
+        15
+      ],
+      "candidates_remaining": [
+        8
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((0 <= j) && (0 <= k)) && ((1 <= n) && (j <= n))) && (((k <= n) && (j == (n - k))) && ((k == (n - j)) && (n == (j + k)))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 244.54510597570334,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu35": {
+      "accepted": true,
+      "candidates_initial": [
+        1
+      ],
+      "candidates_remaining": [
+        1
+      ],
+      "errors": 0,
+      "invariants": [
+        "(0 <= x)"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 9.431571001186967,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu36": {
+      "accepted": true,
+      "candidates_initial": [
+        20
+      ],
+      "candidates_remaining": [
+        13
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((x == y) && (x == step)) && ((y == x) && (y == step))) && (((step == x) && (step == y)) && (0 <= x))) && ((((0 <= y) && (0 <= steps)) && (0 <= step)) && (((x <= steps) && (y <= steps)) && (step <= steps))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 356.3746770087164,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu37": {
+      "accepted": true,
+      "candidates_initial": [
+        6
+      ],
+      "candidates_remaining": [
+        4
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((x == y) && (y == x)) && ((0 <= x) && (0 <= y)))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 56.00832600612193,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    }
+  },
+  "max_rounds": 5,
+  "preregistered_max_rounds": 5,
+  "success_at_1": 21,
+  "tasks": 30
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "base_image": "framac/frama-c@sha256:4f0b7a2bd600c4daabfdcdfa393a3c18301e0db18f3b2739f1d9650193462d36",
+  "dockerfile_sha256": "8ac577ce8e54774c57037377c9566155083d7134590482c90137a576409e2552",
+  "image_id": "sha256:f62849319e07612166da3b950acf8bf7ccfe64646572c293bce1ead45c4412b7",
+  "z3_version": "Z3 version 4.8.12 - 64 bit (Debian package inside the pinned base image)",
+  "why3_provers": [
+    "Alt-Ergo 2.5.4",
+    "Alt-Ergo 2.5.4 (FPA)",
+    "Alt-Ergo 2.5.4 (counterexamples)",
+    "Z3 4.8.12",
+    "Z3 4.8.12 (counterexamples)",
+    "Z3 4.8.12 (noBV)"
+  ],
+  "built": "2026-11-09T20:52:25+00:00",
+  "note": "Built on the development machine with `docker build -t pfc-frama-c-z3 validation/frama-c-z3`; the image id is what sweep --image pins."
+}

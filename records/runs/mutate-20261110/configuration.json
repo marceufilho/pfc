@@ -1,0 +1,262 @@
+{
+  "experiment": "mutate",
+  "provenance": {
+    "clang": "Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)",
+    "commit": "28e37047a2390a0397321464d3d76c7c7c88ab29",
+    "experiment": "mutate",
+    "seed": 0,
+    "solver_version": "5.3.3.0",
+    "tag": null,
+    "timestamp": "2026-11-10T22:02:02+00:00",
+    "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+  },
+  "settings": {
+    "candidate_digest": "ad4aef3b3338de1fd27bbd46ef93032cb636eb1aca1952a4dda1e6d5b3ea7a02",
+    "compiler": "/usr/lib/llvm-19/bin/clang",
+    "compiler_layers": [
+      {
+        "files": [
+          "tests/test_vc.py",
+          "tests/test_general_vc.py",
+          "tests/test_read_domain.py",
+          "tests/test_emit.py",
+          "tests/test_general_emit.py",
+          "tests/test_review_followup.py",
+          "tests/test_review_revisions.py",
+          "tests/test_assessment_adjustments.py",
+          "tests/test_check_summary.py",
+          "tests/test_smt.py",
+          "tests/test_mutations.py",
+          "tests/test_replay.py",
+          "tests/test_solver_cache.py",
+          "tests/test_authorization_fixtures.py",
+          "tests/eval/test_eval_mutation_gaps.py"
+        ],
+        "keyword": "not golden",
+        "name": "unit"
+      },
+      {
+        "files": [
+          "tests/test_emit.py",
+          "tests/test_general_emit.py",
+          "tests/test_ir.py"
+        ],
+        "keyword": "golden",
+        "name": "golden"
+      },
+      {
+        "files": [
+          "tests/test_difftest.py",
+          "tests/test_difftest_integration.py",
+          "tests/test_difftest_mutation.py",
+          "tests/test_original_differential.py",
+          "tests/test_optimized_differential.py",
+          "tests/test_six_kernels.py"
+        ],
+        "keyword": null,
+        "name": "differential"
+      },
+      {
+        "files": [
+          "tests/test_breakit.py",
+          "tests/test_kernel_breakit.py",
+          "tests/test_slice.py"
+        ],
+        "keyword": null,
+        "name": "breakit"
+      },
+      {
+        "files": [
+          "tests/test_soundness.py",
+          "tests/test_proposal_validation.py",
+          "tests/test_proposal_loop.py"
+        ],
+        "keyword": null,
+        "name": "injection"
+      },
+      {
+        "files": [],
+        "keyword": null,
+        "name": "oracle"
+      }
+    ],
+    "compiler_targets": [
+      "pfc/vc.py",
+      "pfc/wp.py",
+      "pfc/authorization.py",
+      "pfc/emit.py"
+    ],
+    "copied_paths": [
+      "pfc",
+      "pfc_eval",
+      "tests",
+      "kernels",
+      "examples",
+      "include",
+      "tools",
+      "validation",
+      "bench/external",
+      "bench/results/g1/soundness",
+      "paper",
+      "thesis/generated",
+      "pyproject.toml",
+      "uv.lock",
+      ".python-version",
+      "main.py",
+      "Makefile"
+    ],
+    "cpp": "cpp",
+    "extended_layers": [
+      {
+        "files": [
+          "tests/test_vc.py",
+          "tests/test_general_vc.py",
+          "tests/test_read_domain.py",
+          "tests/test_emit.py",
+          "tests/test_general_emit.py",
+          "tests/test_review_followup.py",
+          "tests/test_review_revisions.py",
+          "tests/test_assessment_adjustments.py",
+          "tests/test_check_summary.py",
+          "tests/test_smt.py",
+          "tests/test_mutations.py",
+          "tests/test_replay.py",
+          "tests/test_solver_cache.py",
+          "tests/test_authorization_fixtures.py",
+          "tests/eval/test_eval_mutation_gaps.py",
+          "tests/test_ir.py",
+          "tests/test_subset.py",
+          "tests/test_parse.py",
+          "tests/test_target.py",
+          "tests/test_check_cli.py",
+          "tests/test_proposal_validation.py",
+          "tests/test_proposal_loop.py"
+        ],
+        "keyword": "not golden",
+        "name": "unit"
+      },
+      {
+        "files": [
+          "tests/test_emit.py",
+          "tests/test_general_emit.py",
+          "tests/test_ir.py"
+        ],
+        "keyword": "golden",
+        "name": "golden"
+      },
+      {
+        "files": [
+          "tests/test_difftest.py",
+          "tests/test_difftest_integration.py",
+          "tests/test_difftest_mutation.py",
+          "tests/test_original_differential.py",
+          "tests/test_optimized_differential.py",
+          "tests/test_six_kernels.py"
+        ],
+        "keyword": null,
+        "name": "differential"
+      },
+      {
+        "files": [
+          "tests/test_breakit.py",
+          "tests/test_kernel_breakit.py",
+          "tests/test_slice.py"
+        ],
+        "keyword": null,
+        "name": "breakit"
+      },
+      {
+        "files": [
+          "tests/test_soundness.py",
+          "tests/test_proposal_validation.py",
+          "tests/test_proposal_loop.py"
+        ],
+        "keyword": null,
+        "name": "injection"
+      },
+      {
+        "files": [],
+        "keyword": null,
+        "name": "oracle"
+      }
+    ],
+    "extended_targets": [
+      "pfc/smt.py",
+      "pfc/propose/invariants.py",
+      "pfc/lower.py"
+    ],
+    "harness_layers": [
+      {
+        "files": [
+          "tests/eval/test_eval_interpret.py",
+          "tests/eval/test_eval_stats.py",
+          "tests/eval/test_eval_mutation_gaps.py",
+          "tests/eval/test_eval_proposer.py",
+          "tests/eval/test_eval_tables.py"
+        ],
+        "keyword": null,
+        "name": "unit"
+      },
+      {
+        "files": [
+          "tests/eval/test_eval_interpret_integration.py",
+          "tests/eval/test_eval_differential_integration.py",
+          "tests/eval/test_eval_conjuncts.py",
+          "tests/eval/test_eval_inject.py",
+          "tests/eval/test_eval_proposer_integration.py"
+        ],
+        "keyword": null,
+        "name": "integration"
+      }
+    ],
+    "harness_mutants_per_file": 5,
+    "harness_targets": [
+      "pfc_eval/interpret.py",
+      "pfc_eval/stats.py",
+      "pfc_eval/proposer.py",
+      "pfc_eval/tables.py"
+    ],
+    "layer_timeout_s": 600,
+    "linked_paths": [
+      "bench/eval",
+      "bench/proposals/g2-astra-20261105",
+      "bench/oracle/wp32-v4-20261105"
+    ],
+    "mutants_per_file": 10,
+    "operators": [
+      "relational_boundary",
+      "constant_shift",
+      "negated_condition",
+      "deleted_statement",
+      "swapped_operands"
+    ],
+    "oracle_baseline": "bench/oracle/wp32-v4-20261105",
+    "population": {
+      "compiler": {
+        "pfc/authorization.py": 60,
+        "pfc/emit.py": 396,
+        "pfc/vc.py": 93,
+        "pfc/wp.py": 298
+      },
+      "harness": {
+        "pfc_eval/interpret.py": 289,
+        "pfc_eval/proposer.py": 308,
+        "pfc_eval/stats.py": 185,
+        "pfc_eval/tables.py": 430
+      }
+    },
+    "preregistered_operators": [
+      "relational_boundary",
+      "constant_shift",
+      "negated_condition",
+      "deleted_statement",
+      "swapped_operands"
+    ],
+    "python": "/home/marceu/TCC/.venv/bin/python3",
+    "seed": 0,
+    "select_all": false,
+    "smt_encoding": "z3-int-shared-memory-v2; C division truncates to zero; division by zero totalized to 0",
+    "target_score": 0.9,
+    "targets": "all"
+  }
+}

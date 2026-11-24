@@ -1,0 +1,85 @@
+{
+  "profile": "pfc-eval-inputs-v1",
+  "kernel": "init_2_n_u",
+  "function": "init_2_n_u",
+  "program_sha256": "5163d4eb8cbf7f6098ac2b857985a05c23724b7b83d6b44465e88d06b025521f",
+  "cases": 1000,
+  "arrays": {
+    "A": {
+      "length": [
+        1,
+        4096
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    }
+  },
+  "scalars": {
+    "n": {
+      "kind": "prefix",
+      "low": 1,
+      "of": [
+        "A"
+      ]
+    },
+    "m": {
+      "kind": "quotient",
+      "of": [
+        "A"
+      ],
+      "by": "n"
+    },
+    "C": {
+      "kind": "range",
+      "low": -1000,
+      "high": 1000
+    }
+  },
+  "boundary": [
+    {
+      "arrays": {
+        "A": [
+          1
+        ]
+      },
+      "scalars": {
+        "n": 1,
+        "m": 1,
+        "C": 7
+      }
+    },
+    {
+      "arrays": {
+        "A": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "scalars": {
+        "n": 3,
+        "m": 2,
+        "C": 7
+      }
+    },
+    {
+      "arrays": {
+        "A": [
+          1
+        ]
+      },
+      "scalars": {
+        "n": 1,
+        "m": 0,
+        "C": 7
+      }
+    }
+  ],
+  "stress": 0.1
+}

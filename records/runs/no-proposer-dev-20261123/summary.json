@@ -1,0 +1,10 @@
+{
+  "additional_sites_written_over_trivial": 31,
+  "guards_total": 31,
+  "programs": 14,
+  "trivial_programs_accepted": 0,
+  "trivial_programs_all_removed": 0,
+  "trivial_removed": 0,
+  "written_programs_all_removed": 14,
+  "written_removed": 31
+}

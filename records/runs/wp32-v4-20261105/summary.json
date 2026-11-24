@@ -1,0 +1,1045 @@
+[
+  {
+    "compared": {
+      "bounds_a": [
+        "valid"
+      ]
+    },
+    "kind": "positive",
+    "missing_properties": [],
+    "name": "sum",
+    "overflow": {
+      "timeout": 2,
+      "valid": 1
+    },
+    "pfc": {
+      "counts": {
+        "bounds": 1,
+        "entry": 1,
+        "overflow": 2,
+        "preservation": 1
+      },
+      "exit_code": 0,
+      "required_passed": true,
+      "sites": [
+        {
+          "id": "bounds:e7de46dc46da1f3c5d937ab18ab828625bea45d5ee911727d5e9d81a17b95d52",
+          "kind": "bounds",
+          "location": {
+            "column": 17,
+            "file": "/home/marceu/TCC/kernels/sum/kernel.c",
+            "line": 12,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        }
+      ],
+      "solver": "5.3.3.0",
+      "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 4
+    },
+    "status": "conditional-agreement",
+    "support_and_safety": {
+      "valid": 7
+    },
+    "unproved_support": []
+  },
+  {
+    "compared": {
+      "bounds_a": [
+        "valid"
+      ],
+      "bounds_b": [
+        "valid"
+      ]
+    },
+    "kind": "positive",
+    "missing_properties": [],
+    "name": "dot",
+    "overflow": {
+      "timeout": 4,
+      "valid": 1
+    },
+    "pfc": {
+      "counts": {
+        "bounds": 2,
+        "entry": 1,
+        "overflow": 3,
+        "preservation": 1
+      },
+      "exit_code": 0,
+      "required_passed": true,
+      "sites": [
+        {
+          "id": "bounds:722b8c0cb826cbad431ee5898b7fd987728c0d907dedf55c419b618484124405",
+          "kind": "bounds",
+          "location": {
+            "column": 17,
+            "file": "/home/marceu/TCC/kernels/dot/kernel.c",
+            "line": 10,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:0e8c28d0bd867b4beb4bf2c563dd365c41c5510c44a2cccf5722ac2cc3bda0ba",
+          "kind": "bounds",
+          "location": {
+            "column": 24,
+            "file": "/home/marceu/TCC/kernels/dot/kernel.c",
+            "line": 10,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        }
+      ],
+      "solver": "5.3.3.0",
+      "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 4
+    },
+    "status": "conditional-agreement",
+    "support_and_safety": {
+      "valid": 9
+    },
+    "unproved_support": []
+  },
+  {
+    "compared": {
+      "bounds_x_read": [
+        "valid"
+      ],
+      "bounds_y_read": [
+        "valid"
+      ],
+      "bounds_y_write": [
+        "valid"
+      ]
+    },
+    "kind": "positive",
+    "missing_properties": [],
+    "name": "saxpy",
+    "overflow": {
+      "timeout": 4,
+      "valid": 1
+    },
+    "pfc": {
+      "counts": {
+        "bounds": 3,
+        "entry": 1,
+        "overflow": 3,
+        "preservation": 1
+      },
+      "exit_code": 0,
+      "required_passed": true,
+      "sites": [
+        {
+          "id": "bounds:d71eb294a8390c890548c22b72db14bef7f8d5c1f4e8350ff0125ee3b0e0b51b",
+          "kind": "bounds",
+          "location": {
+            "column": 24,
+            "file": "/home/marceu/TCC/kernels/saxpy/kernel.c",
+            "line": 10,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:21fe508ee8342ea07885c41fc20f180cf42b8d81a6252f62458733c3b3127bf9",
+          "kind": "bounds",
+          "location": {
+            "column": 31,
+            "file": "/home/marceu/TCC/kernels/saxpy/kernel.c",
+            "line": 10,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:6acb892607b9112dd749891a7f131edbddc272a17a9706d5dcf8369908a82ee5",
+          "kind": "bounds",
+          "location": {
+            "column": 9,
+            "file": "/home/marceu/TCC/kernels/saxpy/kernel.c",
+            "line": 10,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        }
+      ],
+      "solver": "5.3.3.0",
+      "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 4
+    },
+    "status": "conditional-agreement",
+    "support_and_safety": {
+      "valid": 13
+    },
+    "unproved_support": []
+  },
+  {
+    "compared": {
+      "bounds_a_read": [
+        "valid"
+      ],
+      "bounds_a_write": [
+        "valid"
+      ],
+      "bounds_previous": [
+        "valid"
+      ]
+    },
+    "kind": "positive",
+    "missing_properties": [],
+    "name": "prefix_sum",
+    "overflow": {
+      "timeout": 2,
+      "valid": 2
+    },
+    "pfc": {
+      "counts": {
+        "bounds": 3,
+        "entry": 1,
+        "overflow": 3,
+        "preservation": 1
+      },
+      "exit_code": 0,
+      "required_passed": true,
+      "sites": [
+        {
+          "id": "bounds:6e7bc13c50657e932ed5431f5e08ba65003a995a3ae0f9b89141f128cd41ec25",
+          "kind": "bounds",
+          "location": {
+            "column": 16,
+            "file": "/home/marceu/TCC/kernels/prefix_sum/kernel.c",
+            "line": 12,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:65653b07bdfb28f32f589adcebce11d5956d2629062f65070b4bd0591ae633fc",
+          "kind": "bounds",
+          "location": {
+            "column": 23,
+            "file": "/home/marceu/TCC/kernels/prefix_sum/kernel.c",
+            "line": 12,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:b616d474a12cfbee2d40754e069f0f9cd86aa0bbef817412ae656f401c851a66",
+          "kind": "bounds",
+          "location": {
+            "column": 9,
+            "file": "/home/marceu/TCC/kernels/prefix_sum/kernel.c",
+            "line": 12,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        }
+      ],
+      "solver": "5.3.3.0",
+      "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 5
+    },
+    "status": "conditional-agreement",
+    "support_and_safety": {
+      "valid": 15
+    },
+    "unproved_support": []
+  },
+  {
+    "compared": {
+      "bounds_matrix": [
+        "timeout"
+      ],
+      "bounds_x": [
+        "valid"
+      ],
+      "bounds_y": [
+        "valid"
+      ],
+      "division_contract": [
+        "valid"
+      ]
+    },
+    "kind": "positive",
+    "missing_properties": [],
+    "name": "matvec",
+    "overflow": {
+      "timeout": 4,
+      "valid": 6
+    },
+    "pfc": {
+      "counts": {
+        "bounds": 3,
+        "division": 1,
+        "entry": 2,
+        "overflow": 6,
+        "preservation": 2
+      },
+      "exit_code": 0,
+      "required_passed": true,
+      "sites": [
+        {
+          "id": "division:b4635c52994158f1282aac10a2eb8c8a5758fa99ff472c85a9fed90c89948db1",
+          "kind": "division",
+          "location": {
+            "column": 74,
+            "file": "/home/marceu/TCC/kernels/matvec/kernel.c",
+            "line": 6,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:3141f39828cd6414cc7326d70ef3cddba3adc96552437c718d2edbd7cd2e86cb",
+          "kind": "bounds",
+          "location": {
+            "column": 21,
+            "file": "/home/marceu/TCC/kernels/matvec/kernel.c",
+            "line": 17,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:ec70b3f0d5c7a81cde88f880de5abc4adf23b7b62998dc0fa6728f5b8fe9a383",
+          "kind": "bounds",
+          "location": {
+            "column": 44,
+            "file": "/home/marceu/TCC/kernels/matvec/kernel.c",
+            "line": 17,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:bcfaebe45ba51107debe10fb175153c42b74e7ccaea0366be1b83fc205d9fc40",
+          "kind": "bounds",
+          "location": {
+            "column": 9,
+            "file": "/home/marceu/TCC/kernels/matvec/kernel.c",
+            "line": 20,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        }
+      ],
+      "solver": "5.3.3.0",
+      "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 6
+    },
+    "status": "inconclusive",
+    "support_and_safety": {
+      "timeout": 1,
+      "valid": 17
+    },
+    "unproved_support": [
+      "typed_matvec_assert_bounds_matrix"
+    ]
+  },
+  {
+    "compared": {
+      "bounds_a": [
+        "valid"
+      ],
+      "division_mid": [
+        "valid"
+      ]
+    },
+    "kind": "positive",
+    "missing_properties": [],
+    "name": "binary_search",
+    "overflow": {
+      "valid": 7
+    },
+    "pfc": {
+      "counts": {
+        "bounds": 1,
+        "division": 1,
+        "entry": 1,
+        "overflow": 7,
+        "preservation": 1
+      },
+      "exit_code": 0,
+      "required_passed": true,
+      "sites": [
+        {
+          "id": "division:e96bea1acfa5d74e6a66fc290bd42ea19d0aabe985a25e1bf3101cfb26957db0",
+          "kind": "division",
+          "location": {
+            "column": 26,
+            "file": "/home/marceu/TCC/kernels/binary_search/kernel.c",
+            "line": 10,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:20d9fee926e6cf080de5b88de972bbadab807b3ddc5ee60341f8bb18c8309252",
+          "kind": "bounds",
+          "location": {
+            "column": 22,
+            "file": "/home/marceu/TCC/kernels/binary_search/kernel.c",
+            "line": 11,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        }
+      ],
+      "solver": "5.3.3.0",
+      "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 6
+    },
+    "status": "conditional-agreement",
+    "support_and_safety": {
+      "valid": 10
+    },
+    "unproved_support": []
+  },
+  {
+    "compared": {
+      "bounds_a": [
+        "valid"
+      ]
+    },
+    "kind": "positive",
+    "missing_properties": [],
+    "name": "accumulate",
+    "overflow": {
+      "timeout": 2,
+      "valid": 1
+    },
+    "pfc": {
+      "counts": {
+        "bounds": 1,
+        "entry": 1,
+        "overflow": 2,
+        "preservation": 1
+      },
+      "exit_code": 0,
+      "required_passed": true,
+      "sites": [
+        {
+          "id": "bounds:93998473c04fc095393c84ec8f010bb63e00bda777dd43e5c3f3c59ca70c117f",
+          "kind": "bounds",
+          "location": {
+            "column": 23,
+            "file": "/home/marceu/TCC/bench/external/acsl/accumulate/kernel.c",
+            "line": 8,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        }
+      ],
+      "solver": "5.3.3.0",
+      "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 4
+    },
+    "status": "conditional-agreement",
+    "support_and_safety": {
+      "valid": 7
+    },
+    "unproved_support": []
+  },
+  {
+    "compared": {
+      "bounds_a": [
+        "valid"
+      ],
+      "bounds_b": [
+        "valid"
+      ]
+    },
+    "kind": "positive",
+    "missing_properties": [],
+    "name": "copy",
+    "overflow": {
+      "valid": 1
+    },
+    "pfc": {
+      "counts": {
+        "bounds": 2,
+        "entry": 1,
+        "overflow": 1,
+        "preservation": 1
+      },
+      "exit_code": 0,
+      "required_passed": true,
+      "sites": [
+        {
+          "id": "bounds:c6fd192a20c06aeac7bccfd10fd2d100d979ca0cecaf3688294d54f82450ff6a",
+          "kind": "bounds",
+          "location": {
+            "column": 16,
+            "file": "/home/marceu/TCC/bench/external/acsl/copy/kernel.c",
+            "line": 9,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:353ee3777a3af5897c125ab820f20ea2f5fe85bf126ecf7f8fa11c205c7b5ad4",
+          "kind": "bounds",
+          "location": {
+            "column": 9,
+            "file": "/home/marceu/TCC/bench/external/acsl/copy/kernel.c",
+            "line": 9,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        }
+      ],
+      "solver": "5.3.3.0",
+      "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 4
+    },
+    "status": "conditional-agreement",
+    "support_and_safety": {
+      "valid": 11
+    },
+    "unproved_support": []
+  },
+  {
+    "compared": {
+      "bounds_a": [
+        "valid"
+      ]
+    },
+    "kind": "positive",
+    "missing_properties": [],
+    "name": "count",
+    "overflow": {
+      "valid": 2
+    },
+    "pfc": {
+      "counts": {
+        "bounds": 1,
+        "entry": 1,
+        "overflow": 3,
+        "preservation": 1
+      },
+      "exit_code": 0,
+      "required_passed": true,
+      "sites": [
+        {
+          "id": "bounds:06baf197541c2ee7029a7409b754d226b95415394723d4971a5bcd68edc5c1ea",
+          "kind": "bounds",
+          "location": {
+            "column": 13,
+            "file": "/home/marceu/TCC/bench/external/acsl/count/kernel.c",
+            "line": 9,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        }
+      ],
+      "solver": "5.3.3.0",
+      "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 5
+    },
+    "status": "conditional-agreement",
+    "support_and_safety": {
+      "valid": 7
+    },
+    "unproved_support": []
+  },
+  {
+    "compared": {
+      "bounds_a": [
+        "valid"
+      ]
+    },
+    "kind": "positive",
+    "missing_properties": [],
+    "name": "fill",
+    "overflow": {
+      "valid": 1
+    },
+    "pfc": {
+      "counts": {
+        "bounds": 1,
+        "entry": 1,
+        "overflow": 1,
+        "preservation": 1
+      },
+      "exit_code": 0,
+      "required_passed": true,
+      "sites": [
+        {
+          "id": "bounds:a9ddee637b21b3af887d4f1f2ef519406e7e7abcfd106d49f8b3a6678db1b3ba",
+          "kind": "bounds",
+          "location": {
+            "column": 9,
+            "file": "/home/marceu/TCC/bench/external/acsl/fill/kernel.c",
+            "line": 8,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        }
+      ],
+      "solver": "5.3.3.0",
+      "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 4
+    },
+    "status": "conditional-agreement",
+    "support_and_safety": {
+      "valid": 9
+    },
+    "unproved_support": []
+  },
+  {
+    "compared": {
+      "bounds_a": [
+        "valid"
+      ]
+    },
+    "kind": "positive",
+    "missing_properties": [],
+    "name": "find",
+    "overflow": {
+      "valid": 1
+    },
+    "pfc": {
+      "counts": {
+        "bounds": 1,
+        "entry": 1,
+        "overflow": 1,
+        "preservation": 1
+      },
+      "exit_code": 0,
+      "required_passed": true,
+      "sites": [
+        {
+          "id": "bounds:444610fad26a0d5502c0c27c346bf52427af805b5890a1f65ed18ebd9470051a",
+          "kind": "bounds",
+          "location": {
+            "column": 13,
+            "file": "/home/marceu/TCC/bench/external/acsl/find/kernel.c",
+            "line": 8,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        }
+      ],
+      "solver": "5.3.3.0",
+      "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 5
+    },
+    "status": "conditional-agreement",
+    "support_and_safety": {
+      "valid": 9
+    },
+    "unproved_support": []
+  },
+  {
+    "compared": {
+      "bounds_a_read": [
+        "valid"
+      ],
+      "bounds_a_write": [
+        "valid"
+      ]
+    },
+    "kind": "positive",
+    "missing_properties": [],
+    "name": "replace",
+    "overflow": {
+      "valid": 1
+    },
+    "pfc": {
+      "counts": {
+        "bounds": 2,
+        "entry": 1,
+        "overflow": 2,
+        "preservation": 1
+      },
+      "exit_code": 0,
+      "required_passed": true,
+      "sites": [
+        {
+          "id": "bounds:0d5431e7f08b1704ab97b7cf8feef01390f30a4b38155b0ef16382106112fbbe",
+          "kind": "bounds",
+          "location": {
+            "column": 13,
+            "file": "/home/marceu/TCC/bench/external/acsl/replace/kernel.c",
+            "line": 8,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:db7e0053d9d8c0bbc6b64ab0bf8678ba030eb3168f598cb01ac7b42ed21cbe58",
+          "kind": "bounds",
+          "location": {
+            "column": 26,
+            "file": "/home/marceu/TCC/bench/external/acsl/replace/kernel.c",
+            "line": 8,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        }
+      ],
+      "solver": "5.3.3.0",
+      "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 5
+    },
+    "status": "conditional-agreement",
+    "support_and_safety": {
+      "valid": 11
+    },
+    "unproved_support": []
+  },
+  {
+    "compared": {
+      "bounds_left_read": [
+        "valid"
+      ],
+      "bounds_left_write": [
+        "valid"
+      ],
+      "bounds_right_read": [
+        "valid"
+      ],
+      "bounds_right_write": [
+        "valid"
+      ],
+      "division_half": [
+        "valid"
+      ]
+    },
+    "kind": "positive",
+    "missing_properties": [],
+    "name": "reverse",
+    "overflow": {
+      "valid": 7
+    },
+    "pfc": {
+      "counts": {
+        "bounds": 4,
+        "division": 1,
+        "entry": 1,
+        "overflow": 6,
+        "preservation": 1
+      },
+      "exit_code": 0,
+      "required_passed": true,
+      "sites": [
+        {
+          "id": "division:d0e19aa6296cbfa23e32dc784381fb699760a8d5739bf09a8deb2edc62c75c9c",
+          "kind": "division",
+          "location": {
+            "column": 17,
+            "file": "/home/marceu/TCC/bench/external/acsl/reverse/kernel.c",
+            "line": 6,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:be971906b35a0c6a051c559a06d1437e66bd295d54f14e9a11219266de28ad3c",
+          "kind": "bounds",
+          "location": {
+            "column": 22,
+            "file": "/home/marceu/TCC/bench/external/acsl/reverse/kernel.c",
+            "line": 9,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:a5eb7ef790554103940b79e9e2241af063fceca1a553ce80a130d18e06be3441",
+          "kind": "bounds",
+          "location": {
+            "column": 16,
+            "file": "/home/marceu/TCC/bench/external/acsl/reverse/kernel.c",
+            "line": 10,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:ba20aca3cee3fbf3422eb835ff4e6e436c63b5b3d36e7e0b95d6da2272d13f37",
+          "kind": "bounds",
+          "location": {
+            "column": 9,
+            "file": "/home/marceu/TCC/bench/external/acsl/reverse/kernel.c",
+            "line": 10,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:5dde90aa4e0dbecdb2087d3a73d070fc0cccb6b29a50849d8ce844d46575c086",
+          "kind": "bounds",
+          "location": {
+            "column": 9,
+            "file": "/home/marceu/TCC/bench/external/acsl/reverse/kernel.c",
+            "line": 11,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        }
+      ],
+      "solver": "5.3.3.0",
+      "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 4
+    },
+    "status": "conditional-agreement",
+    "support_and_safety": {
+      "valid": 17
+    },
+    "unproved_support": []
+  },
+  {
+    "compared": {
+      "bounds_a_read": [
+        "valid"
+      ],
+      "bounds_a_write": [
+        "valid"
+      ],
+      "bounds_b_read": [
+        "valid"
+      ],
+      "bounds_b_write": [
+        "valid"
+      ]
+    },
+    "kind": "positive",
+    "missing_properties": [],
+    "name": "swap_ranges",
+    "overflow": {
+      "valid": 1
+    },
+    "pfc": {
+      "counts": {
+        "bounds": 4,
+        "entry": 1,
+        "overflow": 1,
+        "preservation": 1
+      },
+      "exit_code": 0,
+      "required_passed": true,
+      "sites": [
+        {
+          "id": "bounds:258df79819184b500176571e57a90ba8916830998e401867f183e39791b42295",
+          "kind": "bounds",
+          "location": {
+            "column": 22,
+            "file": "/home/marceu/TCC/bench/external/acsl/swap_ranges/kernel.c",
+            "line": 9,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:b0386e892895ed04de0de292702dc3324453f5410d30eeaf787b206f362a1649",
+          "kind": "bounds",
+          "location": {
+            "column": 16,
+            "file": "/home/marceu/TCC/bench/external/acsl/swap_ranges/kernel.c",
+            "line": 10,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:6f23e9d67a8a9886dae4ec2fdf3d6b939dc533e876b4bad17d27e83c7228748e",
+          "kind": "bounds",
+          "location": {
+            "column": 9,
+            "file": "/home/marceu/TCC/bench/external/acsl/swap_ranges/kernel.c",
+            "line": 10,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        },
+        {
+          "id": "bounds:4e51e91e99d20195b7b8592401926fef0b2344997671fa714b4fbd9e98294975",
+          "kind": "bounds",
+          "location": {
+            "column": 9,
+            "file": "/home/marceu/TCC/bench/external/acsl/swap_ranges/kernel.c",
+            "line": 11,
+            "node": "SourceLocation"
+          },
+          "status": "proved"
+        }
+      ],
+      "solver": "5.3.3.0",
+      "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 4
+    },
+    "status": "conditional-agreement",
+    "support_and_safety": {
+      "valid": 16
+    },
+    "unproved_support": []
+  },
+  {
+    "compared": {},
+    "control_detected": true,
+    "kind": "control",
+    "missing_properties": [],
+    "name": "missing_bounds",
+    "overflow": {
+      "timeout": 2,
+      "valid": 1
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 4
+    },
+    "status": "inconclusive",
+    "support_and_safety": {
+      "timeout": 1,
+      "valid": 6
+    },
+    "unproved_support": [
+      "typed_missing_bounds_assert_bounds_a"
+    ]
+  },
+  {
+    "compared": {},
+    "control_detected": true,
+    "kind": "control",
+    "missing_properties": [],
+    "name": "false_invariant",
+    "overflow": {
+      "valid": 1
+    },
+    "smoke": "inconsistent",
+    "smoke_verdicts": {
+      "timeout": 3,
+      "valid": 1
+    },
+    "status": "inconsistent",
+    "support_and_safety": {
+      "timeout": 2,
+      "valid": 3
+    },
+    "unproved_support": [
+      "typed_false_invariant_loop_invariant_established",
+      "typed_false_invariant_loop_invariant_preserved"
+    ]
+  },
+  {
+    "compared": {},
+    "control_detected": true,
+    "kind": "control",
+    "missing_properties": [],
+    "name": "bad_preservation",
+    "overflow": {
+      "valid": 1
+    },
+    "smoke": "no-inconsistency-detected",
+    "smoke_verdicts": {
+      "timeout": 4
+    },
+    "status": "inconclusive",
+    "support_and_safety": {
+      "timeout": 1,
+      "valid": 4
+    },
+    "unproved_support": [
+      "typed_bad_preservation_loop_invariant_preserved"
+    ]
+  },
+  {
+    "compared": {},
+    "control_detected": true,
+    "kind": "control",
+    "missing_properties": [],
+    "name": "division_zero",
+    "overflow": {},
+    "smoke": "not-run",
+    "smoke_verdicts": {},
+    "status": "inconclusive",
+    "support_and_safety": {
+      "timeout": 1,
+      "valid": 2
+    },
+    "unproved_support": [
+      "typed_division_zero_assert_division_denominator"
+    ]
+  },
+  {
+    "compared": {},
+    "control_detected": true,
+    "kind": "control",
+    "missing_properties": [],
+    "name": "signed_overflow",
+    "overflow": {
+      "timeout": 1
+    },
+    "smoke": "not-run",
+    "smoke_verdicts": {},
+    "status": "conditional-agreement",
+    "support_and_safety": {
+      "valid": 1
+    },
+    "unproved_support": []
+  },
+  {
+    "compared": {},
+    "control_detected": true,
+    "kind": "control",
+    "missing_properties": [],
+    "name": "vacuous",
+    "overflow": {},
+    "smoke": "inconsistent",
+    "smoke_verdicts": {
+      "valid": 1
+    },
+    "status": "inconsistent",
+    "support_and_safety": {
+      "valid": 3
+    },
+    "unproved_support": []
+  }
+]

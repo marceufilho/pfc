@@ -1,0 +1,936 @@
+{
+  "entries": [
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "x >= 1 && y >= 1",
+      "mapping": {
+        "step": "v3",
+        "steps": "v0",
+        "x": "v1",
+        "y": "v2"
+      },
+      "name": "zilu01",
+      "obfuscated": "zilu-obfuscated/zilu01/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "1379e5e0bf4ffecc843af7d2178991dd942b8cad7daff1db485bf363ae33e054",
+      "obfuscation": "renamed 4 names (seed 0); swapped 4 commutative operand pairs",
+      "port": "zilu/zilu01/kernel.c",
+      "port_sha256": "de7ca8e122dcf464127c6aebceb738355e8bdfdc0b41ceb846ce48bf2c430bf6",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark01_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable",
+        "nondeterministic loop guard -> counter step < steps with REQUIRES 0 <= steps"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark01_conjunctive.c",
+      "upstream_sha256": "eb49260461cefbf5c3dd21d1ceae53b12fc63b5489fca03ef4e30dd6952fd124"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "l > 0",
+      "mapping": {
+        "i": "v1",
+        "l": "v2",
+        "n": "v0"
+      },
+      "name": "zilu02",
+      "obfuscated": "zilu-obfuscated/zilu02/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "45cd5aa84d8fbc1a45237c25b9ff14ab92d64e611dcc5bfaaa9529b05cc95c90",
+      "obfuscation": "renamed 3 names (seed 0); swapped 1 commutative operand pairs",
+      "port": "zilu/zilu02/kernel.c",
+      "port_sha256": "af5da22ed3ef5f04eca0d5b3b0138b39c49b39277d556aa7eeb7feeba75cef6f",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark02_linear.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark02_linear.c",
+      "upstream_sha256": "c2949f5ad2551a2aeb85c19bbf445f95c9c01300548babb6b1409de0a58ed81c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "hand_invariant": "k + j >= n && j <= n",
+      "mapping": {
+        "j": "v2",
+        "k": "v0",
+        "n": "v1"
+      },
+      "name": "zilu04",
+      "obfuscated": "zilu-obfuscated/zilu04/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "2fdec9f73a96262cf9fedfe22a41c6f928d4ec95ec72b04ff9e1f1c0b2ac0365",
+      "obfuscation": "renamed 3 names (seed 0); swapped 3 commutative operand pairs",
+      "port": "zilu/zilu04/kernel.c",
+      "port_sha256": "4c3e328491dfdf5a16734772731232bdce9e91979435ee3e501bd7e39d89cd8b",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark04_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark04_conjunctive.c",
+      "upstream_sha256": "0f05c589421d8e3d6b7f849625b36aa3dbfd97a1290fcfe4bd84327e66cb8d62"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "x <= y && y <= n",
+      "mapping": {
+        "n": "v1",
+        "x": "v0",
+        "y": "v2"
+      },
+      "name": "zilu05",
+      "obfuscated": "zilu-obfuscated/zilu05/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "7113612a339823c6b5a972f2ff92419b57a56b0283d49e8e0950341397c11303",
+      "obfuscation": "renamed 3 names (seed 0); swapped 3 commutative operand pairs",
+      "port": "zilu/zilu05/kernel.c",
+      "port_sha256": "58dbee2fd5ceb76eb88d94e93f4367eedb5e4405237344cc3463e30e862cd414",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark05_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable",
+        "braces around single-statement branches"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark05_conjunctive.c",
+      "upstream_sha256": "72cf009be33d60e2c470b69dc42d818d6619db7abb4b0a513f3a81c79cad1468"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "hand_invariant": "x + y == k",
+      "mapping": {
+        "i": "v3",
+        "j": "v4",
+        "k": "v5",
+        "step": "v6",
+        "steps": "v0",
+        "x": "v2",
+        "y": "v1"
+      },
+      "name": "zilu06",
+      "obfuscated": "zilu-obfuscated/zilu06/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "8968bc78b5efea5905c8be703b924b82245816919c598a02667108df3157b9a2",
+      "obfuscation": "renamed 7 names (seed 0); swapped 11 commutative operand pairs",
+      "port": "zilu/zilu06/kernel.c",
+      "port_sha256": "c7122d2b82ceb95341b993386d48c1fc3179562f08578fe8ea0fd1f9126d671f",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark06_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable",
+        "nondeterministic loop guard -> counter step < steps with REQUIRES 0 <= steps"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark06_conjunctive.c",
+      "upstream_sha256": "cf1e365b7b60392b5698ab50c03033caa30943dde7d78af03fc0b938aac9dbf5"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "sum >= 0 && i >= 0",
+      "mapping": {
+        "i": "v1",
+        "n": "v0",
+        "sum": "v2"
+      },
+      "name": "zilu08",
+      "obfuscated": "zilu-obfuscated/zilu08/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "caff80ed8d4a9f97999f95b4d99adfd7b4cf71b0c170e16622d578d61ee3ed60",
+      "obfuscation": "renamed 3 names (seed 0); swapped 4 commutative operand pairs",
+      "port": "zilu/zilu08/kernel.c",
+      "port_sha256": "7ede2f8088f994fc08057ca44328d0aaaef0f25ff979009334e56f4edccb99f0",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark08_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark08_conjunctive.c",
+      "upstream_sha256": "a61545396ebb848fdffe04b6e1f5afa32e37f478d3228c0dd9c2570235894120"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "x <= n",
+      "mapping": {
+        "n": "v1",
+        "x": "v0"
+      },
+      "name": "zilu11",
+      "obfuscated": "zilu-obfuscated/zilu11/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "35f9261f7fb27e1cb933ede5bc4bd3cd32c6e6fd90803853cce3d3eba841a439",
+      "obfuscation": "renamed 2 names (seed 0); swapped 3 commutative operand pairs",
+      "port": "zilu/zilu11/kernel.c",
+      "port_sha256": "57c9aeaaea35c406bd1a94ff778ae17f86de545c4394c5d270d432331c279b1f",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark11_linear.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark11_linear.c",
+      "upstream_sha256": "c270ba82ea397321b76ed55010a3d18d0852eb532ffa77e735d1eed204156722"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "y >= t",
+      "mapping": {
+        "step": "v3",
+        "steps": "v4",
+        "t": "v0",
+        "x": "v2",
+        "y": "v1"
+      },
+      "name": "zilu12",
+      "obfuscated": "zilu-obfuscated/zilu12/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "e803610182f97a93225a715e5e3c8a7a98806edcf4ee2c6cd827a1d6181302a6",
+      "obfuscation": "renamed 5 names (seed 0); swapped 4 commutative operand pairs",
+      "port": "zilu/zilu12/kernel.c",
+      "port_sha256": "19541fd8144b7155a4d521c75b31fa14c7642e314a3815795c80a616a4681d5c",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark12_linear.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable",
+        "nondeterministic loop guard -> counter step < steps with REQUIRES 0 <= steps",
+        "braces around single-statement branches"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark12_linear.c",
+      "upstream_sha256": "7510af0b50cb94a8692cbdc5db82d1414ae9014fadbae8c5f1fc70bccac2f719"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "i == j",
+      "mapping": {
+        "i": "v0",
+        "j": "v2",
+        "k": "v1"
+      },
+      "name": "zilu13",
+      "obfuscated": "zilu-obfuscated/zilu13/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "c5fecb7349799234c5dd6b94de3abd1edd46b3071e70496e33e0a5f0cc14df67",
+      "obfuscation": "renamed 3 names (seed 0); swapped 6 commutative operand pairs",
+      "port": "zilu/zilu13/kernel.c",
+      "port_sha256": "fd5dcf0df2469e22b3c782c3fc5fcd33d40a5ece1c8784f9d00b0c6cf827ba57",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark13_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark13_conjunctive.c",
+      "upstream_sha256": "2003091f7614783d9877ad62c7b43caf4644405782bf387d3c63828eca160ad6"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "i >= 0",
+      "mapping": {
+        "i": "v0"
+      },
+      "name": "zilu14",
+      "obfuscated": "zilu-obfuscated/zilu14/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "ddb1ad1c75029b4ab434f97a508daff5ea074c37b93cd46b9ec124a9aa42714f",
+      "obfuscation": "renamed 1 names (seed 0); swapped 0 commutative operand pairs",
+      "port": "zilu/zilu14/kernel.c",
+      "port_sha256": "d94d4a7108d095eb38ce9294fcf38d11400201bc988819b3802069957d76f466",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark14_linear.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark14_linear.c",
+      "upstream_sha256": "6f16bb240ed1567067fa211cbe8089d52110d75f33ccdb83e72077197b25d2b3"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "hand_invariant": "high == low + 2 * mid && mid >= 0",
+      "mapping": {
+        "high": "v1",
+        "low": "v0",
+        "mid": "v2"
+      },
+      "name": "zilu15",
+      "obfuscated": "zilu-obfuscated/zilu15/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "747112aa754172e5cad17d0aa0aea08de09f8bef66e10c0023d8a10bb15d6614",
+      "obfuscation": "renamed 3 names (seed 0); swapped 8 commutative operand pairs",
+      "port": "zilu/zilu15/kernel.c",
+      "port_sha256": "8d204ca198a70206b8db13c181147aecce08d07bc447dd3e325475ce9085dde6",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark15_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark15_conjunctive.c",
+      "upstream_sha256": "5f284310fb8232d8f502b0139e496a84794b1949a85d276a8048dc6f06c8abd5"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "hand_invariant": "1 <= i + k && i + k <= 2 && i >= 1",
+      "mapping": {
+        "i": "v1",
+        "k": "v2",
+        "step": "v3",
+        "steps": "v0"
+      },
+      "name": "zilu16",
+      "obfuscated": "zilu-obfuscated/zilu16/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "a3dfcfdc8ed17cdcfff1c3ff26e039d41a75407b4fdc80520187c989eb212249",
+      "obfuscation": "renamed 4 names (seed 0); swapped 7 commutative operand pairs",
+      "port": "zilu/zilu16/kernel.c",
+      "port_sha256": "2718e4fcd589769f5a21f129c9491232ed25f636221e083c742ae7c381843cb6",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark16_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable",
+        "nondeterministic loop guard -> counter step < steps with REQUIRES 0 <= steps"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark16_conjunctive.c",
+      "upstream_sha256": "a1376ecc40fc824664ba8724836333114528b8e2f79ec447a2e677868159542c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "i == k",
+      "mapping": {
+        "i": "v0",
+        "k": "v2",
+        "n": "v1"
+      },
+      "name": "zilu17",
+      "obfuscated": "zilu-obfuscated/zilu17/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "3f3cfb1f4317b43c755258390f46e148dc5bdeec98216b281effd5eac80bce28",
+      "obfuscation": "renamed 3 names (seed 0); swapped 5 commutative operand pairs",
+      "port": "zilu/zilu17/kernel.c",
+      "port_sha256": "d341261ac395edc1cae2057e0968f29bf0da76abb887106635411207262e21cc",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark17_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark17_conjunctive.c",
+      "upstream_sha256": "f5b8e195704679ef9d4365b98deb99df2b7011e2df47d21915ce2fd370f3c41d"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "i == k && i <= n",
+      "mapping": {
+        "i": "v0",
+        "k": "v2",
+        "n": "v1"
+      },
+      "name": "zilu18",
+      "obfuscated": "zilu-obfuscated/zilu18/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "c47b01dcd211783b6df5d2652ec6b98c5392f8d55a3c70b17db7a7fb38e29288",
+      "obfuscation": "renamed 3 names (seed 0); swapped 7 commutative operand pairs",
+      "port": "zilu/zilu18/kernel.c",
+      "port_sha256": "906f58dbf58c06573e4b53bb7bc8a3f430129e8ee74069fb1b17c11afc8b95f2",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark18_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark18_conjunctive.c",
+      "upstream_sha256": "2dc2db50b0fd020db5bacebd62c36abda1395b203401481e547bf4c8b434a763"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "j == k && j >= 0",
+      "mapping": {
+        "j": "v0",
+        "k": "v2",
+        "n": "v1"
+      },
+      "name": "zilu19",
+      "obfuscated": "zilu-obfuscated/zilu19/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "0fdf8059c89d8f180ea146320ef32f3acb61cc5feee57f515bde0031145a604b",
+      "obfuscation": "renamed 3 names (seed 0); swapped 4 commutative operand pairs",
+      "port": "zilu/zilu19/kernel.c",
+      "port_sha256": "c611f90924eec8aa3127a99fc4c22bc227f004841713caccb46e7f4d07b6763b",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark19_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark19_conjunctive.c",
+      "upstream_sha256": "d7e91d1a87fe71bdf277fb79432441d9ce84ed86f41373204eb52911b4a16441"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "sum >= 0 && i >= 0",
+      "mapping": {
+        "i": "v0",
+        "n": "v2",
+        "sum": "v1"
+      },
+      "name": "zilu20",
+      "obfuscated": "zilu-obfuscated/zilu20/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "198e1f0fbc5edd30d6cdd69f9cb861188d25b35b2a59e1fbf1619dd0752382f2",
+      "obfuscation": "renamed 3 names (seed 0); swapped 4 commutative operand pairs",
+      "port": "zilu/zilu20/kernel.c",
+      "port_sha256": "34479b1030912210140ea64ccd8138ccc3971e8f3d850638d173b7427b6b2cda",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark20_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark20_conjunctive.c",
+      "upstream_sha256": "54fb72fb73987d196630dc309681b0d7864602d7a91c0016bff42358443ec609"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "x >= y && y >= 0 && x >= 1",
+      "mapping": {
+        "step": "v3",
+        "steps": "v0",
+        "x": "v1",
+        "y": "v2"
+      },
+      "name": "zilu22",
+      "obfuscated": "zilu-obfuscated/zilu22/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "936d71c2ee17b67d7f3c653e24884568d3528f2d6976314ef50552ada1dd99fa",
+      "obfuscation": "renamed 4 names (seed 0); swapped 5 commutative operand pairs",
+      "port": "zilu/zilu22/kernel.c",
+      "port_sha256": "59fd16f20c56700be16a632fd8f9fae0972f5569f89405d0fa7ebbeaf4f911d4",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark22_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable",
+        "nondeterministic loop guard -> counter step < steps with REQUIRES 0 <= steps"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark22_conjunctive.c",
+      "upstream_sha256": "332149e5bab02f901d22a394d7fc8b75a68c916816faa3fd6dccce4a7c616f3c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "hand_invariant": "j == 2 * i && i <= 100",
+      "mapping": {
+        "i": "v0",
+        "j": "v1"
+      },
+      "name": "zilu23",
+      "obfuscated": "zilu-obfuscated/zilu23/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "9e196fad41794a0b58707aa2ca07a40e769f621d851d358c02a15177b75de408",
+      "obfuscation": "renamed 2 names (seed 0); swapped 7 commutative operand pairs",
+      "port": "zilu/zilu23/kernel.c",
+      "port_sha256": "30eb0d8a512c321e8381dc5885492e092a63e07841c22ba59d45aaa276605679",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark23_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark23_conjunctive.c",
+      "upstream_sha256": "61ef2f8a78b1c2af8ddc8defea2954950b17db5e561108fd4a8b6f210c384bc2"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "hand_invariant": "2 * k + i == 2 * n && i <= n + 1",
+      "mapping": {
+        "i": "v0",
+        "k": "v2",
+        "n": "v1"
+      },
+      "name": "zilu24",
+      "obfuscated": "zilu-obfuscated/zilu24/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "0249c823b04aaaef861f8012b70d49afc04fc97c0ad5f0c948e69b8345dafe28",
+      "obfuscation": "renamed 3 names (seed 0); swapped 9 commutative operand pairs",
+      "port": "zilu/zilu24/kernel.c",
+      "port_sha256": "525d8503f63ca1ad3feaee6444ac05be836df123db8dca5d2577d01c3936e4ab",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark24_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark24_conjunctive.c",
+      "upstream_sha256": "e6bbd99c2e724766636acbeb4089e9b1cfd2a5b383a9908ccea1cabd76f27733"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "hand_invariant": "x <= 10",
+      "mapping": {
+        "x": "v0"
+      },
+      "name": "zilu25",
+      "obfuscated": "zilu-obfuscated/zilu25/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "c4729b4b11805d46d781c75886c6c51dc6e169bab714855a0f215893d99f73b2",
+      "obfuscation": "renamed 1 names (seed 0); swapped 2 commutative operand pairs",
+      "port": "zilu/zilu25/kernel.c",
+      "port_sha256": "47eab1f771fec2891199ef95766c3fb524e230baa7a00fcff3a0414c3a269631",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark25_linear.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark25_linear.c",
+      "upstream_sha256": "337487b68fe41b6586aa58ec77102e11ca1ce45fa1efbcb519b56c11efd2c505"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "x <= y",
+      "mapping": {
+        "x": "v0",
+        "y": "v1"
+      },
+      "name": "zilu26",
+      "obfuscated": "zilu-obfuscated/zilu26/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "efc818fe9818f2d709a5e33efc3be4fdff4864522a6d82b24dcc67422e4c7089",
+      "obfuscation": "renamed 2 names (seed 0); swapped 2 commutative operand pairs",
+      "port": "zilu/zilu26/kernel.c",
+      "port_sha256": "f5ad0a2f89d31b9c21be946b37e649362dd0a40dac11c0c2d45127e450349c41",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark26_linear.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark26_linear.c",
+      "upstream_sha256": "abebd5aed6ed173f0a4f88fc018b40de604ed7710fac0804896f4028412d26a2"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "hand_invariant": "k > i - j",
+      "mapping": {
+        "i": "v0",
+        "j": "v2",
+        "k": "v1"
+      },
+      "name": "zilu27",
+      "obfuscated": "zilu-obfuscated/zilu27/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "1fa0172541ed18bbfe00d972f1a656d994bce61a8ecde7839bceac01038e87fa",
+      "obfuscation": "renamed 3 names (seed 0); swapped 2 commutative operand pairs",
+      "port": "zilu/zilu27/kernel.c",
+      "port_sha256": "9ce7216435b6928cdb3080bc7f2c42878237f4f3eaeeaf7cb9fdef9913f5a5ae",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark27_linear.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark27_linear.c",
+      "upstream_sha256": "635607d3696f782e377f8d05ce57901700911de876e1f2f951d0c8cce1ebd6bb"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "hand_invariant": "x <= y + 99",
+      "mapping": {
+        "x": "v0",
+        "y": "v1"
+      },
+      "name": "zilu29",
+      "obfuscated": "zilu-obfuscated/zilu29/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "b1bb14c53f634166ad3f7ab5aad3747f6095ecbb165518cd99e1a04d513bffe2",
+      "obfuscation": "renamed 2 names (seed 0); swapped 3 commutative operand pairs",
+      "port": "zilu/zilu29/kernel.c",
+      "port_sha256": "b232fe48842d6601857d40e9329ef402d3d11c537a31ddc030777bf3003bcb11",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark29_linear.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark29_linear.c",
+      "upstream_sha256": "f2ccd2e8342798117d6f951f0e6e512b2934173154d2a4e0c4722158a42769d5"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "x == y",
+      "mapping": {
+        "step": "v3",
+        "steps": "v0",
+        "x": "v1",
+        "y": "v2"
+      },
+      "name": "zilu30",
+      "obfuscated": "zilu-obfuscated/zilu30/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "2674972891ce3d76905af243e1323c43863f1219a674bb47772458d22f3d423f",
+      "obfuscation": "renamed 4 names (seed 0); swapped 6 commutative operand pairs",
+      "port": "zilu/zilu30/kernel.c",
+      "port_sha256": "445cc552be2d631ef761e54981d500d73313e93c0db7a23b0c26348a1f4b2868",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark30_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable",
+        "nondeterministic loop guard -> counter step < steps with REQUIRES 0 <= steps"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark30_conjunctive.c",
+      "upstream_sha256": "8fd036e786e8fd1350246eade06863d982f10933fb11b9690cb8793be5e503e6"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "hand_invariant": "x == 1 || x == 2",
+      "mapping": {
+        "step": "v1",
+        "steps": "v2",
+        "x": "v0"
+      },
+      "name": "zilu32",
+      "obfuscated": "zilu-obfuscated/zilu32/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "ebee870e29e9a96a89742b02acaa148922a105088af541187ab3564ca6cfe87a",
+      "obfuscation": "renamed 3 names (seed 0); swapped 7 commutative operand pairs",
+      "port": "zilu/zilu32/kernel.c",
+      "port_sha256": "aed84447c9946f6cd8ef0160edac902d897ec4ad1cbbbdc3c838db5afe2e22dd",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark32_linear.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable",
+        "nondeterministic loop guard -> counter step < steps with REQUIRES 0 <= steps",
+        "braces around single-statement branches"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark32_linear.c",
+      "upstream_sha256": "89cd19e25f65337e099b7d725458b715b9f3d55a74700211888983a08d344117"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "x >= 0",
+      "mapping": {
+        "x": "v0"
+      },
+      "name": "zilu33",
+      "obfuscated": "zilu-obfuscated/zilu33/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "571ec13e22f5ec7aa0cf8601219795cb9ac20aad1d6106bca75a0a2b1ccf6ea2",
+      "obfuscation": "renamed 1 names (seed 0); swapped 1 commutative operand pairs",
+      "port": "zilu/zilu33/kernel.c",
+      "port_sha256": "5b07c4e28bdc26db1dade853bc5d98a90465f895846b843b9cc3757a669366b5",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark33_linear.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark33_linear.c",
+      "upstream_sha256": "bc608b4cc1ed64c7b39c466fabddfb7a0db4e2da8062d705d55bd8977f8adaf3"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "hand_invariant": "j + k == n && j <= n",
+      "mapping": {
+        "j": "v0",
+        "k": "v2",
+        "n": "v1"
+      },
+      "name": "zilu34",
+      "obfuscated": "zilu-obfuscated/zilu34/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "85f9d0b92e02f8734fd1e0696d1fc4e10d27bcc72b28a497b107b69d3b494d77",
+      "obfuscation": "renamed 3 names (seed 0); swapped 6 commutative operand pairs",
+      "port": "zilu/zilu34/kernel.c",
+      "port_sha256": "fdaa8a93decd3a1d8fb6aca9b5fc975cf7cafec063998e46757efdaf18e7827e",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark34_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark34_conjunctive.c",
+      "upstream_sha256": "24fed658cef7e0f7406dd7501097bb5f17639373766484233d05223858773d4b"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "x >= 0",
+      "mapping": {
+        "x": "v0"
+      },
+      "name": "zilu35",
+      "obfuscated": "zilu-obfuscated/zilu35/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "693f819a8d760a32c797007a6781dad0324105dc1c6ed65f150ed0ac1cb5fb45",
+      "obfuscation": "renamed 1 names (seed 0); swapped 1 commutative operand pairs",
+      "port": "zilu/zilu35/kernel.c",
+      "port_sha256": "97c7f6ca34a46bc4ea0c3a12448050e43701d878d4ffa03d8081c160c419d0ca",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark35_linear.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark35_linear.c",
+      "upstream_sha256": "728c206902216657eb619c1850c6d83bfd390394a9c29cf730cdf89086341140"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "x == y && x >= 0",
+      "mapping": {
+        "step": "v3",
+        "steps": "v0",
+        "x": "v1",
+        "y": "v2"
+      },
+      "name": "zilu36",
+      "obfuscated": "zilu-obfuscated/zilu36/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "e7f5cf75e3cf2179d693845e78891da064e85ba09b0e1ebfb4cf10a50165de04",
+      "obfuscation": "renamed 4 names (seed 0); swapped 7 commutative operand pairs",
+      "port": "zilu/zilu36/kernel.c",
+      "port_sha256": "43e813c6f7c7e397a2534ffb4e826a521c9638c6f9131558dfd3fd6c3a371986",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark36_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable",
+        "nondeterministic loop guard -> counter step < steps with REQUIRES 0 <= steps"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark36_conjunctive.c",
+      "upstream_sha256": "8980d71ab696d54cee5ef1677bb72e05dead0845347f5a7233d8591ae36a4686"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "hand_invariant": "x == y && x >= 0",
+      "mapping": {
+        "x": "v0",
+        "y": "v1"
+      },
+      "name": "zilu37",
+      "obfuscated": "zilu-obfuscated/zilu37/kernel.c",
+      "obfuscated_b0_admitted": true,
+      "obfuscated_sha256": "f2fedc5f3178f539ecee20ab2fa0e3664aca5e14e2ff7c17a586258d1ab56339",
+      "obfuscation": "renamed 2 names (seed 0); swapped 2 commutative operand pairs",
+      "port": "zilu/zilu37/kernel.c",
+      "port_sha256": "865d49e07b2ef747ad8af75504f555f2568d9d155edaf38406d728b95dbd3626",
+      "required_obligations": 3,
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/loop-zilu/benchmark37_conjunctive.c",
+      "transformations": [
+        "int -> long",
+        "nondeterministic initial values -> parameters",
+        "entry assumption -> REQUIRES",
+        "__VERIFIER_assert -> ASSERT after the loop",
+        "x++ / x-- / x += c -> simple assignment",
+        "main -> function returning a loop variable"
+      ],
+      "upstream_file": "c/loop-zilu/benchmark37_conjunctive.c",
+      "upstream_sha256": "0184fba4d7d3180e1c8de64eb13772bb582c3ec516dac091cefffbc15ca7e236"
+    }
+  ],
+  "generator": "pfc_eval/ports.py",
+  "obfuscation": {
+    "method": "pfc_eval.robustness.obfuscate: alpha-renaming plus every commutative operand swap (ADR-0040)",
+    "seed": 0
+  },
+  "schema_version": 1,
+  "selection": "benchmark01..53 in numeric order, skipping the *_abstracted duplicates; the first 30 whose loop is expressible in the pfc subset, whose assertion holds for every input the precondition admits, and whose hand invariant the frozen admit() accepts (the B0 ceiling exists); the rule was fixed before any proposer run",
+  "skipped": {
+    "benchmark03_linear": "the per-iteration nondeterministic flag needs an array read whose guard removal depends on overflow proofs of unbounded accumulators (i += x, j += y); the frozen authorization admits no linear hand invariant, so no B0 ceiling exists",
+    "benchmark07_linear": "k is unconstrained at entry, so the assertion k > n does not hold for every admitted input",
+    "benchmark09_conjunctive": "break statement, outside the subset",
+    "benchmark10_conjunctive": "break statement, outside the subset",
+    "benchmark21_disjunctive": "loop condition `1` with an informal realloopcondition; not a program of the subset",
+    "benchmark28_linear": "assertion j == i fails for negative j admitted by i * i < j * j",
+    "benchmark31_disjunctive": "loop condition `1` with an informal realloopcondition; not a program of the subset"
+  },
+  "upstream": {
+    "commit": "f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25",
+    "directory": "c/loop-zilu",
+    "license": "GPL-2.0-only (upstream LICENSE.GPLv2.txt, copied beside the ports)",
+    "origin": "Li, Sun, Li, Le, Lin: Automatic loop-invariant generation and refinement through selective sampling, ASE 2017 (the 53 Zilu benchmarks, as packaged by Martin Spiessl for SV-COMP)",
+    "repository": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks"
+  }
+}

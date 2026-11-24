@@ -1,0 +1,87 @@
+{
+  "columns": [
+    {
+      "allowed": [
+        "pfc",
+        "wp"
+      ],
+      "name": "tool",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "kernel",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "budget_s",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": [
+        "obligation",
+        "goal"
+      ],
+      "name": "unit",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "identifier",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "kind",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "category",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "status",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "solver_ms",
+      "nullable": true,
+      "type": "number"
+    },
+    {
+      "allowed": null,
+      "name": "query_id",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "smoke",
+      "nullable": true,
+      "type": "boolean"
+    }
+  ],
+  "provenance": [
+    "experiment",
+    "evidence_dir",
+    "tag",
+    "commit",
+    "seed",
+    "timestamp",
+    "vc_model",
+    "solver_version",
+    "clang"
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "entries": [
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 10,
+      "hand_invariants": [
+        "((1 <= i) && (i <= ((CELLCOUNT / 2) + 1)))",
+        "((1 <= i) && (i <= ((CELLCOUNT / 2) + 1)))"
+      ],
+      "loops": 2,
+      "name": "mbpr2",
+      "outside_b1": [
+        true,
+        true
+      ],
+      "overflow_sites": 18,
+      "port": "mbpr2/kernel.c",
+      "port_sha256": "89801595e0786d8f0a238bae4c974ef2e7445e5b2aa0ad0e15e04b9e70e56cba",
+      "profile_sha256": "ba6609d49bccb00b20a12e4a1237030c44fba9fc50e0bb26f8a9450669837f9e",
+      "required_obligations": 24,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/mbpr2.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "upstream_file": "c/array-tiling/mbpr2.c",
+      "upstream_sha256": "a98ea70d5d9f752732070144a56514c68e9571f139726211e2f0ade721d6c5f3"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 21,
+      "hand_invariants": [
+        "((1 <= i) && (i <= ((CELLCOUNT / 3) + 1)))",
+        "((1 <= i) && (i <= ((CELLCOUNT / 3) + 1)))",
+        "((1 <= i) && (i <= ((CELLCOUNT / 3) + 1)))"
+      ],
+      "loops": 3,
+      "name": "mbpr3",
+      "outside_b1": [
+        true,
+        true,
+        true
+      ],
+      "overflow_sites": 39,
+      "port": "mbpr3/kernel.c",
+      "port_sha256": "4648b74ba9267692011949b138c3ce69088472bf605f17909a5d80a6dab0158c",
+      "profile_sha256": "b55a86392b5ec90a0b3f0469c313de57123881b317499567524870d51b3c6db5",
+      "required_obligations": 48,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/mbpr3.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "upstream_file": "c/array-tiling/mbpr3.c",
+      "upstream_sha256": "a50e57e46342104030586dde3ea26bc2e3984490f4fdef34fa383d24842d8980"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 36,
+      "hand_invariants": [
+        "((1 <= i) && (i <= ((CELLCOUNT / 4) + 1)))",
+        "((1 <= i) && (i <= ((CELLCOUNT / 4) + 1)))",
+        "((1 <= i) && (i <= ((CELLCOUNT / 4) + 1)))",
+        "((1 <= i) && (i <= ((CELLCOUNT / 4) + 1)))"
+      ],
+      "loops": 4,
+      "name": "mbpr4",
+      "outside_b1": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "overflow_sites": 68,
+      "port": "mbpr4/kernel.c",
+      "port_sha256": "a9da2a5cfc49fd79a38b18505ad793e6e48fc31fbed0231d22a41837d97a945a",
+      "profile_sha256": "19ddc585aaed9ebeed5d069d2ecaa7487306b6e16f5b3e6c5f2d94fc82a700f4",
+      "required_obligations": 80,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/mbpr4.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "upstream_file": "c/array-tiling/mbpr4.c",
+      "upstream_sha256": "d3770c63a87ff983494c9353997301d9eb30588c650f83b67bcf55f325443055"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 3,
+      "hand_invariants": [
+        "((1 <= i) && (i <= ((CELLCOUNT / 2) + 1)))",
+        "((0 <= j) && (j <= 2))"
+      ],
+      "loops": 2,
+      "name": "nr2",
+      "outside_b1": [
+        true,
+        true
+      ],
+      "overflow_sites": 6,
+      "port": "nr2/kernel.c",
+      "port_sha256": "7e19e06a700445f3aa2b9c1649dfdf75083a8cc7d55b4d021f46589ff12e46bb",
+      "profile_sha256": "d2f11ac3e937e8d03e587f5bc1df29f99f24a1333cfee3dd2a5b749bd971387e",
+      "required_obligations": 9,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/nr2.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "upstream_file": "c/array-tiling/nr2.c",
+      "upstream_sha256": "2a5d4c3d8db636946363c81d25b5c2e381fc236cdcde6b4765d7ce6e059d8a21"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 3,
+      "hand_invariants": [
+        "((1 <= i) && (i <= ((CELLCOUNT / 3) + 1)))",
+        "((0 <= j) && (j <= 3))"
+      ],
+      "loops": 2,
+      "name": "nr3",
+      "outside_b1": [
+        true,
+        true
+      ],
+      "overflow_sites": 6,
+      "port": "nr3/kernel.c",
+      "port_sha256": "cccf46cce6b52890448197119260f5e544a31a6793287700889c9428c2421298",
+      "profile_sha256": "8a6dd3144e08d29b2574a0c338dc68b717256a14e4acf8b3b9116d3e98484c09",
+      "required_obligations": 9,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/nr3.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "upstream_file": "c/array-tiling/nr3.c",
+      "upstream_sha256": "4885a4fffd0288753086daaa59bdb12816a7be62636dc49311bbb97ad277d866"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 3,
+      "hand_invariants": [
+        "((1 <= i) && (i <= ((CELLCOUNT / 4) + 1)))",
+        "((0 <= j) && (j <= 4))"
+      ],
+      "loops": 2,
+      "name": "nr4",
+      "outside_b1": [
+        true,
+        true
+      ],
+      "overflow_sites": 6,
+      "port": "nr4/kernel.c",
+      "port_sha256": "144c2846e5ce58ef78dafe905048e08b61f7c4a4fda0e9520e8ba7f7bd0d46d2",
+      "profile_sha256": "c79bff751db3c019e839be4828d4e824c76592cb53c91a73a10b7962db328a45",
+      "required_obligations": 9,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/nr4.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "upstream_file": "c/array-tiling/nr4.c",
+      "upstream_sha256": "3219130777e42bfc39497c312a66c6d1b1af231a6df358861eaa545434d20cb1"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 3,
+      "hand_invariants": [
+        "((1 <= i) && (i <= ((CELLCOUNT / 5) + 1)))",
+        "((0 <= j) && (j <= 5))"
+      ],
+      "loops": 2,
+      "name": "nr5",
+      "outside_b1": [
+        true,
+        true
+      ],
+      "overflow_sites": 6,
+      "port": "nr5/kernel.c",
+      "port_sha256": "9a548d96ad5968101db30f2104f8b6d8a12cdf65fae47de373403ab83a3c0973",
+      "profile_sha256": "f12db3085b31b891a583f2d6a32683d5c0ac43489c7da6456e8e5c3ec6f7f613",
+      "required_obligations": 9,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/nr5.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "upstream_file": "c/array-tiling/nr5.c",
+      "upstream_sha256": "7a05e17fa6f76d5004d5085f0b83441da7dbecb194f05c3b661e69c00b5f4df0"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 7,
+      "hand_invariants": [
+        "((1 <= i) && (i <= ((SIZE / 2) + 1)))"
+      ],
+      "loops": 1,
+      "name": "pnr2",
+      "outside_b1": [
+        true
+      ],
+      "overflow_sites": 13,
+      "port": "pnr2/kernel.c",
+      "port_sha256": "10fa9bbb2caff3d30cfa3a9c45fb25bc100e5ea4bb389affdff509b2a94d5216",
+      "profile_sha256": "270ff9523b1b84edee6b96ffa14fda8ebf4887002c6d880c357d6b7721a264d3",
+      "required_obligations": 17,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/pnr2.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (ReadFromPort)"
+      ],
+      "upstream_file": "c/array-tiling/pnr2.c",
+      "upstream_sha256": "45158f6a13b5973615c2bf09580b115243957fb0331948310ff4c49f7ae3a23f"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 10,
+      "hand_invariants": [
+        "((1 <= i) && (i <= ((SIZE / 3) + 1)))"
+      ],
+      "loops": 1,
+      "name": "pnr3",
+      "outside_b1": [
+        true
+      ],
+      "overflow_sites": 19,
+      "port": "pnr3/kernel.c",
+      "port_sha256": "2c977f8ac46b18216714ff83a381b18f7650e3866b3e6843afe4ad3a98a6caa8",
+      "profile_sha256": "80c794dd98227133a3b0fd59938141fb98c649a4c22324c823f682d83dab2720",
+      "required_obligations": 33,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/pnr3.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (ReadFromPort)"
+      ],
+      "upstream_file": "c/array-tiling/pnr3.c",
+      "upstream_sha256": "62ec3adf218afb19ac3a8cc5ae9be94d7ddedb51aca1154ad96a3adfa20f8914"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 1,
+      "hand_invariants": [
+        "((0 <= i) && (i <= SIZE))"
+      ],
+      "loops": 1,
+      "name": "poly1",
+      "outside_b1": [
+        false
+      ],
+      "overflow_sites": 2,
+      "port": "poly1/kernel.c",
+      "port_sha256": "92410a528732546b176a54dc084190b90a3c49a39f4b722da551efca855fb7a2",
+      "profile_sha256": "b3fefb18d31cc0e6fce6053b7e97e5b359a1387dcdeabb535f6d7e0cbfc8aed2",
+      "required_obligations": 3,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/poly1.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "upstream_file": "c/array-tiling/poly1.c",
+      "upstream_sha256": "009d23902b2ef0eb2715d1f4e26992b5e86c81418ae8268f4fece9923bfeb336"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 3,
+      "hand_invariants": [
+        "((0 <= i) && (i <= SIZE))",
+        "((0 <= i) && (i <= SIZE))"
+      ],
+      "loops": 2,
+      "name": "poly2",
+      "outside_b1": [
+        false,
+        false
+      ],
+      "overflow_sites": 5,
+      "port": "poly2/kernel.c",
+      "port_sha256": "a22e9b587c2b77bf2c80aeb9b67c38b369bf2e3f7af0b43057c251a6814aec41",
+      "profile_sha256": "48f261987cd135f93804cfbb1a403464ca0997a1a50e42dbaa2079f6c79f652b",
+      "required_obligations": 7,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/poly2.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "upstream_file": "c/array-tiling/poly2.c",
+      "upstream_sha256": "e61905032a34e05ad89c8e55802d7778dc3ba7c153f4f9e02a2fe17c13e5e96e"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 5,
+      "hand_invariants": [
+        "((1 <= i) && (i <= ((CELLCOUNT / 2) + 1)))"
+      ],
+      "loops": 1,
+      "name": "pr2",
+      "outside_b1": [
+        true
+      ],
+      "overflow_sites": 9,
+      "port": "pr2/kernel.c",
+      "port_sha256": "e5997e253bffae39f77924f3ae303b1c69fa072583cd6832c13b6368f7495654",
+      "profile_sha256": "d6509e3719cca77bbed52cb957b8d19225977a86e194e93f061a92de6b1b059b",
+      "required_obligations": 14,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/pr2.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (uninitialized MINVAL)"
+      ],
+      "upstream_file": "c/array-tiling/pr2.c",
+      "upstream_sha256": "5922a5be589e27d89439744489152c928c7510f0140c8b0fb4d1faadee969752"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 7,
+      "hand_invariants": [
+        "((1 <= i) && (i <= ((CELLCOUNT / 3) + 1)))"
+      ],
+      "loops": 1,
+      "name": "pr3",
+      "outside_b1": [
+        true
+      ],
+      "overflow_sites": 13,
+      "port": "pr3/kernel.c",
+      "port_sha256": "d512888cbe94954298744f9256a5810f9e3184581eb10a1bac5ecbd60466884d",
+      "profile_sha256": "4397c02db11e61be1bae8de176e81dafe066df55fbfd60522ed2efce7b79c53d",
+      "required_obligations": 26,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/pr3.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (uninitialized MINVAL)"
+      ],
+      "upstream_file": "c/array-tiling/pr3.c",
+      "upstream_sha256": "73efddcda095c52d9900d13088d1ec70520de6007541f46343a568e878cf2ed4"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 9,
+      "hand_invariants": [
+        "((1 <= i) && (i <= ((CELLCOUNT / 4) + 1)))"
+      ],
+      "loops": 1,
+      "name": "pr4",
+      "outside_b1": [
+        true
+      ],
+      "overflow_sites": 17,
+      "port": "pr4/kernel.c",
+      "port_sha256": "f388c1719a322d65c9d8fe18fc2211f41e41d30370fc372cabfa96174c86a506",
+      "profile_sha256": "ac12cc721010750ee44cd7ca8810392f3fa1033d7098c813330de9e0f1f4012a",
+      "required_obligations": 50,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/pr4.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (uninitialized MINVAL)"
+      ],
+      "upstream_file": "c/array-tiling/pr4.c",
+      "upstream_sha256": "14a75e050103eb09182e049a798a738dec478e3acaa4fb01ae8649b715b8362f"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 11,
+      "hand_invariants": [
+        "((1 <= i) && (i <= ((CELLCOUNT / 5) + 1)))"
+      ],
+      "loops": 1,
+      "name": "pr5",
+      "outside_b1": [
+        true
+      ],
+      "overflow_sites": 21,
+      "port": "pr5/kernel.c",
+      "port_sha256": "63874711efa521b8e24942b24b934fa0335b920809187c514eaef027332328b5",
+      "profile_sha256": "c63b97b81bc5ab47cd00f979c16f7f6765ebc21beb1e2f5f51aba0f74047dc0d",
+      "required_obligations": 98,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/pr5.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (uninitialized MINVAL)"
+      ],
+      "upstream_file": "c/array-tiling/pr5.c",
+      "upstream_sha256": "374c198ea90130277bd1a124bc94571dd240bc0803e6f3936a68065c719ddd5a"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 12,
+      "hand_invariants": [
+        "((0 <= i) && (i <= SIZE))",
+        "((0 <= i) && (i <= SIZE))",
+        "((0 <= i) && (i <= SIZE))"
+      ],
+      "loops": 3,
+      "name": "revcpyswp2",
+      "outside_b1": [
+        false,
+        false,
+        false
+      ],
+      "overflow_sites": 7,
+      "port": "revcpyswp2/kernel.c",
+      "port_sha256": "f570520b60b5ee85cff79adf042975b8574751e73ce665df962e1617907aa3ba",
+      "profile_sha256": "424dd7894bb1e25b65d95a788e98ce47d5220d5a4e0a8ede4f26cb67169a6f08",
+      "required_obligations": 18,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/revcpyswp2.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (a_copy, b_copy filled nondeterministically -> inputs)"
+      ],
+      "upstream_file": "c/array-tiling/revcpyswp2.c",
+      "upstream_sha256": "c2189ee49190f51453c25834336e81ef30709d68a57ad442b493bb043ae42430"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 2,
+      "hand_invariants": [
+        "((0 <= i) && (i <= SIZE))"
+      ],
+      "loops": 1,
+      "name": "rew",
+      "outside_b1": [
+        false
+      ],
+      "overflow_sites": 3,
+      "port": "rew/kernel.c",
+      "port_sha256": "cd304cc1dd9fc75844988ba11f1bc29e0e9281f87a01dc722208b88847b1c284",
+      "profile_sha256": "703d9ef74c43834aec47b8c36efd0691580394f4a80908899e21539225d1fe4c",
+      "required_obligations": 5,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/rew.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "upstream_file": "c/array-tiling/rew.c",
+      "upstream_sha256": "903f2f51bf9e6b991a86a8d6b8eab8fe5409408cff09fd4149716f384eace7e1"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 2,
+      "hand_invariants": [
+        "((0 <= i) && (i <= SIZE))"
+      ],
+      "loops": 1,
+      "name": "rewnif",
+      "outside_b1": [
+        false
+      ],
+      "overflow_sites": 3,
+      "port": "rewnif/kernel.c",
+      "port_sha256": "e1a4ee9c305eec18d6686b3697d52194ab53dabc0e0c34ebf7bc2eb3dc3c1dc2",
+      "profile_sha256": "41d673b9a6463421fc20331846da4aa24c16a14ae4792a11c508f097ea628788",
+      "required_obligations": 5,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/rewnif.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "upstream_file": "c/array-tiling/rewnif.c",
+      "upstream_sha256": "aa97b90092c5967397bc128fddc7d3bbe2dda3dfb1a1011e1f2e50ec9dfc6189"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 2,
+      "hand_invariants": [
+        "(((-1) <= i) && (i <= (SIZE - 1)))"
+      ],
+      "loops": 1,
+      "name": "rewnifrev",
+      "outside_b1": [
+        true
+      ],
+      "overflow_sites": 5,
+      "port": "rewnifrev/kernel.c",
+      "port_sha256": "c70972a1b4f386a195f2fb3ddf4a126272dd056634f5271e2b9a333667ca3883",
+      "profile_sha256": "3e3afaf16523f795367154c5d69be56679e0ae71d23f892e0ddd276582db0e4f",
+      "required_obligations": 5,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/rewnifrev.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "upstream_file": "c/array-tiling/rewnifrev.c",
+      "upstream_sha256": "71fcda709b5159542e902a92bacc7c0ee36d565baaab9d528a5f36e6783c1752"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 2,
+      "hand_invariants": [
+        "(((-1) <= i) && (i <= (SIZE - 2)))"
+      ],
+      "loops": 1,
+      "name": "rewnifrev2",
+      "outside_b1": [
+        true
+      ],
+      "overflow_sites": 4,
+      "port": "rewnifrev2/kernel.c",
+      "port_sha256": "b524efbbe96a14bab0da0a32c28d88376b4be57abb9a0b639cd5c35d17fa8ac3",
+      "profile_sha256": "01063ad0452e16834b553388799e808824114e54854179eaaa9d859fdd9f8106",
+      "required_obligations": 4,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/rewnifrev2.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "upstream_file": "c/array-tiling/rewnifrev2.c",
+      "upstream_sha256": "83484de485ed525d34fd61f747b070d4ed309cc25995b2129d81119d62c2e538"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 2,
+      "hand_invariants": [
+        "(((-2) <= i) && (i <= (SIZE - 2)))"
+      ],
+      "loops": 1,
+      "name": "rewrev",
+      "outside_b1": [
+        true
+      ],
+      "overflow_sites": 3,
+      "port": "rewrev/kernel.c",
+      "port_sha256": "470df3d74d60e135ba74355d182aad4ef2e58a5488ef392323a5ef88f6275650",
+      "profile_sha256": "39318ae70c07ef454f73b2c85b39324842a10b657acfcf05727f0b3d7355b3c8",
+      "required_obligations": 5,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/rewrev.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8"
+      ],
+      "upstream_file": "c/array-tiling/rewrev.c",
+      "upstream_sha256": "668c3585abd39fe8bed7b5fc57c2c11abb11e558bd06e5c9a1d6ce6f83d56f8a"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 5,
+      "hand_invariants": [
+        "((1 <= i) && (i <= ((SIZE / 2) + 1)))"
+      ],
+      "loops": 1,
+      "name": "skipped",
+      "outside_b1": [
+        true
+      ],
+      "overflow_sites": 17,
+      "port": "skipped/kernel.c",
+      "port_sha256": "dfb319210e3549affe6a5b5bb28228cc91daa691d07f45c20240cb3133db5edc",
+      "profile_sha256": "f8302501a0bea1b8571a1ffa0478935d7e3a52310820e69a121a2aaceae0bc98",
+      "required_obligations": 14,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/skipped.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (a filled nondeterministically -> input, updated in place)"
+      ],
+      "upstream_file": "c/array-tiling/skipped.c",
+      "upstream_sha256": "e26f1e8c2144ecd874379457832176c144206bbb891179f0215136cc680d897b"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": null,
+      "guard_sites": 5,
+      "hand_invariants": [
+        "((0 <= i) && (i <= (SIZE / 2)))"
+      ],
+      "loops": 1,
+      "name": "tcpy",
+      "outside_b1": [
+        true
+      ],
+      "overflow_sites": 5,
+      "port": "tcpy/kernel.c",
+      "port_sha256": "c41ca77d3a04f644f4389b37de57f0b274fc8449a0b27d6198bbd03f7dc432bf",
+      "profile_sha256": "66d36a0c77346055d83ff1e94fc331378e7a1264dbb98b589400a57455f79010",
+      "required_obligations": 9,
+      "shape": "tiling",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-tiling/tcpy.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (a filled nondeterministically -> input)"
+      ],
+      "upstream_file": "c/array-tiling/tcpy.c",
+      "upstream_sha256": "bd03875beb64a7944b42d794ad2fd70c32d94c7f0329f5f423023620a3779cd0"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 3,
+      "hand_invariants": [
+        "((0 <= i) && (i <= m))",
+        "((0 <= j) && (j <= n))"
+      ],
+      "loops": 2,
+      "name": "add_2_n_u",
+      "outside_b1": [
+        false,
+        false
+      ],
+      "overflow_sites": 9,
+      "port": "add_2_n_u/kernel.c",
+      "port_sha256": "d84ab7fc7782fbb64ab89663718d1923826eef56165c861eede3f7e531e790ee",
+      "profile_sha256": "d389cfe309836fde231f9a131b466364c7a8e545c92197f88966ccd966bb0c00",
+      "required_obligations": 10,
+      "shape": "grid2",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/add-2-n-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/add-2-n-u.c",
+      "upstream_sha256": "7202e877c1332442c2c226005d8bd7e5f4094e339ca214931497ee0f3766da6a"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 3,
+      "hand_invariants": [
+        "((0 <= i) && (i <= m))",
+        "((0 <= j) && (j <= n))",
+        "((0 <= k) && (k <= p))"
+      ],
+      "loops": 3,
+      "name": "add_3_n_u",
+      "outside_b1": [
+        false,
+        false,
+        false
+      ],
+      "overflow_sites": 16,
+      "port": "add_3_n_u/kernel.c",
+      "port_sha256": "433ef1bdc432a71f90397cbb4db5dcfbdf5f3434081232197ab9328f09233c77",
+      "profile_sha256": "703221124c6f659a262e93f3f17fab757a7dec1c2519bef63a19756bfbfc1c22",
+      "required_obligations": 15,
+      "shape": "grid3",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/add-3-n-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/add-3-n-u.c",
+      "upstream_sha256": "efbd812580893a7521723358e51d4f43c4b930b57b026212f5a7d5f447f3e0f8"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 2,
+      "hand_invariants": [
+        "((0 <= i) && (i <= n))",
+        "((0 <= j) && (j <= n))"
+      ],
+      "loops": 2,
+      "name": "copy_2_u",
+      "outside_b1": [
+        false,
+        false
+      ],
+      "overflow_sites": 6,
+      "port": "copy_2_u/kernel.c",
+      "port_sha256": "2f61649ac7f3ea588300af4e19bec8f39289ff7127cd5e3f7ba23107dd11888d",
+      "profile_sha256": "98dd96b1730b1dd44bcf31c4be3d089ffc188aa1abab64dcbac2dc739cdf634e",
+      "required_obligations": 8,
+      "shape": "square",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/copy-2-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/copy-2-u.c",
+      "upstream_sha256": "d9e382438d8fbe8dfce0f613a239dc56836f436a035cb511dde070c4306eb1f9"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 2,
+      "hand_invariants": [
+        "((0 <= i) && (i <= m))",
+        "((0 <= j) && (j <= n))",
+        "((0 <= k) && (k <= p))"
+      ],
+      "loops": 3,
+      "name": "copy_3_n_u",
+      "outside_b1": [
+        false,
+        false,
+        false
+      ],
+      "overflow_sites": 11,
+      "port": "copy_3_n_u/kernel.c",
+      "port_sha256": "f1862cb4129673ca0a82261d08b5a986fdd48c60f39273708d8953d39c4c27da",
+      "profile_sha256": "3cdd2cef3dbd436052968d1634ff77f9fa66e690f609c98c569b666e5f17b1c0",
+      "required_obligations": 12,
+      "shape": "grid3",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/copy-3-n-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/copy-3-n-u.c",
+      "upstream_sha256": "caaec4b6d97bde36a1fbc7dfb6c9c9f88e0ac7fb0d2e87f4054fca32d8e102e9"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 2,
+      "hand_invariants": [
+        "((0 <= i) && (i <= q))",
+        "((0 <= j) && (j <= s))"
+      ],
+      "loops": 2,
+      "name": "copy_partial_2_n_u",
+      "outside_b1": [
+        false,
+        false
+      ],
+      "overflow_sites": 6,
+      "port": "copy_partial_2_n_u/kernel.c",
+      "port_sha256": "d8368e1608532d6c6d1307c1989972d088e8afc4934ca1b0e944af61128de5e1",
+      "profile_sha256": "d5c7e88ca6e5339e0d710e040438add58d5150c18ac37928d76211743c9e3cc7",
+      "required_obligations": 8,
+      "shape": "grid2-partial",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/copy-partial-2-n-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/copy-partial-2-n-u.c",
+      "upstream_sha256": "2a46b64c20324a7544dfe7936b5f39eaa32bba659068797748195a7f292bdaee"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 4,
+      "hand_invariants": [
+        "((0 <= i) && (i <= p))",
+        "((0 <= j) && (j <= p))",
+        "((0 <= k) && (k <= p))",
+        "((p <= i) && (i <= n))",
+        "((p <= j) && (j <= n))",
+        "((p <= k) && (k <= n))"
+      ],
+      "loops": 6,
+      "name": "copy_partial_3_u",
+      "outside_b1": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "overflow_sites": 22,
+      "port": "copy_partial_3_u/kernel.c",
+      "port_sha256": "bd86e988e4ce9203ef99f62997fa84670fa6b82410aa99e22797d065a0e4f389",
+      "profile_sha256": "9b16845bdada7a2f3a7bb7c8474a72109c38d74de0981a7d100838b605882550",
+      "required_obligations": 20,
+      "shape": "cube-partial",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/copy-partial-3-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/copy-partial-3-u.c",
+      "upstream_sha256": "52a248b2b2cf395cf0c12ea6447af889ed3691d7fa3d2de2504a7728d19c705b"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 3,
+      "hand_invariants": [
+        "((0 <= i) && (i <= m))",
+        "((0 <= j) && (j <= n))"
+      ],
+      "loops": 2,
+      "name": "diff_2_n_u",
+      "outside_b1": [
+        false,
+        false
+      ],
+      "overflow_sites": 9,
+      "port": "diff_2_n_u/kernel.c",
+      "port_sha256": "97db48e8ca39b625800750ccd42910cd16f5c668a2fe0d60937f31273e358564",
+      "profile_sha256": "65375ea09526c00f0feecf17b9c5fe90fc8184125277e2646611230935d9b852",
+      "required_obligations": 10,
+      "shape": "grid2",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/diff-2-n-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/diff-2-n-u.c",
+      "upstream_sha256": "cb0d07e46dc94102f1a204dcfe0d8cca3d45653b0db7cea07d03c16ba8563271"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 3,
+      "hand_invariants": [
+        "((0 <= i) && (i <= m))",
+        "((0 <= j) && (j <= n))",
+        "((0 <= k) && (k <= p))"
+      ],
+      "loops": 3,
+      "name": "diff_3_n_u",
+      "outside_b1": [
+        false,
+        false,
+        false
+      ],
+      "overflow_sites": 16,
+      "port": "diff_3_n_u/kernel.c",
+      "port_sha256": "0c208eac97232ae1e429eeaa22677d9ffc6be16930598aea3bc5d621bb462a98",
+      "profile_sha256": "ec615b86e65df8035897ff4d147452ae7b91b7033b96d01dbc78728eefe7e129",
+      "required_obligations": 15,
+      "shape": "grid3",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/diff-3-n-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/diff-3-n-u.c",
+      "upstream_sha256": "ae698f02be6e3657db0e7ca3e62c4cfb121d43a876624ed4d21d19b033e0c02e"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 1,
+      "hand_invariants": [
+        "((0 <= i) && (i <= m))",
+        "((0 <= j) && (j <= n))"
+      ],
+      "loops": 2,
+      "name": "init_2_n_u",
+      "outside_b1": [
+        false,
+        false
+      ],
+      "overflow_sites": 4,
+      "port": "init_2_n_u/kernel.c",
+      "port_sha256": "b27537e578ae84607173498790d5e4f5d003328555ce1cbd25eb075abb8feadf",
+      "profile_sha256": "6fd360220c5bcd600fbb2d086b511e3b3a88576d1e922ff82d3107d06fcae85d",
+      "required_obligations": 6,
+      "shape": "grid2",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/init-2-n-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (C)"
+      ],
+      "upstream_file": "c/array-multidimensional/init-2-n-u.c",
+      "upstream_sha256": "44b18e123610caaf6237dddd08dfbd765ad919d1168e6261239628431b3c22b1"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 1,
+      "hand_invariants": [
+        "((0 <= i) && (i <= n))",
+        "((0 <= j) && (j <= n))",
+        "((0 <= k) && (k <= n))"
+      ],
+      "loops": 3,
+      "name": "init_3_u",
+      "outside_b1": [
+        false,
+        false,
+        false
+      ],
+      "overflow_sites": 7,
+      "port": "init_3_u/kernel.c",
+      "port_sha256": "7d1fb0a6e8ec7d552b9a0168715e6845802b8ebf84423d3e85e53c1a32cf7e1c",
+      "profile_sha256": "e36882a1d4f7cbe4f2bff73dd51b7e112bafb7a9686bf3b3a769a5e21673d069",
+      "required_obligations": 9,
+      "shape": "cube",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/init-3-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (C)"
+      ],
+      "upstream_file": "c/array-multidimensional/init-3-u.c",
+      "upstream_sha256": "385b06dfd41f8b2cf291934cb4635d07bfe2a63001fa162165126d7b890c1d72"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 1,
+      "hand_invariants": [
+        "((0 <= i) && (i <= m))",
+        "((0 <= j) && (j <= n))",
+        "((0 <= k) && (k <= p))",
+        "((0 <= l) && (l <= q))"
+      ],
+      "loops": 4,
+      "name": "init_4_n_u",
+      "outside_b1": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "overflow_sites": 10,
+      "port": "init_4_n_u/kernel.c",
+      "port_sha256": "d5cfab29b263ceb503ae6ae9c990beb21de25cb351687bb89e230135d04ed536",
+      "profile_sha256": "981f496e3d481d77abb47cd5d17daab16167663795e8dae2d9fe12a48c85768f",
+      "required_obligations": 12,
+      "shape": "grid4",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/init-4-n-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (C)"
+      ],
+      "upstream_file": "c/array-multidimensional/init-4-n-u.c",
+      "upstream_sha256": "7e1c46a3eec085decec4254bf9381483b25ba7b6541d5728ae52d1793b9b8c91"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 1,
+      "hand_invariants": [
+        "((0 <= i) && (i <= q))",
+        "((0 <= j) && (j <= s))"
+      ],
+      "loops": 2,
+      "name": "init_non_constant_2_n_u",
+      "outside_b1": [
+        false,
+        false
+      ],
+      "overflow_sites": 6,
+      "port": "init_non_constant_2_n_u/kernel.c",
+      "port_sha256": "1a59d1bb12993ad6f64e86ab358d2d41e36c57b238fa51d6661c7c177de2c469",
+      "profile_sha256": "ff6df01c9795cc8cb035219a153fd4f181fab4952b11ac5a66aa8fa6d521c0da",
+      "required_obligations": 6,
+      "shape": "grid2-partial",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/init-non-constant-2-n-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (C, q, s)"
+      ],
+      "upstream_file": "c/array-multidimensional/init-non-constant-2-n-u.c",
+      "upstream_sha256": "4fa401c700a21fa1f98a1481c8e8ba1555a45c0429555dc041a1c04ce1059991"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 1,
+      "hand_invariants": [
+        "((0 <= i) && (i <= n))",
+        "((0 <= j) && (j <= n))",
+        "((0 <= k) && (k <= n))"
+      ],
+      "loops": 3,
+      "name": "init_non_constant_3_u",
+      "outside_b1": [
+        false,
+        false,
+        false
+      ],
+      "overflow_sites": 10,
+      "port": "init_non_constant_3_u/kernel.c",
+      "port_sha256": "e8be1db63e5540a3351c3a78f067d50319c50c0d79742d514b59232bf23fc0a3",
+      "profile_sha256": "08c367e5d0f1c1129f2d9a447e0deb732267b816899e86483b2f5962c09a5b21",
+      "required_obligations": 9,
+      "shape": "cube",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/init-non-constant-3-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (C)"
+      ],
+      "upstream_file": "c/array-multidimensional/init-non-constant-3-u.c",
+      "upstream_sha256": "df76811034b688387cfe28dd1eb6de91c21580662ac8ddb8163b41c1d6179172"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 3,
+      "hand_invariants": [
+        "((0 <= i) && (i <= n))",
+        "((0 <= j) && (j <= n))"
+      ],
+      "loops": 2,
+      "name": "max_2_u",
+      "outside_b1": [
+        false,
+        false
+      ],
+      "overflow_sites": 6,
+      "port": "max_2_u/kernel.c",
+      "port_sha256": "648bb5e6e5ec689502bf13cc1e7bed4c41e747a1c993d51ca4ac404808e3412c",
+      "profile_sha256": "371d8c50e343ce8a9cf31a604005693d2a99b773d66df46a79b271681717fc0c",
+      "required_obligations": 8,
+      "shape": "square",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/max-2-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/max-2-u.c",
+      "upstream_sha256": "d56d1653edfb1a7b1c72e82d390b1b74d1df9114797a2f1426eb2285f6c4408f"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 3,
+      "hand_invariants": [
+        "((0 <= i) && (i <= m))",
+        "((0 <= j) && (j <= n))",
+        "((0 <= k) && (k <= p))"
+      ],
+      "loops": 3,
+      "name": "max_3_n_u",
+      "outside_b1": [
+        false,
+        false,
+        false
+      ],
+      "overflow_sites": 11,
+      "port": "max_3_n_u/kernel.c",
+      "port_sha256": "e8ecdfd2ca8bb3c788eff6dae9d7677e750ef96df97b5673d2f1d24a06c4cade",
+      "profile_sha256": "3292c9a909b12b0446654c2582b4576f060cb16651562ce227e7de26ed29f9f1",
+      "required_obligations": 11,
+      "shape": "grid3-positive",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/max-3-n-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/max-3-n-u.c",
+      "upstream_sha256": "6c8d330fcf7e017e6b51632eb7a9f8f167fb4f3e932700b6ef82da7b1572a2f0"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 3,
+      "hand_invariants": [
+        "((0 <= i) && (i <= n))",
+        "((0 <= j) && (j <= n))"
+      ],
+      "loops": 2,
+      "name": "min_2_u",
+      "outside_b1": [
+        false,
+        false
+      ],
+      "overflow_sites": 6,
+      "port": "min_2_u/kernel.c",
+      "port_sha256": "09ff8d0270a7bc44cc0cb2f8f90fce9655639620df317c74f760a8814fc0de3b",
+      "profile_sha256": "de9e569906358443e4190f4a80f4caf677f25531be5b8ca7f146179580882c36",
+      "required_obligations": 8,
+      "shape": "square",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/min-2-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/min-2-u.c",
+      "upstream_sha256": "68785685c781649dca8a870a36ccbd5837fb99f65c0418361b1a73f7848e1bda"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 3,
+      "hand_invariants": [
+        "((0 <= i) && (i <= m))",
+        "((0 <= j) && (j <= n))",
+        "((0 <= k) && (k <= p))"
+      ],
+      "loops": 3,
+      "name": "min_3_n_u",
+      "outside_b1": [
+        false,
+        false,
+        false
+      ],
+      "overflow_sites": 11,
+      "port": "min_3_n_u/kernel.c",
+      "port_sha256": "861162c9493301613e6427c4f5d485b0cac47c19e9c19ce5fa9a7adec6787bcc",
+      "profile_sha256": "91c328c82f4042bba24162e7de6f70bc5e96684f44789e78f52736ed0ebc044d",
+      "required_obligations": 11,
+      "shape": "grid3-positive",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/min-3-n-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/min-3-n-u.c",
+      "upstream_sha256": "9bd7b1a8bed68c803bda82a4dd989302b30da7d6d96131ca67565e0ea166dbcb"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 2,
+      "hand_invariants": [
+        "((0 <= i) && (i <= m))",
+        "((0 <= j) && (j <= n))"
+      ],
+      "loops": 2,
+      "name": "rev_2_n_u",
+      "outside_b1": [
+        false,
+        false
+      ],
+      "overflow_sites": 10,
+      "port": "rev_2_n_u/kernel.c",
+      "port_sha256": "12174afebab40f753a8f8a81e437a9696531d5320816008dc06f8b42d8703959",
+      "profile_sha256": "be3933cc9fd765a1f3ec3e4c73f99566b89ac340b50640d71d6f2ea5c7a9c3dc",
+      "required_obligations": 8,
+      "shape": "grid2",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/rev-2-n-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/rev-2-n-u.c",
+      "upstream_sha256": "bf03248da0b4b82491822f692d5527664b721dbcd28594bdb518a5eab7d5a1f3"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 2,
+      "hand_invariants": [
+        "((0 <= i) && (i <= n))",
+        "((0 <= j) && (j <= n))",
+        "((0 <= k) && (k <= n))"
+      ],
+      "loops": 3,
+      "name": "rev_3_u",
+      "outside_b1": [
+        false,
+        false,
+        false
+      ],
+      "overflow_sites": 17,
+      "port": "rev_3_u/kernel.c",
+      "port_sha256": "6b648ba2c989c5917ea57bf7e3e75718e0042ff80262f66117505929ebd877cd",
+      "profile_sha256": "6136cef4bb6a2362c4443915701176a5faadbb507058d071acb695715b45c710",
+      "required_obligations": 12,
+      "shape": "cube",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/rev-3-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/rev-3-u.c",
+      "upstream_sha256": "fe3cf414f0e241a9a4e73e59647cf6619ea50b905df4a1c2a404b3413992b780"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "family": "array-multidimensional",
+      "frontend_rejection": null,
+      "guard_sites": 2,
+      "hand_invariants": [
+        "((0 <= i) && (i <= n))",
+        "((0 <= j) && (j <= n))"
+      ],
+      "loops": 2,
+      "name": "transpose_u",
+      "outside_b1": [
+        false,
+        false
+      ],
+      "overflow_sites": 6,
+      "port": "transpose_u/kernel.c",
+      "port_sha256": "fa8a4e249e70825283d6ed23ee285d2c800dc8b97563dded831aa3ecab6b3e53",
+      "profile_sha256": "08edeac3ed89b500108df638fb381aed4e8b35b61b3ad49871bd13d7c72f131b",
+      "required_obligations": 8,
+      "shape": "square",
+      "source_url": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks/-/blob/f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25/c/array-multidimensional/transpose-u.c",
+      "transformations": [
+        "R1",
+        "R2",
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R4 (nondeterministic fill loop dropped -> input array)"
+      ],
+      "upstream_file": "c/array-multidimensional/transpose-u.c",
+      "upstream_sha256": "44b06771d393671cf9550617b8bf478abc837489f84f20705c70efc1808f7508"
+    }
+  ],
+  "excluded": {
+    "array-tiling/mlceu.c": "expected unreach-call verdict false",
+    "array-tiling/mlceu2.c": "shift operator >> and sizeof are outside the subset (also uses 66060288/sizeof(int))",
+    "array-tiling/skippedu.c": "expected unreach-call verdict false"
+  },
+  "generator": "pfc_eval/svcomp_arrays.py",
+  "rejected": [
+    {
+      "b0_admitted": null,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": "vc-complexity: VC report exceeds the cumulative formula limit",
+      "name": "mbpr5",
+      "port_sha256": "9bb0589e6c6df8142e2064996100da45b4e32daa74735701e74324395313dc49",
+      "upstream_file": "c/array-tiling/mbpr5.c",
+      "upstream_sha256": "5503daab190ef8b57bdc3b49ed300bfd661cba05f76774439c2c92cf1668f08b"
+    },
+    {
+      "b0_admitted": null,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": "vc-complexity: VC report exceeds the cumulative formula limit",
+      "name": "pnr4",
+      "port_sha256": "fb3614fa2763f85839145e41ba9c9e41c898ad81caf0b6ae4af4faeac037a7d8",
+      "upstream_file": "c/array-tiling/pnr4.c",
+      "upstream_sha256": "f6afa97ea0a451d0528a273d6cd07c473d9399b3b8fd4299d8d7a90b1474c356"
+    },
+    {
+      "b0_admitted": null,
+      "b0_problem": null,
+      "family": "array-tiling",
+      "frontend_rejection": "vc-complexity: VC report exceeds the cumulative formula limit",
+      "name": "pnr5",
+      "port_sha256": "478d04cb53fdbf1352fe0ca523bd7df7ad5051651e10b6deff871370a0eb5b24",
+      "upstream_file": "c/array-tiling/pnr5.c",
+      "upstream_sha256": "391b0cc32beff546317074ee4c99e1e513eed04a5d56bd715a68523ca02460f9"
+    }
+  ],
+  "rules": [
+    "R1 types: int, unsigned int and long long become long; unsigned wrap-around is replaced by the trap-unless-proved overflow semantics of the emitter (the content values are not a proof goal)",
+    "R2 sizes: nondeterministic or constant array dimensions become long parameters; the upstream entry guard becomes REQUIRES (SIZE > 1 && SIZE < MAX stays literal, MAX spelled 100000L for the portable literal range); a constant dimension gets 0 <= v, or 0 < v where it divides in the capacity contract or where the task reads index 0 unconditionally",
+    "R3 arrays: a VLA or safe_malloc array becomes `long a[], long a_len` with the capacity conjunct n <= a_len; a 2-D array A[m][n] becomes a flat array indexed A[i * n + j] with m <= A_len / n; 3-D A[(i*n + j)*p + k] with m <= A_len / p / n; 4-D likewise",
+    "R4 nondeterminism: loops that only fill arrays with nondeterministic values are dropped and the array becomes an input parameter (const when never written); a per-iteration nondeterministic read (ReadFromPort) becomes a read of an input array `port` at the index of the store it feeds; a nondeterministic or uninitialized scalar becomes a parameter",
+    "R5 property: the final loop asserting a universally quantified content property is dropped (not expressible in the subset); the proof goals are the bounds of every remaining access and the overflow of the index arithmetic; the function returns the last loop counter (or the computed scalar for max/min); locals used only by the dropped loop are dropped",
+    "R6 control: for loops become while loops with explicit i = i + 1 / i = i - 1; `SIZE % k == 0` assumptions and the early `return 1` are dropped (they constrain only the content property); `SIZE / k` bounds stay literal",
+    "R7 B0 invariant: for every loop, the conjunction of the counter's bounds at the loop head (initial value and exit bound: lo <= i && i <= hi for ascending, lo - 1 <= i && i <= hi for descending), nothing else",
+    "R8 identifiers: upstream names are kept (CELLCOUNT, volArray, MINVAL, A, B, C, m, n, p, q, s); no SEPARATED is added"
+  ],
+  "schema_version": 1,
+  "selection": "every .c task of c/array-tiling and c/array-multidimensional at the recorded commit whose unreach-call expected verdict is true, in lexicographic order of the file name; a task is excluded only for a construct outside the pfc subset (listed in EXCLUDED) or because the frozen admit() rejects the mechanical B0 (recorded per task); the rules were fixed on 2026-11-10 before any proposer, Houdini or differential run read the set",
+  "upstream": {
+    "commit": "f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25",
+    "directories": [
+      "c/array-tiling",
+      "c/array-multidimensional"
+    ],
+    "license": "Apache-2.0 (upstream LICENSE.Apache-2.0.txt, copied beside the ports)",
+    "origin": {
+      "array-multidimensional": "Rajkhowa, Lin: Extending VIAP to handle array programs, VSTTE 2018",
+      "array-tiling": "Chakraborty, Gupta, Unadkat: Verifying array manipulating programs by tiling, SAS 2017"
+    },
+    "repository": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks"
+  }
+}

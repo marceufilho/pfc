@@ -1,0 +1,43 @@
+{
+  "conditions": {
+    "L1": {
+      "attempts": 40,
+      "attempts_to_first_success": 1.0,
+      "mean_success_at_k": {
+        "estimate": 1.0,
+        "high": 1.0,
+        "low": 1.0,
+        "replicates": 2000,
+        "seed": 0
+      },
+      "origins": {
+        "live": 40
+      },
+      "rejection_classes": {},
+      "runs": 5,
+      "success_at_k": {
+        "accumulate": 1.0,
+        "copy": 1.0,
+        "count": 1.0,
+        "fill": 1.0,
+        "find": 1.0,
+        "replace": 1.0,
+        "reverse": 1.0,
+        "swap_ranges": 1.0
+      },
+      "successes_by_run": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "tasks": 8,
+      "tokens_per_success": 1024.925,
+      "tokens_total": 40997
+    }
+  },
+  "passed": true,
+  "replay_consistent": null,
+  "requests": 40
+}

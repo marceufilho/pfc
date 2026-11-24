@@ -1,0 +1,1098 @@
+{
+  "experiment": "houdini",
+  "family": "dynamic inference over loop-head states: `v == c`, `v == w + c`, `v == a*w + b` (a in {-2, -1, 2}), `c <= v`, `v <= c`, `v <= w + c` with observed extremes, `v == w + x`, `v == w - x`, `v == w * x`, and implications `cond => e` from call-free scalar branch conditions in the loop body (written as disjunctions); every literal of absolute value at most 8; at most 40 candidates per loop; 200 fuzz draws plus 200 profile draws when a profile binds; a loop with fewer than 20 observed head states gets no candidate",
+  "family_label": "b2",
+  "kernels": {
+    "add_2_n_u": {
+      "accepted": true,
+      "candidates_initial": [
+        19,
+        21
+      ],
+      "candidates_remaining": [
+        6,
+        13
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((0 <= m) && (1 <= n)) && (0 <= i)) && (((0 <= j) && (i <= m)) && (j <= n)))",
+        "(((((1 <= A_len) && (1 <= m)) && ((1 <= n) && (0 <= i))) && (((0 <= j) && (m <= A_len)) && (n <= A_len))) && ((((n <= C_len) && (i <= (A_len - 1))) && (i <= (m - 1))) && (((j <= A_len) && (j <= C_len)) && (j <= n))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 5,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 1222.1321551332949,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "add_3_n_u": {
+      "accepted": false,
+      "candidates_initial": [
+        40,
+        40,
+        40
+      ],
+      "candidates_remaining": [
+        7,
+        8,
+        9
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((0 <= m) && (1 <= n)) && ((1 <= p) && (0 <= i))) && (((0 <= j) && (0 <= k)) && (k <= 8)))",
+        "((((1 <= m) && (1 <= n)) && ((1 <= p) && (0 <= i))) && (((0 <= j) && (0 <= k)) && ((i <= (m - 1)) && (j <= n))))",
+        "(((((1 <= m) && (1 <= n)) && (1 <= p)) && ((0 <= i) && (0 <= j))) && (((0 <= k) && (i <= (m - 1))) && ((j <= (n - 1)) && (k <= p))))"
+      ],
+      "loops": 3,
+      "probe_splits": 0,
+      "queries": 17,
+      "rejection_class": "not-inductive",
+      "rounds": 5,
+      "solver_ms": 79169.0442328545,
+      "status": "round-limit",
+      "timeouts": 1,
+      "unknown": 0
+    },
+    "copy_2_u": {
+      "accepted": true,
+      "candidates_initial": [
+        14,
+        13
+      ],
+      "candidates_remaining": [
+        14,
+        13
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((1 <= A_len) && (1 <= B_len)) && ((1 <= n) && (0 <= i))) && (((0 <= j) && (n <= A_len)) && (n <= B_len))) && ((((i <= A_len) && (i <= B_len)) && ((i <= n) && (i <= j))) && (((j <= A_len) && (j <= B_len)) && (j <= n))))",
+        "(((((1 <= A_len) && (1 <= B_len)) && ((1 <= n) && (0 <= i))) && (((0 <= j) && (n <= A_len)) && (n <= B_len))) && ((((i <= (A_len - 1)) && (i <= (B_len - 1))) && (i <= (n - 1))) && (((j <= A_len) && (j <= B_len)) && (j <= n))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 377.76330301130656,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "copy_3_n_u": {
+      "accepted": false,
+      "candidates_initial": [
+        40,
+        40,
+        40
+      ],
+      "candidates_remaining": [
+        8,
+        7,
+        7
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((0 <= m) && (1 <= n)) && ((1 <= p) && (0 <= i))) && (((0 <= j) && (0 <= k)) && ((k <= 8) && (i <= m))))",
+        "((((1 <= m) && (1 <= n)) && ((1 <= p) && (0 <= i))) && (((0 <= j) && (0 <= k)) && (i <= (m - 1))))",
+        "((((1 <= m) && (1 <= n)) && ((1 <= p) && (0 <= i))) && (((0 <= j) && (0 <= k)) && (i <= (m - 1))))"
+      ],
+      "loops": 3,
+      "probe_splits": 0,
+      "queries": 16,
+      "rejection_class": "not-inductive",
+      "rounds": 5,
+      "solver_ms": 9826.751234868425,
+      "status": "round-limit",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "copy_partial_2_n_u": {
+      "accepted": true,
+      "candidates_initial": [
+        30,
+        30
+      ],
+      "candidates_remaining": [
+        12,
+        12
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((1 <= m) && (1 <= n)) && (0 <= q)) && (((0 <= s) && (0 <= i)) && (0 <= j))) && ((((q <= (m - 1)) && (s <= (n - 1))) && (i <= (m - 1))) && (((i <= q) && (j <= (n - 1))) && (j <= s))))",
+        "(((((2 <= m) && (1 <= n)) && (1 <= q)) && (((0 <= s) && (0 <= i)) && (0 <= j))) && ((((q <= (m - 1)) && (s <= (n - 1))) && (i <= (m - 2))) && (((i <= (q - 1)) && (j <= (n - 1))) && (j <= s))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 12,
+      "rejection_class": "accepted",
+      "rounds": 5,
+      "solver_ms": 2774.2668548453366,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "copy_partial_3_u": {
+      "accepted": false,
+      "candidates_initial": [
+        37,
+        25,
+        25,
+        29,
+        27,
+        25
+      ],
+      "candidates_remaining": [
+        21,
+        14,
+        12,
+        20,
+        17,
+        13
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((j == k) && (k == j)) && (1 <= n)) && (((0 <= p) && (0 <= i)) && (i <= 3))) && ((((0 <= j) && (j <= 3)) && (0 <= k)) && ((k <= 3) && (p <= (n - 1))))) && (((((i <= (n - 1)) && (i <= p)) && (i <= j)) && ((i <= k) && (j <= (n - 1)))) && ((((j <= p) && (j <= (i + 2))) && (k <= (n - 1))) && ((k <= p) && (k <= (i + 2))))))",
+        "(((((2 <= n) && (1 <= p)) && ((0 <= i) && (0 <= j))) && (((0 <= k) && (p <= (n - 1))) && (i <= (n - 2)))) && ((((i <= (p - 1)) && (i <= k)) && ((j <= (n - 1)) && (j <= p))) && (((j <= k) && (k <= (n - 1))) && (k <= p))))",
+        "(((((2 <= n) && (1 <= p)) && (0 <= i)) && (((0 <= j) && (0 <= k)) && (p <= (n - 1)))) && ((((i <= (n - 2)) && (i <= (p - 1))) && (j <= (n - 2))) && (((j <= (p - 1)) && (k <= (n - 1))) && (k <= p))))",
+        "((((((j == k) && (k == j)) && (1 <= n)) && ((0 <= p) && (p <= 3))) && ((((0 <= i) && (0 <= j)) && (0 <= k)) && ((p <= (n - 1)) && (p <= i)))) && (((((p <= j) && (p <= k)) && (i <= (B_len - 1))) && ((i <= n) && (i <= j))) && ((((i <= k) && (j <= (B_len - 1))) && (j <= n)) && ((k <= (B_len - 1)) && (k <= n)))))",
+        "((((((1 <= n) && (0 <= p)) && (p <= 3)) && ((0 <= i) && (0 <= j))) && (((0 <= k) && (p <= (n - 1))) && ((p <= i) && (p <= j)))) && ((((p <= k) && (i <= (n - 1))) && ((i <= k) && (j <= (B_len - 1)))) && (((j <= n) && (j <= k)) && ((k <= (B_len - 1)) && (k <= n)))))",
+        "(((((1 <= n) && (0 <= p)) && ((p <= 3) && (0 <= i))) && (((0 <= j) && (0 <= k)) && (p <= (n - 1)))) && ((((p <= i) && (p <= j)) && (p <= k)) && (((i <= (n - 1)) && (j <= (n - 1))) && (k <= n))))"
+      ],
+      "loops": 6,
+      "probe_splits": 0,
+      "queries": 31,
+      "rejection_class": "not-inductive",
+      "rounds": 5,
+      "solver_ms": 17375.171743129613,
+      "status": "round-limit",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "diff_2_n_u": {
+      "accepted": true,
+      "candidates_initial": [
+        19,
+        21
+      ],
+      "candidates_remaining": [
+        6,
+        13
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((0 <= m) && (1 <= n)) && (0 <= i)) && (((0 <= j) && (i <= m)) && (j <= n)))",
+        "(((((1 <= A_len) && (1 <= m)) && ((1 <= n) && (0 <= i))) && (((0 <= j) && (m <= A_len)) && (n <= A_len))) && ((((n <= C_len) && (i <= (A_len - 1))) && (i <= (m - 1))) && (((j <= A_len) && (j <= C_len)) && (j <= n))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 5,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 1200.1430041564163,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "diff_3_n_u": {
+      "accepted": false,
+      "candidates_initial": [
+        40,
+        40,
+        40
+      ],
+      "candidates_remaining": [
+        7,
+        8,
+        9
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((0 <= m) && (1 <= n)) && ((1 <= p) && (0 <= i))) && (((0 <= j) && (0 <= k)) && (k <= 8)))",
+        "((((1 <= m) && (1 <= n)) && ((1 <= p) && (0 <= i))) && (((0 <= j) && (0 <= k)) && ((i <= (m - 1)) && (j <= n))))",
+        "(((((1 <= m) && (1 <= n)) && (1 <= p)) && ((0 <= i) && (0 <= j))) && (((0 <= k) && (i <= (m - 1))) && ((j <= (n - 1)) && (k <= p))))"
+      ],
+      "loops": 3,
+      "probe_splits": 0,
+      "queries": 17,
+      "rejection_class": "not-inductive",
+      "rounds": 5,
+      "solver_ms": 80076.99372421484,
+      "status": "round-limit",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "init_2_n_u": {
+      "accepted": true,
+      "candidates_initial": [
+        11,
+        11
+      ],
+      "candidates_remaining": [
+        6,
+        11
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((0 <= m) && (1 <= n)) && (0 <= i)) && (((0 <= j) && (i <= m)) && (j <= n)))",
+        "(((((1 <= A_len) && (1 <= m)) && (1 <= n)) && (((0 <= i) && (0 <= j)) && (m <= A_len))) && ((((n <= A_len) && (i <= (A_len - 1))) && (i <= (m - 1))) && ((j <= A_len) && (j <= n))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 367.09542700555176,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "init_3_u": {
+      "accepted": true,
+      "candidates_initial": [
+        17,
+        15,
+        13
+      ],
+      "candidates_remaining": [
+        16,
+        14,
+        12
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((j == k) && (k == j)) && ((1 <= A_len) && (1 <= n))) && (((0 <= i) && (0 <= j)) && ((0 <= k) && (n <= A_len)))) && ((((i <= A_len) && (i <= n)) && ((i <= j) && (i <= k))) && (((j <= A_len) && (j <= n)) && ((k <= A_len) && (k <= n)))))",
+        "(((((1 <= A_len) && (1 <= n)) && ((0 <= i) && (0 <= j))) && (((0 <= k) && (n <= A_len)) && (i <= (A_len - 1)))) && ((((i <= (n - 1)) && (i <= k)) && ((j <= A_len) && (j <= n))) && (((j <= k) && (k <= A_len)) && (k <= n))))",
+        "(((((1 <= A_len) && (1 <= n)) && (0 <= i)) && (((0 <= j) && (0 <= k)) && (n <= A_len))) && ((((i <= (A_len - 1)) && (i <= (n - 1))) && (j <= (A_len - 1))) && (((j <= (n - 1)) && (k <= A_len)) && (k <= n))))"
+      ],
+      "loops": 3,
+      "probe_splits": 0,
+      "queries": 9,
+      "rejection_class": "accepted",
+      "rounds": 4,
+      "solver_ms": 2057.452356093563,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "init_4_n_u": {
+      "accepted": false,
+      "candidates_initial": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "candidates_remaining": [
+        10,
+        9,
+        8,
+        8
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((0 <= m) && (1 <= n)) && (1 <= p)) && ((1 <= q) && (0 <= i))) && ((((0 <= j) && (0 <= k)) && (k <= 5)) && ((0 <= l) && (l <= 5))))",
+        "(((((1 <= m) && (1 <= n)) && (1 <= p)) && ((1 <= q) && (0 <= i))) && (((0 <= j) && (0 <= k)) && ((0 <= l) && (l <= 5))))",
+        "((((1 <= m) && (1 <= n)) && ((1 <= p) && (1 <= q))) && (((0 <= i) && (0 <= j)) && ((0 <= k) && (0 <= l))))",
+        "((((1 <= m) && (1 <= n)) && ((1 <= p) && (1 <= q))) && (((0 <= i) && (0 <= j)) && ((0 <= k) && (0 <= l))))"
+      ],
+      "loops": 4,
+      "probe_splits": 0,
+      "queries": 22,
+      "rejection_class": "not-inductive",
+      "rounds": 5,
+      "solver_ms": 9970.384389947867,
+      "status": "round-limit",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "init_non_constant_2_n_u": {
+      "accepted": true,
+      "candidates_initial": [
+        30,
+        30
+      ],
+      "candidates_remaining": [
+        12,
+        12
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((1 <= m) && (1 <= n)) && (0 <= q)) && (((0 <= s) && (0 <= i)) && (0 <= j))) && ((((q <= (m - 1)) && (s <= (n - 1))) && (i <= (m - 1))) && (((i <= q) && (j <= (n - 1))) && (j <= s))))",
+        "(((((2 <= m) && (1 <= n)) && (1 <= q)) && (((0 <= s) && (0 <= i)) && (0 <= j))) && ((((q <= (m - 1)) && (s <= (n - 1))) && (i <= (m - 2))) && (((i <= (q - 1)) && (j <= (n - 1))) && (j <= s))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 12,
+      "rejection_class": "accepted",
+      "rounds": 5,
+      "solver_ms": 2325.23432499147,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "init_non_constant_3_u": {
+      "accepted": true,
+      "candidates_initial": [
+        17,
+        15,
+        13
+      ],
+      "candidates_remaining": [
+        16,
+        14,
+        12
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((j == k) && (k == j)) && ((1 <= A_len) && (1 <= n))) && (((0 <= i) && (0 <= j)) && ((0 <= k) && (n <= A_len)))) && ((((i <= A_len) && (i <= n)) && ((i <= j) && (i <= k))) && (((j <= A_len) && (j <= n)) && ((k <= A_len) && (k <= n)))))",
+        "(((((1 <= A_len) && (1 <= n)) && ((0 <= i) && (0 <= j))) && (((0 <= k) && (n <= A_len)) && (i <= (A_len - 1)))) && ((((i <= (n - 1)) && (i <= k)) && ((j <= A_len) && (j <= n))) && (((j <= k) && (k <= A_len)) && (k <= n))))",
+        "(((((1 <= A_len) && (1 <= n)) && (0 <= i)) && (((0 <= j) && (0 <= k)) && (n <= A_len))) && ((((i <= (A_len - 1)) && (i <= (n - 1))) && (j <= (A_len - 1))) && (((j <= (n - 1)) && (k <= A_len)) && (k <= n))))"
+      ],
+      "loops": 3,
+      "probe_splits": 0,
+      "queries": 9,
+      "rejection_class": "accepted",
+      "rounds": 4,
+      "solver_ms": 2002.7243200456724,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "max_2_u": {
+      "accepted": true,
+      "candidates_initial": [
+        10,
+        9
+      ],
+      "candidates_remaining": [
+        10,
+        9
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((1 <= A_len) && (1 <= n)) && (0 <= i)) && ((0 <= j) && (n <= A_len))) && ((((i <= A_len) && (i <= n)) && (i <= j)) && ((j <= A_len) && (j <= n))))",
+        "(((((1 <= A_len) && (1 <= n)) && (0 <= i)) && ((0 <= j) && (n <= A_len))) && (((i <= (A_len - 1)) && (i <= (n - 1))) && ((j <= A_len) && (j <= n))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 283.0740619538119,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "max_3_n_u": {
+      "accepted": false,
+      "candidates_initial": [
+        40,
+        40,
+        40
+      ],
+      "candidates_remaining": [
+        12,
+        9,
+        9
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((1 <= m) && (1 <= n)) && (1 <= p)) && (((0 <= i) && (0 <= j)) && (0 <= k))) && ((((k <= 8) && (i <= m)) && (j <= n)) && (((k <= (m + 7)) && (k <= (n + 7))) && (k <= p))))",
+        "(((((1 <= m) && (1 <= n)) && (1 <= p)) && ((0 <= i) && (0 <= j))) && (((0 <= k) && (i <= (m - 1))) && ((j <= n) && (k <= p))))",
+        "(((((1 <= m) && (1 <= n)) && (1 <= p)) && ((0 <= i) && (0 <= j))) && (((0 <= k) && (i <= (m - 1))) && ((j <= (n - 1)) && (k <= p))))"
+      ],
+      "loops": 3,
+      "probe_splits": 0,
+      "queries": 19,
+      "rejection_class": "not-inductive",
+      "rounds": 5,
+      "solver_ms": 8216.391434965772,
+      "status": "round-limit",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "mbpr2": {
+      "accepted": true,
+      "candidates_initial": [
+        21,
+        21
+      ],
+      "candidates_remaining": [
+        21,
+        21
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((MINVAL == 2) && (CCCELVOL2 == 3)) && (CCCELVOL1 == 1)) && (((2 <= volArray_len) && (2 <= CELLCOUNT)) && (1 <= i))) && ((((CELLCOUNT <= volArray_len) && (MINVAL <= volArray_len)) && (MINVAL <= CELLCOUNT)) && ((MINVAL <= (i + 1)) && (CCCELVOL2 <= (volArray_len + 1))))) && (((((CCCELVOL2 <= (CELLCOUNT + 1)) && (CCCELVOL2 <= (i + 2))) && (CCCELVOL1 <= (volArray_len - 1))) && ((CCCELVOL1 <= (CELLCOUNT - 1)) && (CCCELVOL1 <= i))) && ((((i <= volArray_len) && (i <= CELLCOUNT)) && (MINVAL == (CCCELVOL2 - CCCELVOL1))) && ((CCCELVOL2 == (MINVAL + CCCELVOL1)) && (CCCELVOL1 == (CCCELVOL2 - MINVAL))))))",
+        "((((((MINVAL == 2) && (CCCELVOL2 == 3)) && (CCCELVOL1 == 1)) && (((2 <= volArray_len) && (2 <= CELLCOUNT)) && (1 <= i))) && ((((CELLCOUNT <= volArray_len) && (MINVAL <= volArray_len)) && (MINVAL <= CELLCOUNT)) && ((MINVAL <= (i + 1)) && (CCCELVOL2 <= (volArray_len + 1))))) && (((((CCCELVOL2 <= (CELLCOUNT + 1)) && (CCCELVOL2 <= (i + 2))) && (CCCELVOL1 <= (volArray_len - 1))) && ((CCCELVOL1 <= (CELLCOUNT - 1)) && (CCCELVOL1 <= i))) && ((((i <= volArray_len) && (i <= CELLCOUNT)) && (MINVAL == (CCCELVOL2 - CCCELVOL1))) && ((CCCELVOL2 == (MINVAL + CCCELVOL1)) && (CCCELVOL1 == (CCCELVOL2 - MINVAL))))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 894.6980541659286,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "mbpr3": {
+      "accepted": true,
+      "candidates_initial": [
+        25,
+        25,
+        25
+      ],
+      "candidates_remaining": [
+        25,
+        25,
+        25
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((MINVAL == 2) && (CCCELVOL3 == 7)) && ((CCCELVOL2 == 3) && (CCCELVOL1 == 1))) && (((2 <= volArray_len) && (2 <= CELLCOUNT)) && (1 <= i))) && ((((CELLCOUNT <= volArray_len) && (MINVAL <= volArray_len)) && (MINVAL <= CELLCOUNT)) && (((MINVAL <= (i + 1)) && (CCCELVOL3 <= (volArray_len + 5))) && (CCCELVOL3 <= (CELLCOUNT + 5))))) && (((((CCCELVOL3 <= (i + 6)) && (CCCELVOL2 <= (volArray_len + 1))) && (CCCELVOL2 <= (CELLCOUNT + 1))) && (((CCCELVOL2 <= (i + 2)) && (CCCELVOL1 <= (volArray_len - 1))) && (CCCELVOL1 <= (CELLCOUNT - 1)))) && ((((CCCELVOL1 <= i) && (i <= (volArray_len - 1))) && (i <= (CELLCOUNT - 1))) && (((MINVAL == (CCCELVOL2 - CCCELVOL1)) && (CCCELVOL2 == (MINVAL + CCCELVOL1))) && (CCCELVOL1 == (CCCELVOL2 - MINVAL))))))",
+        "((((((MINVAL == 2) && (CCCELVOL3 == 7)) && ((CCCELVOL2 == 3) && (CCCELVOL1 == 1))) && (((2 <= volArray_len) && (2 <= CELLCOUNT)) && (1 <= i))) && ((((CELLCOUNT <= volArray_len) && (MINVAL <= volArray_len)) && (MINVAL <= CELLCOUNT)) && (((MINVAL <= (i + 1)) && (CCCELVOL3 <= (volArray_len + 5))) && (CCCELVOL3 <= (CELLCOUNT + 5))))) && (((((CCCELVOL3 <= (i + 6)) && (CCCELVOL2 <= (volArray_len + 1))) && (CCCELVOL2 <= (CELLCOUNT + 1))) && (((CCCELVOL2 <= (i + 2)) && (CCCELVOL1 <= (volArray_len - 1))) && (CCCELVOL1 <= (CELLCOUNT - 1)))) && ((((CCCELVOL1 <= i) && (i <= (volArray_len - 1))) && (i <= (CELLCOUNT - 1))) && (((MINVAL == (CCCELVOL2 - CCCELVOL1)) && (CCCELVOL2 == (MINVAL + CCCELVOL1))) && (CCCELVOL1 == (CCCELVOL2 - MINVAL))))))",
+        "((((((MINVAL == 2) && (CCCELVOL3 == 7)) && ((CCCELVOL2 == 3) && (CCCELVOL1 == 1))) && (((2 <= volArray_len) && (2 <= CELLCOUNT)) && (1 <= i))) && ((((CELLCOUNT <= volArray_len) && (MINVAL <= volArray_len)) && (MINVAL <= CELLCOUNT)) && (((MINVAL <= (i + 1)) && (CCCELVOL3 <= (volArray_len + 5))) && (CCCELVOL3 <= (CELLCOUNT + 5))))) && (((((CCCELVOL3 <= (i + 6)) && (CCCELVOL2 <= (volArray_len + 1))) && (CCCELVOL2 <= (CELLCOUNT + 1))) && (((CCCELVOL2 <= (i + 2)) && (CCCELVOL1 <= (volArray_len - 1))) && (CCCELVOL1 <= (CELLCOUNT - 1)))) && ((((CCCELVOL1 <= i) && (i <= (volArray_len - 1))) && (i <= (CELLCOUNT - 1))) && (((MINVAL == (CCCELVOL2 - CCCELVOL1)) && (CCCELVOL2 == (MINVAL + CCCELVOL1))) && (CCCELVOL1 == (CCCELVOL2 - MINVAL))))))"
+      ],
+      "loops": 3,
+      "probe_splits": 3,
+      "queries": 8,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 2415.602763139759,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "mbpr4": {
+      "accepted": false,
+      "candidates_initial": [
+        35,
+        35,
+        35,
+        35
+      ],
+      "candidates_remaining": [
+        35,
+        35,
+        35,
+        35
+      ],
+      "errors": 140,
+      "invariants": [
+        "(((((((MINVAL == 2) && (CCCELVOL4 == 5)) && (CCCELVOL3 == 7)) && ((CCCELVOL2 == 3) && (CCCELVOL1 == 1))) && (((2 <= volArray_len) && (2 <= CELLCOUNT)) && ((1 <= i) && (CELLCOUNT <= volArray_len)))) && (((((MINVAL <= volArray_len) && (MINVAL <= CELLCOUNT)) && (MINVAL <= (i + 1))) && ((CCCELVOL4 <= (volArray_len + 3)) && (CCCELVOL4 <= (CELLCOUNT + 3)))) && (((CCCELVOL4 <= (i + 4)) && (CCCELVOL3 <= (volArray_len + 5))) && ((CCCELVOL3 <= (CELLCOUNT + 5)) && (CCCELVOL3 <= (i + 6)))))) && ((((((CCCELVOL2 <= (volArray_len + 1)) && (CCCELVOL2 <= (CELLCOUNT + 1))) && (CCCELVOL2 <= (i + 2))) && ((CCCELVOL1 <= (volArray_len - 1)) && (CCCELVOL1 <= (CELLCOUNT - 1)))) && (((CCCELVOL1 <= i) && (i <= (volArray_len - 1))) && ((i <= (CELLCOUNT - 1)) && (MINVAL == (CCCELVOL4 - CCCELVOL2))))) && ((((MINVAL == (CCCELVOL3 - CCCELVOL4)) && (MINVAL == (CCCELVOL2 - CCCELVOL1))) && ((CCCELVOL4 == (MINVAL + CCCELVOL2)) && (CCCELVOL4 == (CCCELVOL3 - MINVAL)))) && (((CCCELVOL3 == (MINVAL + CCCELVOL4)) && (CCCELVOL2 == (MINVAL + CCCELVOL1))) && ((CCCELVOL2 == (CCCELVOL4 - MINVAL)) && (CCCELVOL1 == (CCCELVOL2 - MINVAL)))))))",
+        "(((((((MINVAL == 2) && (CCCELVOL4 == 5)) && (CCCELVOL3 == 7)) && ((CCCELVOL2 == 3) && (CCCELVOL1 == 1))) && (((2 <= volArray_len) && (2 <= CELLCOUNT)) && ((1 <= i) && (CELLCOUNT <= volArray_len)))) && (((((MINVAL <= volArray_len) && (MINVAL <= CELLCOUNT)) && (MINVAL <= (i + 1))) && ((CCCELVOL4 <= (volArray_len + 3)) && (CCCELVOL4 <= (CELLCOUNT + 3)))) && (((CCCELVOL4 <= (i + 4)) && (CCCELVOL3 <= (volArray_len + 5))) && ((CCCELVOL3 <= (CELLCOUNT + 5)) && (CCCELVOL3 <= (i + 6)))))) && ((((((CCCELVOL2 <= (volArray_len + 1)) && (CCCELVOL2 <= (CELLCOUNT + 1))) && (CCCELVOL2 <= (i + 2))) && ((CCCELVOL1 <= (volArray_len - 1)) && (CCCELVOL1 <= (CELLCOUNT - 1)))) && (((CCCELVOL1 <= i) && (i <= (volArray_len - 1))) && ((i <= (CELLCOUNT - 1)) && (MINVAL == (CCCELVOL4 - CCCELVOL2))))) && ((((MINVAL == (CCCELVOL3 - CCCELVOL4)) && (MINVAL == (CCCELVOL2 - CCCELVOL1))) && ((CCCELVOL4 == (MINVAL + CCCELVOL2)) && (CCCELVOL4 == (CCCELVOL3 - MINVAL)))) && (((CCCELVOL3 == (MINVAL + CCCELVOL4)) && (CCCELVOL2 == (MINVAL + CCCELVOL1))) && ((CCCELVOL2 == (CCCELVOL4 - MINVAL)) && (CCCELVOL1 == (CCCELVOL2 - MINVAL)))))))",
+        "(((((((MINVAL == 2) && (CCCELVOL4 == 5)) && (CCCELVOL3 == 7)) && ((CCCELVOL2 == 3) && (CCCELVOL1 == 1))) && (((2 <= volArray_len) && (2 <= CELLCOUNT)) && ((1 <= i) && (CELLCOUNT <= volArray_len)))) && (((((MINVAL <= volArray_len) && (MINVAL <= CELLCOUNT)) && (MINVAL <= (i + 1))) && ((CCCELVOL4 <= (volArray_len + 3)) && (CCCELVOL4 <= (CELLCOUNT + 3)))) && (((CCCELVOL4 <= (i + 4)) && (CCCELVOL3 <= (volArray_len + 5))) && ((CCCELVOL3 <= (CELLCOUNT + 5)) && (CCCELVOL3 <= (i + 6)))))) && ((((((CCCELVOL2 <= (volArray_len + 1)) && (CCCELVOL2 <= (CELLCOUNT + 1))) && (CCCELVOL2 <= (i + 2))) && ((CCCELVOL1 <= (volArray_len - 1)) && (CCCELVOL1 <= (CELLCOUNT - 1)))) && (((CCCELVOL1 <= i) && (i <= (volArray_len - 1))) && ((i <= (CELLCOUNT - 1)) && (MINVAL == (CCCELVOL4 - CCCELVOL2))))) && ((((MINVAL == (CCCELVOL3 - CCCELVOL4)) && (MINVAL == (CCCELVOL2 - CCCELVOL1))) && ((CCCELVOL4 == (MINVAL + CCCELVOL2)) && (CCCELVOL4 == (CCCELVOL3 - MINVAL)))) && (((CCCELVOL3 == (MINVAL + CCCELVOL4)) && (CCCELVOL2 == (MINVAL + CCCELVOL1))) && ((CCCELVOL2 == (CCCELVOL4 - MINVAL)) && (CCCELVOL1 == (CCCELVOL2 - MINVAL)))))))",
+        "(((((((MINVAL == 2) && (CCCELVOL4 == 5)) && (CCCELVOL3 == 7)) && ((CCCELVOL2 == 3) && (CCCELVOL1 == 1))) && (((2 <= volArray_len) && (2 <= CELLCOUNT)) && ((1 <= i) && (CELLCOUNT <= volArray_len)))) && (((((MINVAL <= volArray_len) && (MINVAL <= CELLCOUNT)) && (MINVAL <= (i + 1))) && ((CCCELVOL4 <= (volArray_len + 3)) && (CCCELVOL4 <= (CELLCOUNT + 3)))) && (((CCCELVOL4 <= (i + 4)) && (CCCELVOL3 <= (volArray_len + 5))) && ((CCCELVOL3 <= (CELLCOUNT + 5)) && (CCCELVOL3 <= (i + 6)))))) && ((((((CCCELVOL2 <= (volArray_len + 1)) && (CCCELVOL2 <= (CELLCOUNT + 1))) && (CCCELVOL2 <= (i + 2))) && ((CCCELVOL1 <= (volArray_len - 1)) && (CCCELVOL1 <= (CELLCOUNT - 1)))) && (((CCCELVOL1 <= i) && (i <= (volArray_len - 1))) && ((i <= (CELLCOUNT - 1)) && (MINVAL == (CCCELVOL4 - CCCELVOL2))))) && ((((MINVAL == (CCCELVOL3 - CCCELVOL4)) && (MINVAL == (CCCELVOL2 - CCCELVOL1))) && ((CCCELVOL4 == (MINVAL + CCCELVOL2)) && (CCCELVOL4 == (CCCELVOL3 - MINVAL)))) && (((CCCELVOL3 == (MINVAL + CCCELVOL4)) && (CCCELVOL2 == (MINVAL + CCCELVOL1))) && ((CCCELVOL2 == (CCCELVOL4 - MINVAL)) && (CCCELVOL1 == (CCCELVOL2 - MINVAL)))))))"
+      ],
+      "loops": 4,
+      "probe_splits": 134,
+      "queries": 1,
+      "rejection_class": "unparseable",
+      "rounds": 1,
+      "solver_ms": 0.0,
+      "status": "inconclusive",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "min_2_u": {
+      "accepted": true,
+      "candidates_initial": [
+        10,
+        9
+      ],
+      "candidates_remaining": [
+        10,
+        9
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((1 <= A_len) && (1 <= n)) && (0 <= i)) && ((0 <= j) && (n <= A_len))) && ((((i <= A_len) && (i <= n)) && (i <= j)) && ((j <= A_len) && (j <= n))))",
+        "(((((1 <= A_len) && (1 <= n)) && (0 <= i)) && ((0 <= j) && (n <= A_len))) && (((i <= (A_len - 1)) && (i <= (n - 1))) && ((j <= A_len) && (j <= n))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 286.89575697353575,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "min_3_n_u": {
+      "accepted": false,
+      "candidates_initial": [
+        40,
+        40,
+        40
+      ],
+      "candidates_remaining": [
+        12,
+        9,
+        9
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((1 <= m) && (1 <= n)) && (1 <= p)) && (((0 <= i) && (0 <= j)) && (0 <= k))) && ((((k <= 8) && (i <= m)) && (j <= n)) && (((k <= (m + 7)) && (k <= (n + 7))) && (k <= p))))",
+        "(((((1 <= m) && (1 <= n)) && (1 <= p)) && ((0 <= i) && (0 <= j))) && (((0 <= k) && (i <= (m - 1))) && ((j <= n) && (k <= p))))",
+        "(((((1 <= m) && (1 <= n)) && (1 <= p)) && ((0 <= i) && (0 <= j))) && (((0 <= k) && (i <= (m - 1))) && ((j <= (n - 1)) && (k <= p))))"
+      ],
+      "loops": 3,
+      "probe_splits": 0,
+      "queries": 19,
+      "rejection_class": "not-inductive",
+      "rounds": 5,
+      "solver_ms": 8316.659154021181,
+      "status": "round-limit",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "nr2": {
+      "accepted": true,
+      "candidates_initial": [
+        14,
+        18
+      ],
+      "candidates_remaining": [
+        14,
+        18
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((MINVAL == 2) && (j == 0)) && ((2 <= volArray_len) && (2 <= CELLCOUNT))) && (((1 <= i) && (CELLCOUNT <= volArray_len)) && (MINVAL <= volArray_len))) && ((((MINVAL <= CELLCOUNT) && (MINVAL <= (i + 1))) && ((i <= volArray_len) && (i <= CELLCOUNT))) && (((j <= (volArray_len - 2)) && (j <= (CELLCOUNT - 2))) && (j <= (i - 1)))))",
+        "((((((MINVAL == 2) && (2 <= volArray_len)) && (2 <= CELLCOUNT)) && ((1 <= i) && (0 <= j))) && (((j <= 2) && (CELLCOUNT <= volArray_len)) && ((MINVAL <= volArray_len) && (MINVAL <= CELLCOUNT)))) && (((((MINVAL <= (i + 1)) && (MINVAL <= (j + 2))) && (i <= (volArray_len - 1))) && ((i <= (CELLCOUNT - 1)) && (j <= volArray_len))) && (((j <= CELLCOUNT) && (j <= MINVAL)) && ((j <= (i + 1)) && ((!(j >= MINVAL)) || (j == 2))))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 409.20995312626474,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "nr3": {
+      "accepted": true,
+      "candidates_initial": [
+        14,
+        17
+      ],
+      "candidates_remaining": [
+        14,
+        17
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((MINVAL == 2) && (j == 0)) && ((2 <= volArray_len) && (2 <= CELLCOUNT))) && (((1 <= i) && (CELLCOUNT <= volArray_len)) && (MINVAL <= volArray_len))) && ((((MINVAL <= CELLCOUNT) && (MINVAL <= (i + 1))) && ((i <= (volArray_len - 1)) && (i <= (CELLCOUNT - 1)))) && (((j <= (volArray_len - 2)) && (j <= (CELLCOUNT - 2))) && (j <= (i - 1)))))",
+        "((((((MINVAL == 2) && (3 <= volArray_len)) && (3 <= CELLCOUNT)) && ((1 <= i) && (0 <= j))) && (((j <= 3) && (CELLCOUNT <= volArray_len)) && ((MINVAL <= (volArray_len - 1)) && (MINVAL <= (CELLCOUNT - 1))))) && ((((MINVAL <= (i + 1)) && (MINVAL <= (j + 2))) && ((i <= (volArray_len - 2)) && (i <= (CELLCOUNT - 2)))) && (((j <= volArray_len) && (j <= CELLCOUNT)) && ((j <= (MINVAL + 1)) && (j <= (i + 2))))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 409.43029095069505,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "nr4": {
+      "accepted": true,
+      "candidates_initial": [
+        14,
+        17
+      ],
+      "candidates_remaining": [
+        14,
+        17
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((MINVAL == 2) && (j == 0)) && ((2 <= volArray_len) && (2 <= CELLCOUNT))) && (((1 <= i) && (CELLCOUNT <= volArray_len)) && (MINVAL <= volArray_len))) && ((((MINVAL <= CELLCOUNT) && (MINVAL <= (i + 1))) && ((i <= (volArray_len - 1)) && (i <= (CELLCOUNT - 1)))) && (((j <= (volArray_len - 2)) && (j <= (CELLCOUNT - 2))) && (j <= (i - 1)))))",
+        "((((((MINVAL == 2) && (4 <= volArray_len)) && (4 <= CELLCOUNT)) && ((1 <= i) && (0 <= j))) && (((j <= 4) && (CELLCOUNT <= volArray_len)) && ((MINVAL <= (volArray_len - 2)) && (MINVAL <= (CELLCOUNT - 2))))) && ((((MINVAL <= (i + 1)) && (MINVAL <= (j + 2))) && ((i <= (volArray_len - 3)) && (i <= (CELLCOUNT - 3)))) && (((j <= volArray_len) && (j <= CELLCOUNT)) && ((j <= (MINVAL + 2)) && (j <= (i + 3))))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 416.3417149684392,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "nr5": {
+      "accepted": true,
+      "candidates_initial": [
+        14,
+        17
+      ],
+      "candidates_remaining": [
+        14,
+        17
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((MINVAL == 2) && (j == 0)) && ((2 <= volArray_len) && (2 <= CELLCOUNT))) && (((1 <= i) && (CELLCOUNT <= volArray_len)) && (MINVAL <= volArray_len))) && ((((MINVAL <= CELLCOUNT) && (MINVAL <= (i + 1))) && ((i <= (volArray_len - 1)) && (i <= (CELLCOUNT - 1)))) && (((j <= (volArray_len - 2)) && (j <= (CELLCOUNT - 2))) && (j <= (i - 1)))))",
+        "((((((MINVAL == 2) && (5 <= volArray_len)) && (5 <= CELLCOUNT)) && ((1 <= i) && (0 <= j))) && (((j <= 5) && (CELLCOUNT <= volArray_len)) && ((MINVAL <= (volArray_len - 3)) && (MINVAL <= (CELLCOUNT - 3))))) && ((((MINVAL <= (i + 1)) && (MINVAL <= (j + 2))) && ((i <= (volArray_len - 4)) && (i <= (CELLCOUNT - 4)))) && (((j <= volArray_len) && (j <= CELLCOUNT)) && ((j <= (MINVAL + 3)) && (j <= (i + 4))))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 415.87853099917993,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "pnr2": {
+      "accepted": true,
+      "candidates_initial": [
+        18
+      ],
+      "candidates_remaining": [
+        18
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((DEFAULTVAL == 0) && (2 <= port_len)) && (2 <= a_len)) && ((2 <= SIZE) && (1 <= i))) && (((SIZE <= port_len) && (SIZE <= a_len)) && ((DEFAULTVAL <= (port_len - 2)) && (DEFAULTVAL <= (a_len - 2))))) && (((((DEFAULTVAL <= (SIZE - 2)) && (DEFAULTVAL <= (i - 1))) && (FIXEDVAL <= (port_len + 8))) && ((FIXEDVAL <= (a_len + 8)) && (FIXEDVAL <= (SIZE + 8)))) && (((i <= port_len) && (i <= a_len)) && ((i <= SIZE) && ((value != DEFAULTVAL) || (value == 0))))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 777.6440190064022,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "pnr3": {
+      "accepted": true,
+      "candidates_initial": [
+        19
+      ],
+      "candidates_remaining": [
+        18
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((DEFAULTVAL == 0) && (2 <= port_len)) && (2 <= a_len)) && ((2 <= SIZE) && (1 <= i))) && (((SIZE <= port_len) && (SIZE <= a_len)) && ((DEFAULTVAL <= (port_len - 2)) && (DEFAULTVAL <= (a_len - 2))))) && (((((DEFAULTVAL <= (SIZE - 2)) && (DEFAULTVAL <= (i - 1))) && (FIXEDVAL <= (port_len + 8))) && ((FIXEDVAL <= (a_len + 8)) && (FIXEDVAL <= (SIZE + 8)))) && (((i <= (port_len - 1)) && (i <= (a_len - 1))) && ((i <= (SIZE - 1)) && ((value != DEFAULTVAL) || (value == 0))))))"
+      ],
+      "loops": 1,
+      "probe_splits": 3,
+      "queries": 6,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 3520.0925623066723,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "poly1": {
+      "accepted": true,
+      "candidates_initial": [
+        6
+      ],
+      "candidates_remaining": [
+        6
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((2 <= a_len) && (2 <= SIZE)) && (0 <= i)) && (((SIZE <= a_len) && (i <= a_len)) && (i <= SIZE)))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 62.50412996450905,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "poly2": {
+      "accepted": true,
+      "candidates_initial": [
+        6,
+        6
+      ],
+      "candidates_remaining": [
+        6,
+        6
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((2 <= a_len) && (2 <= SIZE)) && (0 <= i)) && (((SIZE <= a_len) && (i <= a_len)) && (i <= SIZE)))",
+        "((((2 <= a_len) && (2 <= SIZE)) && (0 <= i)) && (((SIZE <= a_len) && (i <= a_len)) && (i <= SIZE)))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 140.38756098307204,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "pr2": {
+      "accepted": true,
+      "candidates_initial": [
+        14
+      ],
+      "candidates_remaining": [
+        14
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((CCCELVOL2 == 3) && (CCCELVOL1 == 1)) && ((2 <= volArray_len) && (2 <= CELLCOUNT))) && (((1 <= i) && (CELLCOUNT <= volArray_len)) && (CCCELVOL2 <= (volArray_len + 1)))) && ((((CCCELVOL2 <= (CELLCOUNT + 1)) && (CCCELVOL2 <= (i + 2))) && ((CCCELVOL1 <= (volArray_len - 1)) && (CCCELVOL1 <= (CELLCOUNT - 1)))) && (((CCCELVOL1 <= i) && (i <= volArray_len)) && (i <= CELLCOUNT))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 408.5049809073098,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "pr3": {
+      "accepted": true,
+      "candidates_initial": [
+        18
+      ],
+      "candidates_remaining": [
+        18
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((CCCELVOL3 == 7) && (CCCELVOL2 == 3)) && (CCCELVOL1 == 1)) && ((2 <= volArray_len) && (2 <= CELLCOUNT))) && (((1 <= i) && (CELLCOUNT <= volArray_len)) && ((CCCELVOL3 <= (volArray_len + 5)) && (CCCELVOL3 <= (CELLCOUNT + 5))))) && (((((CCCELVOL3 <= (i + 6)) && (CCCELVOL2 <= (volArray_len + 1))) && (CCCELVOL2 <= (CELLCOUNT + 1))) && ((CCCELVOL2 <= (i + 2)) && (CCCELVOL1 <= (volArray_len - 1)))) && (((CCCELVOL1 <= (CELLCOUNT - 1)) && (CCCELVOL1 <= i)) && ((i <= (volArray_len - 1)) && (i <= (CELLCOUNT - 1))))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 1260.3528850595467,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "pr4": {
+      "accepted": true,
+      "candidates_initial": [
+        22
+      ],
+      "candidates_remaining": [
+        22
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((CCCELVOL4 == 5) && (CCCELVOL3 == 7)) && (CCCELVOL2 == 3)) && (((CCCELVOL1 == 1) && (2 <= volArray_len)) && (2 <= CELLCOUNT))) && ((((1 <= i) && (CELLCOUNT <= volArray_len)) && (CCCELVOL4 <= (volArray_len + 3))) && ((CCCELVOL4 <= (CELLCOUNT + 3)) && (CCCELVOL4 <= (i + 4))))) && (((((CCCELVOL3 <= (volArray_len + 5)) && (CCCELVOL3 <= (CELLCOUNT + 5))) && (CCCELVOL3 <= (i + 6))) && (((CCCELVOL2 <= (volArray_len + 1)) && (CCCELVOL2 <= (CELLCOUNT + 1))) && (CCCELVOL2 <= (i + 2)))) && ((((CCCELVOL1 <= (volArray_len - 1)) && (CCCELVOL1 <= (CELLCOUNT - 1))) && (CCCELVOL1 <= i)) && ((i <= (volArray_len - 1)) && (i <= (CELLCOUNT - 1))))))"
+      ],
+      "loops": 1,
+      "probe_splits": 3,
+      "queries": 5,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 2947.4726659682347,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "pr5": {
+      "accepted": true,
+      "candidates_initial": [
+        35
+      ],
+      "candidates_remaining": [
+        35
+      ],
+      "errors": 35,
+      "invariants": [
+        "(((((((CCCELVOL5 == 2) && (CCCELVOL4 == 5)) && (CCCELVOL3 == 7)) && ((CCCELVOL2 == 3) && (CCCELVOL1 == 1))) && (((2 <= volArray_len) && (2 <= CELLCOUNT)) && ((1 <= i) && (CELLCOUNT <= volArray_len)))) && (((((CCCELVOL5 <= volArray_len) && (CCCELVOL5 <= CELLCOUNT)) && (CCCELVOL5 <= (i + 1))) && ((CCCELVOL4 <= (volArray_len + 3)) && (CCCELVOL4 <= (CELLCOUNT + 3)))) && (((CCCELVOL4 <= (i + 4)) && (CCCELVOL3 <= (volArray_len + 5))) && ((CCCELVOL3 <= (CELLCOUNT + 5)) && (CCCELVOL3 <= (i + 6)))))) && ((((((CCCELVOL2 <= (volArray_len + 1)) && (CCCELVOL2 <= (CELLCOUNT + 1))) && (CCCELVOL2 <= (i + 2))) && ((CCCELVOL1 <= (volArray_len - 1)) && (CCCELVOL1 <= (CELLCOUNT - 1)))) && (((CCCELVOL1 <= i) && (i <= (volArray_len - 1))) && ((i <= (CELLCOUNT - 1)) && (CCCELVOL5 == (CCCELVOL4 - CCCELVOL2))))) && ((((CCCELVOL5 == (CCCELVOL3 - CCCELVOL4)) && (CCCELVOL5 == (CCCELVOL2 - CCCELVOL1))) && ((CCCELVOL4 == (CCCELVOL5 + CCCELVOL2)) && (CCCELVOL4 == (CCCELVOL3 - CCCELVOL5)))) && (((CCCELVOL3 == (CCCELVOL5 + CCCELVOL4)) && (CCCELVOL2 == (CCCELVOL5 + CCCELVOL1))) && ((CCCELVOL2 == (CCCELVOL4 - CCCELVOL5)) && (CCCELVOL1 == (CCCELVOL2 - CCCELVOL5)))))))"
+      ],
+      "loops": 1,
+      "probe_splits": 33,
+      "queries": 1,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 1735.7619430549676,
+      "status": "inconclusive",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "rev_2_n_u": {
+      "accepted": true,
+      "candidates_initial": [
+        18,
+        18
+      ],
+      "candidates_remaining": [
+        6,
+        16
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((0 <= m) && (1 <= n)) && (0 <= i)) && (((0 <= j) && (i <= m)) && (j <= n)))",
+        "(((((1 <= A_len) && (1 <= B_len)) && ((1 <= m) && (1 <= n))) && (((0 <= i) && (0 <= j)) && ((m <= A_len) && (m <= B_len)))) && ((((n <= A_len) && (n <= B_len)) && ((i <= (A_len - 1)) && (i <= (B_len - 1)))) && (((i <= (m - 1)) && (j <= A_len)) && ((j <= B_len) && (j <= n)))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 7,
+      "rejection_class": "accepted",
+      "rounds": 4,
+      "solver_ms": 1409.6221991203493,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "rev_3_u": {
+      "accepted": true,
+      "candidates_initial": [
+        21,
+        19,
+        17
+      ],
+      "candidates_remaining": [
+        21,
+        19,
+        17
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((j == k) && (k == j)) && (1 <= A_len)) && (((1 <= B_len) && (1 <= n)) && (0 <= i))) && ((((0 <= j) && (0 <= k)) && (n <= A_len)) && ((n <= B_len) && (i <= A_len)))) && (((((i <= B_len) && (i <= n)) && (i <= j)) && ((i <= k) && (j <= A_len))) && ((((j <= B_len) && (j <= n)) && (k <= A_len)) && ((k <= B_len) && (k <= n)))))",
+        "((((((1 <= A_len) && (1 <= B_len)) && (1 <= n)) && ((0 <= i) && (0 <= j))) && ((((0 <= k) && (n <= A_len)) && (n <= B_len)) && ((i <= (A_len - 1)) && (i <= (B_len - 1))))) && (((((i <= (n - 1)) && (i <= k)) && (j <= A_len)) && ((j <= B_len) && (j <= n))) && (((j <= k) && (k <= A_len)) && ((k <= B_len) && (k <= n)))))",
+        "((((((1 <= A_len) && (1 <= B_len)) && (1 <= n)) && ((0 <= i) && (0 <= j))) && (((0 <= k) && (n <= A_len)) && ((n <= B_len) && (i <= (A_len - 1))))) && ((((i <= (B_len - 1)) && (i <= (n - 1))) && ((j <= (A_len - 1)) && (j <= (B_len - 1)))) && (((j <= (n - 1)) && (k <= A_len)) && ((k <= B_len) && (k <= n)))))"
+      ],
+      "loops": 3,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 1361.6323450114578,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "revcpyswp2": {
+      "accepted": true,
+      "candidates_initial": [
+        22,
+        15,
+        15
+      ],
+      "candidates_remaining": [
+        22,
+        15,
+        15
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((tmp == 0) && (2 <= a_len)) && (2 <= b_len)) && (((2 <= a_copy_len) && (2 <= b_copy_len)) && (2 <= SIZE))) && ((((0 <= i) && (SIZE <= a_len)) && (SIZE <= b_len)) && ((SIZE <= a_copy_len) && (SIZE <= b_copy_len)))) && (((((i <= a_len) && (i <= b_len)) && (i <= a_copy_len)) && (((i <= b_copy_len) && (i <= SIZE)) && (tmp <= (a_len - 2)))) && ((((tmp <= (b_len - 2)) && (tmp <= (a_copy_len - 2))) && (tmp <= (b_copy_len - 2))) && ((tmp <= (SIZE - 2)) && (tmp <= i)))))",
+        "(((((2 <= a_len) && (2 <= b_len)) && ((2 <= a_copy_len) && (2 <= b_copy_len))) && (((2 <= SIZE) && (0 <= i)) && ((SIZE <= a_len) && (SIZE <= b_len)))) && ((((SIZE <= a_copy_len) && (SIZE <= b_copy_len)) && ((i <= a_len) && (i <= b_len))) && (((i <= a_copy_len) && (i <= b_copy_len)) && (i <= SIZE))))",
+        "(((((2 <= a_len) && (2 <= b_len)) && ((2 <= a_copy_len) && (2 <= b_copy_len))) && (((2 <= SIZE) && (0 <= i)) && ((SIZE <= a_len) && (SIZE <= b_len)))) && ((((SIZE <= a_copy_len) && (SIZE <= b_copy_len)) && ((i <= a_len) && (i <= b_len))) && (((i <= a_copy_len) && (i <= b_copy_len)) && (i <= SIZE))))"
+      ],
+      "loops": 3,
+      "probe_splits": 0,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 678.099524055142,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "rew": {
+      "accepted": true,
+      "candidates_initial": [
+        14
+      ],
+      "candidates_remaining": [
+        14
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((val2 == 3) && (val1 == 0)) && ((2 <= a_len) && (2 <= SIZE))) && (((0 <= i) && (SIZE <= a_len)) && (val2 <= (a_len + 1)))) && ((((val2 <= (SIZE + 1)) && (val2 <= (i + 3))) && ((val1 <= (a_len - 2)) && (val1 <= (SIZE - 2)))) && (((val1 <= i) && (i <= a_len)) && (i <= SIZE))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 177.72647099627648,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "rewnif": {
+      "accepted": true,
+      "candidates_initial": [
+        6
+      ],
+      "candidates_remaining": [
+        6
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((2 <= a_len) && (2 <= SIZE)) && (0 <= i)) && (((SIZE <= a_len) && (i <= a_len)) && (i <= SIZE)))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 71.66358502581716,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "rewnifrev": {
+      "accepted": true,
+      "candidates_initial": [
+        6
+      ],
+      "candidates_remaining": [
+        6
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((2 <= a_len) && (2 <= SIZE)) && (-1 <= i)) && (((SIZE <= a_len) && (i <= (a_len - 1))) && (i <= (SIZE - 1))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 75.71910196566023,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "rewnifrev2": {
+      "accepted": true,
+      "candidates_initial": [
+        6
+      ],
+      "candidates_remaining": [
+        6
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((2 <= a_len) && (2 <= SIZE)) && (-1 <= i)) && (((SIZE <= a_len) && (i <= (a_len - 2))) && (i <= (SIZE - 2))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 49.52262392907869,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "rewrev": {
+      "accepted": true,
+      "candidates_initial": [
+        13
+      ],
+      "candidates_remaining": [
+        13
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((val2 == 3) && (val1 == 7)) && ((2 <= a_len) && (2 <= SIZE))) && (((-2 <= i) && (SIZE <= a_len)) && (val2 <= (a_len + 1)))) && ((((val2 <= (SIZE + 1)) && (val2 <= (i + 5))) && (val1 <= (a_len + 5))) && (((val1 <= (SIZE + 5)) && (i <= (a_len - 2))) && (i <= (SIZE - 2)))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 171.5770689334022,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "skipped": {
+      "accepted": true,
+      "candidates_initial": [
+        6
+      ],
+      "candidates_remaining": [
+        6
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((2 <= a_len) && (2 <= SIZE)) && (1 <= i)) && (((SIZE <= a_len) && (i <= a_len)) && (i <= SIZE)))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 255.93323410430457,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "tcpy": {
+      "accepted": true,
+      "candidates_initial": [
+        9
+      ],
+      "candidates_remaining": [
+        9
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((2 <= a_len) && (2 <= acopy_len)) && (2 <= SIZE)) && ((0 <= i) && (SIZE <= a_len))) && (((SIZE <= acopy_len) && (i <= (a_len - 1))) && ((i <= (acopy_len - 1)) && (i <= (SIZE - 1)))))"
+      ],
+      "loops": 1,
+      "probe_splits": 0,
+      "queries": 2,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 113.87094997917302,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "transpose_u": {
+      "accepted": true,
+      "candidates_initial": [
+        14,
+        13
+      ],
+      "candidates_remaining": [
+        14,
+        13
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((1 <= A_len) && (1 <= C_len)) && ((1 <= n) && (0 <= i))) && (((0 <= j) && (n <= A_len)) && (n <= C_len))) && ((((i <= A_len) && (i <= C_len)) && ((i <= n) && (i <= j))) && (((j <= A_len) && (j <= C_len)) && (j <= n))))",
+        "(((((1 <= A_len) && (1 <= C_len)) && ((1 <= n) && (0 <= i))) && (((0 <= j) && (n <= A_len)) && (n <= C_len))) && ((((i <= (A_len - 1)) && (i <= (C_len - 1))) && (i <= (n - 1))) && (((j <= A_len) && (j <= C_len)) && (j <= n))))"
+      ],
+      "loops": 2,
+      "probe_splits": 0,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 1,
+      "solver_ms": 370.1725199498469,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    }
+  },
+  "max_rounds": 5,
+  "preregistered_max_rounds": 5,
+  "success_at_1": 35,
+  "tasks": 43
+}

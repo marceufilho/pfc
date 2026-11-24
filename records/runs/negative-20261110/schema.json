@@ -1,0 +1,112 @@
+{
+  "columns": [
+    {
+      "allowed": null,
+      "name": "kernel",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "case_id",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "precondition",
+        "overflow"
+      ],
+      "name": "class",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "checked",
+        "verified"
+      ],
+      "name": "build",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "rejected_reason",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "rejection_line",
+      "nullable": true,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "rejection_column",
+      "nullable": true,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "false_conjuncts",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "rendered_conjuncts",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "expected_trap",
+      "nullable": true,
+      "type": "boolean"
+    },
+    {
+      "allowed": [
+        "sigill",
+        "completed",
+        "other-signal",
+        "timeout",
+        "compile",
+        "error"
+      ],
+      "name": "observed",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "returncode",
+      "nullable": true,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "agreement",
+      "nullable": true,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "total_length",
+      "nullable": false,
+      "type": "integer"
+    }
+  ],
+  "provenance": [
+    "experiment",
+    "evidence_dir",
+    "tag",
+    "commit",
+    "seed",
+    "timestamp",
+    "vc_model",
+    "solver_version",
+    "clang"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "noticed_by": {
+    "audit": 19,
+    "differential": 17,
+    "golden": 20,
+    "unit": 28
+  },
+  "noticed_by_none": 0,
+  "population": 1214,
+  "probed": 1204,
+  "selected": 28
+}

@@ -1,0 +1,19 @@
+{
+  "canaries_sha256": null,
+  "commit": "28e37047a2390a0397321464d3d76c7c7c88ab29",
+  "created_utc": "2026-11-09T20:49:52+00:00",
+  "date": "20261109",
+  "documents": [
+    "PLAN.txt",
+    "evaluation-architecture.md",
+    "evaluation-roadmap.md",
+    "experimental-design.md",
+    "paper/AMENDMENTS.md",
+    "paper/evidence.json",
+    "validation/freeze/baseline.sha256",
+    "validation/freeze/protected.sha256"
+  ],
+  "heldout_profiles_sha256": {},
+  "statement": "Pre-registration bundle; held-out kernel sources and canary values are intentionally absent.",
+  "tag": null
+}

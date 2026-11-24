@@ -1,0 +1,1252 @@
+{
+  "budgets": [
+    1,
+    2,
+    5,
+    10,
+    30,
+    60
+  ],
+  "curve": {
+    "pfc": {
+      "1": {
+        "proved": 707,
+        "total": 707
+      },
+      "10": {
+        "proved": 707,
+        "total": 707
+      },
+      "2": {
+        "proved": 707,
+        "total": 707
+      },
+      "30": {
+        "proved": 707,
+        "total": 707
+      },
+      "5": {
+        "proved": 707,
+        "total": 707
+      },
+      "60": {
+        "proved": 707,
+        "total": 707
+      }
+    },
+    "wp": {}
+  },
+  "experiment": "sweep",
+  "kernels": {
+    "add_2_n_u": {
+      "pfc": {
+        "1": {
+          "proved": 10,
+          "total": 10
+        },
+        "10": {
+          "proved": 10,
+          "total": 10
+        },
+        "2": {
+          "proved": 10,
+          "total": 10
+        },
+        "30": {
+          "proved": 10,
+          "total": 10
+        },
+        "5": {
+          "proved": 10,
+          "total": 10
+        },
+        "60": {
+          "proved": 10,
+          "total": 10
+        }
+      }
+    },
+    "add_3_n_u": {
+      "pfc": {
+        "1": {
+          "proved": 15,
+          "total": 15
+        },
+        "10": {
+          "proved": 15,
+          "total": 15
+        },
+        "2": {
+          "proved": 15,
+          "total": 15
+        },
+        "30": {
+          "proved": 15,
+          "total": 15
+        },
+        "5": {
+          "proved": 15,
+          "total": 15
+        },
+        "60": {
+          "proved": 15,
+          "total": 15
+        }
+      }
+    },
+    "copy_2_u": {
+      "pfc": {
+        "1": {
+          "proved": 8,
+          "total": 8
+        },
+        "10": {
+          "proved": 8,
+          "total": 8
+        },
+        "2": {
+          "proved": 8,
+          "total": 8
+        },
+        "30": {
+          "proved": 8,
+          "total": 8
+        },
+        "5": {
+          "proved": 8,
+          "total": 8
+        },
+        "60": {
+          "proved": 8,
+          "total": 8
+        }
+      }
+    },
+    "copy_3_n_u": {
+      "pfc": {
+        "1": {
+          "proved": 12,
+          "total": 12
+        },
+        "10": {
+          "proved": 12,
+          "total": 12
+        },
+        "2": {
+          "proved": 12,
+          "total": 12
+        },
+        "30": {
+          "proved": 12,
+          "total": 12
+        },
+        "5": {
+          "proved": 12,
+          "total": 12
+        },
+        "60": {
+          "proved": 12,
+          "total": 12
+        }
+      }
+    },
+    "copy_partial_2_n_u": {
+      "pfc": {
+        "1": {
+          "proved": 8,
+          "total": 8
+        },
+        "10": {
+          "proved": 8,
+          "total": 8
+        },
+        "2": {
+          "proved": 8,
+          "total": 8
+        },
+        "30": {
+          "proved": 8,
+          "total": 8
+        },
+        "5": {
+          "proved": 8,
+          "total": 8
+        },
+        "60": {
+          "proved": 8,
+          "total": 8
+        }
+      }
+    },
+    "copy_partial_3_u": {
+      "pfc": {
+        "1": {
+          "proved": 20,
+          "total": 20
+        },
+        "10": {
+          "proved": 20,
+          "total": 20
+        },
+        "2": {
+          "proved": 20,
+          "total": 20
+        },
+        "30": {
+          "proved": 20,
+          "total": 20
+        },
+        "5": {
+          "proved": 20,
+          "total": 20
+        },
+        "60": {
+          "proved": 20,
+          "total": 20
+        }
+      }
+    },
+    "diff_2_n_u": {
+      "pfc": {
+        "1": {
+          "proved": 10,
+          "total": 10
+        },
+        "10": {
+          "proved": 10,
+          "total": 10
+        },
+        "2": {
+          "proved": 10,
+          "total": 10
+        },
+        "30": {
+          "proved": 10,
+          "total": 10
+        },
+        "5": {
+          "proved": 10,
+          "total": 10
+        },
+        "60": {
+          "proved": 10,
+          "total": 10
+        }
+      }
+    },
+    "diff_3_n_u": {
+      "pfc": {
+        "1": {
+          "proved": 15,
+          "total": 15
+        },
+        "10": {
+          "proved": 15,
+          "total": 15
+        },
+        "2": {
+          "proved": 15,
+          "total": 15
+        },
+        "30": {
+          "proved": 15,
+          "total": 15
+        },
+        "5": {
+          "proved": 15,
+          "total": 15
+        },
+        "60": {
+          "proved": 15,
+          "total": 15
+        }
+      }
+    },
+    "init_2_n_u": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "init_3_u": {
+      "pfc": {
+        "1": {
+          "proved": 9,
+          "total": 9
+        },
+        "10": {
+          "proved": 9,
+          "total": 9
+        },
+        "2": {
+          "proved": 9,
+          "total": 9
+        },
+        "30": {
+          "proved": 9,
+          "total": 9
+        },
+        "5": {
+          "proved": 9,
+          "total": 9
+        },
+        "60": {
+          "proved": 9,
+          "total": 9
+        }
+      }
+    },
+    "init_4_n_u": {
+      "pfc": {
+        "1": {
+          "proved": 12,
+          "total": 12
+        },
+        "10": {
+          "proved": 12,
+          "total": 12
+        },
+        "2": {
+          "proved": 12,
+          "total": 12
+        },
+        "30": {
+          "proved": 12,
+          "total": 12
+        },
+        "5": {
+          "proved": 12,
+          "total": 12
+        },
+        "60": {
+          "proved": 12,
+          "total": 12
+        }
+      }
+    },
+    "init_non_constant_2_n_u": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "init_non_constant_3_u": {
+      "pfc": {
+        "1": {
+          "proved": 9,
+          "total": 9
+        },
+        "10": {
+          "proved": 9,
+          "total": 9
+        },
+        "2": {
+          "proved": 9,
+          "total": 9
+        },
+        "30": {
+          "proved": 9,
+          "total": 9
+        },
+        "5": {
+          "proved": 9,
+          "total": 9
+        },
+        "60": {
+          "proved": 9,
+          "total": 9
+        }
+      }
+    },
+    "max_2_u": {
+      "pfc": {
+        "1": {
+          "proved": 8,
+          "total": 8
+        },
+        "10": {
+          "proved": 8,
+          "total": 8
+        },
+        "2": {
+          "proved": 8,
+          "total": 8
+        },
+        "30": {
+          "proved": 8,
+          "total": 8
+        },
+        "5": {
+          "proved": 8,
+          "total": 8
+        },
+        "60": {
+          "proved": 8,
+          "total": 8
+        }
+      }
+    },
+    "max_3_n_u": {
+      "pfc": {
+        "1": {
+          "proved": 11,
+          "total": 11
+        },
+        "10": {
+          "proved": 11,
+          "total": 11
+        },
+        "2": {
+          "proved": 11,
+          "total": 11
+        },
+        "30": {
+          "proved": 11,
+          "total": 11
+        },
+        "5": {
+          "proved": 11,
+          "total": 11
+        },
+        "60": {
+          "proved": 11,
+          "total": 11
+        }
+      }
+    },
+    "mbpr2": {
+      "pfc": {
+        "1": {
+          "proved": 24,
+          "total": 24
+        },
+        "10": {
+          "proved": 24,
+          "total": 24
+        },
+        "2": {
+          "proved": 24,
+          "total": 24
+        },
+        "30": {
+          "proved": 24,
+          "total": 24
+        },
+        "5": {
+          "proved": 24,
+          "total": 24
+        },
+        "60": {
+          "proved": 24,
+          "total": 24
+        }
+      }
+    },
+    "mbpr3": {
+      "pfc": {
+        "1": {
+          "proved": 48,
+          "total": 48
+        },
+        "10": {
+          "proved": 48,
+          "total": 48
+        },
+        "2": {
+          "proved": 48,
+          "total": 48
+        },
+        "30": {
+          "proved": 48,
+          "total": 48
+        },
+        "5": {
+          "proved": 48,
+          "total": 48
+        },
+        "60": {
+          "proved": 48,
+          "total": 48
+        }
+      }
+    },
+    "mbpr4": {
+      "pfc": {
+        "1": {
+          "proved": 80,
+          "total": 80
+        },
+        "10": {
+          "proved": 80,
+          "total": 80
+        },
+        "2": {
+          "proved": 80,
+          "total": 80
+        },
+        "30": {
+          "proved": 80,
+          "total": 80
+        },
+        "5": {
+          "proved": 80,
+          "total": 80
+        },
+        "60": {
+          "proved": 80,
+          "total": 80
+        }
+      }
+    },
+    "min_2_u": {
+      "pfc": {
+        "1": {
+          "proved": 8,
+          "total": 8
+        },
+        "10": {
+          "proved": 8,
+          "total": 8
+        },
+        "2": {
+          "proved": 8,
+          "total": 8
+        },
+        "30": {
+          "proved": 8,
+          "total": 8
+        },
+        "5": {
+          "proved": 8,
+          "total": 8
+        },
+        "60": {
+          "proved": 8,
+          "total": 8
+        }
+      }
+    },
+    "min_3_n_u": {
+      "pfc": {
+        "1": {
+          "proved": 11,
+          "total": 11
+        },
+        "10": {
+          "proved": 11,
+          "total": 11
+        },
+        "2": {
+          "proved": 11,
+          "total": 11
+        },
+        "30": {
+          "proved": 11,
+          "total": 11
+        },
+        "5": {
+          "proved": 11,
+          "total": 11
+        },
+        "60": {
+          "proved": 11,
+          "total": 11
+        }
+      }
+    },
+    "nr2": {
+      "pfc": {
+        "1": {
+          "proved": 9,
+          "total": 9
+        },
+        "10": {
+          "proved": 9,
+          "total": 9
+        },
+        "2": {
+          "proved": 9,
+          "total": 9
+        },
+        "30": {
+          "proved": 9,
+          "total": 9
+        },
+        "5": {
+          "proved": 9,
+          "total": 9
+        },
+        "60": {
+          "proved": 9,
+          "total": 9
+        }
+      }
+    },
+    "nr3": {
+      "pfc": {
+        "1": {
+          "proved": 9,
+          "total": 9
+        },
+        "10": {
+          "proved": 9,
+          "total": 9
+        },
+        "2": {
+          "proved": 9,
+          "total": 9
+        },
+        "30": {
+          "proved": 9,
+          "total": 9
+        },
+        "5": {
+          "proved": 9,
+          "total": 9
+        },
+        "60": {
+          "proved": 9,
+          "total": 9
+        }
+      }
+    },
+    "nr4": {
+      "pfc": {
+        "1": {
+          "proved": 9,
+          "total": 9
+        },
+        "10": {
+          "proved": 9,
+          "total": 9
+        },
+        "2": {
+          "proved": 9,
+          "total": 9
+        },
+        "30": {
+          "proved": 9,
+          "total": 9
+        },
+        "5": {
+          "proved": 9,
+          "total": 9
+        },
+        "60": {
+          "proved": 9,
+          "total": 9
+        }
+      }
+    },
+    "nr5": {
+      "pfc": {
+        "1": {
+          "proved": 9,
+          "total": 9
+        },
+        "10": {
+          "proved": 9,
+          "total": 9
+        },
+        "2": {
+          "proved": 9,
+          "total": 9
+        },
+        "30": {
+          "proved": 9,
+          "total": 9
+        },
+        "5": {
+          "proved": 9,
+          "total": 9
+        },
+        "60": {
+          "proved": 9,
+          "total": 9
+        }
+      }
+    },
+    "pnr2": {
+      "pfc": {
+        "1": {
+          "proved": 17,
+          "total": 17
+        },
+        "10": {
+          "proved": 17,
+          "total": 17
+        },
+        "2": {
+          "proved": 17,
+          "total": 17
+        },
+        "30": {
+          "proved": 17,
+          "total": 17
+        },
+        "5": {
+          "proved": 17,
+          "total": 17
+        },
+        "60": {
+          "proved": 17,
+          "total": 17
+        }
+      }
+    },
+    "pnr3": {
+      "pfc": {
+        "1": {
+          "proved": 33,
+          "total": 33
+        },
+        "10": {
+          "proved": 33,
+          "total": 33
+        },
+        "2": {
+          "proved": 33,
+          "total": 33
+        },
+        "30": {
+          "proved": 33,
+          "total": 33
+        },
+        "5": {
+          "proved": 33,
+          "total": 33
+        },
+        "60": {
+          "proved": 33,
+          "total": 33
+        }
+      }
+    },
+    "poly1": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "poly2": {
+      "pfc": {
+        "1": {
+          "proved": 7,
+          "total": 7
+        },
+        "10": {
+          "proved": 7,
+          "total": 7
+        },
+        "2": {
+          "proved": 7,
+          "total": 7
+        },
+        "30": {
+          "proved": 7,
+          "total": 7
+        },
+        "5": {
+          "proved": 7,
+          "total": 7
+        },
+        "60": {
+          "proved": 7,
+          "total": 7
+        }
+      }
+    },
+    "pr2": {
+      "pfc": {
+        "1": {
+          "proved": 14,
+          "total": 14
+        },
+        "10": {
+          "proved": 14,
+          "total": 14
+        },
+        "2": {
+          "proved": 14,
+          "total": 14
+        },
+        "30": {
+          "proved": 14,
+          "total": 14
+        },
+        "5": {
+          "proved": 14,
+          "total": 14
+        },
+        "60": {
+          "proved": 14,
+          "total": 14
+        }
+      }
+    },
+    "pr3": {
+      "pfc": {
+        "1": {
+          "proved": 26,
+          "total": 26
+        },
+        "10": {
+          "proved": 26,
+          "total": 26
+        },
+        "2": {
+          "proved": 26,
+          "total": 26
+        },
+        "30": {
+          "proved": 26,
+          "total": 26
+        },
+        "5": {
+          "proved": 26,
+          "total": 26
+        },
+        "60": {
+          "proved": 26,
+          "total": 26
+        }
+      }
+    },
+    "pr4": {
+      "pfc": {
+        "1": {
+          "proved": 50,
+          "total": 50
+        },
+        "10": {
+          "proved": 50,
+          "total": 50
+        },
+        "2": {
+          "proved": 50,
+          "total": 50
+        },
+        "30": {
+          "proved": 50,
+          "total": 50
+        },
+        "5": {
+          "proved": 50,
+          "total": 50
+        },
+        "60": {
+          "proved": 50,
+          "total": 50
+        }
+      }
+    },
+    "pr5": {
+      "pfc": {
+        "1": {
+          "proved": 98,
+          "total": 98
+        },
+        "10": {
+          "proved": 98,
+          "total": 98
+        },
+        "2": {
+          "proved": 98,
+          "total": 98
+        },
+        "30": {
+          "proved": 98,
+          "total": 98
+        },
+        "5": {
+          "proved": 98,
+          "total": 98
+        },
+        "60": {
+          "proved": 98,
+          "total": 98
+        }
+      }
+    },
+    "rev_2_n_u": {
+      "pfc": {
+        "1": {
+          "proved": 8,
+          "total": 8
+        },
+        "10": {
+          "proved": 8,
+          "total": 8
+        },
+        "2": {
+          "proved": 8,
+          "total": 8
+        },
+        "30": {
+          "proved": 8,
+          "total": 8
+        },
+        "5": {
+          "proved": 8,
+          "total": 8
+        },
+        "60": {
+          "proved": 8,
+          "total": 8
+        }
+      }
+    },
+    "rev_3_u": {
+      "pfc": {
+        "1": {
+          "proved": 12,
+          "total": 12
+        },
+        "10": {
+          "proved": 12,
+          "total": 12
+        },
+        "2": {
+          "proved": 12,
+          "total": 12
+        },
+        "30": {
+          "proved": 12,
+          "total": 12
+        },
+        "5": {
+          "proved": 12,
+          "total": 12
+        },
+        "60": {
+          "proved": 12,
+          "total": 12
+        }
+      }
+    },
+    "revcpyswp2": {
+      "pfc": {
+        "1": {
+          "proved": 18,
+          "total": 18
+        },
+        "10": {
+          "proved": 18,
+          "total": 18
+        },
+        "2": {
+          "proved": 18,
+          "total": 18
+        },
+        "30": {
+          "proved": 18,
+          "total": 18
+        },
+        "5": {
+          "proved": 18,
+          "total": 18
+        },
+        "60": {
+          "proved": 18,
+          "total": 18
+        }
+      }
+    },
+    "rew": {
+      "pfc": {
+        "1": {
+          "proved": 5,
+          "total": 5
+        },
+        "10": {
+          "proved": 5,
+          "total": 5
+        },
+        "2": {
+          "proved": 5,
+          "total": 5
+        },
+        "30": {
+          "proved": 5,
+          "total": 5
+        },
+        "5": {
+          "proved": 5,
+          "total": 5
+        },
+        "60": {
+          "proved": 5,
+          "total": 5
+        }
+      }
+    },
+    "rewnif": {
+      "pfc": {
+        "1": {
+          "proved": 5,
+          "total": 5
+        },
+        "10": {
+          "proved": 5,
+          "total": 5
+        },
+        "2": {
+          "proved": 5,
+          "total": 5
+        },
+        "30": {
+          "proved": 5,
+          "total": 5
+        },
+        "5": {
+          "proved": 5,
+          "total": 5
+        },
+        "60": {
+          "proved": 5,
+          "total": 5
+        }
+      }
+    },
+    "rewnifrev": {
+      "pfc": {
+        "1": {
+          "proved": 5,
+          "total": 5
+        },
+        "10": {
+          "proved": 5,
+          "total": 5
+        },
+        "2": {
+          "proved": 5,
+          "total": 5
+        },
+        "30": {
+          "proved": 5,
+          "total": 5
+        },
+        "5": {
+          "proved": 5,
+          "total": 5
+        },
+        "60": {
+          "proved": 5,
+          "total": 5
+        }
+      }
+    },
+    "rewnifrev2": {
+      "pfc": {
+        "1": {
+          "proved": 4,
+          "total": 4
+        },
+        "10": {
+          "proved": 4,
+          "total": 4
+        },
+        "2": {
+          "proved": 4,
+          "total": 4
+        },
+        "30": {
+          "proved": 4,
+          "total": 4
+        },
+        "5": {
+          "proved": 4,
+          "total": 4
+        },
+        "60": {
+          "proved": 4,
+          "total": 4
+        }
+      }
+    },
+    "rewrev": {
+      "pfc": {
+        "1": {
+          "proved": 5,
+          "total": 5
+        },
+        "10": {
+          "proved": 5,
+          "total": 5
+        },
+        "2": {
+          "proved": 5,
+          "total": 5
+        },
+        "30": {
+          "proved": 5,
+          "total": 5
+        },
+        "5": {
+          "proved": 5,
+          "total": 5
+        },
+        "60": {
+          "proved": 5,
+          "total": 5
+        }
+      }
+    },
+    "skipped": {
+      "pfc": {
+        "1": {
+          "proved": 14,
+          "total": 14
+        },
+        "10": {
+          "proved": 14,
+          "total": 14
+        },
+        "2": {
+          "proved": 14,
+          "total": 14
+        },
+        "30": {
+          "proved": 14,
+          "total": 14
+        },
+        "5": {
+          "proved": 14,
+          "total": 14
+        },
+        "60": {
+          "proved": 14,
+          "total": 14
+        }
+      }
+    },
+    "tcpy": {
+      "pfc": {
+        "1": {
+          "proved": 9,
+          "total": 9
+        },
+        "10": {
+          "proved": 9,
+          "total": 9
+        },
+        "2": {
+          "proved": 9,
+          "total": 9
+        },
+        "30": {
+          "proved": 9,
+          "total": 9
+        },
+        "5": {
+          "proved": 9,
+          "total": 9
+        },
+        "60": {
+          "proved": 9,
+          "total": 9
+        }
+      }
+    },
+    "transpose_u": {
+      "pfc": {
+        "1": {
+          "proved": 8,
+          "total": 8
+        },
+        "10": {
+          "proved": 8,
+          "total": 8
+        },
+        "2": {
+          "proved": 8,
+          "total": 8
+        },
+        "30": {
+          "proved": 8,
+          "total": 8
+        },
+        "5": {
+          "proved": 8,
+          "total": 8
+        },
+        "60": {
+          "proved": 8,
+          "total": 8
+        }
+      }
+    }
+  },
+  "tools": [
+    "pfc",
+    "wp"
+  ],
+  "wp_errors": 0,
+  "wp_skipped_reason": null
+}

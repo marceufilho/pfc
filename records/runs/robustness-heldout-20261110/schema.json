@@ -1,0 +1,98 @@
+{
+  "columns": [
+    {
+      "allowed": null,
+      "name": "kernel",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "variant_id",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "rename",
+        "reorder",
+        "swap",
+        "obfuscate"
+      ],
+      "name": "transformation",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "detail",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "verdicts_identical",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "decisions_identical",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "facts_identical",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "c_compared",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "c_identical",
+      "nullable": true,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "behavior_cases",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "behavior_rejected",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "divergent",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "brittle",
+      "nullable": false,
+      "type": "boolean"
+    }
+  ],
+  "provenance": [
+    "experiment",
+    "evidence_dir",
+    "tag",
+    "commit",
+    "seed",
+    "timestamp",
+    "vc_model",
+    "solver_version",
+    "clang"
+  ]
+}

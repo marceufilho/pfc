@@ -1,0 +1,26 @@
+{
+  "experiment": "audit",
+  "provenance": {
+    "clang": "Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)",
+    "commit": "28e37047a2390a0397321464d3d76c7c7c88ab29",
+    "experiment": "audit",
+    "seed": null,
+    "solver_version": "5.3.3.0",
+    "tag": null,
+    "timestamp": "2026-11-10T04:58:09+00:00",
+    "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+  },
+  "settings": {
+    "builds": [
+      "build/verified-v5-20261110"
+    ],
+    "compiler": "/usr/lib/llvm-19/bin/clang",
+    "cpp": "cpp",
+    "manifests": {
+      "build/verified-v5-20261110": "788a36ffc57d7cdd78dbcf488486f5f72541ff51b82e826467402b9e1e1edefc"
+    },
+    "replay_cache": "fresh smt.SolverCache per kernel",
+    "seed": null,
+    "smt_encoding": "z3-int-shared-memory-v2; C division truncates to zero; division by zero totalized to 0"
+  }
+}

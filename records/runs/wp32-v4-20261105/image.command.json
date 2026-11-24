@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "docker",
+    "image",
+    "inspect",
+    "framac/frama-c@sha256:4f0b7a2bd600c4daabfdcdfa393a3c18301e0db18f3b2739f1d9650193462d36"
+  ],
+  "exit_code": 0,
+  "seconds": 0.11448049399768934
+}

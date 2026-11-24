@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "revision": "3e8cd9adf79955d9b722185f9beb4518c66d57f2",
+  "selection": "Eight hand-selected array algorithms; safety-only adaptations, not the upstream functional specifications.",
+  "entries": [
+    {
+      "name": "accumulate",
+      "upstream_path": "StandardAlgorithms/Numeric/accumulate.c",
+      "source_url": "https://github.com/fraunhoferfokus/acsl-by-example/blob/3e8cd9adf79955d9b722185f9beb4518c66d57f2/StandardAlgorithms/Numeric/accumulate.c",
+      "upstream_sha256": "33b26e948df3dd2084d188acc6b3d489daad1a81cc9062b40026296c252e564d",
+      "port_sha256": "9b1a7d809abbc21179009c1e1991c628e0f0d8aaffad145d8e2125acb0afe5b7",
+      "port": "accumulate/kernel.c"
+    },
+    {
+      "name": "copy",
+      "upstream_path": "StandardAlgorithms/Mutating/copy.c",
+      "source_url": "https://github.com/fraunhoferfokus/acsl-by-example/blob/3e8cd9adf79955d9b722185f9beb4518c66d57f2/StandardAlgorithms/Mutating/copy.c",
+      "upstream_sha256": "fb6f995d5be2cd18ed479803d4848ba10e41a6742f5ed3e2b65c5da40d4f5ee2",
+      "port_sha256": "4b29d8e550ea7f15fc706237d5852b5e2b50bc422351fea70e25f89c46ee21f8",
+      "port": "copy/kernel.c"
+    },
+    {
+      "name": "count",
+      "upstream_path": "StandardAlgorithms/Nonmutating/count.c",
+      "source_url": "https://github.com/fraunhoferfokus/acsl-by-example/blob/3e8cd9adf79955d9b722185f9beb4518c66d57f2/StandardAlgorithms/Nonmutating/count.c",
+      "upstream_sha256": "0e2da37ece65857087ffcbc1ff294abf5e0f10ddde99b17cd57ad9d26fbbdabe",
+      "port_sha256": "378b37cd2c142e422b741b6c3dc93f1832798c7c8bd7dc9e21ecfcbd25786694",
+      "port": "count/kernel.c"
+    },
+    {
+      "name": "fill",
+      "upstream_path": "StandardAlgorithms/Mutating/fill.c",
+      "source_url": "https://github.com/fraunhoferfokus/acsl-by-example/blob/3e8cd9adf79955d9b722185f9beb4518c66d57f2/StandardAlgorithms/Mutating/fill.c",
+      "upstream_sha256": "b5644a7927987cfad5f33fbedf3c71cde81a4508d6cae06e8301a54d35e578b7",
+      "port_sha256": "3b002d07ef53fad8e9834c32a4d9014fbe37d572b24e361b6a0a5f59a2a7d661",
+      "port": "fill/kernel.c"
+    },
+    {
+      "name": "find",
+      "upstream_path": "StandardAlgorithms/Nonmutating/find.c",
+      "source_url": "https://github.com/fraunhoferfokus/acsl-by-example/blob/3e8cd9adf79955d9b722185f9beb4518c66d57f2/StandardAlgorithms/Nonmutating/find.c",
+      "upstream_sha256": "72b25f7d1f2a446afd9016dc1729dc6474b536e93c233f3adaa8624263d612c0",
+      "port_sha256": "101701674a7bbbacbdcc4dcf62f83703370f530679c3ff6038b1a3aa97e6b41e",
+      "port": "find/kernel.c"
+    },
+    {
+      "name": "replace",
+      "upstream_path": "StandardAlgorithms/Mutating/replace.c",
+      "source_url": "https://github.com/fraunhoferfokus/acsl-by-example/blob/3e8cd9adf79955d9b722185f9beb4518c66d57f2/StandardAlgorithms/Mutating/replace.c",
+      "upstream_sha256": "ad5878f2ebdeae303b95edd6951abb442098036d9c8c9b42dbcecabc64f253e6",
+      "port_sha256": "3c3d14dcb0865f1a2a9fc56a525b2d3f4d06a07faf8d7c8a3ec48985f2982e3b",
+      "port": "replace/kernel.c"
+    },
+    {
+      "name": "reverse",
+      "upstream_path": "StandardAlgorithms/Mutating/reverse.c",
+      "source_url": "https://github.com/fraunhoferfokus/acsl-by-example/blob/3e8cd9adf79955d9b722185f9beb4518c66d57f2/StandardAlgorithms/Mutating/reverse.c",
+      "upstream_sha256": "adeeba2ddd7a43e01b793af3f3b54106ad86b57134f4752cf32d655f9c190f5e",
+      "port_sha256": "55b9781099311635d130a39fbbc05aa6d3d3d372660a634315f673145236d79e",
+      "port": "reverse/kernel.c"
+    },
+    {
+      "name": "swap_ranges",
+      "upstream_path": "StandardAlgorithms/Mutating/swap_ranges.c",
+      "source_url": "https://github.com/fraunhoferfokus/acsl-by-example/blob/3e8cd9adf79955d9b722185f9beb4518c66d57f2/StandardAlgorithms/Mutating/swap_ranges.c",
+      "upstream_sha256": "869a06f057a815f6b835de37387caa4d617bb59a8b4075c81b3270108f769855",
+      "port_sha256": "c70de0ae5f6e78a4b0d599f609daa9105e214a8e4a131e632529d1d082ec74f8",
+      "port": "swap_ranges/kernel.c"
+    }
+  ]
+}

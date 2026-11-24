@@ -1,0 +1,101 @@
+{
+  "profile": "pfc-eval-inputs-v1",
+  "kernel": "copy_partial_2_n_u",
+  "function": "copy_partial_2_n_u",
+  "program_sha256": "654645a683a329d0d1c0d107212a9324d396e7c9b2f465e9f378af0e6ac24b15",
+  "cases": 1000,
+  "arrays": {
+    "A": {
+      "length": [
+        64,
+        4096
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    },
+    "B": {
+      "length": [
+        64,
+        4096
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    }
+  },
+  "scalars": {
+    "n": {
+      "kind": "range",
+      "low": 1,
+      "high": 32
+    },
+    "m": {
+      "kind": "quotient",
+      "of": [
+        "A",
+        "B"
+      ],
+      "by": "n"
+    },
+    "q": {
+      "kind": "range",
+      "low": 0,
+      "high": 2
+    },
+    "s": {
+      "kind": "range",
+      "low": 0,
+      "high": 2
+    }
+  },
+  "boundary": [
+    {
+      "arrays": {
+        "A": [
+          1
+        ],
+        "B": [
+          2
+        ]
+      },
+      "scalars": {
+        "n": 1,
+        "m": 1,
+        "q": 0,
+        "s": 0
+      }
+    },
+    {
+      "arrays": {
+        "A": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "B": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "scalars": {
+        "n": 3,
+        "m": 2,
+        "q": 0,
+        "s": 0
+      }
+    }
+  ],
+  "stress": 0.1
+}

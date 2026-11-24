@@ -1,0 +1,95 @@
+{
+  "experiment": "sweep",
+  "provenance": {
+    "clang": "Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)",
+    "commit": "28e37047a2390a0397321464d3d76c7c7c88ab29",
+    "experiment": "sweep",
+    "seed": null,
+    "solver_version": "5.3.3.0",
+    "tag": null,
+    "timestamp": "2026-11-05T18:07:54+00:00",
+    "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+  },
+  "settings": {
+    "budgets_s": [
+      1,
+      2,
+      5,
+      10,
+      30,
+      60
+    ],
+    "compiler": "/usr/lib/llvm-19/bin/clang",
+    "cpp": "cpp",
+    "kernels": [
+      "accumulate",
+      "copy",
+      "count",
+      "fill",
+      "find",
+      "replace",
+      "reverse",
+      "swap_ranges",
+      "binary_search",
+      "dot",
+      "matvec",
+      "prefix_sum",
+      "saxpy",
+      "sum"
+    ],
+    "pfc_process_timeout_s": 900,
+    "seed": null,
+    "smt_encoding": "z3-int-shared-memory-v2; C division truncates to zero; division by zero totalized to 0",
+    "tools": [
+      "pfc",
+      "wp"
+    ],
+    "wp": {
+      "cases": [
+        "sum",
+        "dot",
+        "saxpy",
+        "prefix_sum",
+        "matvec",
+        "binary_search",
+        "accumulate",
+        "copy",
+        "count",
+        "fill",
+        "find",
+        "replace",
+        "reverse",
+        "swap_ranges"
+      ],
+      "frama_c": "32.1 (Germanium)",
+      "image": "framac/frama-c@sha256:4f0b7a2bd600c4daabfdcdfa393a3c18301e0db18f3b2739f1d9650193462d36",
+      "options": [
+        "-machdep",
+        "x86_64",
+        "-wp",
+        "-wp-model",
+        "Typed",
+        "-wp-rte",
+        "-wp-smoke-tests",
+        "-wp-prover",
+        "alt-ergo",
+        "-wp-smoke-timeout",
+        "2",
+        "-wp-par",
+        "2",
+        "-wp-print"
+      ],
+      "prover": "Alt-Ergo 2.5.4",
+      "smoke_timeout_s": "2"
+    },
+    "wp_outer_timeout_s": {
+      "1": 320,
+      "10": 500,
+      "2": 340,
+      "30": 900,
+      "5": 400,
+      "60": 1500
+    },
+    "wp_skipped_reason": null
+  }
+}

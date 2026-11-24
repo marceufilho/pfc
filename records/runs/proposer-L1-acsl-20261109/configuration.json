@@ -1,0 +1,46 @@
+{
+  "experiment": "proposer",
+  "provenance": {
+    "clang": "Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)",
+    "commit": "28e37047a2390a0397321464d3d76c7c7c88ab29",
+    "experiment": "proposer",
+    "seed": 0,
+    "solver_version": "5.3.3.0",
+    "tag": null,
+    "timestamp": "2026-11-09T04:14:07+00:00",
+    "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+  },
+  "settings": {
+    "attempts_per_run": 5,
+    "compiler": "/usr/lib/llvm-19/bin/clang",
+    "condition": "L1",
+    "cpp": "cpp",
+    "mode": "live",
+    "replay_of": null,
+    "runs": 5,
+    "seed": 0,
+    "service": {
+      "base_url": "https://api.openai.com/v1",
+      "max_output_tokens": 2048,
+      "model": "gpt-6-astra",
+      "protocol": "pfc-eval-proposer-v3",
+      "reasoning_effort": "low",
+      "snapshot_status": "undated",
+      "temperature": null
+    },
+    "skipped_without_loops": [],
+    "smt_encoding": "z3-int-shared-memory-v2; C division truncates to zero; division by zero totalized to 0",
+    "tasks": [
+      "accumulate",
+      "copy",
+      "count",
+      "fill",
+      "find",
+      "replace",
+      "reverse",
+      "swap_ranges"
+    ],
+    "timeout_ms": 10000,
+    "transcripts": "full; repository programs only"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "conditions": {
+    "L2": {
+      "attempts": 215,
+      "attempts_to_first_success": 1.0,
+      "mean_success_at_k": {
+        "estimate": 1.0,
+        "high": 1.0,
+        "low": 1.0,
+        "replicates": 2000,
+        "seed": 0
+      },
+      "origins": {
+        "live": 215
+      },
+      "rejection_classes": {},
+      "runs": 5,
+      "success_at_k": {
+        "add_2_n_u": 1.0,
+        "add_3_n_u": 1.0,
+        "copy_2_u": 1.0,
+        "copy_3_n_u": 1.0,
+        "copy_partial_2_n_u": 1.0,
+        "copy_partial_3_u": 1.0,
+        "diff_2_n_u": 1.0,
+        "diff_3_n_u": 1.0,
+        "init_2_n_u": 1.0,
+        "init_3_u": 1.0,
+        "init_4_n_u": 1.0,
+        "init_non_constant_2_n_u": 1.0,
+        "init_non_constant_3_u": 1.0,
+        "max_2_u": 1.0,
+        "max_3_n_u": 1.0,
+        "mbpr2": 1.0,
+        "mbpr3": 1.0,
+        "mbpr4": 1.0,
+        "min_2_u": 1.0,
+        "min_3_n_u": 1.0,
+        "nr2": 1.0,
+        "nr3": 1.0,
+        "nr4": 1.0,
+        "nr5": 1.0,
+        "pnr2": 1.0,
+        "pnr3": 1.0,
+        "poly1": 1.0,
+        "poly2": 1.0,
+        "pr2": 1.0,
+        "pr3": 1.0,
+        "pr4": 1.0,
+        "pr5": 1.0,
+        "rev_2_n_u": 1.0,
+        "rev_3_u": 1.0,
+        "revcpyswp2": 1.0,
+        "rew": 1.0,
+        "rewnif": 1.0,
+        "rewnifrev": 1.0,
+        "rewnifrev2": 1.0,
+        "rewrev": 1.0,
+        "skipped": 1.0,
+        "tcpy": 1.0,
+        "transpose_u": 1.0
+      },
+      "successes_by_run": [
+        43,
+        43,
+        43,
+        43,
+        43
+      ],
+      "tasks": 43,
+      "tokens_per_success": 591.8139534883721,
+      "tokens_total": 127240
+    }
+  },
+  "passed": true,
+  "replay_consistent": null,
+  "requests": 215
+}

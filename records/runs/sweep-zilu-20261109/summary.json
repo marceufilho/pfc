@@ -1,0 +1,886 @@
+{
+  "budgets": [
+    1,
+    2,
+    5,
+    10,
+    30,
+    60
+  ],
+  "curve": {
+    "pfc": {
+      "1": {
+        "proved": 90,
+        "total": 90
+      },
+      "10": {
+        "proved": 90,
+        "total": 90
+      },
+      "2": {
+        "proved": 90,
+        "total": 90
+      },
+      "30": {
+        "proved": 90,
+        "total": 90
+      },
+      "5": {
+        "proved": 90,
+        "total": 90
+      },
+      "60": {
+        "proved": 90,
+        "total": 90
+      }
+    }
+  },
+  "experiment": "sweep",
+  "kernels": {
+    "zilu01": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu02": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu04": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu05": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu06": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu08": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu11": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu12": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu13": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu14": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu15": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu16": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu17": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu18": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu19": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu20": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu22": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu23": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu24": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu25": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu26": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu27": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu29": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu30": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu32": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu33": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu34": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu35": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu36": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    },
+    "zilu37": {
+      "pfc": {
+        "1": {
+          "proved": 3,
+          "total": 3
+        },
+        "10": {
+          "proved": 3,
+          "total": 3
+        },
+        "2": {
+          "proved": 3,
+          "total": 3
+        },
+        "30": {
+          "proved": 3,
+          "total": 3
+        },
+        "5": {
+          "proved": 3,
+          "total": 3
+        },
+        "60": {
+          "proved": 3,
+          "total": 3
+        }
+      }
+    }
+  },
+  "tools": [
+    "pfc"
+  ],
+  "wp_errors": 0,
+  "wp_skipped_reason": "not requested"
+}

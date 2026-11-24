@@ -1,0 +1,121 @@
+{
+  "columns": [
+    {
+      "allowed": null,
+      "name": "kernel",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "plain",
+        "checked",
+        "verified",
+        "without-delete",
+        "without-restrict",
+        "without-assume",
+        "without-overflow-traps"
+      ],
+      "name": "variant",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "plain",
+        "checked",
+        "verified"
+      ],
+      "name": "mode",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "facts",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "block",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "run",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "warmup",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "wall_ms",
+      "nullable": false,
+      "type": "number"
+    },
+    {
+      "allowed": null,
+      "name": "exit_code",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "started",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "instructions",
+      "nullable": true,
+      "type": "integer"
+    },
+    {
+      "allowed": [
+        "perf",
+        "cachegrind",
+        "unavailable"
+      ],
+      "name": "counter_tool",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "vectorized",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "elements",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "repetitions",
+      "nullable": false,
+      "type": "integer"
+    }
+  ],
+  "provenance": [
+    "experiment",
+    "evidence_dir",
+    "tag",
+    "commit",
+    "seed",
+    "timestamp",
+    "vc_model",
+    "solver_version",
+    "clang"
+  ]
+}

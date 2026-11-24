@@ -1,0 +1,124 @@
+{
+  "c_differences": 0,
+  "experiment": "audit",
+  "kernels": {
+    "accumulate": {
+      "c_identical": true,
+      "problems": [],
+      "sites": 3,
+      "source_id_match": true,
+      "status_flips": 0,
+      "target_match": true
+    },
+    "binary_search": {
+      "c_identical": true,
+      "problems": [],
+      "sites": 7,
+      "source_id_match": true,
+      "status_flips": 0,
+      "target_match": true
+    },
+    "copy": {
+      "c_identical": true,
+      "problems": [],
+      "sites": 3,
+      "source_id_match": true,
+      "status_flips": 0,
+      "target_match": true
+    },
+    "count": {
+      "c_identical": true,
+      "problems": [],
+      "sites": 3,
+      "source_id_match": true,
+      "status_flips": 0,
+      "target_match": true
+    },
+    "dot": {
+      "c_identical": true,
+      "problems": [],
+      "sites": 5,
+      "source_id_match": true,
+      "status_flips": 0,
+      "target_match": true
+    },
+    "fill": {
+      "c_identical": true,
+      "problems": [],
+      "sites": 2,
+      "source_id_match": true,
+      "status_flips": 0,
+      "target_match": true
+    },
+    "find": {
+      "c_identical": true,
+      "problems": [],
+      "sites": 2,
+      "source_id_match": true,
+      "status_flips": 0,
+      "target_match": true
+    },
+    "matvec": {
+      "c_identical": true,
+      "problems": [],
+      "sites": 9,
+      "source_id_match": true,
+      "status_flips": 0,
+      "target_match": true
+    },
+    "prefix_sum": {
+      "c_identical": true,
+      "problems": [],
+      "sites": 6,
+      "source_id_match": true,
+      "status_flips": 0,
+      "target_match": true
+    },
+    "replace": {
+      "c_identical": true,
+      "problems": [],
+      "sites": 3,
+      "source_id_match": true,
+      "status_flips": 0,
+      "target_match": true
+    },
+    "reverse": {
+      "c_identical": true,
+      "problems": [],
+      "sites": 10,
+      "source_id_match": true,
+      "status_flips": 0,
+      "target_match": true
+    },
+    "saxpy": {
+      "c_identical": true,
+      "problems": [],
+      "sites": 6,
+      "source_id_match": true,
+      "status_flips": 0,
+      "target_match": true
+    },
+    "sum": {
+      "c_identical": true,
+      "problems": [],
+      "sites": 3,
+      "source_id_match": true,
+      "status_flips": 0,
+      "target_match": true
+    },
+    "swap_ranges": {
+      "c_identical": true,
+      "problems": [],
+      "sites": 5,
+      "source_id_match": true,
+      "status_flips": 0,
+      "target_match": true
+    }
+  },
+  "passed": true,
+  "problems": 0,
+  "sites": 67,
+  "statement": "Replayable solver evidence: every recorded query was re-solved with a fresh process-local cache and compared with the recorded status; the C was re-emitted and compared byte for byte; the site map was read from the saved C text alone. This is a reproduction record, not a certificate; recorded decisions are never rewritten.",
+  "status_flips": 0,
+  "uncited_removals": 0
+}

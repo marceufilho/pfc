@@ -1,0 +1,69 @@
+{
+  "profile": "pfc-eval-inputs-v1",
+  "kernel": "poly2",
+  "function": "poly2",
+  "program_sha256": "03caffc5ae9a0a046c197d6a39675a3d133fc52db6d88587e62e14bd31dc0fef",
+  "cases": 1000,
+  "arrays": {
+    "a": {
+      "length": [
+        2,
+        1024
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    }
+  },
+  "scalars": {
+    "SIZE": {
+      "kind": "prefix",
+      "low": 2,
+      "of": [
+        "a"
+      ]
+    }
+  },
+  "boundary": [
+    {
+      "arrays": {
+        "a": [
+          3,
+          -3
+        ]
+      },
+      "scalars": {
+        "SIZE": 2
+      }
+    },
+    {
+      "arrays": {
+        "a": [
+          1,
+          2,
+          3
+        ]
+      },
+      "scalars": {
+        "SIZE": 2
+      }
+    },
+    {
+      "arrays": {
+        "a": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "scalars": {
+        "SIZE": 5
+      }
+    }
+  ],
+  "stress": 0.1
+}

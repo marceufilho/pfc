@@ -1,0 +1,542 @@
+{
+  "baseline_passed": true,
+  "groups": {
+    "compiler": {
+      "by_operator": {
+        "constant_shift": {
+          "killed": 8,
+          "mutants": 9
+        },
+        "deleted_statement": {
+          "killed": 21,
+          "mutants": 21
+        },
+        "negated_condition": {
+          "killed": 10,
+          "mutants": 10
+        }
+      },
+      "by_target": {
+        "pfc/authorization.py": {
+          "killed": 10,
+          "mutants": 10
+        },
+        "pfc/emit.py": {
+          "killed": 10,
+          "mutants": 10
+        },
+        "pfc/vc.py": {
+          "killed": 9,
+          "mutants": 10
+        },
+        "pfc/wp.py": {
+          "killed": 10,
+          "mutants": 10
+        }
+      },
+      "crashed": 0,
+      "golden_only": [
+        "emit-03"
+      ],
+      "killed": 39,
+      "kills_by_layer": {
+        "golden": 1,
+        "unit": 38
+      },
+      "matrix": {
+        "authorization-01": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "authorization-02": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "authorization-03": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "authorization-04": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "authorization-05": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "authorization-06": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "authorization-07": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "authorization-08": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "authorization-09": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "authorization-10": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "emit-01": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "emit-02": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "emit-03": {
+          "breakit": "passed",
+          "differential": "passed",
+          "golden": "killed",
+          "injection": "passed",
+          "oracle": "not_run",
+          "unit": "passed"
+        },
+        "emit-04": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "emit-05": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "emit-06": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "emit-07": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "emit-08": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "emit-09": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "emit-10": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "vc-01": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "vc-02": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "vc-03": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "vc-04": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "vc-05": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "vc-06": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "vc-07": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "vc-08": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "vc-09": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "vc-10": {
+          "breakit": "passed",
+          "differential": "passed",
+          "golden": "passed",
+          "injection": "passed",
+          "oracle": "passed",
+          "unit": "passed"
+        },
+        "wp-01": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "wp-02": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "wp-03": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "wp-04": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "wp-05": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "wp-06": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "wp-07": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "wp-08": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "wp-09": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        },
+        "wp-10": {
+          "breakit": "not_run",
+          "differential": "not_run",
+          "golden": "not_run",
+          "injection": "not_run",
+          "oracle": "not_run",
+          "unit": "killed"
+        }
+      },
+      "mutants": 40,
+      "score": {
+        "equivalent": 0,
+        "estimate": 0.975,
+        "killed": 39,
+        "total": 40,
+        "wilson_high": 0.9955731684973186,
+        "wilson_low": 0.8711863103652591
+      },
+      "score_without_golden_only": {
+        "equivalent": 0,
+        "estimate": 0.95,
+        "killed": 38,
+        "total": 40,
+        "wilson_high": 0.9861793326138516,
+        "wilson_low": 0.8349612263085903
+      },
+      "survivors": [
+        "vc-10"
+      ],
+      "timeouts": 0
+    },
+    "harness": {
+      "by_operator": {
+        "constant_shift": {
+          "killed": 4,
+          "mutants": 5
+        },
+        "deleted_statement": {
+          "killed": 6,
+          "mutants": 7
+        },
+        "negated_condition": {
+          "killed": 3,
+          "mutants": 3
+        },
+        "swapped_operands": {
+          "killed": 5,
+          "mutants": 5
+        }
+      },
+      "by_target": {
+        "pfc_eval/interpret.py": {
+          "killed": 5,
+          "mutants": 5
+        },
+        "pfc_eval/proposer.py": {
+          "killed": 3,
+          "mutants": 5
+        },
+        "pfc_eval/stats.py": {
+          "killed": 5,
+          "mutants": 5
+        },
+        "pfc_eval/tables.py": {
+          "killed": 5,
+          "mutants": 5
+        }
+      },
+      "crashed": 0,
+      "golden_only": [],
+      "killed": 18,
+      "kills_by_layer": {
+        "unit": 18
+      },
+      "matrix": {
+        "interpret-01": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "interpret-02": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "interpret-03": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "interpret-04": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "interpret-05": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "proposer-01": {
+          "integration": "passed",
+          "unit": "passed"
+        },
+        "proposer-02": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "proposer-03": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "proposer-04": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "proposer-05": {
+          "integration": "passed",
+          "unit": "passed"
+        },
+        "stats-01": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "stats-02": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "stats-03": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "stats-04": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "stats-05": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "tables-01": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "tables-02": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "tables-03": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "tables-04": {
+          "integration": "not_run",
+          "unit": "killed"
+        },
+        "tables-05": {
+          "integration": "not_run",
+          "unit": "killed"
+        }
+      },
+      "mutants": 20,
+      "score": {
+        "equivalent": 0,
+        "estimate": 0.9,
+        "killed": 18,
+        "total": 20,
+        "wilson_high": 0.9721335187862319,
+        "wilson_low": 0.6989663547715128
+      },
+      "score_without_golden_only": {
+        "equivalent": 0,
+        "estimate": 0.9,
+        "killed": 18,
+        "total": 20,
+        "wilson_high": 0.9721335187862319,
+        "wilson_low": 0.6989663547715128
+      },
+      "survivors": [
+        "proposer-01",
+        "proposer-05"
+      ],
+      "timeouts": 0
+    }
+  },
+  "passed": true,
+  "repository_untouched": true,
+  "target_score": 0.9
+}

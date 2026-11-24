@@ -1,0 +1,69 @@
+{
+  "profile": "pfc-eval-inputs-v1",
+  "kernel": "nr2",
+  "function": "nr2",
+  "program_sha256": "8aa46bbe0ecb8dad75a5303572226334864ebc67f18792b3ee4f3e477a1ae2dd",
+  "cases": 1000,
+  "arrays": {
+    "volArray": {
+      "length": [
+        2,
+        1024
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    }
+  },
+  "scalars": {
+    "CELLCOUNT": {
+      "kind": "prefix",
+      "low": 2,
+      "of": [
+        "volArray"
+      ]
+    }
+  },
+  "boundary": [
+    {
+      "arrays": {
+        "volArray": [
+          3,
+          -3
+        ]
+      },
+      "scalars": {
+        "CELLCOUNT": 2
+      }
+    },
+    {
+      "arrays": {
+        "volArray": [
+          1,
+          2,
+          3
+        ]
+      },
+      "scalars": {
+        "CELLCOUNT": 2
+      }
+    },
+    {
+      "arrays": {
+        "volArray": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "scalars": {
+        "CELLCOUNT": 5
+      }
+    }
+  ],
+  "stress": 0.1
+}

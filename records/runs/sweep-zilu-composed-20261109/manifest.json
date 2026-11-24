@@ -1,0 +1,27 @@
+{
+  "files": {
+    "COMPLETE": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "configuration.json": "6f3744d340da03e5931e3549f867824f63c945b49a31d48213a56af696c355c3",
+    "environment.json": "741a11979e4278a107345b5a78f356c61ad55cb0f84a7dad04f55633390b9362",
+    "observations.jsonl": "cca54d3fc727879da416c11a6326303618ba9129ef85577c2373fc2bbf59b674",
+    "raw/row/pfc-zilupair01.jsonl": "c694b22e541c7837c746f378b7c6e933c697b18c352c65b0e5c63b9338c34009",
+    "raw/row/pfc-zilupair02.jsonl": "22b430c0d0a38d540f8e206ac688c5574d71459a788357439e79d9752c22f765",
+    "raw/row/pfc-zilupair03.jsonl": "00b44f64568ba8b3d5649326bff8c0049d554c1236a7ce380bb8b73273533107",
+    "raw/row/pfc-zilupair04.jsonl": "fe225a88944a2637cdb1e8c2f30d694dada0d79da6235b33925099c56351f18e",
+    "raw/row/pfc-zilupair05.jsonl": "83f47390785e1a4f227726b27482d3aa346c7a1d1d013afee2fbf0328dfedcd1",
+    "raw/row/pfc-zilupair06.jsonl": "8273a7812b67b1a28f81551d377c8edbc86783abe0d83d77c27f5f389640cbfb",
+    "raw/row/pfc-zilupair07.jsonl": "4410e803e12e883e32b9d6152e0586d51be2b52f19257df1dcde4f6ea953265b",
+    "raw/row/pfc-zilupair08.jsonl": "9475e9b462d810117db5be8147ee7cd901ee98ece384a5f2ea67c2a9e37d55fe",
+    "raw/row/pfc-zilupair09.jsonl": "462a9a73b60e746887bf46e0537ea43ccf2382a858d18feeb183f685455a9a40",
+    "raw/row/pfc-zilupair10.jsonl": "0048f2dbb98c1b5276aa1f1ee3cac8b03f28c0bf2fb6a8cf739c98b42290f377",
+    "raw/row/pfc-zilupair11.jsonl": "363282360da7de2bceda587850b858080a9023567ad0e0dafda8e66cf72cb782",
+    "raw/row/pfc-zilupair12.jsonl": "35f583cc755ccb605390d0da4a1aa0df75873f2576aed531e40e64a7f961a214",
+    "raw/row/pfc-zilupair13.jsonl": "cf5b311a17b0635bf6490596f76ba4fbb13fbfe9112565dbc6a7185a96f6351b",
+    "raw/row/pfc-zilupair14.jsonl": "db99e8fb663940d87bc7643de9a6ce67d985a745e08cb47c62fa69845760c3f4",
+    "raw/row/pfc-zilupair15.jsonl": "69881ec195aa7e09cba120526cfbab008e653762d5726856de2b8b424da39c9b",
+    "schema.json": "adcdf5e62973ca5aa64f6fa7207ef07a38f91f64ff815ee67c8aaf2081d5e9b8",
+    "summary.json": "ac534056bf6412909ab7d1dda326e303be91122e1f5e72305b7b3067fdef19ab",
+    "tables.md": "8fec334778fe772162bbdf8f76bfb7269a521cc134b408125ae0bae6a86b5a8e"
+  },
+  "schema_version": "pfc-eval-evidence-v1"
+}

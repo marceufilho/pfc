@@ -1,0 +1,866 @@
+{
+  "experiment": "conjuncts",
+  "kernels": {
+    "add_2_n_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 5,
+      "function": "add_2_n_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 3,
+        "total": 3
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "add_3_n_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 3,
+      "anomalies": 0,
+      "conjuncts": 6,
+      "function": "add_3_n_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 3,
+        "total": 3
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "copy_2_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "copy_2_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 2,
+        "total": 2
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "copy_3_n_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 3,
+      "anomalies": 0,
+      "conjuncts": 5,
+      "function": "copy_3_n_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 2,
+        "total": 2
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "copy_partial_2_n_u": {
+      "all_as_expected": false,
+      "annotation_dependent": 3,
+      "anomalies": 0,
+      "conjuncts": 8,
+      "function": "copy_partial_2_n_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 2,
+        "total": 2
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 3
+      }
+    },
+    "copy_partial_3_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 5,
+      "function": "copy_partial_3_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 4,
+        "total": 4
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "diff_2_n_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 5,
+      "function": "diff_2_n_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 3,
+        "total": 3
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "diff_3_n_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 3,
+      "anomalies": 0,
+      "conjuncts": 6,
+      "function": "diff_3_n_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 3,
+        "total": 3
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "init_2_n_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "init_2_n_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "init_3_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "init_3_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "init_4_n_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 4,
+      "anomalies": 0,
+      "conjuncts": 5,
+      "function": "init_4_n_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "init_non_constant_2_n_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 3,
+      "anomalies": 0,
+      "conjuncts": 7,
+      "function": "init_non_constant_2_n_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 3,
+        "total": 3
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "init_non_constant_3_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "init_non_constant_3_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "max_2_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "max_2_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "max_3_n_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 3,
+      "anomalies": 0,
+      "conjuncts": 4,
+      "function": "max_3_n_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "mbpr2": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "mbpr2",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "mbpr3": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "mbpr3",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "mbpr4": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "mbpr4",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "min_2_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "min_2_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "min_3_n_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 3,
+      "anomalies": 0,
+      "conjuncts": 4,
+      "function": "min_3_n_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "nr2": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "nr2",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "nr3": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "nr3",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "nr4": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "nr4",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "nr5": {
+      "all_as_expected": false,
+      "annotation_dependent": 0,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "nr5",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 1
+      }
+    },
+    "pnr2": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 4,
+      "function": "pnr2",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 2,
+        "total": 2
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "pnr3": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 4,
+      "function": "pnr3",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 2,
+        "total": 2
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "poly1": {
+      "all_as_expected": false,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "poly1",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 1
+      }
+    },
+    "poly2": {
+      "all_as_expected": false,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "poly2",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 1
+      }
+    },
+    "pr2": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "pr2",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "pr3": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "pr3",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "pr4": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "pr4",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "pr5": {
+      "all_as_expected": false,
+      "annotation_dependent": 0,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "pr5",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 1
+      }
+    },
+    "rev_2_n_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 4,
+      "function": "rev_2_n_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 2,
+        "total": 2
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "rev_3_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "rev_3_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 2,
+        "total": 2
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "revcpyswp2": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 6,
+      "function": "revcpyswp2",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 4,
+        "total": 4
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "rew": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "rew",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "rewnif": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "rewnif",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "rewnifrev": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "rewnifrev",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "rewnifrev2": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "rewnifrev2",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "rewrev": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "rewrev",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "skipped": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "skipped",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 1,
+        "total": 1
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "tcpy": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 4,
+      "function": "tcpy",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 2,
+        "total": 2
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "transpose_u": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "transpose_u",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 2,
+        "total": 2
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    }
+  },
+  "passed": false
+}

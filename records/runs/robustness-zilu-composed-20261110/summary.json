@@ -1,0 +1,186 @@
+{
+  "experiment": "robustness",
+  "kernels": {
+    "zilupair01": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 0,
+        "swap": 5
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    },
+    "zilupair02": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 0,
+        "swap": 5
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    },
+    "zilupair03": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 0,
+        "swap": 5
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    },
+    "zilupair04": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 0,
+        "swap": 5
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    },
+    "zilupair05": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 0,
+        "swap": 5
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    },
+    "zilupair06": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 7,
+        "reorder": 0,
+        "swap": 3
+      },
+      "divergent": 0,
+      "renamed_c_compared": 7,
+      "renamed_c_identical": 7,
+      "variants": 10
+    },
+    "zilupair07": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 0,
+        "swap": 5
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    },
+    "zilupair08": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 1,
+        "swap": 4
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    },
+    "zilupair09": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 0,
+        "swap": 5
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    },
+    "zilupair10": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 0,
+        "swap": 5
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    },
+    "zilupair11": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 0,
+        "swap": 5
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    },
+    "zilupair12": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 0,
+        "swap": 5
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    },
+    "zilupair13": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 0,
+        "swap": 5
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    },
+    "zilupair14": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 0,
+        "swap": 5
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    },
+    "zilupair15": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 0,
+        "swap": 5
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    }
+  },
+  "passed": true
+}

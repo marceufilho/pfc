@@ -1,0 +1,174 @@
+{
+  "experiment": "robustness",
+  "kernels": {
+    "accumulate": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 8,
+        "reorder": 0,
+        "swap": 2
+      },
+      "divergent": 0,
+      "renamed_c_compared": 8,
+      "renamed_c_identical": 8,
+      "variants": 10
+    },
+    "binary_search": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 6,
+        "reorder": 1,
+        "swap": 3
+      },
+      "divergent": 0,
+      "renamed_c_compared": 6,
+      "renamed_c_identical": 6,
+      "variants": 10
+    },
+    "copy": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 9,
+        "reorder": 0,
+        "swap": 1
+      },
+      "divergent": 0,
+      "renamed_c_compared": 9,
+      "renamed_c_identical": 9,
+      "variants": 10
+    },
+    "count": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 7,
+        "reorder": 0,
+        "swap": 3
+      },
+      "divergent": 0,
+      "renamed_c_compared": 7,
+      "renamed_c_identical": 7,
+      "variants": 10
+    },
+    "dot": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 6,
+        "reorder": 1,
+        "swap": 3
+      },
+      "divergent": 0,
+      "renamed_c_compared": 6,
+      "renamed_c_identical": 6,
+      "variants": 10
+    },
+    "fill": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 9,
+        "reorder": 0,
+        "swap": 1
+      },
+      "divergent": 0,
+      "renamed_c_compared": 9,
+      "renamed_c_identical": 9,
+      "variants": 10
+    },
+    "find": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 8,
+        "reorder": 0,
+        "swap": 2
+      },
+      "divergent": 0,
+      "renamed_c_compared": 8,
+      "renamed_c_identical": 8,
+      "variants": 10
+    },
+    "matvec": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 5,
+        "reorder": 1,
+        "swap": 4
+      },
+      "divergent": 0,
+      "renamed_c_compared": 5,
+      "renamed_c_identical": 5,
+      "variants": 10
+    },
+    "prefix_sum": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 7,
+        "reorder": 0,
+        "swap": 3
+      },
+      "divergent": 0,
+      "renamed_c_compared": 7,
+      "renamed_c_identical": 7,
+      "variants": 10
+    },
+    "replace": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 8,
+        "reorder": 0,
+        "swap": 2
+      },
+      "divergent": 0,
+      "renamed_c_compared": 8,
+      "renamed_c_identical": 8,
+      "variants": 10
+    },
+    "reverse": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 9,
+        "reorder": 0,
+        "swap": 1
+      },
+      "divergent": 0,
+      "renamed_c_compared": 9,
+      "renamed_c_identical": 9,
+      "variants": 10
+    },
+    "saxpy": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 7,
+        "reorder": 0,
+        "swap": 3
+      },
+      "divergent": 0,
+      "renamed_c_compared": 7,
+      "renamed_c_identical": 7,
+      "variants": 10
+    },
+    "sum": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 7,
+        "reorder": 1,
+        "swap": 2
+      },
+      "divergent": 0,
+      "renamed_c_compared": 7,
+      "renamed_c_identical": 7,
+      "variants": 10
+    },
+    "swap_ranges": {
+      "brittle": 0,
+      "by_kind": {
+        "rename": 9,
+        "reorder": 0,
+        "swap": 1
+      },
+      "divergent": 0,
+      "renamed_c_compared": 9,
+      "renamed_c_identical": 9,
+      "variants": 10
+    }
+  },
+  "passed": true
+}

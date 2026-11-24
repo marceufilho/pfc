@@ -1,0 +1,85 @@
+{
+  "profile": "pfc-eval-inputs-v1",
+  "kernel": "init_non_constant_2_n_u",
+  "function": "init_non_constant_2_n_u",
+  "program_sha256": "892fe61dc4d0804125c110759e17edab34bd806c8360f0f08d9470e7361b8d49",
+  "cases": 1000,
+  "arrays": {
+    "A": {
+      "length": [
+        64,
+        4096
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    }
+  },
+  "scalars": {
+    "n": {
+      "kind": "range",
+      "low": 1,
+      "high": 32
+    },
+    "m": {
+      "kind": "quotient",
+      "of": [
+        "A"
+      ],
+      "by": "n"
+    },
+    "q": {
+      "kind": "range",
+      "low": 0,
+      "high": 2
+    },
+    "s": {
+      "kind": "range",
+      "low": 0,
+      "high": 2
+    },
+    "C": {
+      "kind": "range",
+      "low": -1000,
+      "high": 1000
+    }
+  },
+  "boundary": [
+    {
+      "arrays": {
+        "A": [
+          1
+        ]
+      },
+      "scalars": {
+        "n": 1,
+        "m": 1,
+        "q": 0,
+        "s": 0,
+        "C": 7
+      }
+    },
+    {
+      "arrays": {
+        "A": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "scalars": {
+        "n": 3,
+        "m": 2,
+        "q": 0,
+        "s": 0,
+        "C": 7
+      }
+    }
+  ],
+  "stress": 0.1
+}

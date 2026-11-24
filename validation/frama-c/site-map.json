@@ -1,0 +1,16 @@
+{
+  "sum": {"bounds_a": [12, 17]},
+  "dot": {"bounds_a": [10, 17], "bounds_b": [10, 24]},
+  "saxpy": {"bounds_x_read": [10, 24], "bounds_y_read": [10, 31], "bounds_y_write": [10, 9]},
+  "prefix_sum": {"bounds_a_read": [12, 16], "bounds_previous": [12, 23], "bounds_a_write": [12, 9]},
+  "matvec": {"division_contract": [6, 74], "bounds_matrix": [17, 21], "bounds_x": [17, 44], "bounds_y": [20, 9]},
+  "binary_search": {"division_mid": [10, 26], "bounds_a": [11, 22]},
+  "accumulate": {"bounds_a": [8, 23]},
+  "copy": {"bounds_a": [9, 16], "bounds_b": [9, 9]},
+  "count": {"bounds_a": [9, 13]},
+  "fill": {"bounds_a": [8, 9]},
+  "find": {"bounds_a": [8, 13]},
+  "replace": {"bounds_a_read": [8, 13], "bounds_a_write": [8, 26]},
+  "reverse": {"division_half": [6, 17], "bounds_left_read": [9, 22], "bounds_right_read": [10, 16], "bounds_left_write": [10, 9], "bounds_right_write": [11, 9]},
+  "swap_ranges": {"bounds_a_read": [9, 22], "bounds_b_read": [10, 16], "bounds_a_write": [10, 9], "bounds_b_write": [11, 9]}
+}

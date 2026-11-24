@@ -1,0 +1,533 @@
+{
+  "counter_tool": "unavailable",
+  "cpu": null,
+  "governor": "powersave",
+  "kernels": {
+    "binary_search": {
+      "failed_runs": 0,
+      "instruction_ratios": {},
+      "iqr_ms": {
+        "checked": 20.604749999999996,
+        "plain": 19.66500000000002,
+        "verified": 16.312250000000006,
+        "without-assume": 14.939250000000015,
+        "without-delete": 23.906749999999988,
+        "without-restrict": 25.713749999999976
+      },
+      "median_instructions": {},
+      "medians_ms": {
+        "checked": 150.655,
+        "plain": 156.1395,
+        "verified": 148.817,
+        "without-assume": 146.178,
+        "without-delete": 146.59300000000002,
+        "without-restrict": 147.8505
+      },
+      "ratios": {
+        "checked/plain": {
+          "estimate": 0.9556654531589079,
+          "high": 0.9897657175150456,
+          "low": 0.9122280088190163,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/checked": {
+          "estimate": 0.9993740521180928,
+          "high": 1.0338961375010276,
+          "low": 0.964338087722262,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/plain": {
+          "estimate": 0.9550672563926914,
+          "high": 0.994918576826943,
+          "low": 0.914586728620034,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-assume/verified": {
+          "estimate": 0.986469234150718,
+          "high": 1.0161157249391775,
+          "low": 0.9575615633828604,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-delete/verified": {
+          "estimate": 1.003496713736237,
+          "high": 1.0394495649567883,
+          "low": 0.9667151273624368,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-restrict/verified": {
+          "estimate": 1.0203118315120105,
+          "high": 1.0644911699238555,
+          "low": 0.9790584161694325,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        }
+      },
+      "runs_per_variant": {
+        "checked": 30,
+        "plain": 30,
+        "verified": 30,
+        "without-assume": 30,
+        "without-delete": 30,
+        "without-restrict": 30
+      },
+      "vectorized": {
+        "checked": false,
+        "plain": false,
+        "verified": false,
+        "without-assume": false,
+        "without-delete": false,
+        "without-restrict": false
+      }
+    },
+    "dot": {
+      "failed_runs": 0,
+      "instruction_ratios": {},
+      "iqr_ms": {
+        "checked": 165.87400000000002,
+        "plain": 91.77250000000004,
+        "verified": 126.07249999999988,
+        "without-assume": 76.30374999999992,
+        "without-delete": 131.53300000000002,
+        "without-restrict": 99.17925000000002
+      },
+      "median_instructions": {},
+      "medians_ms": {
+        "checked": 1012.105,
+        "plain": 746.488,
+        "verified": 857.8275,
+        "without-assume": 887.8795,
+        "without-delete": 927.2085,
+        "without-restrict": 877.064
+      },
+      "ratios": {
+        "checked/plain": {
+          "estimate": 1.3789921656825814,
+          "high": 1.4277354607708377,
+          "low": 1.3343061160004455,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/checked": {
+          "estimate": 0.8584197817032202,
+          "high": 0.9002630836706315,
+          "low": 0.8225901556974694,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/plain": {
+          "estimate": 1.1837541538356924,
+          "high": 1.2598662145570882,
+          "low": 1.119374117411527,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-assume/verified": {
+          "estimate": 1.0146793409202672,
+          "high": 1.0936046952957335,
+          "low": 0.9449556183938003,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-delete/verified": {
+          "estimate": 1.0603984198602894,
+          "high": 1.1025901205389543,
+          "low": 1.0202013318352139,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-restrict/verified": {
+          "estimate": 1.0106676443400338,
+          "high": 1.0664386451577241,
+          "low": 0.9609686880867343,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        }
+      },
+      "runs_per_variant": {
+        "checked": 30,
+        "plain": 30,
+        "verified": 30,
+        "without-assume": 30,
+        "without-delete": 30,
+        "without-restrict": 30
+      },
+      "vectorized": {
+        "checked": false,
+        "plain": true,
+        "verified": false,
+        "without-assume": false,
+        "without-delete": false,
+        "without-restrict": false
+      }
+    },
+    "matvec": {
+      "failed_runs": 0,
+      "instruction_ratios": {},
+      "iqr_ms": {
+        "checked": 126.50575000000003,
+        "plain": 56.12975000000006,
+        "verified": 72.71649999999988,
+        "without-assume": 122.69450000000006,
+        "without-delete": 88.52374999999984,
+        "without-restrict": 95.89200000000005
+      },
+      "median_instructions": {},
+      "medians_ms": {
+        "checked": 1193.789,
+        "plain": 631.026,
+        "verified": 765.803,
+        "without-assume": 761.039,
+        "without-delete": 1077.481,
+        "without-restrict": 761.8499999999999
+      },
+      "ratios": {
+        "checked/plain": {
+          "estimate": 1.8514597998393847,
+          "high": 1.9621959248017733,
+          "low": 1.753142533059216,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/checked": {
+          "estimate": 0.6271801326248044,
+          "high": 0.6503785120805324,
+          "low": 0.6029511136826513,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/plain": {
+          "estimate": 1.1611988028127593,
+          "high": 1.230334478732972,
+          "low": 1.0858453134490855,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-assume/verified": {
+          "estimate": 1.0446711286311008,
+          "high": 1.091113857480675,
+          "low": 1.005059422565337,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-delete/verified": {
+          "estimate": 1.4078790024793562,
+          "high": 1.4385902191252544,
+          "low": 1.3784873937875284,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-restrict/verified": {
+          "estimate": 1.0161977551391073,
+          "high": 1.053208028364443,
+          "low": 0.9825169592055889,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        }
+      },
+      "runs_per_variant": {
+        "checked": 30,
+        "plain": 30,
+        "verified": 30,
+        "without-assume": 30,
+        "without-delete": 30,
+        "without-restrict": 30
+      },
+      "vectorized": {
+        "checked": true,
+        "plain": true,
+        "verified": false,
+        "without-assume": false,
+        "without-delete": false,
+        "without-restrict": false
+      }
+    },
+    "prefix_sum": {
+      "failed_runs": 0,
+      "instruction_ratios": {},
+      "iqr_ms": {
+        "checked": 225.0545000000002,
+        "plain": 134.41624999999976,
+        "verified": 124.36499999999978,
+        "without-assume": 261.0822500000004,
+        "without-delete": 162.4602500000001,
+        "without-restrict": 150.57399999999961
+      },
+      "median_instructions": {},
+      "medians_ms": {
+        "checked": 2612.7955,
+        "plain": 1208.5215,
+        "verified": 2553.276,
+        "without-assume": 2488.6265,
+        "without-delete": 2516.691,
+        "without-restrict": 2501.291
+      },
+      "ratios": {
+        "checked/plain": {
+          "estimate": 2.1673326835502413,
+          "high": 2.221294318516856,
+          "low": 2.113762026328334,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/checked": {
+          "estimate": 0.9829065808992085,
+          "high": 1.0097161097475764,
+          "low": 0.9582328355868099,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/plain": {
+          "estimate": 2.1302855576594735,
+          "high": 2.1966508989907,
+          "low": 2.058920826360694,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-assume/verified": {
+          "estimate": 0.9754525698626783,
+          "high": 1.0068296643190058,
+          "low": 0.9429388298752701,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-delete/verified": {
+          "estimate": 0.9990906347328165,
+          "high": 1.0204434798852695,
+          "low": 0.9789651751609831,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-restrict/verified": {
+          "estimate": 0.9807491082999901,
+          "high": 1.0108755048747093,
+          "low": 0.9477653335146727,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        }
+      },
+      "runs_per_variant": {
+        "checked": 30,
+        "plain": 30,
+        "verified": 30,
+        "without-assume": 30,
+        "without-delete": 30,
+        "without-restrict": 30
+      },
+      "vectorized": {
+        "checked": false,
+        "plain": false,
+        "verified": false,
+        "without-assume": false,
+        "without-delete": false,
+        "without-restrict": false
+      }
+    },
+    "saxpy": {
+      "failed_runs": 0,
+      "instruction_ratios": {},
+      "iqr_ms": {
+        "checked": 147.98874999999998,
+        "plain": 131.49850000000004,
+        "verified": 111.42025000000001,
+        "without-assume": 217.60350000000005,
+        "without-delete": 116.77425000000017,
+        "without-restrict": 103.9654999999999
+      },
+      "median_instructions": {},
+      "medians_ms": {
+        "checked": 1070.424,
+        "plain": 823.3455,
+        "verified": 967.1880000000001,
+        "without-assume": 950.9449999999999,
+        "without-delete": 994.812,
+        "without-restrict": 980.585
+      },
+      "ratios": {
+        "checked/plain": {
+          "estimate": 1.2892002945837053,
+          "high": 1.3405840358186563,
+          "low": 1.24478980116894,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/checked": {
+          "estimate": 0.8782046268683262,
+          "high": 0.9073686830121565,
+          "low": 0.8494495232799923,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/plain": {
+          "estimate": 1.1321816636634192,
+          "high": 1.1735504798539813,
+          "low": 1.0914325242806975,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-assume/verified": {
+          "estimate": 1.064364485595916,
+          "high": 1.1298983576621646,
+          "low": 1.0104780709740135,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-delete/verified": {
+          "estimate": 1.0295258358959944,
+          "high": 1.0541996434088123,
+          "low": 1.0048734304839906,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-restrict/verified": {
+          "estimate": 1.004732425748147,
+          "high": 1.0338970749408272,
+          "low": 0.9757349749267887,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        }
+      },
+      "runs_per_variant": {
+        "checked": 30,
+        "plain": 30,
+        "verified": 30,
+        "without-assume": 30,
+        "without-delete": 30,
+        "without-restrict": 30
+      },
+      "vectorized": {
+        "checked": false,
+        "plain": true,
+        "verified": false,
+        "without-assume": false,
+        "without-delete": false,
+        "without-restrict": false
+      }
+    },
+    "sum": {
+      "failed_runs": 0,
+      "instruction_ratios": {},
+      "iqr_ms": {
+        "checked": 89.8610000000001,
+        "plain": 149.26625,
+        "verified": 44.299749999999904,
+        "without-assume": 74.38875000000007,
+        "without-delete": 62.5954999999999,
+        "without-restrict": 116.19550000000004
+      },
+      "median_instructions": {},
+      "medians_ms": {
+        "checked": 696.391,
+        "plain": 580.7465,
+        "verified": 623.2850000000001,
+        "without-assume": 636.5264999999999,
+        "without-delete": 632.393,
+        "without-restrict": 632.9335
+      },
+      "ratios": {
+        "checked/plain": {
+          "estimate": 1.1887225861517337,
+          "high": 1.2615835692699013,
+          "low": 1.1156069014998315,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/checked": {
+          "estimate": 0.8845165082197959,
+          "high": 0.9155771502669419,
+          "low": 0.8579954701376444,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/plain": {
+          "estimate": 1.0514447511449367,
+          "high": 1.1053215107531007,
+          "low": 0.9934089904306349,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-assume/verified": {
+          "estimate": 1.0156885020994542,
+          "high": 1.0449752323194348,
+          "low": 0.9904009984953561,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-delete/verified": {
+          "estimate": 1.0125787283691445,
+          "high": 1.0370438429534836,
+          "low": 0.9873150483671317,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-restrict/verified": {
+          "estimate": 1.0290210701917348,
+          "high": 1.0601562582314845,
+          "low": 1.000201113635115,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        }
+      },
+      "runs_per_variant": {
+        "checked": 30,
+        "plain": 30,
+        "verified": 30,
+        "without-assume": 30,
+        "without-delete": 30,
+        "without-restrict": 30
+      },
+      "vectorized": {
+        "checked": false,
+        "plain": true,
+        "verified": false,
+        "without-assume": false,
+        "without-delete": false,
+        "without-restrict": false
+      }
+    }
+  },
+  "label": "exploratory",
+  "passed": true,
+  "timed_runs": 1080,
+  "warmups": 108
+}

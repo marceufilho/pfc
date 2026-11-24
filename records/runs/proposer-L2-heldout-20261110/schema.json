@@ -1,0 +1,154 @@
+{
+  "columns": [
+    {
+      "allowed": null,
+      "name": "kernel",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "function",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "name": "condition",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "run",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "attempt",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "model",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "protocol",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "base_url",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "dated",
+        "undated"
+      ],
+      "name": "snapshot_status",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "live",
+        "replay",
+        "test"
+      ],
+      "name": "origin",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "success",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "task_success",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": [
+        "success",
+        "not_inductive",
+        "too_weak",
+        "out_of_scope",
+        "abstained",
+        "unparseable",
+        "protocol_error"
+      ],
+      "name": "rejection_class",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "tokens_in",
+      "nullable": true,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "tokens_out",
+      "nullable": true,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "reasoning_tokens",
+      "nullable": true,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "latency_ms",
+      "nullable": true,
+      "type": "number"
+    },
+    {
+      "allowed": null,
+      "name": "loops",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "guards_total",
+      "nullable": true,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "guards_removed",
+      "nullable": true,
+      "type": "integer"
+    }
+  ],
+  "provenance": [
+    "experiment",
+    "evidence_dir",
+    "tag",
+    "commit",
+    "seed",
+    "timestamp",
+    "vc_model",
+    "solver_version",
+    "clang"
+  ]
+}

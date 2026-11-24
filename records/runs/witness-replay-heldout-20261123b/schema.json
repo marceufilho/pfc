@@ -1,0 +1,111 @@
+{
+  "columns": [
+    {
+      "allowed": null,
+      "name": "kernel",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "function",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "requires_index",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "conjunct_index",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "conjunct_text",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "witness_kind",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "witness_message",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "witness_line",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": [
+        "trap",
+        "returned",
+        "compile error",
+        "not executed"
+      ],
+      "name": "checked",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "trap",
+        "returned",
+        "compile error",
+        "not executed"
+      ],
+      "name": "verified",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "witnessed guard",
+        "another guard",
+        "other trap",
+        "returned",
+        "compile error",
+        "not executed"
+      ],
+      "name": "checked_stop",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "witnessed guard",
+        "another guard",
+        "other trap",
+        "returned",
+        "compile error",
+        "not executed"
+      ],
+      "name": "verified_stop",
+      "nullable": false,
+      "type": "string"
+    }
+  ],
+  "provenance": [
+    "experiment",
+    "evidence_dir",
+    "tag",
+    "commit",
+    "seed",
+    "timestamp",
+    "vc_model",
+    "solver_version",
+    "clang"
+  ]
+}

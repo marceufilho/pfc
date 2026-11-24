@@ -1,0 +1,255 @@
+{
+  "budgets": [
+    10,
+    30,
+    60
+  ],
+  "curve": {
+    "wp": {
+      "10": {
+        "proved": 192,
+        "total": 210
+      },
+      "30": {
+        "proved": 192,
+        "total": 210
+      },
+      "60": {
+        "proved": 192,
+        "total": 210
+      }
+    }
+  },
+  "experiment": "sweep",
+  "kernels": {
+    "accumulate": {
+      "wp": {
+        "10": {
+          "proved": 8,
+          "total": 10
+        },
+        "30": {
+          "proved": 8,
+          "total": 10
+        },
+        "60": {
+          "proved": 8,
+          "total": 10
+        }
+      }
+    },
+    "binary_search": {
+      "wp": {
+        "10": {
+          "proved": 17,
+          "total": 17
+        },
+        "30": {
+          "proved": 17,
+          "total": 17
+        },
+        "60": {
+          "proved": 17,
+          "total": 17
+        }
+      }
+    },
+    "copy": {
+      "wp": {
+        "10": {
+          "proved": 12,
+          "total": 12
+        },
+        "30": {
+          "proved": 12,
+          "total": 12
+        },
+        "60": {
+          "proved": 12,
+          "total": 12
+        }
+      }
+    },
+    "count": {
+      "wp": {
+        "10": {
+          "proved": 9,
+          "total": 9
+        },
+        "30": {
+          "proved": 9,
+          "total": 9
+        },
+        "60": {
+          "proved": 9,
+          "total": 9
+        }
+      }
+    },
+    "dot": {
+      "wp": {
+        "10": {
+          "proved": 10,
+          "total": 14
+        },
+        "30": {
+          "proved": 10,
+          "total": 14
+        },
+        "60": {
+          "proved": 10,
+          "total": 14
+        }
+      }
+    },
+    "fill": {
+      "wp": {
+        "10": {
+          "proved": 10,
+          "total": 10
+        },
+        "30": {
+          "proved": 10,
+          "total": 10
+        },
+        "60": {
+          "proved": 10,
+          "total": 10
+        }
+      }
+    },
+    "find": {
+      "wp": {
+        "10": {
+          "proved": 10,
+          "total": 10
+        },
+        "30": {
+          "proved": 10,
+          "total": 10
+        },
+        "60": {
+          "proved": 10,
+          "total": 10
+        }
+      }
+    },
+    "matvec": {
+      "wp": {
+        "10": {
+          "proved": 24,
+          "total": 28
+        },
+        "30": {
+          "proved": 24,
+          "total": 28
+        },
+        "60": {
+          "proved": 24,
+          "total": 28
+        }
+      }
+    },
+    "prefix_sum": {
+      "wp": {
+        "10": {
+          "proved": 17,
+          "total": 19
+        },
+        "30": {
+          "proved": 17,
+          "total": 19
+        },
+        "60": {
+          "proved": 17,
+          "total": 19
+        }
+      }
+    },
+    "replace": {
+      "wp": {
+        "10": {
+          "proved": 12,
+          "total": 12
+        },
+        "30": {
+          "proved": 12,
+          "total": 12
+        },
+        "60": {
+          "proved": 12,
+          "total": 12
+        }
+      }
+    },
+    "reverse": {
+      "wp": {
+        "10": {
+          "proved": 24,
+          "total": 24
+        },
+        "30": {
+          "proved": 24,
+          "total": 24
+        },
+        "60": {
+          "proved": 24,
+          "total": 24
+        }
+      }
+    },
+    "saxpy": {
+      "wp": {
+        "10": {
+          "proved": 14,
+          "total": 18
+        },
+        "30": {
+          "proved": 14,
+          "total": 18
+        },
+        "60": {
+          "proved": 14,
+          "total": 18
+        }
+      }
+    },
+    "sum": {
+      "wp": {
+        "10": {
+          "proved": 8,
+          "total": 10
+        },
+        "30": {
+          "proved": 8,
+          "total": 10
+        },
+        "60": {
+          "proved": 8,
+          "total": 10
+        }
+      }
+    },
+    "swap_ranges": {
+      "wp": {
+        "10": {
+          "proved": 17,
+          "total": 17
+        },
+        "30": {
+          "proved": 17,
+          "total": 17
+        },
+        "60": {
+          "proved": 17,
+          "total": 17
+        }
+      }
+    }
+  },
+  "tools": [
+    "wp"
+  ],
+  "wp_errors": 0,
+  "wp_skipped_reason": null
+}

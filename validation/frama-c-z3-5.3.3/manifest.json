@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "base_image": "framac/frama-c@sha256:4f0b7a2bd600c4daabfdcdfa393a3c18301e0db18f3b2739f1d9650193462d36",
+  "dockerfile_sha256": "ed5bc81cde0da460162f3ae61237b8e17fe6d841ba52cdf6580ab88857559256",
+  "image_id": "sha256:afa9c9e7974bb14807ce440b5281d12fb443a0d2d1c318502d053b75f35655f8",
+  "z3_version": "Z3 version 5.3.3 - 64 bit (binary of the PyPI wheel z3-solver 5.3.3.0, the version locked in uv.lock)",
+  "why3_provers": [
+    "Alt-Ergo 2.5.4",
+    "Alt-Ergo 2.5.4 (FPA)",
+    "Alt-Ergo 2.5.4 (counterexamples)",
+    "Z3 5.3.3",
+    "Z3 5.3.3 (counterexamples)",
+    "Z3 5.3.3 (noBV)"
+  ],
+  "why3_note": "why3 config detect reports Z3 5.3.3 as an unrecognized version (known: 4.8.7 to 4.13.x) and registers it with its newest Z3 driver",
+  "built": "2026-11-12",
+  "note": "Built on the development machine with `docker build -t pfc-frama-c-z3-533 validation/frama-c-z3-5.3.3`; the image id is what sweep --image pins."
+}

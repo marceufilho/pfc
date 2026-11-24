@@ -1,0 +1,341 @@
+{
+  "evidence": [
+    {
+      "experiment": "audit",
+      "manifest_sha256": "7a0a7710a2910b6f9dd51be3ce0583538e3f26546baf4215afc8bd3bc5001459",
+      "path": "bench/eval/audit-verified-v5-20261110",
+      "stratum": "development"
+    },
+    {
+      "experiment": "conjuncts",
+      "manifest_sha256": "bdcd5e51d76a958e2dc100aecdb7ef27db430e64b6e4aefaa8f5c304f8340cd4",
+      "path": "bench/eval/conjuncts-20261110",
+      "stratum": "development"
+    },
+    {
+      "experiment": "conjuncts",
+      "manifest_sha256": "8aa5836f717de6518859cd9ac89e50e2052ef8ddee94be6b7cbdd80158bff67a",
+      "path": "bench/eval/conjuncts-zilu-20261110",
+      "stratum": "ported"
+    },
+    {
+      "experiment": "conjuncts",
+      "manifest_sha256": "b4a554a2043de035c11897b94a3601b838a8e622593149242ca88ba12b9ca741",
+      "path": "bench/eval/conjuncts-zilu-composed-20261110",
+      "stratum": "composed"
+    },
+    {
+      "experiment": "conjuncts",
+      "manifest_sha256": "2532b11d0c2f36fa4088095916c8a492b989f88a976555a15eb9467815bd63ec",
+      "path": "bench/eval/conjuncts-heldout-20261110",
+      "stratum": "heldout"
+    },
+    {
+      "experiment": "crosscheck",
+      "manifest_sha256": "a903a5d3a1931fcbcdb4dc51e77bc846c3c018885c2f3711f38b461f8c8823f7",
+      "path": "bench/eval/crosscheck-20261109",
+      "stratum": "development"
+    },
+    {
+      "experiment": "crosscheck",
+      "manifest_sha256": "05395a4dd2525f821c5bdc0b7e77d47ca76027012582bfc20d1a6b37330142ef",
+      "path": "bench/eval/crosscheck-zilu-20261109",
+      "stratum": "ported"
+    },
+    {
+      "experiment": "crosscheck",
+      "manifest_sha256": "bcdf1e36d9667056d9ccd87e99192d7415201da3acc3d5656470aeeaa9c80fd5",
+      "path": "bench/eval/crosscheck-zilu-composed-20261109",
+      "stratum": "composed"
+    },
+    {
+      "experiment": "crosscheck",
+      "manifest_sha256": "a53009ecf41598f1e18d712c7e65ce11e93b6dc2bb5378ba4ccaffde6b530687",
+      "path": "bench/eval/crosscheck-heldout-20261110",
+      "stratum": "heldout"
+    },
+    {
+      "experiment": "differential",
+      "manifest_sha256": "4aa5fa04b2ed7e7742d3f93a7769696c2b70e32af7284e7229f44199dadf69f7",
+      "path": "bench/eval/differential-20261110",
+      "stratum": "development"
+    },
+    {
+      "experiment": "differential",
+      "manifest_sha256": "bb51afadbd0b3c5c8d010471d21ce8688cb660884c7836a22ad106f88e4b220f",
+      "path": "bench/eval/differential-heldout-20261110",
+      "stratum": "heldout"
+    },
+    {
+      "experiment": "houdini",
+      "manifest_sha256": "28383b958b39281dc33c4ba3c2bd35d9f89b32605010e31fe5bba42058f2aaa3",
+      "path": "bench/eval/houdini-20261105",
+      "stratum": "development"
+    },
+    {
+      "experiment": "houdini",
+      "manifest_sha256": "cec5877049077cccc76dc1fb57e9d6fde69512a601baae8a3fa7d93c29c21053",
+      "path": "bench/eval/houdini-zilu-20261109",
+      "stratum": "ported"
+    },
+    {
+      "experiment": "houdini",
+      "manifest_sha256": "e3cd2bda1dee7f97087882a80d80a8d651f17f7380ae225148730a4d4f2e19ed",
+      "path": "bench/eval/houdini-zilu-obfuscated-20261109",
+      "stratum": "obfuscated"
+    },
+    {
+      "experiment": "houdini",
+      "manifest_sha256": "0ad70052524d9f14342fd0731aec55d91c063bd173a80ed271dc6f7f5c35d68b",
+      "path": "bench/eval/houdini-zilu-composed-20261109",
+      "stratum": "composed"
+    },
+    {
+      "experiment": "houdini",
+      "manifest_sha256": "c75e8144fe096a083a3c8f7bfcd53d4d9736697caa4a48f0a4fe871ae0cbb66c",
+      "path": "bench/eval/houdini-b2-20261109",
+      "stratum": "development"
+    },
+    {
+      "experiment": "houdini",
+      "manifest_sha256": "a9c8a544c92137af0392a90c9512e60cbdf29dcc455fe9f1d493e0e080367dc5",
+      "path": "bench/eval/houdini-b2-zilu-20261109",
+      "stratum": "ported"
+    },
+    {
+      "experiment": "houdini",
+      "manifest_sha256": "365219819bba6149078db3a7489122e90091f0f221a711f1e58d9d54ac00cf35",
+      "path": "bench/eval/houdini-b2-zilu-obfuscated-20261109",
+      "stratum": "obfuscated"
+    },
+    {
+      "experiment": "houdini",
+      "manifest_sha256": "56d28ea47e72c49a01caa36fa6e26d88555cd61e4b513994dbff46d92279642c",
+      "path": "bench/eval/houdini-b2-zilu-composed-20261109",
+      "stratum": "composed"
+    },
+    {
+      "experiment": "houdini",
+      "manifest_sha256": "8e2af964a3503b7c0cb24d5e2c4fccf1fd917424411c9074094ced626a7ae035",
+      "path": "bench/eval/houdini-heldout-20261110",
+      "stratum": "heldout"
+    },
+    {
+      "experiment": "houdini",
+      "manifest_sha256": "74558a39fdf44b9a751ea948568f585046fa7b66a6d7f9451635cab2a862a740",
+      "path": "bench/eval/houdini-b2-heldout-20261110",
+      "stratum": "heldout"
+    },
+    {
+      "experiment": "inject",
+      "manifest_sha256": "32f38cf36ae6de5f0eb250d1d354e6c6095a2e3cea91da1cec57d2b5fae5c182",
+      "path": "bench/eval/inject-20261110",
+      "stratum": "development"
+    },
+    {
+      "experiment": "inject",
+      "manifest_sha256": "c0b351df5c8a5d762d37ac6a9cfa7bd920bb70f285e1fd9e0685412ba49a1f16",
+      "path": "bench/eval/inject-zilu-20261110",
+      "stratum": "ported"
+    },
+    {
+      "experiment": "inject",
+      "manifest_sha256": "2e21c0acb3290f89f2536a9f202df6ec3517c26ad8e6fe2b5f0b6e18206357fc",
+      "path": "bench/eval/inject-zilu-composed-20261110",
+      "stratum": "composed"
+    },
+    {
+      "experiment": "inject",
+      "manifest_sha256": "b4e29ff752611a793fe0c9340b4a4ab357491d417daa0c6b30c42f813ea321d6",
+      "path": "bench/eval/inject-heldout-20261110",
+      "stratum": "heldout"
+    },
+    {
+      "experiment": "mutate",
+      "manifest_sha256": "a28c8e815d232d4dd097e6c82501d861664d5c68e5c1df16461028f663b712ef",
+      "path": "bench/eval/mutate-20261110",
+      "stratum": "development"
+    },
+    {
+      "experiment": "mutate",
+      "manifest_sha256": "e1ba83bc0af6b055883c628d0ff2f1bb1f5b6d3e10dd566fbcb53ae27ced2f17",
+      "path": "bench/eval/mutate-20261111b",
+      "stratum": "development"
+    },
+    {
+      "experiment": "mutate",
+      "manifest_sha256": "3012f1e0277c132742e8af1457ac7dc28accba71557d13e30feea28e050e7c49",
+      "path": "bench/eval/mutate-full-compiler-20261110",
+      "stratum": "development"
+    },
+    {
+      "experiment": "mutate",
+      "manifest_sha256": "e58cfaec1526c2b8c9fd530de68112198875caf11ed0305beb77d10a9cc9d566",
+      "path": "bench/eval/mutate-full-harness-20261110",
+      "stratum": "development"
+    },
+    {
+      "experiment": "mutate",
+      "manifest_sha256": "c0e9fef6fb4c4edec50bff37cb137a30616b2b31e47e9e997a284bdd68c4c9ec",
+      "path": "bench/eval/mutate-full-extended-20261110",
+      "stratum": "development"
+    },
+    {
+      "experiment": "mutate",
+      "manifest_sha256": "0116f74f7c3f8dff6881a75e0010b3bc13be23e5004870eb03589d670f12e95a",
+      "path": "bench/eval/mutate-full-compiler-20261111b",
+      "stratum": "development"
+    },
+    {
+      "experiment": "negative",
+      "manifest_sha256": "770fab80effcd743c7aef6d5e2e9616997e09d4bbaa43212ab8831663cee719c",
+      "path": "bench/eval/negative-20261110",
+      "stratum": "development"
+    },
+    {
+      "experiment": "proposer",
+      "manifest_sha256": "c786fdfd5c52769a188a76043f5d0f6275fce029cea3b8d5d457318a9ca44057",
+      "path": "bench/eval/proposer-L1-dev-20261109",
+      "stratum": "development"
+    },
+    {
+      "experiment": "proposer",
+      "manifest_sha256": "800a7ed6b03d57808955310b8d22a9abf3f53533c7384bf0d07d8ecfadf064e6",
+      "path": "bench/eval/proposer-L1-acsl-20261109",
+      "stratum": "development"
+    },
+    {
+      "experiment": "proposer",
+      "manifest_sha256": "176c6bf220d10fbc56e5c439421c677d96e1c52471198ff1378a2b96134b7361",
+      "path": "bench/eval/proposer-L2-dev-20261109",
+      "stratum": "development"
+    },
+    {
+      "experiment": "proposer",
+      "manifest_sha256": "1339966463ba2bc576ebb5db368246c872771cdbc194b5046b772dad2c406211",
+      "path": "bench/eval/proposer-L2-acsl-20261109",
+      "stratum": "development"
+    },
+    {
+      "experiment": "proposer",
+      "manifest_sha256": "7a2a99afd75ff2f72e62f9472e84581ace1755b8e66e5426c2fb587b282d0feb",
+      "path": "bench/eval/proposer-L1-zilu-20261109",
+      "stratum": "ported"
+    },
+    {
+      "experiment": "proposer",
+      "manifest_sha256": "4aff666ed9177eb5089f21e7638ccdba2785a38dce5f0bf20f749df8da366732",
+      "path": "bench/eval/proposer-L2-zilu-20261109",
+      "stratum": "ported"
+    },
+    {
+      "experiment": "proposer",
+      "manifest_sha256": "ef6ea18a6fd1016019117fea73d1eeafa0cc7f79f88f37f657d246c47964d2a0",
+      "path": "bench/eval/proposer-L1-zilu-obfuscated-20261109",
+      "stratum": "obfuscated"
+    },
+    {
+      "experiment": "proposer",
+      "manifest_sha256": "8aa07021e6b78e084e6a1aac7fb1b07525f5072588de7d73fe5c77f76992c762",
+      "path": "bench/eval/proposer-L2-zilu-obfuscated-20261109",
+      "stratum": "obfuscated"
+    },
+    {
+      "experiment": "proposer",
+      "manifest_sha256": "21642d108bc308a4f80c94faeaced6be02853dbec7dfa54b3a8aecf9926b0f16",
+      "path": "bench/eval/proposer-L1-zilu-composed-20261109",
+      "stratum": "composed"
+    },
+    {
+      "experiment": "proposer",
+      "manifest_sha256": "b27e2384e6793f6cbde9310e9260ba72ba8cced374dc18533c56c75078b7736c",
+      "path": "bench/eval/proposer-L2-zilu-composed-20261109",
+      "stratum": "composed"
+    },
+    {
+      "experiment": "proposer",
+      "manifest_sha256": "8a2465cb9948cf6f79a2eaa2e97f3bfd0636c083fdc7b1271a0cb821e8193f0a",
+      "path": "bench/eval/proposer-L1-heldout-20261110",
+      "stratum": "heldout"
+    },
+    {
+      "experiment": "proposer",
+      "manifest_sha256": "9edc2e8e23847604a9deb19dfa05e726a27a2aecaee15d1c052c5ce9977aaafe",
+      "path": "bench/eval/proposer-L2-heldout-20261110",
+      "stratum": "heldout"
+    },
+    {
+      "experiment": "robustness",
+      "manifest_sha256": "e967965184bb891a02e018b34768476c7282486b785b57cc9a23ccc1e2eac734",
+      "path": "bench/eval/robustness-20261110",
+      "stratum": "development"
+    },
+    {
+      "experiment": "robustness",
+      "manifest_sha256": "f5ffdc642f7f0f004e0c9a63992510d65c577a9aad87b06946d6d620136d6f76",
+      "path": "bench/eval/robustness-zilu-20261110",
+      "stratum": "ported"
+    },
+    {
+      "experiment": "robustness",
+      "manifest_sha256": "14459f1260f84cfe5d5d59215d62c20646189b6ea53d9fdd5e8153fa6473ace8",
+      "path": "bench/eval/robustness-zilu-composed-20261110",
+      "stratum": "composed"
+    },
+    {
+      "experiment": "robustness",
+      "manifest_sha256": "1aea6b66e3b7639716011a9603377e1c8dc0bbe817862554840bd89699954299",
+      "path": "bench/eval/robustness-heldout-20261110",
+      "stratum": "heldout"
+    },
+    {
+      "experiment": "runtime",
+      "manifest_sha256": "6b5a3991b8e18f9a7702e6486d368e045e61483ed8aecb2b7ff0ae770271a563",
+      "path": "bench/eval/runtime-20261110",
+      "stratum": "development"
+    },
+    {
+      "experiment": "sweep",
+      "manifest_sha256": "8aaea31addb0792119ee99da24658ac16dcb86084638090224d6ff890bb8911f",
+      "path": "bench/eval/sweep-20261105",
+      "stratum": "development"
+    },
+    {
+      "experiment": "sweep",
+      "manifest_sha256": "1030110e94988994d1ca0b5d7bc09dbe579e62f94cd389b2d0294e8208601a0b",
+      "path": "bench/eval/sweep-zilu-20261109",
+      "stratum": "ported"
+    },
+    {
+      "experiment": "sweep",
+      "manifest_sha256": "53af8d60815df388cb6e111b8882bb176720e8b159d4f368c1dddb6beac3deec",
+      "path": "bench/eval/sweep-zilu-composed-20261109",
+      "stratum": "composed"
+    },
+    {
+      "experiment": "sweep",
+      "manifest_sha256": "db2167b2230d4fd5bf1b7e40dd8006db313d1fae1d3cd57dec8b8c37a62e45dd",
+      "path": "bench/eval/sweep-heldout-20261110",
+      "stratum": "heldout"
+    },
+    {
+      "experiment": "wp_z3",
+      "manifest_sha256": "44dc491dd5e012a1b7830731482463243e6032ba04a4057a19bc48340843814b",
+      "path": "bench/eval/wp-z3-20261109",
+      "stratum": "development"
+    },
+    {
+      "experiment": "wp_z3",
+      "manifest_sha256": "e84917e1e0f4e2af3b4e2e1ea3b3d4244912b1deb2ca484720d0094ac50ca16c",
+      "path": "bench/eval/wp-z3-20261112",
+      "stratum": "development"
+    },
+    {
+      "experiment": "oracle",
+      "manifest_sha256": "41520eb3a6cd5f29234273a7c9e03d49247413d8bc3ad65d52de3ca3c7bd2c3a",
+      "path": "bench/oracle/wp32-v4-20261105",
+      "stratum": "development"
+    }
+  ],
+  "seed": 0
+}

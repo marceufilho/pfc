@@ -1,0 +1,34 @@
+{
+  "advisory": true,
+  "by_category": {
+    "entry": {
+      "agree": 43,
+      "disagree": 0,
+      "inconclusive": 0,
+      "n": 43
+    },
+    "reported": {
+      "agree": 854,
+      "disagree": 0,
+      "inconclusive": 39,
+      "n": 893
+    },
+    "required": {
+      "agree": 693,
+      "disagree": 0,
+      "inconclusive": 14,
+      "n": 707
+    }
+  },
+  "cvc5_statuses": {
+    "error": 53,
+    "sat": 50,
+    "timeout": 0,
+    "unknown": 0,
+    "unsat": 1540
+  },
+  "disagreements": [],
+  "experiment": "crosscheck",
+  "note": "advisory: cvc5 grants no removal authority; pfc authorization accepts only Z3's solver version. Agreement is a second witness of the same formula; a disagreement is reported for investigation.",
+  "passed": true
+}

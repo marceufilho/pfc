@@ -1,0 +1,119 @@
+{
+  "columns": [
+    {
+      "allowed": [
+        "compiler",
+        "harness",
+        "compiler-extended"
+      ],
+      "name": "group",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "mutant_id",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "target",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "relational_boundary",
+        "constant_shift",
+        "negated_condition",
+        "deleted_statement",
+        "swapped_operands",
+        "arithmetic_operator",
+        "boolean_operator",
+        "equality_flip",
+        "return_replacement"
+      ],
+      "name": "operator",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "line",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "description",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "layer",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "passed",
+        "killed",
+        "crashed",
+        "timeout",
+        "not_run"
+      ],
+      "name": "status",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "seconds",
+      "nullable": true,
+      "type": "number"
+    },
+    {
+      "allowed": null,
+      "name": "killed",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "killing_layer",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "golden_only",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "survivor",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "equivalent",
+      "nullable": true,
+      "type": "boolean"
+    }
+  ],
+  "provenance": [
+    "experiment",
+    "evidence_dir",
+    "tag",
+    "commit",
+    "seed",
+    "timestamp",
+    "vc_model",
+    "solver_version",
+    "clang"
+  ]
+}

@@ -1,0 +1,653 @@
+{
+  "counter_tool": "unavailable",
+  "cpu": null,
+  "governor": "powersave",
+  "kernels": {
+    "binary_search": {
+      "failed_runs": 0,
+      "instruction_ratios": {},
+      "iqr_ms": {
+        "checked": 8.471250000000012,
+        "plain": 6.048500000000004,
+        "verified": 6.169750000000008,
+        "without-assume": 5.483250000000027,
+        "without-delete": 7.1785,
+        "without-overflow-traps": 8.547499999999985,
+        "without-restrict": 5.999250000000018
+      },
+      "median_instructions": {},
+      "medians_ms": {
+        "checked": 122.70949999999999,
+        "plain": 123.4985,
+        "verified": 120.63749999999999,
+        "without-assume": 118.8215,
+        "without-delete": 122.262,
+        "without-overflow-traps": 122.3075,
+        "without-restrict": 119.138
+      },
+      "ratios": {
+        "checked/plain": {
+          "estimate": 0.983790335142722,
+          "high": 1.010955824117762,
+          "low": 0.955709929704064,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/checked": {
+          "estimate": 0.982096761967525,
+          "high": 0.9997470579197012,
+          "low": 0.9647723864569632,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/plain": {
+          "estimate": 0.9661773025986135,
+          "high": 0.9893041463901576,
+          "low": 0.9421064576282785,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-assume/verified": {
+          "estimate": 0.9977363869719136,
+          "high": 1.0174259913965198,
+          "low": 0.9793304220359184,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-delete/verified": {
+          "estimate": 1.008266239831596,
+          "high": 1.027093954315704,
+          "low": 0.9915773014886939,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-overflow-traps/plain": {
+          "estimate": 0.9734559346911887,
+          "high": 0.9959293047867079,
+          "low": 0.9469525027336537,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-overflow-traps/verified": {
+          "estimate": 1.0075334331214352,
+          "high": 1.0258831031647127,
+          "low": 0.9902074380205479,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-restrict/verified": {
+          "estimate": 0.9985390823360425,
+          "high": 1.0213509698735426,
+          "low": 0.9804618861259876,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        }
+      },
+      "runs_per_variant": {
+        "checked": 30,
+        "plain": 30,
+        "verified": 30,
+        "without-assume": 30,
+        "without-delete": 30,
+        "without-overflow-traps": 30,
+        "without-restrict": 30
+      },
+      "vectorized": {
+        "checked": false,
+        "plain": false,
+        "verified": false,
+        "without-assume": false,
+        "without-delete": false,
+        "without-overflow-traps": false,
+        "without-restrict": false
+      }
+    },
+    "dot": {
+      "failed_runs": 0,
+      "instruction_ratios": {},
+      "iqr_ms": {
+        "checked": 15.469749999999976,
+        "plain": 16.83825000000013,
+        "verified": 20.30100000000016,
+        "without-assume": 18.76299999999992,
+        "without-delete": 14.277000000000157,
+        "without-overflow-traps": 15.561249999999973,
+        "without-restrict": 15.80700000000013
+      },
+      "median_instructions": {},
+      "medians_ms": {
+        "checked": 800.5475,
+        "plain": 627.913,
+        "verified": 684.8305,
+        "without-assume": 678.4895,
+        "without-delete": 731.642,
+        "without-overflow-traps": 626.3675,
+        "without-restrict": 678.989
+      },
+      "ratios": {
+        "checked/plain": {
+          "estimate": 1.2764853399678395,
+          "high": 1.2922404499875433,
+          "low": 1.2617885617670064,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/checked": {
+          "estimate": 0.8548783518312939,
+          "high": 0.8622135899473632,
+          "low": 0.8467638638963344,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/plain": {
+          "estimate": 1.0912396835685154,
+          "high": 1.1029815242038352,
+          "low": 1.0799462170615444,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-assume/verified": {
+          "estimate": 0.9983562879271037,
+          "high": 1.0128110326861552,
+          "low": 0.9871973603558598,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-delete/verified": {
+          "estimate": 1.0647517704396086,
+          "high": 1.0724787128783098,
+          "low": 1.0571041911185453,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-overflow-traps/plain": {
+          "estimate": 1.0015374924838356,
+          "high": 1.0132257821023274,
+          "low": 0.9900140701540976,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-overflow-traps/verified": {
+          "estimate": 0.9177979022982922,
+          "high": 0.9282957791098781,
+          "low": 0.9072915356707526,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-restrict/verified": {
+          "estimate": 0.9948442434835478,
+          "high": 1.0065407532824677,
+          "low": 0.9841372955943091,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        }
+      },
+      "runs_per_variant": {
+        "checked": 30,
+        "plain": 30,
+        "verified": 30,
+        "without-assume": 30,
+        "without-delete": 30,
+        "without-overflow-traps": 30,
+        "without-restrict": 30
+      },
+      "vectorized": {
+        "checked": false,
+        "plain": true,
+        "verified": false,
+        "without-assume": false,
+        "without-delete": false,
+        "without-overflow-traps": true,
+        "without-restrict": false
+      }
+    },
+    "matvec": {
+      "failed_runs": 0,
+      "instruction_ratios": {},
+      "iqr_ms": {
+        "checked": 12.64650000000006,
+        "plain": 24.869000000000028,
+        "verified": 14.812500000000114,
+        "without-assume": 17.18100000000004,
+        "without-delete": 18.30099999999993,
+        "without-overflow-traps": 16.093000000000075,
+        "without-restrict": 16.29950000000008
+      },
+      "median_instructions": {},
+      "medians_ms": {
+        "checked": 936.7565,
+        "plain": 500.2845,
+        "verified": 620.8109999999999,
+        "without-assume": 618.4085,
+        "without-delete": 889.9784999999999,
+        "without-overflow-traps": 520.9839999999999,
+        "without-restrict": 618.5619999999999
+      },
+      "ratios": {
+        "checked/plain": {
+          "estimate": 1.8528071545001834,
+          "high": 1.8784759152210215,
+          "low": 1.825443186982623,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/checked": {
+          "estimate": 0.6620122204238462,
+          "high": 0.6701457007288231,
+          "low": 0.6547498605081428,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/plain": {
+          "estimate": 1.2265809783678545,
+          "high": 1.250208911597515,
+          "low": 1.2038796436622843,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-assume/verified": {
+          "estimate": 1.000345395949919,
+          "high": 1.0148271547285557,
+          "low": 0.9857842263892103,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-delete/verified": {
+          "estimate": 1.432844789332583,
+          "high": 1.4502359242529823,
+          "low": 1.414757437897316,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-overflow-traps/plain": {
+          "estimate": 1.0359363052654726,
+          "high": 1.0574296881693024,
+          "low": 1.0156060372879536,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-overflow-traps/verified": {
+          "estimate": 0.8445722895881994,
+          "high": 0.8570888757368211,
+          "low": 0.8324283454515319,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-restrict/verified": {
+          "estimate": 1.0001895734451585,
+          "high": 1.0166260637431277,
+          "low": 0.9838333677418811,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        }
+      },
+      "runs_per_variant": {
+        "checked": 30,
+        "plain": 30,
+        "verified": 30,
+        "without-assume": 30,
+        "without-delete": 30,
+        "without-overflow-traps": 30,
+        "without-restrict": 30
+      },
+      "vectorized": {
+        "checked": true,
+        "plain": true,
+        "verified": false,
+        "without-assume": false,
+        "without-delete": false,
+        "without-overflow-traps": true,
+        "without-restrict": false
+      }
+    },
+    "prefix_sum": {
+      "failed_runs": 0,
+      "instruction_ratios": {},
+      "iqr_ms": {
+        "checked": 16.020500000000084,
+        "plain": 20.18950000000018,
+        "verified": 12.71725000000015,
+        "without-assume": 14.523499999999785,
+        "without-delete": 10.39449999999988,
+        "without-overflow-traps": 15.226499999999987,
+        "without-restrict": 12.427999999999884
+      },
+      "median_instructions": {},
+      "medians_ms": {
+        "checked": 2194.7145,
+        "plain": 972.0505,
+        "verified": 2206.2439999999997,
+        "without-assume": 2205.541,
+        "without-delete": 2203.3525,
+        "without-overflow-traps": 966.3765000000001,
+        "without-restrict": 2206.2655
+      },
+      "ratios": {
+        "checked/plain": {
+          "estimate": 2.2515620458863466,
+          "high": 2.2651510090519302,
+          "low": 2.236542407733316,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/checked": {
+          "estimate": 1.0053649435362375,
+          "high": 1.0080022757279907,
+          "low": 1.0019966777279303,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/plain": {
+          "estimate": 2.263641549130862,
+          "high": 2.2784757647977356,
+          "low": 2.246668400648998,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-assume/verified": {
+          "estimate": 1.0005088475185455,
+          "high": 1.003130683905397,
+          "low": 0.997574741817256,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-delete/verified": {
+          "estimate": 0.9996364930814448,
+          "high": 1.002850616693707,
+          "low": 0.9968633967204957,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-overflow-traps/plain": {
+          "estimate": 0.9968258021666797,
+          "high": 1.0038636688702263,
+          "low": 0.9892352483022665,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-overflow-traps/verified": {
+          "estimate": 0.44036380342524484,
+          "high": 0.4426442957298606,
+          "low": 0.43831127228524486,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-restrict/verified": {
+          "estimate": 1.0000064277829586,
+          "high": 1.0036736093500307,
+          "low": 0.9964636427223161,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        }
+      },
+      "runs_per_variant": {
+        "checked": 30,
+        "plain": 30,
+        "verified": 30,
+        "without-assume": 30,
+        "without-delete": 30,
+        "without-overflow-traps": 30,
+        "without-restrict": 30
+      },
+      "vectorized": {
+        "checked": false,
+        "plain": false,
+        "verified": false,
+        "without-assume": false,
+        "without-delete": false,
+        "without-overflow-traps": false,
+        "without-restrict": false
+      }
+    },
+    "saxpy": {
+      "failed_runs": 0,
+      "instruction_ratios": {},
+      "iqr_ms": {
+        "checked": 24.99899999999991,
+        "plain": 12.243250000000103,
+        "verified": 12.12824999999998,
+        "without-assume": 19.882499999999936,
+        "without-delete": 20.29849999999999,
+        "without-overflow-traps": 19.744749999999954,
+        "without-restrict": 19.862499999999955
+      },
+      "median_instructions": {},
+      "medians_ms": {
+        "checked": 811.95,
+        "plain": 683.5619999999999,
+        "verified": 737.6365000000001,
+        "without-assume": 737.8105,
+        "without-delete": 754.9369999999999,
+        "without-overflow-traps": 685.111,
+        "without-restrict": 738.452
+      },
+      "ratios": {
+        "checked/plain": {
+          "estimate": 1.191900265038593,
+          "high": 1.202632973618366,
+          "low": 1.1817151346309878,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/checked": {
+          "estimate": 0.9043996663899543,
+          "high": 0.9142403598967846,
+          "low": 0.8939424596869265,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/plain": {
+          "estimate": 1.0779542020710018,
+          "high": 1.086339996300263,
+          "low": 1.069421599211209,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-assume/verified": {
+          "estimate": 1.0015620803092418,
+          "high": 1.0123178589379587,
+          "low": 0.9916032728212716,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-delete/verified": {
+          "estimate": 1.0212023755445039,
+          "high": 1.0311609057041857,
+          "low": 1.0118497138454403,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-overflow-traps/plain": {
+          "estimate": 1.0005966642774322,
+          "high": 1.0112723997775432,
+          "low": 0.9905351131318558,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-overflow-traps/verified": {
+          "estimate": 0.9282367120560895,
+          "high": 0.936833780472261,
+          "low": 0.9192806845684072,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-restrict/verified": {
+          "estimate": 1.0036158383316465,
+          "high": 1.012083289635993,
+          "low": 0.9949706297075676,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        }
+      },
+      "runs_per_variant": {
+        "checked": 30,
+        "plain": 30,
+        "verified": 30,
+        "without-assume": 30,
+        "without-delete": 30,
+        "without-overflow-traps": 30,
+        "without-restrict": 30
+      },
+      "vectorized": {
+        "checked": false,
+        "plain": true,
+        "verified": false,
+        "without-assume": false,
+        "without-delete": false,
+        "without-overflow-traps": true,
+        "without-restrict": false
+      }
+    },
+    "sum": {
+      "failed_runs": 0,
+      "instruction_ratios": {},
+      "iqr_ms": {
+        "checked": 11.593000000000075,
+        "plain": 22.987499999999955,
+        "verified": 17.690500000000043,
+        "without-assume": 14.610000000000014,
+        "without-delete": 17.644999999999982,
+        "without-overflow-traps": 17.92025000000001,
+        "without-restrict": 19.93775000000005
+      },
+      "median_instructions": {},
+      "medians_ms": {
+        "checked": 607.9404999999999,
+        "plain": 470.274,
+        "verified": 540.3105,
+        "without-assume": 538.5,
+        "without-delete": 538.9704999999999,
+        "without-overflow-traps": 469.0825,
+        "without-restrict": 537.5350000000001
+      },
+      "ratios": {
+        "checked/plain": {
+          "estimate": 1.2746419413352923,
+          "high": 1.2940941483992159,
+          "low": 1.253114214839096,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/checked": {
+          "estimate": 0.8938260540227538,
+          "high": 0.9055101546360411,
+          "low": 0.883772497201264,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "verified/plain": {
+          "estimate": 1.1393081767156268,
+          "high": 1.1631278979543793,
+          "low": 1.1182091053813181,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-assume/verified": {
+          "estimate": 0.9950760641568319,
+          "high": 1.0093657743399036,
+          "low": 0.9804356622669261,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-delete/verified": {
+          "estimate": 0.9976495508435442,
+          "high": 1.0119103425034055,
+          "low": 0.9835932644988147,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-overflow-traps/plain": {
+          "estimate": 0.9978086573447829,
+          "high": 1.0237384804063263,
+          "low": 0.973402754956905,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-overflow-traps/verified": {
+          "estimate": 0.8758022436223044,
+          "high": 0.8921844766468142,
+          "low": 0.8611280038324083,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        },
+        "without-restrict/verified": {
+          "estimate": 0.9981607717476875,
+          "high": 1.0132155623938828,
+          "low": 0.9827786880309748,
+          "pairs": 30,
+          "replicates": 2000,
+          "seed": 0
+        }
+      },
+      "runs_per_variant": {
+        "checked": 30,
+        "plain": 30,
+        "verified": 30,
+        "without-assume": 30,
+        "without-delete": 30,
+        "without-overflow-traps": 30,
+        "without-restrict": 30
+      },
+      "vectorized": {
+        "checked": false,
+        "plain": true,
+        "verified": false,
+        "without-assume": false,
+        "without-delete": false,
+        "without-overflow-traps": true,
+        "without-restrict": false
+      }
+    }
+  },
+  "label": "exploratory",
+  "passed": true,
+  "timed_runs": 1260,
+  "warmups": 126
+}

@@ -1,0 +1,47 @@
+{
+  "experiment": "undue-removal",
+  "provenance": {
+    "clang": "Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)",
+    "commit": null,
+    "experiment": "undue-removal",
+    "seed": 0,
+    "solver_version": "5.3.3.0",
+    "tag": null,
+    "timestamp": "2026-11-23T21:12:33+00:00",
+    "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+  },
+  "settings": {
+    "candidate_digest": "b14a4c5b387de7173666f3e4c8d9e305dca33267d61f0096ec2f410e099034ff",
+    "compiler": "/usr/lib/llvm-19/bin/clang",
+    "cpp": "cpp",
+    "layers": [
+      "unit",
+      "golden",
+      "differential",
+      "audit"
+    ],
+    "population": 1214,
+    "post_hoc": true,
+    "probed_first": null,
+    "seed": 0,
+    "smt_encoding": "z3-int-shared-memory-v2; C division truncates to zero; division by zero totalized to 0",
+    "unsafe_programs": {
+      "bench/external/acsl/accumulate": 1,
+      "bench/external/acsl/copy": 2,
+      "bench/external/acsl/count": 1,
+      "bench/external/acsl/fill": 1,
+      "bench/external/acsl/find": 1,
+      "bench/external/acsl/replace": 1,
+      "bench/external/acsl/reverse": 1,
+      "bench/external/acsl/swap_ranges": 2,
+      "kernels/binary_search": 1,
+      "kernels/dot": 2,
+      "kernels/matvec": 3,
+      "kernels/prefix_sum": 1,
+      "kernels/saxpy": 2,
+      "kernels/sum": 1,
+      "paper/examples/pair": 1
+    },
+    "witness_campaign": "bench/eval/conjuncts-20261110"
+  }
+}

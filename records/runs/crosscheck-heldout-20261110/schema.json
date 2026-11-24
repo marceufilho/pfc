@@ -1,0 +1,91 @@
+{
+  "columns": [
+    {
+      "allowed": null,
+      "name": "kernel",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "function",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "obligation_id",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "kind",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "required",
+        "reported",
+        "entry"
+      ],
+      "name": "category",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "query_id",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "z3_status",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "z3_ms",
+      "nullable": false,
+      "type": "number"
+    },
+    {
+      "allowed": [
+        "unsat",
+        "sat",
+        "unknown",
+        "timeout",
+        "error"
+      ],
+      "name": "cvc5_status",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "cvc5_ms",
+      "nullable": false,
+      "type": "number"
+    },
+    {
+      "allowed": null,
+      "name": "agreement",
+      "nullable": true,
+      "type": "boolean"
+    }
+  ],
+  "provenance": [
+    "experiment",
+    "evidence_dir",
+    "tag",
+    "commit",
+    "seed",
+    "timestamp",
+    "vc_model",
+    "solver_version",
+    "clang"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "conditions": {
+    "L1": {
+      "attempts": 75,
+      "attempts_to_first_success": 1.0,
+      "mean_success_at_k": {
+        "estimate": 1.0,
+        "high": 1.0,
+        "low": 1.0,
+        "replicates": 2000,
+        "seed": 0
+      },
+      "origins": {
+        "live": 75
+      },
+      "rejection_classes": {},
+      "runs": 5,
+      "success_at_k": {
+        "zilupair01": 1.0,
+        "zilupair02": 1.0,
+        "zilupair03": 1.0,
+        "zilupair04": 1.0,
+        "zilupair05": 1.0,
+        "zilupair06": 1.0,
+        "zilupair07": 1.0,
+        "zilupair08": 1.0,
+        "zilupair09": 1.0,
+        "zilupair10": 1.0,
+        "zilupair11": 1.0,
+        "zilupair12": 1.0,
+        "zilupair13": 1.0,
+        "zilupair14": 1.0,
+        "zilupair15": 1.0
+      },
+      "successes_by_run": [
+        15,
+        15,
+        15,
+        15,
+        15
+      ],
+      "tasks": 15,
+      "tokens_per_success": 1709.9733333333334,
+      "tokens_total": 128248
+    }
+  },
+  "passed": true,
+  "replay_consistent": null,
+  "requests": 75
+}

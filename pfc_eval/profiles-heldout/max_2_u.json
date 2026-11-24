@@ -1,0 +1,53 @@
+{
+  "profile": "pfc-eval-inputs-v1",
+  "kernel": "max_2_u",
+  "function": "max_2_u",
+  "program_sha256": "09a19054274676ba0d5ff7a15ebfb7d2c289b1bdb6fcd38fc866e9b19f801cd9",
+  "cases": 1000,
+  "arrays": {
+    "A": {
+      "length": [
+        1600,
+        4096
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    }
+  },
+  "scalars": {
+    "n": {
+      "kind": "range",
+      "low": 1,
+      "high": 40
+    }
+  },
+  "boundary": [
+    {
+      "arrays": {
+        "A": [
+          1
+        ]
+      },
+      "scalars": {
+        "n": 1
+      }
+    },
+    {
+      "arrays": {
+        "A": [
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "scalars": {
+        "n": 2
+      }
+    }
+  ],
+  "stress": 0.1
+}

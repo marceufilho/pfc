@@ -1,0 +1,348 @@
+{
+  "entries": [
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "composed_sha256": "2f540e105c49d30ac5d02a25bd8858f2bfdf281dca39643ac0d0a3b5cbcde42a",
+      "hand_invariants": [
+        "((x <= y) && (y <= n))",
+        "((high2 == (low2 + (2 * mid2))) && (mid2 >= 0))"
+      ],
+      "loops": 2,
+      "name": "zilupair01",
+      "parts": [
+        "zilu05",
+        "zilu15"
+      ],
+      "renaming": {
+        "high": "high2",
+        "low": "low2",
+        "mid": "mid2"
+      },
+      "task": "zilu-composed/zilupair01/kernel.c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "composed_sha256": "bf3bf11e85ada59e8044c5ffca6d8375ef2fc1de18f4af86da60877b4d42b35a",
+      "hand_invariants": [
+        "((((2 * k) + i) == (2 * n)) && (i <= (n + 1)))",
+        "((j2 == (2 * i2)) && (i2 <= 100))"
+      ],
+      "loops": 2,
+      "name": "zilupair02",
+      "parts": [
+        "zilu24",
+        "zilu23"
+      ],
+      "renaming": {
+        "i": "i2",
+        "j": "j2"
+      },
+      "task": "zilu-composed/zilupair02/kernel.c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "composed_sha256": "97c02c5b7e9978ba006e8c7cf4d45b32bc8e439230d2423e13522811f70e04ed",
+      "hand_invariants": [
+        "((sum >= 0) && (i >= 0))",
+        "((x2 >= 1) && (y2 >= 1))"
+      ],
+      "loops": 2,
+      "name": "zilupair03",
+      "parts": [
+        "zilu08",
+        "zilu01"
+      ],
+      "renaming": {
+        "step": "step2",
+        "steps": "steps2",
+        "x": "x2",
+        "y": "y2"
+      },
+      "task": "zilu-composed/zilupair03/kernel.c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "composed_sha256": "469bf25fb96c4aa4a29744de4de2356d32538b6d486fd658e476a34108ccfa71",
+      "hand_invariants": [
+        "(y >= t)",
+        "(((j2 + k2) == n2) && (j2 <= n2))"
+      ],
+      "loops": 2,
+      "name": "zilupair04",
+      "parts": [
+        "zilu12",
+        "zilu34"
+      ],
+      "renaming": {
+        "j": "j2",
+        "k": "k2",
+        "n": "n2"
+      },
+      "task": "zilu-composed/zilupair04/kernel.c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "composed_sha256": "104c29f1955b5e3c7e913b2c23e2168572eef308acac1803ff4fa71179bec993",
+      "hand_invariants": [
+        "((x == y) && (x >= 0))",
+        "((j2 == k2) && (j2 >= 0))"
+      ],
+      "loops": 2,
+      "name": "zilupair05",
+      "parts": [
+        "zilu37",
+        "zilu19"
+      ],
+      "renaming": {
+        "j": "j2",
+        "k": "k2",
+        "n": "n2"
+      },
+      "task": "zilu-composed/zilupair05/kernel.c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "composed_sha256": "fcc24fbd86e380957e08834eb474350a1df56b366d77dfd3ef2571ee9542227d",
+      "hand_invariants": [
+        "(x <= y)",
+        "(x2 >= 0)"
+      ],
+      "loops": 2,
+      "name": "zilupair06",
+      "parts": [
+        "zilu26",
+        "zilu33"
+      ],
+      "renaming": {
+        "x": "x2"
+      },
+      "task": "zilu-composed/zilupair06/kernel.c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "composed_sha256": "99f7c2ec7a252eea707181768a6584a6cdf18d577b0097106699144f37adbe36",
+      "hand_invariants": [
+        "(k > (i - j))",
+        "(((k2 + j2) >= n2) && (j2 <= n2))"
+      ],
+      "loops": 2,
+      "name": "zilupair07",
+      "parts": [
+        "zilu27",
+        "zilu04"
+      ],
+      "renaming": {
+        "j": "j2",
+        "k": "k2",
+        "n": "n2"
+      },
+      "task": "zilu-composed/zilupair07/kernel.c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "composed_sha256": "63bed3d7cf3845eba2bb0d9ecbdaaad13d5dbaa5cee04950d4eba5268e5f47db",
+      "hand_invariants": [
+        "(x <= 10)",
+        "((x2 + y2) == k2)"
+      ],
+      "loops": 2,
+      "name": "zilupair08",
+      "parts": [
+        "zilu25",
+        "zilu06"
+      ],
+      "renaming": {
+        "i": "i2",
+        "j": "j2",
+        "k": "k2",
+        "step": "step2",
+        "steps": "steps2",
+        "x": "x2",
+        "y": "y2"
+      },
+      "task": "zilu-composed/zilupair08/kernel.c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "composed_sha256": "181b618e5c28e7f4d6a443b2b8e9c7a08ff1f5b473043653feaea51b0af373e0",
+      "hand_invariants": [
+        "(x == y)",
+        "(x2 <= n2)"
+      ],
+      "loops": 2,
+      "name": "zilupair09",
+      "parts": [
+        "zilu30",
+        "zilu11"
+      ],
+      "renaming": {
+        "n": "n2",
+        "x": "x2"
+      },
+      "task": "zilu-composed/zilupair09/kernel.c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "composed_sha256": "54907d6c21cadc16571d5fdc82e4245caa90969bd4314c5f68b7dbee1d46dbd9",
+      "hand_invariants": [
+        "(((1 <= (i + k)) && ((i + k) <= 2)) && (i >= 1))",
+        "(x2 <= (y2 + 99))"
+      ],
+      "loops": 2,
+      "name": "zilupair10",
+      "parts": [
+        "zilu16",
+        "zilu29"
+      ],
+      "renaming": {
+        "x": "x2",
+        "y": "y2"
+      },
+      "task": "zilu-composed/zilupair10/kernel.c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "composed_sha256": "5288f360e4baba30dc40fced3f0eccd3170c1ec44ec85bd9db23f0228f5ab904",
+      "hand_invariants": [
+        "(i >= 0)",
+        "((x2 == y2) && (x2 >= 0))"
+      ],
+      "loops": 2,
+      "name": "zilupair11",
+      "parts": [
+        "zilu14",
+        "zilu36"
+      ],
+      "renaming": {
+        "step": "step2",
+        "steps": "steps2",
+        "x": "x2",
+        "y": "y2"
+      },
+      "task": "zilu-composed/zilupair11/kernel.c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "composed_sha256": "208139f8675bc00b30e6e86b948e6580f610b1cf72c9624336aafb53f68695f5",
+      "hand_invariants": [
+        "((sum >= 0) && (i >= 0))",
+        "(((x2 >= y2) && (y2 >= 0)) && (x2 >= 1))"
+      ],
+      "loops": 2,
+      "name": "zilupair12",
+      "parts": [
+        "zilu20",
+        "zilu22"
+      ],
+      "renaming": {
+        "step": "step2",
+        "steps": "steps2",
+        "x": "x2",
+        "y": "y2"
+      },
+      "task": "zilu-composed/zilupair12/kernel.c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "composed_sha256": "c918d019f13d0e4ab21dc9f903fdb70ad8dd78a578204ed51a83ddd8a986932b",
+      "hand_invariants": [
+        "(i == j)",
+        "(l2 > 0)"
+      ],
+      "loops": 2,
+      "name": "zilupair13",
+      "parts": [
+        "zilu13",
+        "zilu02"
+      ],
+      "renaming": {
+        "i": "i2",
+        "l": "l2",
+        "n": "n2"
+      },
+      "task": "zilu-composed/zilupair13/kernel.c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": false,
+      "composed_sha256": "932a336c5672a9756a3d732bf922713a1dd0a4abd1829efaa9272c9721f89950",
+      "hand_invariants": [
+        "((i == k) && (i <= n))",
+        "((x2 == 1) || (x2 == 2))"
+      ],
+      "loops": 2,
+      "name": "zilupair14",
+      "parts": [
+        "zilu18",
+        "zilu32"
+      ],
+      "renaming": {
+        "step": "step2",
+        "steps": "steps2",
+        "x": "x2"
+      },
+      "task": "zilu-composed/zilupair14/kernel.c"
+    },
+    {
+      "b0_admitted": true,
+      "b0_problem": null,
+      "b1_family": true,
+      "composed_sha256": "a060f2970f092fdb6505b199d1ef3188b381b235ad5485be30e5bfecc7474330",
+      "hand_invariants": [
+        "(i == k)",
+        "(x2 >= 0)"
+      ],
+      "loops": 2,
+      "name": "zilupair15",
+      "parts": [
+        "zilu17",
+        "zilu35"
+      ],
+      "renaming": {
+        "x": "x2"
+      },
+      "task": "zilu-composed/zilupair15/kernel.c"
+    }
+  ],
+  "generator": "pfc_eval/ports.py write_composed",
+  "pairing": {
+    "method": "seeded shuffle of PORTS, consecutive disjoint pairs; second loop alpha-renamed with suffix 2",
+    "rule": "a composite is a task only when both hand invariants are admitted together by the frozen admit()",
+    "seed": 0
+  },
+  "schema_version": 1,
+  "upstream": {
+    "commit": "f3feef51a07ffe7c6ef58f3da3b7fe041af4fd25",
+    "directory": "c/loop-zilu",
+    "license": "GPL-2.0-only (upstream LICENSE.GPLv2.txt, copied beside the ports)",
+    "origin": "Li, Sun, Li, Le, Lin: Automatic loop-invariant generation and refinement through selective sampling, ASE 2017 (the 53 Zilu benchmarks, as packaged by Martin Spiessl for SV-COMP)",
+    "repository": "https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks"
+  }
+}

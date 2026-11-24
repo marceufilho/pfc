@@ -1,0 +1,14 @@
+{
+  "checked_stopped_by_witnessed_guard": 20,
+  "checked_stops": {
+    "witnessed guard": 20
+  },
+  "checked_trap": 20,
+  "passed": true,
+  "verified_stopped_by_witnessed_guard": 20,
+  "verified_stops": {
+    "witnessed guard": 20
+  },
+  "verified_trap": 20,
+  "witnesses": 20
+}

@@ -1,0 +1,471 @@
+{
+  "experiment": "inject",
+  "kernels": {
+    "zilupair01": {
+      "abstract_models": 27,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 13,
+      "false": {
+        "admitted": 0,
+        "total": 25
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 13,
+      "unclassified": {
+        "admitted": 0,
+        "total": 10
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 0,
+        "total": 0
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 5
+      }
+    },
+    "zilupair02": {
+      "abstract_models": 32,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 8,
+      "false": {
+        "admitted": 0,
+        "total": 28
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 8,
+      "unclassified": {
+        "admitted": 0,
+        "total": 9
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 0,
+        "total": 0
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 3
+      }
+    },
+    "zilupair03": {
+      "abstract_models": 36,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 3,
+      "false": {
+        "admitted": 0,
+        "total": 19
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 3,
+      "unclassified": {
+        "admitted": 0,
+        "total": 19
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 1,
+        "total": 1
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 1
+      }
+    },
+    "zilupair04": {
+      "abstract_models": 25,
+      "candidates": 39,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 14,
+      "false": {
+        "admitted": 0,
+        "total": 33
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 14,
+      "unclassified": {
+        "admitted": 0,
+        "total": 4
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 0,
+        "total": 0
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 2
+      }
+    },
+    "zilupair05": {
+      "abstract_models": 27,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 11,
+      "false": {
+        "admitted": 0,
+        "total": 22
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 11,
+      "unclassified": {
+        "admitted": 0,
+        "total": 8
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 2,
+        "total": 2
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 8
+      }
+    },
+    "zilupair06": {
+      "abstract_models": 12,
+      "candidates": 16,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 4,
+      "false": {
+        "admitted": 0,
+        "total": 10
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 4,
+      "unclassified": {
+        "admitted": 0,
+        "total": 4
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 0,
+        "total": 0
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 2
+      }
+    },
+    "zilupair07": {
+      "abstract_models": 25,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 15,
+      "false": {
+        "admitted": 0,
+        "total": 29
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 15,
+      "unclassified": {
+        "admitted": 0,
+        "total": 5
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 0,
+        "total": 0
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 6
+      }
+    },
+    "zilupair08": {
+      "abstract_models": 25,
+      "candidates": 32,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 7,
+      "false": {
+        "admitted": 0,
+        "total": 22
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 7,
+      "unclassified": {
+        "admitted": 0,
+        "total": 9
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 0,
+        "total": 0
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 1
+      }
+    },
+    "zilupair09": {
+      "abstract_models": 18,
+      "candidates": 29,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 11,
+      "false": {
+        "admitted": 0,
+        "total": 22
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 11,
+      "unclassified": {
+        "admitted": 0,
+        "total": 3
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 0,
+        "total": 0
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 4
+      }
+    },
+    "zilupair10": {
+      "abstract_models": 22,
+      "candidates": 35,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 13,
+      "false": {
+        "admitted": 0,
+        "total": 22
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 13,
+      "unclassified": {
+        "admitted": 0,
+        "total": 9
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 0,
+        "total": 0
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 4
+      }
+    },
+    "zilupair11": {
+      "abstract_models": 25,
+      "candidates": 29,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 3,
+      "false": {
+        "admitted": 0,
+        "total": 12
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 3,
+      "unclassified": {
+        "admitted": 0,
+        "total": 6
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 1,
+        "total": 1
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 10
+      }
+    },
+    "zilupair12": {
+      "abstract_models": 37,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 3,
+      "false": {
+        "admitted": 0,
+        "total": 15
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 3,
+      "unclassified": {
+        "admitted": 0,
+        "total": 23
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 0,
+        "total": 0
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 2
+      }
+    },
+    "zilupair13": {
+      "abstract_models": 10,
+      "candidates": 24,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 11,
+      "false": {
+        "admitted": 0,
+        "total": 18
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 11,
+      "unclassified": {
+        "admitted": 0,
+        "total": 3
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 3,
+        "total": 3
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 0
+      }
+    },
+    "zilupair14": {
+      "abstract_models": 23,
+      "candidates": 32,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 9,
+      "false": {
+        "admitted": 0,
+        "total": 25
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 9,
+      "unclassified": {
+        "admitted": 0,
+        "total": 6
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 0,
+        "total": 0
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 1
+      }
+    },
+    "zilupair15": {
+      "abstract_models": 11,
+      "candidates": 18,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 7,
+      "false": {
+        "admitted": 0,
+        "total": 11
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 7,
+      "unclassified": {
+        "admitted": 0,
+        "total": 5
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 0,
+        "total": 0
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 2
+      }
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,65 @@
+{
+  "conditions": {
+    "L2": {
+      "attempts": 150,
+      "attempts_to_first_success": 1.0,
+      "mean_success_at_k": {
+        "estimate": 1.0,
+        "high": 1.0,
+        "low": 1.0,
+        "replicates": 2000,
+        "seed": 0
+      },
+      "origins": {
+        "live": 150
+      },
+      "rejection_classes": {},
+      "runs": 5,
+      "success_at_k": {
+        "zilu01": 1.0,
+        "zilu02": 1.0,
+        "zilu04": 1.0,
+        "zilu05": 1.0,
+        "zilu06": 1.0,
+        "zilu08": 1.0,
+        "zilu11": 1.0,
+        "zilu12": 1.0,
+        "zilu13": 1.0,
+        "zilu14": 1.0,
+        "zilu15": 1.0,
+        "zilu16": 1.0,
+        "zilu17": 1.0,
+        "zilu18": 1.0,
+        "zilu19": 1.0,
+        "zilu20": 1.0,
+        "zilu22": 1.0,
+        "zilu23": 1.0,
+        "zilu24": 1.0,
+        "zilu25": 1.0,
+        "zilu26": 1.0,
+        "zilu27": 1.0,
+        "zilu29": 1.0,
+        "zilu30": 1.0,
+        "zilu32": 1.0,
+        "zilu33": 1.0,
+        "zilu34": 1.0,
+        "zilu35": 1.0,
+        "zilu36": 1.0,
+        "zilu37": 1.0
+      },
+      "successes_by_run": [
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "tasks": 30,
+      "tokens_per_success": 343.8333333333333,
+      "tokens_total": 51575
+    }
+  },
+  "passed": true,
+  "replay_consistent": null,
+  "requests": 150
+}

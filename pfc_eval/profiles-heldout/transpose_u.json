@@ -1,0 +1,73 @@
+{
+  "profile": "pfc-eval-inputs-v1",
+  "kernel": "transpose_u",
+  "function": "transpose_u",
+  "program_sha256": "e5cdd4ecac4c2301789648c34537c83fdac71bd9b55265db4a66688ed2d2929e",
+  "cases": 1000,
+  "arrays": {
+    "A": {
+      "length": [
+        1600,
+        4096
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    },
+    "C": {
+      "length": [
+        1600,
+        4096
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    }
+  },
+  "scalars": {
+    "n": {
+      "kind": "range",
+      "low": 1,
+      "high": 40
+    }
+  },
+  "boundary": [
+    {
+      "arrays": {
+        "A": [
+          1
+        ],
+        "C": [
+          2
+        ]
+      },
+      "scalars": {
+        "n": 1
+      }
+    },
+    {
+      "arrays": {
+        "A": [
+          4,
+          3,
+          2,
+          1
+        ],
+        "C": [
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "scalars": {
+        "n": 2
+      }
+    }
+  ],
+  "stress": 0.1
+}

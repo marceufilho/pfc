@@ -1,0 +1,134 @@
+{
+  "columns": [
+    {
+      "allowed": null,
+      "name": "kernel",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "loop_index",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "loop_line",
+      "nullable": false,
+      "type": "integer"
+    },
+    {
+      "allowed": [
+        "literal_false",
+        "near_miss",
+        "off_by_one",
+        "reversed",
+        "dropped",
+        "wrong_variable"
+      ],
+      "name": "operator",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "candidate_text",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "false",
+        "valid-and-sufficient",
+        "valid-but-insufficient",
+        "unclassified",
+        "unparseable"
+      ],
+      "name": "candidate_class",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "refutation_loop",
+      "nullable": true,
+      "type": "integer"
+    },
+    {
+      "allowed": null,
+      "name": "admitted",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": [
+        "accepted",
+        "unparseable",
+        "not-inductive",
+        "insufficient",
+        "guards-retained"
+      ],
+      "name": "rejection_class",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "failed_kinds",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "real_model",
+      "nullable": false,
+      "type": "boolean"
+    },
+    {
+      "allowed": null,
+      "name": "model_kind",
+      "nullable": true,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "entry",
+        "abstract",
+        "none"
+      ],
+      "name": "model_class",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": [
+        "reproduced",
+        "discrepancy",
+        "abstract",
+        "unreconstructible",
+        "none"
+      ],
+      "name": "reproduction",
+      "nullable": false,
+      "type": "string"
+    },
+    {
+      "allowed": null,
+      "name": "checked_trap",
+      "nullable": true,
+      "type": "boolean"
+    }
+  ],
+  "provenance": [
+    "experiment",
+    "evidence_dir",
+    "tag",
+    "commit",
+    "seed",
+    "timestamp",
+    "vc_model",
+    "solver_version",
+    "clang"
+  ]
+}

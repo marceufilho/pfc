@@ -1,0 +1,229 @@
+{
+  "cases": [
+    {
+      "name": "sum",
+      "original": "kernels/sum/kernel.c",
+      "original_sha256": "fdbfb9ba53745d86457e7626d16298b82fc8652bb4d58e7a864c46eed727ff75",
+      "properties": [
+        "bounds_a"
+      ],
+      "sha256": "58dbad7d6f332003d7cbcb11564920b8110271be95a0e354e3365f7e009b3871",
+      "source": "sources/sum.c"
+    },
+    {
+      "name": "dot",
+      "original": "kernels/dot/kernel.c",
+      "original_sha256": "281079fc940ac103b9c6b2948dc0cc92821bcf3368cc75e804b64dd4d1c10ae8",
+      "properties": [
+        "bounds_a",
+        "bounds_b"
+      ],
+      "sha256": "573abdd8ef964e7277d5c3965115efd95d96005f8b44e9d6f36ff3a39a36b51d",
+      "source": "sources/dot.c"
+    },
+    {
+      "name": "saxpy",
+      "original": "kernels/saxpy/kernel.c",
+      "original_sha256": "f644f383234d600b7aba80c4a3a1feb8744fcad38bdb44e149d1ab02af60af27",
+      "properties": [
+        "bounds_x_read",
+        "bounds_y_read",
+        "bounds_y_write"
+      ],
+      "sha256": "1b06c76d6f25031f2a64715a92bbb3ec4f215ab472162fbb1811cb95b26efda6",
+      "source": "sources/saxpy.c"
+    },
+    {
+      "name": "prefix_sum",
+      "original": "kernels/prefix_sum/kernel.c",
+      "original_sha256": "856c5a493367680f06e98c57dff31cc5382c6a11a18f14d626f5a8d8ec1e6b3d",
+      "properties": [
+        "bounds_a_read",
+        "bounds_previous",
+        "bounds_a_write"
+      ],
+      "sha256": "4d72f560279482f35cf91959670f99528064923cefcfd9f927c14e4d991d935b",
+      "source": "sources/prefix_sum.c"
+    },
+    {
+      "name": "matvec",
+      "original": "kernels/matvec/kernel.c",
+      "original_sha256": "38cbcd06bc92e6ca78e205dbd5e27e2f5d70b8893ca37f44134b89028016025b",
+      "properties": [
+        "division_contract",
+        "bounds_matrix",
+        "bounds_x",
+        "bounds_y"
+      ],
+      "sha256": "9b2df485081055c07d2fc9b19c749cf64c37d49cacca889bdb5e20e2c237a0b9",
+      "source": "sources/matvec.c"
+    },
+    {
+      "name": "binary_search",
+      "original": "kernels/binary_search/kernel.c",
+      "original_sha256": "4780cd5b475309fb3ceb82f79da909483d6b9391a45acc244afc7acaca53a077",
+      "properties": [
+        "division_mid",
+        "bounds_a"
+      ],
+      "sha256": "c919511ef9bf3e288784f1ac83778dbcf00a2fe10f068e4281e5125ab5495b92",
+      "source": "sources/binary_search.c"
+    },
+    {
+      "name": "accumulate",
+      "original": "bench/external/acsl/accumulate/kernel.c",
+      "original_sha256": "9b1a7d809abbc21179009c1e1991c628e0f0d8aaffad145d8e2125acb0afe5b7",
+      "properties": [
+        "bounds_a"
+      ],
+      "sha256": "9f61e9b0b5534f4790edb160b857baa1c8b2fdf7df6becd764c44d925bb7ee7c",
+      "source": "sources/accumulate.c"
+    },
+    {
+      "name": "copy",
+      "original": "bench/external/acsl/copy/kernel.c",
+      "original_sha256": "4b29d8e550ea7f15fc706237d5852b5e2b50bc422351fea70e25f89c46ee21f8",
+      "properties": [
+        "bounds_a",
+        "bounds_b"
+      ],
+      "sha256": "2dcdf3829f540859815acc057b6fc36aeef48547f6116e3ab5f8711aafefbbd5",
+      "source": "sources/copy.c"
+    },
+    {
+      "name": "count",
+      "original": "bench/external/acsl/count/kernel.c",
+      "original_sha256": "378b37cd2c142e422b741b6c3dc93f1832798c7c8bd7dc9e21ecfcbd25786694",
+      "properties": [
+        "bounds_a"
+      ],
+      "sha256": "a70bb6fb5d54e1fb47d5a8689f449612de04a1a1510beb4f31436d61eec727ca",
+      "source": "sources/count.c"
+    },
+    {
+      "name": "fill",
+      "original": "bench/external/acsl/fill/kernel.c",
+      "original_sha256": "3b002d07ef53fad8e9834c32a4d9014fbe37d572b24e361b6a0a5f59a2a7d661",
+      "properties": [
+        "bounds_a"
+      ],
+      "sha256": "89c7b81b937852a8c40deeefc844e02a083cf84e2cc7370b84e788bcf816bc0c",
+      "source": "sources/fill.c"
+    },
+    {
+      "name": "find",
+      "original": "bench/external/acsl/find/kernel.c",
+      "original_sha256": "101701674a7bbbacbdcc4dcf62f83703370f530679c3ff6038b1a3aa97e6b41e",
+      "properties": [
+        "bounds_a"
+      ],
+      "sha256": "fef2e52af7b3db6558f106a6a4a19ec83644acf203471e956c30b73c31f6d995",
+      "source": "sources/find.c"
+    },
+    {
+      "name": "replace",
+      "original": "bench/external/acsl/replace/kernel.c",
+      "original_sha256": "3c3d14dcb0865f1a2a9fc56a525b2d3f4d06a07faf8d7c8a3ec48985f2982e3b",
+      "properties": [
+        "bounds_a_read",
+        "bounds_a_write"
+      ],
+      "sha256": "a1050a3377e71bd3f1e6ec80391c61884654b652cb39c12f95c28b864f7a2d2c",
+      "source": "sources/replace.c"
+    },
+    {
+      "name": "reverse",
+      "original": "bench/external/acsl/reverse/kernel.c",
+      "original_sha256": "55b9781099311635d130a39fbbc05aa6d3d3d372660a634315f673145236d79e",
+      "properties": [
+        "division_half",
+        "bounds_left_read",
+        "bounds_right_read",
+        "bounds_left_write",
+        "bounds_right_write"
+      ],
+      "sha256": "52c04ccad92cbc48e0160fc789cb8f234e9cf146f025e96109b71b8dc338d76c",
+      "source": "sources/reverse.c"
+    },
+    {
+      "name": "swap_ranges",
+      "original": "bench/external/acsl/swap_ranges/kernel.c",
+      "original_sha256": "c70de0ae5f6e78a4b0d599f609daa9105e214a8e4a131e632529d1d082ec74f8",
+      "properties": [
+        "bounds_a_read",
+        "bounds_b_read",
+        "bounds_a_write",
+        "bounds_b_write"
+      ],
+      "sha256": "ac81825042ddbb6731a5e6c41f08e3e08a9b56dce899d3ae1adbfca78c0137df",
+      "source": "sources/swap_ranges.c"
+    }
+  ],
+  "controls": [
+    {
+      "expected_inconsistent": false,
+      "expected_unproved": "assert_bounds_a",
+      "name": "missing_bounds",
+      "sha256": "3b9c33fd5a002d6d854906f34666c6c8d532be99c4e2e8842a58b15b9bb95608",
+      "source": "controls/missing_bounds.c"
+    },
+    {
+      "expected_inconsistent": false,
+      "expected_unproved": "loop_invariant_established",
+      "name": "false_invariant",
+      "sha256": "2406c388e449f232a8d06ef07462a588641468327525dafbe0d159d628f2710f",
+      "source": "controls/false_invariant.c"
+    },
+    {
+      "expected_inconsistent": false,
+      "expected_unproved": "loop_invariant_preserved",
+      "name": "bad_preservation",
+      "sha256": "d43f5e3ee343787e8192bfbbe34942eeff40dfcfd920fad1d3d9725a5b7b6b74",
+      "source": "controls/bad_preservation.c"
+    },
+    {
+      "expected_inconsistent": false,
+      "expected_unproved": "assert_division_denominator",
+      "name": "division_zero",
+      "sha256": "085aa75e799d0e2b58915bd6d8780bb2d22eb392f060de5b374d1a721a7d3f4d",
+      "source": "controls/division_zero.c"
+    },
+    {
+      "expected_inconsistent": false,
+      "expected_unproved": "assert_rte_signed_overflow",
+      "name": "signed_overflow",
+      "sha256": "e29eeff362eea889b315110ae9dd8a82075235853fe4b253e09f28bee8195e39",
+      "source": "controls/signed_overflow.c"
+    },
+    {
+      "expected_inconsistent": true,
+      "expected_unproved": null,
+      "name": "vacuous",
+      "sha256": "4bfb9fdf87fdeb40aefce08b402e7607ae1e10981886979a8c1949800ea1aa5a",
+      "source": "controls/vacuous.c"
+    }
+  ],
+  "frama_c": "32.1 (Germanium)",
+  "image": "framac/frama-c@sha256:4f0b7a2bd600c4daabfdcdfa393a3c18301e0db18f3b2739f1d9650193462d36",
+  "options": [
+    "-machdep",
+    "x86_64",
+    "-wp",
+    "-wp-model",
+    "Typed",
+    "-wp-rte",
+    "-wp-smoke-tests",
+    "-wp-prover",
+    "alt-ergo",
+    "-wp-timeout",
+    "10",
+    "-wp-smoke-timeout",
+    "2",
+    "-wp-par",
+    "2",
+    "-wp-print"
+  ],
+  "prover": "Alt-Ergo 2.5.4",
+  "schema_version": 1,
+  "why3": "1.8.2"
+}

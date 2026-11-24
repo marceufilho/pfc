@@ -1,0 +1,47 @@
+{
+  "experiment": "houdini",
+  "provenance": {
+    "clang": "Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)",
+    "commit": "28e37047a2390a0397321464d3d76c7c7c88ab29",
+    "experiment": "houdini",
+    "seed": null,
+    "solver_version": "5.3.3.0",
+    "tag": null,
+    "timestamp": "2026-11-09T04:22:21+00:00",
+    "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+  },
+  "settings": {
+    "chunk": 24,
+    "compiler": "/usr/lib/llvm-19/bin/clang",
+    "constants": [
+      -1,
+      0,
+      1
+    ],
+    "cpp": "cpp",
+    "family": "`c <= v`, `v <= w + c` over the loop's scalar variables and length parameters, c \u2208 {\u22121, 0, 1}",
+    "kernels": [
+      "zilupair01",
+      "zilupair02",
+      "zilupair03",
+      "zilupair04",
+      "zilupair05",
+      "zilupair06",
+      "zilupair07",
+      "zilupair08",
+      "zilupair09",
+      "zilupair10",
+      "zilupair11",
+      "zilupair12",
+      "zilupair13",
+      "zilupair14",
+      "zilupair15"
+    ],
+    "max_rounds": 5,
+    "preregistered_max_rounds": 5,
+    "probe_parameter": "pfc_probe",
+    "seed": null,
+    "smt_encoding": "z3-int-shared-memory-v2; C division truncates to zero; division by zero totalized to 0",
+    "timeout_ms": 10000
+  }
+}

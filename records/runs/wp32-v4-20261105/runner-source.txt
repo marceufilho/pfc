@@ -1,0 +1,330 @@
+"""Independent Frama-C experiment runner; never imported by pfc proof authorization."""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import os
+import re
+import subprocess
+import sys
+import time
+import uuid
+from collections import Counter
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any
+
+
+@dataclass(frozen=True)
+class Goal:
+    name: str
+    verdict: str
+    smoke: bool
+
+
+def parse_goals(payload: object) -> tuple[Goal, ...]:
+    """Read the documented WP JSON schema; do not mistake smoke `passed` for SAT."""
+    if not isinstance(payload, list) or not payload:
+        raise ValueError("missing or empty WP goal list")
+    result = []
+    seen = set()
+    for item in payload:
+        if not isinstance(item, dict):
+            raise ValueError("WP goal must be an object")
+        name, verdict, smoke, passed = (item.get(k) for k in ("goal", "verdict", "smoke", "passed"))
+        if (
+            not isinstance(name, str)
+            or not name
+            or name in seen
+            or not isinstance(verdict, str)
+            or verdict not in {"none", "valid", "failed", "unknown", "stepout", "timeout"}
+            or type(smoke) is not bool
+            or type(passed) is not bool
+            or passed != ((verdict != "valid") if smoke else (verdict == "valid"))
+        ):
+            raise ValueError("invalid, duplicate or inconsistent WP verdict")
+        result.append(Goal(name, verdict, smoke))
+        seen.add(name)
+    return tuple(result)
+
+
+def assess(goals: tuple[Goal, ...], expected: tuple[str, ...], *, returncode: int) -> dict[str, object]:
+    """Conservative conditional comparison; every non-overflow support goal must be valid."""
+    smoke = tuple(g for g in goals if g.smoke)
+    overflow = tuple(g for g in goals if not g.smoke and "_rte_signed_overflow" in g.name)
+    safety = tuple(g for g in goals if not g.smoke and g not in overflow)
+    matched = {
+        label: [g for g in safety if re.search(r"_assert_" + re.escape(label) + r"(?:_\d+)?$", g.name)]
+        for label in expected
+    }
+    missing = [label for label, items in matched.items() if not items]
+    inconsistent = any(g.verdict == "valid" for g in smoke)
+    if returncode or missing or not goals:
+        status = "error"
+    elif inconsistent:
+        status = "inconsistent"
+    elif any(g.verdict != "valid" for g in safety):
+        status = "inconclusive"
+    else:
+        status = "conditional-agreement"
+    return {
+        "status": status,
+        "missing_properties": missing,
+        "compared": {label: [g.verdict for g in items] for label, items in matched.items()},
+        "support_and_safety": dict(Counter(g.verdict for g in safety)),
+        "overflow": dict(Counter(g.verdict for g in overflow)),
+        "smoke": "inconsistent" if inconsistent else "no-inconsistency-detected" if smoke else "not-run",
+        "smoke_verdicts": dict(Counter(g.verdict for g in smoke)),
+        "unproved_support": [g.name for g in safety if g.verdict != "valid"],
+    }
+
+
+def validate_positive(goals: tuple[Goal, ...], expected: tuple[str, ...], *, bounds: int, divisions: int) -> None:
+    """A truncated/misconfigured experiment cannot masquerade as corroboration."""
+    if (
+        sum(label.startswith("bounds_") for label in expected) != bounds
+        or sum(label.startswith("division_") for label in expected) != divisions
+    ):
+        raise ValueError("comparison labels do not cover the pfc bounds/division inventory")
+    if not any(g.smoke and "requires" in g.name for g in goals):
+        raise ValueError("entry smoke evidence missing")
+    if bounds and not any(not g.smoke and "_rte_mem_access" in g.name for g in goals):
+        raise ValueError("RTE memory evidence missing")
+
+
+# This runner imports no pfc VC, term, lowering, or authorization implementation.
+# The pfc CLI is queried separately only to record the other side of the comparison.
+
+ROOT = Path(__file__).resolve().parents[1]
+INPUT = ROOT / "validation/frama-c"
+PROCESS_TIMEOUT_SECONDS = 300
+
+
+def digest(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def write_json(path: Path, data: object) -> None:
+    with path.open("x", encoding="utf-8") as stream:
+        json.dump(data, stream, indent=2, sort_keys=True)
+        stream.write("\n")
+
+
+def configuration() -> dict[str, Any]:
+    data: dict[str, Any] = json.loads((INPUT / "manifest.json").read_text(encoding="utf-8"))
+    if data.get("schema_version") != 1 or len(data.get("cases", [])) != 14 or len(data.get("controls", [])) != 6:
+        raise ValueError("unexpected comparison population")
+    if not re.fullmatch(r"framac/frama-c@sha256:[0-9a-f]{64}", data.get("image", "")):
+        raise ValueError("oracle image must be digest-pinned")
+    seen = set()
+    for case in data["cases"] + data["controls"]:
+        name = case["name"]
+        if not re.fullmatch(r"[a-z_]+", name) or name in seen:
+            raise ValueError("invalid or duplicate case name")
+        seen.add(name)
+        for base, key, checksum in ((INPUT, "source", "sha256"), (ROOT, "original", "original_sha256")):
+            if key not in case:
+                continue
+            path = (base / case[key]).resolve()
+            if not path.is_relative_to(base) or digest(path) != case[checksum]:
+                raise ValueError(f"source identity mismatch: {name}")
+    return data
+
+
+def capture(command: list[str], directory: Path, label: str, *, timeout: int = PROCESS_TIMEOUT_SECONDS) -> int:
+    """Record the exact argv and both streams; no shell, credentials or hidden retries."""
+    started = time.monotonic()
+    with (directory / f"{label}.stdout").open("x", encoding="utf-8") as stdout:
+        with (directory / f"{label}.stderr").open("x", encoding="utf-8") as stderr:
+            try:
+                result = subprocess.run(command, stdout=stdout, stderr=stderr, timeout=timeout, check=False)
+                code = result.returncode
+            except subprocess.TimeoutExpired:
+                stderr.write("Outer process timeout; no validity conclusion.\n")
+                code = 124
+    write_json(
+        directory / f"{label}.command.json",
+        {
+            "argv": command,
+            "exit_code": code,
+            "seconds": time.monotonic() - started,
+        },
+    )
+    return code
+
+
+def run_case(case: dict[str, Any], config: dict[str, Any], output: Path, clang: str) -> dict[str, Any]:
+    directory = output / case["name"]
+    directory.mkdir()
+    container = "pfc-oracle-" + uuid.uuid4().hex
+    command = [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--network=none",
+        "--name",
+        container,
+        "--cap-drop=ALL",
+        "--security-opt=no-new-privileges",
+        "--cpus=2",
+        "--memory=2g",
+        "--user",
+        f"{os.getuid()}:{os.getgid()}",
+        "--mount",
+        f"type=bind,src={INPUT},dst=/input,readonly",
+        "--mount",
+        f"type=bind,src={directory},dst=/output",
+        config["image"],
+        "frama-c",
+        "/input/" + case["source"],
+        *config["options"],
+        "-wp-report-json",
+        "/output/wp.json",
+    ]
+    code = capture(command, directory, "wp")
+    if code == 124:
+        subprocess.run(["docker", "rm", "-f", container], capture_output=True, timeout=30, check=False)
+    result: dict[str, Any] = {"name": case["name"], "kind": "positive" if "original" in case else "control"}
+    try:
+        goals = parse_goals(json.loads((directory / "wp.json").read_text(encoding="utf-8")))
+        expected = tuple(case.get("properties", ()))
+        result.update(assess(goals, expected, returncode=code))
+        if "original" in case:
+            pfc_code = capture(
+                ["pfc", "check", str(ROOT / case["original"]), "--clang", clang, "--json"], directory, "pfc"
+            )
+            proof = json.loads((directory / "pfc.stdout").read_text(encoding="utf-8"))
+            counts = Counter(r["obligation"]["kind"] for r in proof["results"])
+            validate_positive(goals, expected, bounds=counts["bounds"], divisions=counts["division"])
+            if proof["target"]["long_bits"] != 64 or proof["target"]["int_bits"] != 32:
+                raise ValueError("pfc target differs from pinned WP x86_64")
+            result["pfc"] = {
+                "exit_code": pfc_code,
+                "required_passed": proof["required_passed"],
+                "vc_model": proof["vc_model"],
+                "solver": proof["solver_version"],
+                "counts": dict(counts),
+                "sites": [
+                    {
+                        "id": r["obligation"]["id"],
+                        "kind": r["obligation"]["kind"],
+                        "location": r["obligation"]["location"],
+                        "status": r["status"],
+                    }
+                    for r in proof["results"]
+                    if r["obligation"]["kind"] in {"bounds", "division"}
+                ],
+            }
+            if pfc_code or not proof["required_passed"]:
+                result["status"] = "inconclusive"
+        else:
+            if case["expected_inconsistent"]:
+                detected = any(g.smoke and "requires" in g.name and g.verdict == "valid" for g in goals)
+            else:
+                pattern = case["expected_unproved"]
+                detected = any(not g.smoke and pattern in g.name and g.verdict != "valid" for g in goals)
+            result["control_detected"] = bool(code == 0 and detected)
+    except (OSError, ValueError, KeyError, TypeError) as error:
+        result.update(status="error", problem=str(error), control_detected=False)
+    write_json(directory / "comparison.json", result)
+    return result
+
+
+def render(rows: list[dict[str, Any]]) -> str:
+    lines = [
+        "# Independent WP/RTE comparison",
+        "",
+        "| case | class | result | non-overflow goals | overflow goals | smoke |",
+        "| --- | --- | --- | --- | --- | --- |",
+    ]
+    for row in rows:
+        status = row["status"]
+        if row["kind"] == "control":
+            status = "control detected" if row.get("control_detected") else "CONTROL NOT DETECTED"
+        lines.append(
+            f"| {row['name']} | {row['kind']} | {status} | "
+            f"{row.get('support_and_safety', {})} | {row.get('overflow', {})} | {row.get('smoke', 'error')} |"
+        )
+    lines.extend(
+        [
+            "",
+            "Conditional agreement is restricted to matched bounds/division and checked non-overflow support.",
+            "Unproved overflow is not a claim of UB freedom. Unproved smoke is not SAT. Unproved goals are not counterexamples.",
+            "See each wp.json, wp.stdout (full goal formulas), pfc.stdout and comparison.json. No result authorizes pfc removal.",
+        ]
+    )
+    return "\n".join(lines) + "\n"
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(
+        description=__doc__, epilog="Example: uv run python tools/frama_oracle.py --output bench/oracle/new"
+    )
+    parser.add_argument("--output", type=Path, required=True, help="new evidence directory; existing paths refused")
+    parser.add_argument(
+        "--dry-run", action="store_true", help="validate source hashes and show configuration; run no tools"
+    )
+    parser.add_argument(
+        "--clang", default="clang-19", help="pfc target compiler (WP target remains x86_64 int32/long64)"
+    )
+    args = parser.parse_args(argv)
+    output = args.output.resolve()
+    try:
+        if output.exists():
+            raise ValueError("existing output directory; choose a new path")
+        if any(c in str(output) + str(INPUT) for c in (",", "\n", "\r")):
+            raise ValueError("Docker mount paths cannot contain commas or newlines")
+        config = configuration()
+        if args.dry_run:
+            print(
+                json.dumps(
+                    {"positive_cases": 14, "controls": 6, "image": config["image"], "options": config["options"]},
+                    indent=2,
+                )
+            )
+            return 0
+        output.mkdir(parents=True)
+        write_json(output / "configuration.json", config)
+        write_json(
+            output / "runner.json", {"sha256": digest(Path(__file__)), "python": sys.version, "clang": args.clang}
+        )
+        image = config["image"]
+        for label, command in (
+            ("image", ["docker", "image", "inspect", image]),
+            ("version", ["docker", "run", "--rm", "--pull=never", "--network=none", image, "frama-c", "-version"]),
+            ("provers", ["docker", "run", "--rm", "--pull=never", "--network=none", image, "frama-c", "-wp-detect"]),
+            ("why3", ["docker", "run", "--rm", "--pull=never", "--network=none", image, "why3", "--version"]),
+        ):
+            if capture(command, output, label, timeout=30):
+                raise ValueError(f"tool preflight failed: {label}; inspect saved logs")
+        if (output / "version.stdout").read_text().strip() != config["frama_c"]:
+            raise ValueError("Frama-C version mismatch")
+        rows = []
+        for case in config["cases"] + config["controls"]:
+            print(f"oracle: {case['name']}", file=sys.stderr, flush=True)
+            rows.append(run_case(case, config, output, args.clang))
+        write_json(output / "summary.json", rows)
+        (output / "tables.md").write_text(render(rows), encoding="utf-8")
+        write_json(
+            output / "manifest.json",
+            {str(p.relative_to(output)): digest(p) for p in sorted(output.rglob("*")) if p.is_file()},
+        )
+        print(render(rows), end="")
+        return (
+            0
+            if all(
+                r["status"] == "conditional-agreement" if r["kind"] == "positive" else r.get("control_detected")
+                for r in rows
+            )
+            else 1
+        )
+    except (OSError, ValueError, subprocess.SubprocessError) as error:
+        print(f"oracle: {error}", file=sys.stderr)
+        return 2
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

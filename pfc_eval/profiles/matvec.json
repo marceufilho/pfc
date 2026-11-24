@@ -1,0 +1,283 @@
+{
+  "profile": "pfc-eval-inputs-v1",
+  "kernel": "matvec",
+  "function": "matvec",
+  "program_sha256": "998dbc08da0d9b9e11ab75fce75002ade92c21cfd5b4ca16c83912e2c1a3390f",
+  "cases": 1000,
+  "arrays": {
+    "matrix": {
+      "length": [
+        1,
+        65536
+      ],
+      "values": [
+        -1048576,
+        1048576
+      ],
+      "sorted": false
+    },
+    "x": {
+      "length": [
+        1,
+        65536
+      ],
+      "values": [
+        -1048576,
+        1048576
+      ],
+      "sorted": false
+    },
+    "y": {
+      "length": [
+        1,
+        65536
+      ],
+      "values": [
+        -1048576,
+        1048576
+      ],
+      "sorted": false
+    }
+  },
+  "scalars": {
+    "cols": {
+      "kind": "prefix",
+      "low": 1,
+      "of": [
+        "x"
+      ]
+    },
+    "rows": {
+      "kind": "quotient",
+      "of": [
+        "matrix"
+      ],
+      "by": "cols",
+      "cap": [
+        "y"
+      ]
+    }
+  },
+  "boundary": [
+    {
+      "arrays": {
+        "matrix": [],
+        "x": [
+          1
+        ],
+        "y": []
+      },
+      "scalars": {
+        "cols": 1,
+        "rows": 0
+      }
+    },
+    {
+      "arrays": {
+        "matrix": [
+          5
+        ],
+        "x": [
+          2
+        ],
+        "y": [
+          0
+        ]
+      },
+      "scalars": {
+        "cols": 1,
+        "rows": 1
+      }
+    },
+    {
+      "arrays": {
+        "matrix": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "x": [
+          1,
+          1
+        ],
+        "y": [
+          0,
+          0
+        ]
+      },
+      "scalars": {
+        "cols": 2,
+        "rows": 2
+      }
+    },
+    {
+      "arrays": {
+        "matrix": [
+          1,
+          2,
+          3,
+          4,
+          99
+        ],
+        "x": [
+          2,
+          3
+        ],
+        "y": [
+          8,
+          9,
+          77
+        ]
+      },
+      "scalars": {
+        "cols": 2,
+        "rows": 2
+      }
+    },
+    {
+      "arrays": {
+        "matrix": [
+          1,
+          2,
+          3
+        ],
+        "x": [
+          1,
+          1,
+          1
+        ],
+        "y": [
+          0
+        ]
+      },
+      "scalars": {
+        "cols": 3,
+        "rows": 1
+      }
+    },
+    {
+      "arrays": {
+        "matrix": [
+          1,
+          2,
+          3
+        ],
+        "x": [
+          1,
+          1,
+          1
+        ],
+        "y": [
+          0,
+          0
+        ]
+      },
+      "scalars": {
+        "cols": 3,
+        "rows": 1
+      }
+    },
+    {
+      "arrays": {
+        "matrix": [
+          1048576,
+          1048576,
+          1048576,
+          1048576
+        ],
+        "x": [
+          1048576,
+          1048576
+        ],
+        "y": [
+          0,
+          0
+        ]
+      },
+      "scalars": {
+        "cols": 2,
+        "rows": 2
+      }
+    },
+    {
+      "arrays": {
+        "matrix": [
+          -1048576,
+          -1048576,
+          -1048576,
+          -1048576
+        ],
+        "x": [
+          1048576,
+          1048576
+        ],
+        "y": [
+          1,
+          1
+        ]
+      },
+      "scalars": {
+        "cols": 2,
+        "rows": 2
+      }
+    },
+    {
+      "arrays": {
+        "matrix": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ],
+        "y": [
+          0,
+          0
+        ]
+      },
+      "scalars": {
+        "cols": 3,
+        "rows": 0
+      }
+    },
+    {
+      "arrays": {
+        "matrix": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "x": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "y": [
+          0
+        ]
+      },
+      "scalars": {
+        "cols": 8,
+        "rows": 1
+      }
+    }
+  ],
+  "stress": 0.1
+}

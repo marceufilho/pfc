@@ -1,0 +1,606 @@
+{
+  "experiment": "conjuncts",
+  "kernels": {
+    "zilu01": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "zilu01",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "zilu02": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 1,
+      "function": "zilu02",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "zilu04": {
+      "all_as_expected": true,
+      "annotation_dependent": 3,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "zilu04",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "zilu05": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "zilu05",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "zilu06": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "zilu06",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "zilu08": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "zilu08",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "zilu11": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "zilu11",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "zilu12": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "zilu12",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 2,
+        "total": 2
+      }
+    },
+    "zilu13": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "zilu13",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "zilu14": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "zilu14",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "zilu15": {
+      "all_as_expected": true,
+      "annotation_dependent": 3,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "zilu15",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "zilu16": {
+      "all_as_expected": true,
+      "annotation_dependent": 3,
+      "anomalies": 0,
+      "conjuncts": 4,
+      "function": "zilu16",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "zilu17": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "zilu17",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "zilu18": {
+      "all_as_expected": true,
+      "annotation_dependent": 3,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "zilu18",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "zilu19": {
+      "all_as_expected": true,
+      "annotation_dependent": 3,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "zilu19",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "zilu20": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 4,
+      "function": "zilu20",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 2,
+        "total": 2
+      }
+    },
+    "zilu22": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "zilu22",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "zilu23": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "zilu23",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "zilu24": {
+      "all_as_expected": true,
+      "annotation_dependent": 3,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "zilu24",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "zilu25": {
+      "all_as_expected": false,
+      "annotation_dependent": 0,
+      "anomalies": 0,
+      "conjuncts": 1,
+      "function": "zilu25",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 1
+      }
+    },
+    "zilu26": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 1,
+      "function": "zilu26",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "zilu27": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "zilu27",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "zilu29": {
+      "all_as_expected": false,
+      "annotation_dependent": 0,
+      "anomalies": 0,
+      "conjuncts": 1,
+      "function": "zilu29",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 1
+      }
+    },
+    "zilu30": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "zilu30",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "zilu32": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "zilu32",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "zilu33": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 1,
+      "function": "zilu33",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "zilu34": {
+      "all_as_expected": true,
+      "annotation_dependent": 3,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "zilu34",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "zilu35": {
+      "all_as_expected": true,
+      "annotation_dependent": 1,
+      "anomalies": 0,
+      "conjuncts": 1,
+      "function": "zilu35",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    },
+    "zilu36": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 3,
+      "function": "zilu36",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 1,
+        "total": 1
+      }
+    },
+    "zilu37": {
+      "all_as_expected": true,
+      "annotation_dependent": 2,
+      "anomalies": 0,
+      "conjuncts": 2,
+      "function": "zilu37",
+      "original_required_passed": true,
+      "sensitivity": {
+        "as_expected": 0,
+        "total": 0
+      },
+      "separated": {
+        "total": 0,
+        "withdrawn": 0
+      },
+      "specificity": {
+        "as_expected": 0,
+        "total": 0
+      }
+    }
+  },
+  "passed": false
+}

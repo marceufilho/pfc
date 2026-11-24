@@ -1,0 +1,47 @@
+| kernel | accepted | boundary | seeded | drawn | rejected by reason | failures | 95% one-sided bound (seeded) | 3/n | proofs | passed |
+| --- | ---: | ---: | ---: | ---: | --- | ---: | ---: | ---: | --- | --- |
+| add_2_n_u | 1000 | 3 | 997 | 1075 | PreconditionViolated=75 | 0 | 0.300% | 0.301% | passed | yes |
+| add_3_n_u | 1000 | 2 | 998 | 1000 | none | 0 | 0.300% | 0.301% | passed | yes |
+| copy_2_u | 1000 | 2 | 998 | 1000 | none | 0 | 0.300% | 0.301% | passed | yes |
+| copy_3_n_u | 1000 | 2 | 998 | 1000 | none | 0 | 0.300% | 0.301% | passed | yes |
+| copy_partial_2_n_u | 1000 | 2 | 998 | 1331 | PreconditionViolated=331 | 0 | 0.300% | 0.301% | passed | yes |
+| copy_partial_3_u | 1000 | 2 | 998 | 1153 | PreconditionViolated=153 | 0 | 0.300% | 0.301% | passed | yes |
+| diff_2_n_u | 1000 | 3 | 997 | 1075 | PreconditionViolated=75 | 0 | 0.300% | 0.301% | passed | yes |
+| diff_3_n_u | 1000 | 2 | 998 | 1000 | none | 0 | 0.300% | 0.301% | passed | yes |
+| init_2_n_u | 1000 | 3 | 997 | 1063 | PreconditionViolated=63 | 0 | 0.300% | 0.301% | passed | yes |
+| init_3_u | 1000 | 2 | 998 | 1000 | none | 0 | 0.300% | 0.301% | passed | yes |
+| init_4_n_u | 1000 | 2 | 998 | 1000 | none | 0 | 0.300% | 0.301% | passed | yes |
+| init_non_constant_2_n_u | 1000 | 2 | 998 | 1182 | PreconditionViolated=182 | 0 | 0.300% | 0.301% | passed | yes |
+| init_non_constant_3_u | 1000 | 2 | 998 | 1000 | none | 0 | 0.300% | 0.301% | passed | yes |
+| max_2_u | 1000 | 2 | 998 | 1000 | none | 0 | 0.300% | 0.301% | passed | yes |
+| max_3_n_u | 1000 | 2 | 998 | 1000 | none | 0 | 0.300% | 0.301% | passed | yes |
+| mbpr2 | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| mbpr3 | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| mbpr4 | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| min_2_u | 1000 | 2 | 998 | 1000 | none | 0 | 0.300% | 0.301% | passed | yes |
+| min_3_n_u | 1000 | 2 | 998 | 1000 | none | 0 | 0.300% | 0.301% | passed | yes |
+| nr2 | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| nr3 | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| nr4 | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| nr5 | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| pnr2 | 1000 | 3 | 997 | 1036 | PreconditionViolated=36 | 0 | 0.300% | 0.301% | passed | yes |
+| pnr3 | 1000 | 3 | 997 | 1036 | PreconditionViolated=36 | 0 | 0.300% | 0.301% | passed | yes |
+| poly1 | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| poly2 | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| pr2 | 1000 | 3 | 997 | 1022 | PreconditionViolated=22 | 0 | 0.300% | 0.301% | passed | yes |
+| pr3 | 1000 | 3 | 997 | 1022 | PreconditionViolated=22 | 0 | 0.300% | 0.301% | passed | yes |
+| pr4 | 1000 | 3 | 997 | 1022 | PreconditionViolated=22 | 0 | 0.300% | 0.301% | passed | yes |
+| pr5 | 1000 | 3 | 997 | 1022 | PreconditionViolated=22 | 0 | 0.300% | 0.301% | passed | yes |
+| rev_2_n_u | 1000 | 3 | 997 | 1076 | PreconditionViolated=76 | 0 | 0.300% | 0.301% | passed | yes |
+| rev_3_u | 1000 | 2 | 998 | 1000 | none | 0 | 0.300% | 0.301% | passed | yes |
+| revcpyswp2 | 1000 | 3 | 997 | 1038 | PreconditionViolated=38 | 0 | 0.300% | 0.301% | passed | yes |
+| rew | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| rewnif | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| rewnifrev | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| rewnifrev2 | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| rewrev | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| skipped | 1000 | 3 | 997 | 1019 | PreconditionViolated=19 | 0 | 0.300% | 0.301% | passed | yes |
+| tcpy | 1000 | 3 | 997 | 1036 | PreconditionViolated=36 | 0 | 0.300% | 0.301% | passed | yes |
+| transpose_u | 1000 | 2 | 998 | 1000 | none | 0 | 0.300% | 0.301% | passed | yes |
+
+The bound is the exact one-sided 95% binomial upper bound on the per-input disagreement probability relative to the documented generator, over seeded cases only; it is not a bound over all inputs or a proof.

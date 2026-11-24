@@ -1,0 +1,556 @@
+{
+  "_comment": "Hand-derived expectations (revision plan, phase 2B). decisions: executable guard sites in source order with the expected verified verdict; overflow: arithmetic sites by operator; requires_rendered: pure-scalar REQUIRES conjuncts checked at entry in verified. runs: concrete calls; expect 'ok' with the printed return or 'sigill' (trap). A run may carry observe_trap: true; the driver then prints the arrays from a SIGILL handler, and the expectation is 'sigill name=v0,v1' (the state the trap interrupted).",
+  "short_circuit_and": {
+    "required_passed": false,
+    "decisions": [
+      {
+        "kind": "bounds",
+        "removed": false,
+        "why": "i may be negative: 0 <= i is not implied by the guard i < n"
+      }
+    ],
+    "overflow": [],
+    "requires_rendered": 2,
+    "runs": [
+      {
+        "arrays": {
+          "a": [
+            5
+          ]
+        },
+        "scalars": {
+          "n": 1,
+          "i": 0
+        },
+        "modes": {
+          "checked": "1",
+          "verified": "1"
+        }
+      },
+      {
+        "arrays": {
+          "a": [
+            5
+          ]
+        },
+        "scalars": {
+          "n": 1,
+          "i": -1
+        },
+        "modes": {
+          "checked": "sigill",
+          "verified": "sigill"
+        }
+      },
+      {
+        "arrays": {
+          "a": [
+            5
+          ]
+        },
+        "scalars": {
+          "n": 1,
+          "i": 3
+        },
+        "modes": {
+          "checked": "0",
+          "verified": "0"
+        }
+      }
+    ]
+  },
+  "short_circuit_or": {
+    "required_passed": true,
+    "decisions": [
+      {
+        "kind": "bounds",
+        "removed": true,
+        "why": "the read is reached only when i < n, and 0 <= i is a precondition"
+      }
+    ],
+    "overflow": [],
+    "requires_rendered": 3,
+    "runs": [
+      {
+        "arrays": {
+          "a": [
+            5
+          ]
+        },
+        "scalars": {
+          "n": 1,
+          "i": 0
+        },
+        "modes": {
+          "checked": "1",
+          "verified": "1"
+        }
+      },
+      {
+        "arrays": {
+          "a": [
+            -5
+          ]
+        },
+        "scalars": {
+          "n": 1,
+          "i": 0
+        },
+        "modes": {
+          "checked": "0",
+          "verified": "0"
+        }
+      },
+      {
+        "arrays": {
+          "a": [
+            5
+          ]
+        },
+        "scalars": {
+          "n": 1,
+          "i": 3
+        },
+        "modes": {
+          "checked": "1",
+          "verified": "1"
+        }
+      },
+      {
+        "arrays": {
+          "a": [
+            5
+          ]
+        },
+        "scalars": {
+          "n": 1,
+          "i": -1
+        },
+        "modes": {
+          "checked": "sigill",
+          "verified": "sigill"
+        }
+      }
+    ]
+  },
+  "branch_one_proved": {
+    "required_passed": false,
+    "decisions": [
+      {
+        "kind": "bounds",
+        "removed": true,
+        "why": "0 <= i < n <= a_len"
+      },
+      {
+        "kind": "bounds",
+        "removed": false,
+        "why": "j < n does not bound j below"
+      }
+    ],
+    "overflow": [],
+    "requires_rendered": 4,
+    "runs": [
+      {
+        "arrays": {
+          "a": [
+            7,
+            8
+          ]
+        },
+        "scalars": {
+          "n": 2,
+          "i": 0,
+          "j": 5
+        },
+        "modes": {
+          "checked": "7",
+          "verified": "7"
+        }
+      },
+      {
+        "arrays": {
+          "a": [
+            7,
+            8
+          ]
+        },
+        "scalars": {
+          "n": 2,
+          "i": 1,
+          "j": 0
+        },
+        "modes": {
+          "checked": "7",
+          "verified": "7"
+        }
+      },
+      {
+        "arrays": {
+          "a": [
+            7,
+            8
+          ]
+        },
+        "scalars": {
+          "n": 2,
+          "i": 0,
+          "j": -1
+        },
+        "modes": {
+          "checked": "sigill",
+          "verified": "sigill"
+        }
+      }
+    ]
+  },
+  "index_through_memory": {
+    "required_passed": false,
+    "decisions": [
+      {
+        "kind": "bounds",
+        "removed": true,
+        "why": "a[i] with 0 <= i < n <= a_len"
+      },
+      {
+        "kind": "bounds",
+        "removed": false,
+        "why": "k is a value read from memory; no contract bounds it, no restrict or assume fact follows"
+      }
+    ],
+    "overflow": [],
+    "requires_rendered": 5,
+    "runs": [
+      {
+        "arrays": {
+          "a": [
+            1
+          ],
+          "b": [
+            3,
+            4
+          ]
+        },
+        "scalars": {
+          "n": 1,
+          "i": 0
+        },
+        "modes": {
+          "checked": "4",
+          "verified": "4"
+        }
+      },
+      {
+        "arrays": {
+          "a": [
+            9
+          ],
+          "b": [
+            3,
+            4
+          ]
+        },
+        "scalars": {
+          "n": 1,
+          "i": 0
+        },
+        "modes": {
+          "checked": "sigill",
+          "verified": "sigill"
+        }
+      }
+    ]
+  },
+  "overflow_add": {
+    "required_passed": true,
+    "decisions": [],
+    "overflow": [
+      {
+        "operator": "+",
+        "removed": false
+      }
+    ],
+    "requires_rendered": 1,
+    "runs": [
+      {
+        "arrays": {},
+        "scalars": {
+          "x": 1,
+          "y": 2
+        },
+        "modes": {
+          "checked": "3",
+          "verified": "3"
+        }
+      },
+      {
+        "arrays": {},
+        "scalars": {
+          "x": 9223372036854775807,
+          "y": 1
+        },
+        "modes": {
+          "checked": "sigill",
+          "verified": "sigill"
+        }
+      }
+    ]
+  },
+  "overflow_mul": {
+    "required_passed": true,
+    "decisions": [],
+    "overflow": [
+      {
+        "operator": "*",
+        "removed": false
+      }
+    ],
+    "requires_rendered": 1,
+    "runs": [
+      {
+        "arrays": {},
+        "scalars": {
+          "x": 3,
+          "y": 4
+        },
+        "modes": {
+          "checked": "12",
+          "verified": "12"
+        }
+      },
+      {
+        "arrays": {},
+        "scalars": {
+          "x": 9223372036854775807,
+          "y": 2
+        },
+        "modes": {
+          "checked": "sigill",
+          "verified": "sigill"
+        }
+      }
+    ]
+  },
+  "overflow_neg_min": {
+    "required_passed": true,
+    "decisions": [],
+    "overflow": [
+      {
+        "operator": "neg",
+        "removed": false
+      }
+    ],
+    "requires_rendered": 1,
+    "runs": [
+      {
+        "arrays": {},
+        "scalars": {
+          "x": -5
+        },
+        "modes": {
+          "checked": "5",
+          "verified": "5"
+        }
+      },
+      {
+        "arrays": {},
+        "scalars": {
+          "x": -9223372036854775808
+        },
+        "modes": {
+          "checked": "sigill",
+          "verified": "sigill"
+        }
+      }
+    ]
+  },
+  "overflow_proved": {
+    "required_passed": true,
+    "decisions": [],
+    "overflow": [
+      {
+        "operator": "+",
+        "removed": true
+      }
+    ],
+    "requires_rendered": 4,
+    "runs": [
+      {
+        "arrays": {},
+        "scalars": {
+          "x": 2,
+          "y": 3
+        },
+        "modes": {
+          "checked": "5",
+          "verified": "5"
+        }
+      },
+      {
+        "arrays": {},
+        "scalars": {
+          "x": 5000,
+          "y": 3
+        },
+        "modes": {
+          "checked": "5003",
+          "verified": "sigill"
+        },
+        "why": "verified checks the REQUIRES at entry; checked has no entry check and the sum does not overflow"
+      }
+    ]
+  },
+  "mixed_sites": {
+    "required_passed": false,
+    "decisions": [
+      {
+        "kind": "bounds",
+        "removed": true,
+        "why": "inner read a[i] (evaluated first): 0 <= i < n <= a_len"
+      },
+      {
+        "kind": "bounds",
+        "removed": false,
+        "why": "outer read: the index a[i] is unconstrained memory"
+      }
+    ],
+    "overflow": [],
+    "requires_rendered": 4,
+    "runs": [
+      {
+        "arrays": {
+          "a": [
+            1,
+            7
+          ]
+        },
+        "scalars": {
+          "n": 2,
+          "i": 0
+        },
+        "modes": {
+          "checked": "7",
+          "verified": "7"
+        }
+      },
+      {
+        "arrays": {
+          "a": [
+            5,
+            7
+          ]
+        },
+        "scalars": {
+          "n": 2,
+          "i": 0
+        },
+        "modes": {
+          "checked": "sigill",
+          "verified": "sigill"
+        }
+      }
+    ]
+  },
+  "requires_division": {
+    "required_passed": true,
+    "decisions": [],
+    "overflow": [
+      {
+        "operator": "*",
+        "removed": true
+      }
+    ],
+    "requires_rendered": 3,
+    "runs": [
+      {
+        "arrays": {
+          "a": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "scalars": {
+          "rows": 2,
+          "cols": 2
+        },
+        "modes": {
+          "checked": "4",
+          "verified": "4"
+        }
+      },
+      {
+        "arrays": {
+          "a": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "scalars": {
+          "rows": 2,
+          "cols": 0
+        },
+        "modes": {
+          "checked": "0",
+          "verified": "sigill"
+        },
+        "why": "conjunct 1 (0 < cols) fails at entry in verified; the division conjunct is rendered only after it"
+      }
+    ]
+  },
+  "write_then_trap": {
+    "required_passed": true,
+    "decisions": [
+      {
+        "kind": "bounds",
+        "removed": true
+      },
+      {
+        "kind": "bounds",
+        "removed": true
+      }
+    ],
+    "overflow": [
+      {
+        "operator": "+",
+        "removed": false
+      }
+    ],
+    "requires_rendered": 1,
+    "runs": [
+      {
+        "arrays": {
+          "a": [
+            5,
+            5
+          ]
+        },
+        "scalars": {
+          "x": 3
+        },
+        "modes": {
+          "checked": "4",
+          "verified": "4"
+        }
+      },
+      {
+        "arrays": {
+          "a": [
+            5,
+            5
+          ]
+        },
+        "scalars": {
+          "x": 9223372036854775807
+        },
+        "observe_trap": true,
+        "modes": {
+          "checked": "sigill a=7,5",
+          "verified": "sigill a=7,5"
+        }
+      }
+    ]
+  }
+}

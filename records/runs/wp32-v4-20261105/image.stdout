@@ -1,0 +1,120 @@
+[
+    {
+        "Id": "sha256:4f0b7a2bd600c4daabfdcdfa393a3c18301e0db18f3b2739f1d9650193462d36",
+        "RepoTags": [
+            "framac/frama-c@sha256:4f0b7a2bd600c4daabfdcdfa393a3c18301e0db18f3b2739f1d9650193462d36"
+        ],
+        "RepoDigests": [
+            "framac/frama-c@sha256:4f0b7a2bd600c4daabfdcdfa393a3c18301e0db18f3b2739f1d9650193462d36"
+        ],
+        "Created": "2026-06-17T21:46:32.325361547Z",
+        "Config": {
+            "User": "opam",
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "HOME=/home/opam",
+                "OPAMYES=1",
+                "OPAMCONFIRMLEVEL=unsafe-yes",
+                "OPAMERRLOGLEN=0",
+                "OPAMPRECISETRACKING=1"
+            ],
+            "Entrypoint": [
+                "opam",
+                "exec",
+                "--"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "bash"
+            ],
+            "WorkingDir": "/home/opam",
+            "Labels": {
+                "io.buildah.version": "1.43.1"
+            },
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 2129794494,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:c1cea7d579ca16766d00847a63294943a3075a67b9b812fdd6da1ce7aed8f18f",
+                "sha256:c005bcf76d5bc9dd552cd828d75284447a633ed9f4906083c8bcd6df5340ddd7",
+                "sha256:98c2ecb70f9b8787a049a793bdcffe6013d5e0c8344c1b90324b2535519bab08",
+                "sha256:fa55e0e52d0fa4383bf5a00775b1dd03ba794102b2e680b730d2dbee129015da",
+                "sha256:b91be9081e516b81fc33a9d7f951cd8624695f40f0654795b1f9521856491c9f",
+                "sha256:3986c1e1925bce1f0a44df2f34eeb853513fc1bd9b597219c9ef233cd3dc85f4",
+                "sha256:7fc9ce27ec1d410e96a61de5d63744dc07d64e1ddf959f739d05bcdc9ad2c40c",
+                "sha256:3bc640989ff64aace51e689511f562a093a2ab3bfc7a740b273e9f7570035dc8",
+                "sha256:fa41ca40927bce2cf5edc670983c7b86b4350cecf9526f5e51981d77c9022257",
+                "sha256:dced1bcc24c1c2d557aaa10565c288f68bef1cc918b1f53671b95b6b09c0828a",
+                "sha256:d73cbfd4e8e8cb6d2035abbc8eb2ab5a2db8df36257fe985ec5bcf3a8046cb80",
+                "sha256:cc6ae2d97a2ea0fc691b98ee42cbb298cf504c9ed5e657d65f24a591aeb0ad18",
+                "sha256:95d02cdf641b41ac0ae3b1d19d919a62ccedd70109c5b66c237905cbbee236e7",
+                "sha256:5bcf9cbb1b68a3d277ea5cce2429b9cca2cd1a8dbb800e4e012e795b70c269b7",
+                "sha256:586844f212e5ab3522d1b153c7f1773f8437b7abf5c144d812be684c4fb36d16",
+                "sha256:6a099d0a4dcdfaa4b2c974ed29ca0dcb5e1520059cfccca560ab0ac5b09371fc",
+                "sha256:36b23e0247b9d1330755958edad559b1522aa7afcafb9f68bfa37c77498c32db",
+                "sha256:32484d14e4c4dc10981649679dfa1f877dbc61cb62c148d9c0a6da9c51e37bec",
+                "sha256:14568a5e9721572e9c3586bc3c77ceef4faeff2167aa424c229b041d4a3f6429",
+                "sha256:91d291e2a7a93a0348818fa5ede2bb0deabe6b52163f478da45dc9e430d09be6",
+                "sha256:338c01c8267dd926d8167b689e09c9d65644d68085435d5686992f66b3819f49",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:f0ef7b83194616fe70408563fbfbb099ec4ac98dc6eee776f9b00ae546913fa7",
+                "sha256:727601236e50bd4fd2c8a120a69d17b655083805396c0f83469c079447fb2064",
+                "sha256:626a5c75ce9c57abf6ed910123b8f855bb527009253760770c6b26a70031c207",
+                "sha256:a15a5256b31c514441a97716d13c33e208c649a957ee2e95d7faa101e0a1bf6e",
+                "sha256:8889507948095fc6f88bb27e896edd0ec47f16b1137815367a30aaff3f566618",
+                "sha256:24d39f7066ff67c62146c82a87d3e638eeeb12a627959918765c44439fef5676",
+                "sha256:1e3a0d14415b3f02daffa8f36aa1e5cba4d7aef321244a1cd34f10a98042dac9",
+                "sha256:9230767f5976c4397f27a9ade92094fe66df72fc72fa4e2b18c783beb213ff14",
+                "sha256:c1140a8dd5471e4f07796b70ee40c0b87f6a59b8736b3481099fd213ecd9f179",
+                "sha256:6670345911c44a6d8ed29ef8be662428943d91f1cfcbc0fe830386433633f31f",
+                "sha256:6f55251a5c70db88d7400a72707fffcbf2a78160ffec3d61f9b691fef1b1ae11",
+                "sha256:93cdb3cf906f9dc6b72fd035fbda1d58f9dbeea1c15fb73221ad7059d09d1367",
+                "sha256:36932abeffaa98f92d8448e9fb4d650427974a8702bba0cc18f27a394959c03b",
+                "sha256:cc28649f9c40ae4be22bdd87d2ff46d436ac1006c92c144322883451c04d8186",
+                "sha256:d601619258796de16904bc23192826b8461e2f1435a6f82ebf8f22fdae6ee4f2",
+                "sha256:fa8d8c3256e612f3a438ac6378e808188bf97f16f8a8d2e4bec49fa5fd75d1e1",
+                "sha256:66a38ded1c849f4b54fd41195f0f1044b14eadcb49edfe6a0543488ce534f66e",
+                "sha256:09b8c96b9350e58c331ed804a1b9b1d06bfad80e5ccc8b62c5ae7c37b8f1b677",
+                "sha256:96aec4c9b25bb51791f402fb60686761e163a1dcc24c95e2b6929c17b6c44d00",
+                "sha256:660f266de5a76f69bbee89c084e45823b254f659467eec3c85ee39efc336e22f",
+                "sha256:b5a2d429128ac82fcafcf48200418ffacf87055e527fca42460df2d07489ac36",
+                "sha256:acf184d265ac4c1a55a75010b2049c8520af700148e8ca645197e72b1448dbd5",
+                "sha256:7ea3ae35050e7e04c189391093a71eb3fbde5413a55812eff6e7538781a881cf",
+                "sha256:578373e1e02926f5e3d68587c12868b711d8a9083a9ef7de6c2bb8bc815235b2",
+                "sha256:578373e1e02926f5e3d68587c12868b711d8a9083a9ef7de6c2bb8bc815235b2",
+                "sha256:dde0134f02d6baa10537894a1dcaf3d0d4478529b5a9f0672c45f550f0b42f38",
+                "sha256:dde0134f02d6baa10537894a1dcaf3d0d4478529b5a9f0672c45f550f0b42f38",
+                "sha256:65c38f32ec6d38596ff740f3634c829c26ccc355833abdc624ef99a0bac054d0",
+                "sha256:fb6d4e811e91e6ecb05d0972317f26ad145ea6b0a407a4e01e79133869424c9c",
+                "sha256:fb6d4e811e91e6ecb05d0972317f26ad145ea6b0a407a4e01e79133869424c9c",
+                "sha256:3845105436dc17b73a40c1a4fb3784e35f1aeddc1ee86b9355c47609bec4be6b",
+                "sha256:4a38519503585fbc7ebc6d7312f29e1403885d2faa035713f8d66abe38ce4be2",
+                "sha256:77ff36b1cf5674ceb4d7981483f14824a03219c9251ef855fc9c3a44e0568b4e",
+                "sha256:ddc71cc58f237f11dc24cf48b103fb866292b065f10b5846ae9382b121a06adc",
+                "sha256:e396a22a5f18b57f6715a30cab3e8aaabdb57b99a1fdd7a79af79b4236a30b58",
+                "sha256:45db167291369277cb39f40b2358a39a4f8f7b4a37612c5df5526241e21452fe",
+                "sha256:5b3490ab176d4bc3a6c3a1de34032840447253e630860325d486655ddebc9d9e"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-05T08:57:54.579813555Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:4f0b7a2bd600c4daabfdcdfa393a3c18301e0db18f3b2739f1d9650193462d36",
+            "size": 9803
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "docker.io/framac/frama-c"
+                }
+            ]
+        }
+    }
+]

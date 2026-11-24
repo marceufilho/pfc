@@ -1,0 +1,1339 @@
+{
+  "experiment": "inject",
+  "kernels": {
+    "add_2_n_u": {
+      "abstract_models": 22,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 10,
+      "false": {
+        "admitted": 0,
+        "total": 15
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 2,
+      "unclassified": {
+        "admitted": 0,
+        "total": 6
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 8,
+      "valid-and-sufficient": {
+        "admitted": 8,
+        "total": 8
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 11
+      }
+    },
+    "add_3_n_u": {
+      "abstract_models": 44,
+      "candidates": 60,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 7,
+      "false": {
+        "admitted": 0,
+        "total": 16
+      },
+      "loops": 3,
+      "passed": true,
+      "reproduced": 0,
+      "unclassified": {
+        "admitted": 0,
+        "total": 15
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 7,
+      "valid-and-sufficient": {
+        "admitted": 9,
+        "total": 9
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 20
+      }
+    },
+    "copy_2_u": {
+      "abstract_models": 20,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 5,
+      "false": {
+        "admitted": 0,
+        "total": 15
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 4,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 1,
+      "valid-and-sufficient": {
+        "admitted": 15,
+        "total": 15
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 10
+      }
+    },
+    "copy_3_n_u": {
+      "abstract_models": 45,
+      "candidates": 60,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 7,
+      "false": {
+        "admitted": 0,
+        "total": 22
+      },
+      "loops": 3,
+      "passed": true,
+      "reproduced": 0,
+      "unclassified": {
+        "admitted": 0,
+        "total": 11
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 7,
+      "valid-and-sufficient": {
+        "admitted": 8,
+        "total": 8
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 19
+      }
+    },
+    "copy_partial_2_n_u": {
+      "abstract_models": 28,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 5,
+      "false": {
+        "admitted": 0,
+        "total": 13
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 1,
+      "unclassified": {
+        "admitted": 0,
+        "total": 6
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 4,
+      "valid-and-sufficient": {
+        "admitted": 7,
+        "total": 7
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 14
+      }
+    },
+    "copy_partial_3_u": {
+      "abstract_models": 83,
+      "candidates": 120,
+      "controls_rejected": false,
+      "discrepancies": 0,
+      "entry_models": 4,
+      "false": {
+        "admitted": 0,
+        "total": 23
+      },
+      "loops": 6,
+      "passed": false,
+      "reproduced": 3,
+      "unclassified": {
+        "admitted": 0,
+        "total": 31
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 1,
+      "valid-and-sufficient": {
+        "admitted": 33,
+        "total": 33
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 33
+      }
+    },
+    "diff_2_n_u": {
+      "abstract_models": 22,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 10,
+      "false": {
+        "admitted": 0,
+        "total": 15
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 0,
+      "unclassified": {
+        "admitted": 0,
+        "total": 6
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 10,
+      "valid-and-sufficient": {
+        "admitted": 8,
+        "total": 8
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 11
+      }
+    },
+    "diff_3_n_u": {
+      "abstract_models": 44,
+      "candidates": 60,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 7,
+      "false": {
+        "admitted": 0,
+        "total": 16
+      },
+      "loops": 3,
+      "passed": true,
+      "reproduced": 0,
+      "unclassified": {
+        "admitted": 0,
+        "total": 15
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 7,
+      "valid-and-sufficient": {
+        "admitted": 9,
+        "total": 9
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 20
+      }
+    },
+    "init_2_n_u": {
+      "abstract_models": 24,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 9,
+      "false": {
+        "admitted": 0,
+        "total": 20
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 2,
+      "unclassified": {
+        "admitted": 0,
+        "total": 2
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 7,
+      "valid-and-sufficient": {
+        "admitted": 7,
+        "total": 7
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 11
+      }
+    },
+    "init_3_u": {
+      "abstract_models": 39,
+      "candidates": 60,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 7,
+      "false": {
+        "admitted": 0,
+        "total": 27
+      },
+      "loops": 3,
+      "passed": true,
+      "reproduced": 7,
+      "unclassified": {
+        "admitted": 0,
+        "total": 6
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 14,
+        "total": 14
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 13
+      }
+    },
+    "init_4_n_u": {
+      "abstract_models": 64,
+      "candidates": 80,
+      "controls_rejected": false,
+      "discrepancies": 0,
+      "entry_models": 5,
+      "false": {
+        "admitted": 0,
+        "total": 4
+      },
+      "loops": 4,
+      "passed": false,
+      "reproduced": 0,
+      "unclassified": {
+        "admitted": 0,
+        "total": 46
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 5,
+      "valid-and-sufficient": {
+        "admitted": 11,
+        "total": 11
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 19
+      }
+    },
+    "init_non_constant_2_n_u": {
+      "abstract_models": 26,
+      "candidates": 40,
+      "controls_rejected": false,
+      "discrepancies": 0,
+      "entry_models": 7,
+      "false": {
+        "admitted": 0,
+        "total": 5
+      },
+      "loops": 2,
+      "passed": false,
+      "reproduced": 6,
+      "unclassified": {
+        "admitted": 0,
+        "total": 16
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 1,
+      "valid-and-sufficient": {
+        "admitted": 7,
+        "total": 7
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 12
+      }
+    },
+    "init_non_constant_3_u": {
+      "abstract_models": 39,
+      "candidates": 60,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 7,
+      "false": {
+        "admitted": 0,
+        "total": 27
+      },
+      "loops": 3,
+      "passed": true,
+      "reproduced": 7,
+      "unclassified": {
+        "admitted": 0,
+        "total": 6
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 14,
+        "total": 14
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 13
+      }
+    },
+    "max_2_u": {
+      "abstract_models": 20,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 7,
+      "false": {
+        "admitted": 0,
+        "total": 19
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 6,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 1,
+      "valid-and-sufficient": {
+        "admitted": 13,
+        "total": 13
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 8
+      }
+    },
+    "max_3_n_u": {
+      "abstract_models": 48,
+      "candidates": 60,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 5,
+      "false": {
+        "admitted": 0,
+        "total": 22
+      },
+      "loops": 3,
+      "passed": true,
+      "reproduced": 2,
+      "unclassified": {
+        "admitted": 0,
+        "total": 12
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 3,
+      "valid-and-sufficient": {
+        "admitted": 7,
+        "total": 7
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 19
+      }
+    },
+    "mbpr2": {
+      "abstract_models": 25,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 5,
+      "false": {
+        "admitted": 0,
+        "total": 18
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 5,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 10,
+        "total": 10
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 12
+      }
+    },
+    "mbpr3": {
+      "abstract_models": 46,
+      "candidates": 60,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 5,
+      "false": {
+        "admitted": 0,
+        "total": 27
+      },
+      "loops": 3,
+      "passed": true,
+      "reproduced": 5,
+      "unclassified": {
+        "admitted": 0,
+        "total": 3
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 9,
+        "total": 9
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 21
+      }
+    },
+    "mbpr4": {
+      "abstract_models": 66,
+      "candidates": 80,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 6,
+      "false": {
+        "admitted": 0,
+        "total": 40
+      },
+      "loops": 4,
+      "passed": true,
+      "reproduced": 6,
+      "unclassified": {
+        "admitted": 0,
+        "total": 4
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 8,
+        "total": 8
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 28
+      }
+    },
+    "min_2_u": {
+      "abstract_models": 20,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 7,
+      "false": {
+        "admitted": 0,
+        "total": 19
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 6,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 1,
+      "valid-and-sufficient": {
+        "admitted": 13,
+        "total": 13
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 8
+      }
+    },
+    "min_3_n_u": {
+      "abstract_models": 48,
+      "candidates": 60,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 5,
+      "false": {
+        "admitted": 0,
+        "total": 20
+      },
+      "loops": 3,
+      "passed": true,
+      "reproduced": 0,
+      "unclassified": {
+        "admitted": 0,
+        "total": 14
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 5,
+      "valid-and-sufficient": {
+        "admitted": 7,
+        "total": 7
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 19
+      }
+    },
+    "nr2": {
+      "abstract_models": 20,
+      "candidates": 37,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 6,
+      "false": {
+        "admitted": 0,
+        "total": 19
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 6,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 11,
+        "total": 11
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 7
+      }
+    },
+    "nr3": {
+      "abstract_models": 19,
+      "candidates": 37,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 8,
+      "false": {
+        "admitted": 0,
+        "total": 19
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 8,
+      "unclassified": {
+        "admitted": 0,
+        "total": 1
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 10,
+        "total": 10
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 7
+      }
+    },
+    "nr4": {
+      "abstract_models": 19,
+      "candidates": 37,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 8,
+      "false": {
+        "admitted": 0,
+        "total": 19
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 8,
+      "unclassified": {
+        "admitted": 0,
+        "total": 1
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 10,
+        "total": 10
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 7
+      }
+    },
+    "nr5": {
+      "abstract_models": 19,
+      "candidates": 37,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 8,
+      "false": {
+        "admitted": 0,
+        "total": 19
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 8,
+      "unclassified": {
+        "admitted": 0,
+        "total": 1
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 10,
+        "total": 10
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 7
+      }
+    },
+    "pnr2": {
+      "abstract_models": 11,
+      "candidates": 20,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 5,
+      "false": {
+        "admitted": 0,
+        "total": 11
+      },
+      "loops": 1,
+      "passed": true,
+      "reproduced": 5,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 4,
+        "total": 4
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 5
+      }
+    },
+    "pnr3": {
+      "abstract_models": 10,
+      "candidates": 20,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 6,
+      "false": {
+        "admitted": 0,
+        "total": 11
+      },
+      "loops": 1,
+      "passed": true,
+      "reproduced": 6,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 4,
+        "total": 4
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 5
+      }
+    },
+    "poly1": {
+      "abstract_models": 6,
+      "candidates": 15,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 4,
+      "false": {
+        "admitted": 0,
+        "total": 6
+      },
+      "loops": 1,
+      "passed": true,
+      "reproduced": 4,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 5,
+        "total": 5
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 4
+      }
+    },
+    "poly2": {
+      "abstract_models": 16,
+      "candidates": 30,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 4,
+      "false": {
+        "admitted": 0,
+        "total": 12
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 4,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 10,
+        "total": 10
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 8
+      }
+    },
+    "pr2": {
+      "abstract_models": 8,
+      "candidates": 20,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 8,
+      "false": {
+        "admitted": 0,
+        "total": 11
+      },
+      "loops": 1,
+      "passed": true,
+      "reproduced": 8,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 4,
+        "total": 4
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 5
+      }
+    },
+    "pr3": {
+      "abstract_models": 10,
+      "candidates": 20,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 7,
+      "false": {
+        "admitted": 0,
+        "total": 10
+      },
+      "loops": 1,
+      "passed": true,
+      "reproduced": 7,
+      "unclassified": {
+        "admitted": 0,
+        "total": 1
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 3,
+        "total": 3
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 6
+      }
+    },
+    "pr4": {
+      "abstract_models": 12,
+      "candidates": 20,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 6,
+      "false": {
+        "admitted": 0,
+        "total": 10
+      },
+      "loops": 1,
+      "passed": true,
+      "reproduced": 6,
+      "unclassified": {
+        "admitted": 0,
+        "total": 1
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 2,
+        "total": 2
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 7
+      }
+    },
+    "pr5": {
+      "abstract_models": 12,
+      "candidates": 20,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 5,
+      "false": {
+        "admitted": 0,
+        "total": 8
+      },
+      "loops": 1,
+      "passed": true,
+      "reproduced": 5,
+      "unclassified": {
+        "admitted": 0,
+        "total": 1
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 3,
+        "total": 3
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 8
+      }
+    },
+    "rev_2_n_u": {
+      "abstract_models": 21,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 10,
+      "false": {
+        "admitted": 0,
+        "total": 17
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 1,
+      "unclassified": {
+        "admitted": 0,
+        "total": 4
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 9,
+      "valid-and-sufficient": {
+        "admitted": 9,
+        "total": 9
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 10
+      }
+    },
+    "rev_3_u": {
+      "abstract_models": 36,
+      "candidates": 60,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 4,
+      "false": {
+        "admitted": 0,
+        "total": 18
+      },
+      "loops": 3,
+      "passed": true,
+      "reproduced": 4,
+      "unclassified": {
+        "admitted": 0,
+        "total": 6
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 20,
+        "total": 20
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 16
+      }
+    },
+    "revcpyswp2": {
+      "abstract_models": 40,
+      "candidates": 60,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 4,
+      "false": {
+        "admitted": 0,
+        "total": 25
+      },
+      "loops": 3,
+      "passed": true,
+      "reproduced": 4,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 16,
+        "total": 16
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 19
+      }
+    },
+    "rew": {
+      "abstract_models": 9,
+      "candidates": 20,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 5,
+      "false": {
+        "admitted": 0,
+        "total": 9
+      },
+      "loops": 1,
+      "passed": true,
+      "reproduced": 5,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 6,
+        "total": 6
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 5
+      }
+    },
+    "rewnif": {
+      "abstract_models": 6,
+      "candidates": 15,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 4,
+      "false": {
+        "admitted": 0,
+        "total": 6
+      },
+      "loops": 1,
+      "passed": true,
+      "reproduced": 4,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 5,
+        "total": 5
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 4
+      }
+    },
+    "rewnifrev": {
+      "abstract_models": 4,
+      "candidates": 15,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 6,
+      "false": {
+        "admitted": 0,
+        "total": 8
+      },
+      "loops": 1,
+      "passed": true,
+      "reproduced": 6,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 5,
+        "total": 5
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 2
+      }
+    },
+    "rewnifrev2": {
+      "abstract_models": 4,
+      "candidates": 15,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 6,
+      "false": {
+        "admitted": 0,
+        "total": 8
+      },
+      "loops": 1,
+      "passed": true,
+      "reproduced": 6,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 5,
+        "total": 5
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 2
+      }
+    },
+    "rewrev": {
+      "abstract_models": 4,
+      "candidates": 20,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 10,
+      "false": {
+        "admitted": 0,
+        "total": 11
+      },
+      "loops": 1,
+      "passed": true,
+      "reproduced": 10,
+      "unclassified": {
+        "admitted": 0,
+        "total": 1
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 6,
+        "total": 6
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 2
+      }
+    },
+    "skipped": {
+      "abstract_models": 7,
+      "candidates": 15,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 5,
+      "false": {
+        "admitted": 0,
+        "total": 8
+      },
+      "loops": 1,
+      "passed": true,
+      "reproduced": 5,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 3,
+        "total": 3
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 4
+      }
+    },
+    "tcpy": {
+      "abstract_models": 8,
+      "candidates": 18,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 6,
+      "false": {
+        "admitted": 0,
+        "total": 9
+      },
+      "loops": 1,
+      "passed": true,
+      "reproduced": 6,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 0,
+      "valid-and-sufficient": {
+        "admitted": 4,
+        "total": 4
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 5
+      }
+    },
+    "transpose_u": {
+      "abstract_models": 20,
+      "candidates": 40,
+      "controls_rejected": true,
+      "discrepancies": 0,
+      "entry_models": 5,
+      "false": {
+        "admitted": 0,
+        "total": 15
+      },
+      "loops": 2,
+      "passed": true,
+      "reproduced": 3,
+      "unclassified": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unparseable": {
+        "admitted": 0,
+        "total": 0
+      },
+      "unreconstructible": 2,
+      "valid-and-sufficient": {
+        "admitted": 15,
+        "total": 15
+      },
+      "valid-but-insufficient": {
+        "admitted": 0,
+        "total": 10
+      }
+    }
+  },
+  "passed": false
+}

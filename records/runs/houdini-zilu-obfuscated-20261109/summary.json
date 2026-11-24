@@ -1,0 +1,640 @@
+{
+  "experiment": "houdini",
+  "family": "`c <= v`, `v <= w + c` over the loop's scalar variables and length parameters, c \u2208 {\u22121, 0, 1}",
+  "kernels": {
+    "zilu01": {
+      "accepted": true,
+      "candidates_initial": [
+        48
+      ],
+      "candidates_remaining": [
+        22
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((-1 <= v1) && (0 <= v1)) && (1 <= v1)) && (((-1 <= v2) && (0 <= v2)) && (1 <= v2))) && ((((-1 <= v0) && (0 <= v0)) && (-1 <= v3)) && ((0 <= v3) && (v1 <= v2)))) && (((((v1 <= (v2 + 1)) && (v2 <= v1)) && (v2 <= (v1 + 1))) && (((v3 <= (v1 - 1)) && (v3 <= v1)) && (v3 <= (v1 + 1)))) && ((((v3 <= (v2 - 1)) && (v3 <= v2)) && (v3 <= (v2 + 1))) && ((v3 <= v0) && (v3 <= (v0 + 1))))))"
+      ],
+      "loops": 1,
+      "queries": 6,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 932.7399530011462,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu02": {
+      "accepted": true,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        8
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((-1 <= v2) && (0 <= v2)) && ((1 <= v2) && (-1 <= v1))) && (((0 <= v1) && (1 <= v1)) && ((v2 <= v1) && (v2 <= (v1 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 6,
+      "rejection_class": "accepted",
+      "rounds": 4,
+      "solver_ms": 342.6738590496825,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu04": {
+      "accepted": false,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        7
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((-1 <= v2) && (0 <= v2)) && ((-1 <= v1) && (0 <= v1))) && (((1 <= v1) && (v2 <= v1)) && (v2 <= (v1 + 1))))"
+      ],
+      "loops": 1,
+      "queries": 7,
+      "rejection_class": "insufficient",
+      "rounds": 5,
+      "solver_ms": 533.117094062618,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu05": {
+      "accepted": true,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        13
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= v0) && (0 <= v0)) && ((-1 <= v2) && (0 <= v2))) && (((-1 <= v1) && (0 <= v1)) && (1 <= v1))) && ((((v0 <= v2) && (v0 <= (v2 + 1))) && (v0 <= v1)) && (((v0 <= (v1 + 1)) && (v2 <= v1)) && (v2 <= (v1 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 5,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 677.864574972773,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu06": {
+      "accepted": false,
+      "candidates_initial": [
+        147
+      ],
+      "candidates_remaining": [
+        14
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= v0) && (0 <= v0)) && ((-1 <= v4) && (0 <= v4))) && (((-1 <= v6) && (0 <= v6)) && (v4 <= v0))) && ((((v4 <= (v0 + 1)) && (v4 <= v6)) && ((v4 <= (v6 + 1)) && (v6 <= v0))) && (((v6 <= (v0 + 1)) && (v6 <= v4)) && (v6 <= (v4 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 9,
+      "rejection_class": "insufficient",
+      "rounds": 2,
+      "solver_ms": 4269.199666130589,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu08": {
+      "accepted": true,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        9
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= v0) && (0 <= v0)) && (-1 <= v2)) && ((0 <= v2) && (-1 <= v1))) && (((0 <= v1) && (v1 <= v0)) && ((v1 <= (v0 + 1)) && (v1 <= (v2 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 5,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 386.9149760284927,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu11": {
+      "accepted": true,
+      "candidates_initial": [
+        12
+      ],
+      "candidates_remaining": [
+        7
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((-1 <= v0) && (0 <= v0)) && ((-1 <= v1) && (0 <= v1))) && (((1 <= v1) && (v0 <= v1)) && (v0 <= (v1 + 1))))"
+      ],
+      "loops": 1,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 151.6334229381755,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu12": {
+      "accepted": true,
+      "candidates_initial": [
+        75
+      ],
+      "candidates_remaining": [
+        8
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((-1 <= v4) && (0 <= v4)) && ((-1 <= v3) && (0 <= v3))) && (((v0 <= v1) && (v0 <= (v1 + 1))) && ((v3 <= v4) && (v3 <= (v4 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 7,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 1629.7327260108432,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu13": {
+      "accepted": true,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        8
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((-1 <= v0) && (0 <= v0)) && ((-1 <= v2) && (0 <= v2))) && (((v0 <= v2) && (v0 <= (v2 + 1))) && ((v2 <= v0) && (v2 <= (v0 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 539.9672689818544,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu14": {
+      "accepted": true,
+      "candidates_initial": [
+        3
+      ],
+      "candidates_remaining": [
+        2
+      ],
+      "errors": 0,
+      "invariants": [
+        "((-1 <= v0) && (0 <= v0))"
+      ],
+      "loops": 1,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 27.00807701330632,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu15": {
+      "accepted": false,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        10
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= v0) && (0 <= v0)) && (-1 <= v2)) && ((0 <= v2) && (-1 <= v1))) && ((((0 <= v1) && (1 <= v1)) && (v2 <= (v1 - 1))) && ((v2 <= v1) && (v2 <= (v1 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 6,
+      "rejection_class": "insufficient",
+      "rounds": 4,
+      "solver_ms": 583.7087941617938,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu16": {
+      "accepted": false,
+      "candidates_initial": [
+        48
+      ],
+      "candidates_remaining": [
+        18
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((-1 <= v1) && (0 <= v1)) && (1 <= v1)) && ((-1 <= v0) && (0 <= v0))) && (((-1 <= v3) && (0 <= v3)) && ((v1 <= (v0 + 1)) && (v1 <= (v3 + 1))))) && (((((v2 <= v1) && (v2 <= (v1 + 1))) && (v2 <= (v0 + 1))) && ((v2 <= (v3 + 1)) && (v3 <= (v1 - 1)))) && (((v3 <= v1) && (v3 <= (v1 + 1))) && ((v3 <= v0) && (v3 <= (v0 + 1))))))"
+      ],
+      "loops": 1,
+      "queries": 6,
+      "rejection_class": "insufficient",
+      "rounds": 4,
+      "solver_ms": 1032.0883870881516,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu17": {
+      "accepted": true,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        8
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((-1 <= v0) && (0 <= v0)) && ((-1 <= v2) && (0 <= v2))) && (((v0 <= v2) && (v0 <= (v2 + 1))) && ((v2 <= v0) && (v2 <= (v0 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 412.35211095772684,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu18": {
+      "accepted": true,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        15
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= v0) && (0 <= v0)) && ((-1 <= v2) && (0 <= v2))) && (((-1 <= v1) && (0 <= v1)) && ((1 <= v1) && (v0 <= v2)))) && ((((v0 <= (v2 + 1)) && (v0 <= v1)) && ((v0 <= (v1 + 1)) && (v2 <= v0))) && (((v2 <= (v0 + 1)) && (v2 <= v1)) && (v2 <= (v1 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 5,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 481.8600709841121,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu19": {
+      "accepted": true,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        15
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= v0) && (0 <= v0)) && ((-1 <= v2) && (0 <= v2))) && (((-1 <= v1) && (0 <= v1)) && ((1 <= v1) && (v0 <= v2)))) && ((((v0 <= (v2 + 1)) && (v0 <= v1)) && ((v0 <= (v1 + 1)) && (v2 <= v0))) && (((v2 <= (v0 + 1)) && (v2 <= v1)) && (v2 <= (v1 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 6,
+      "rejection_class": "accepted",
+      "rounds": 4,
+      "solver_ms": 678.9654949097894,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu20": {
+      "accepted": true,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        9
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= v0) && (0 <= v0)) && (-1 <= v2)) && ((0 <= v2) && (-1 <= v1))) && (((0 <= v1) && (v0 <= v2)) && ((v0 <= (v2 + 1)) && (v0 <= (v1 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 5,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 406.1737210577121,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu22": {
+      "accepted": true,
+      "candidates_initial": [
+        48
+      ],
+      "candidates_remaining": [
+        21
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((-1 <= v1) && (0 <= v1)) && (1 <= v1)) && (((-1 <= v2) && (0 <= v2)) && (-1 <= v0))) && ((((0 <= v0) && (-1 <= v3)) && (0 <= v3)) && ((v2 <= v1) && (v2 <= (v1 + 1))))) && (((((v2 <= v0) && (v2 <= (v0 + 1))) && (v2 <= v3)) && ((v2 <= (v3 + 1)) && (v3 <= v1))) && ((((v3 <= (v1 + 1)) && (v3 <= v2)) && (v3 <= (v2 + 1))) && ((v3 <= v0) && (v3 <= (v0 + 1))))))"
+      ],
+      "loops": 1,
+      "queries": 6,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 929.9420310708228,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu23": {
+      "accepted": false,
+      "candidates_initial": [
+        12
+      ],
+      "candidates_remaining": [
+        6
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((-1 <= v0) && (0 <= v0)) && (-1 <= v1)) && (((0 <= v1) && (v0 <= v1)) && (v0 <= (v1 + 1))))"
+      ],
+      "loops": 1,
+      "queries": 5,
+      "rejection_class": "insufficient",
+      "rounds": 4,
+      "solver_ms": 198.90129298437387,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu24": {
+      "accepted": false,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        7
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((-1 <= v0) && (0 <= v0)) && ((-1 <= v1) && (0 <= v1))) && (((v0 <= (v1 + 1)) && (v2 <= v1)) && (v2 <= (v1 + 1))))"
+      ],
+      "loops": 1,
+      "queries": 7,
+      "rejection_class": "insufficient",
+      "rounds": 5,
+      "solver_ms": 498.80021292483434,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu25": {
+      "accepted": false,
+      "candidates_initial": [
+        3
+      ],
+      "candidates_remaining": [
+        0
+      ],
+      "errors": 0,
+      "invariants": [
+        "1"
+      ],
+      "loops": 1,
+      "queries": 3,
+      "rejection_class": "insufficient",
+      "rounds": 2,
+      "solver_ms": 19.743359051062725,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu26": {
+      "accepted": true,
+      "candidates_initial": [
+        12
+      ],
+      "candidates_remaining": [
+        2
+      ],
+      "errors": 0,
+      "invariants": [
+        "((v0 <= v1) && (v0 <= (v1 + 1)))"
+      ],
+      "loops": 1,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 103.69067199644633,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu27": {
+      "accepted": false,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        2
+      ],
+      "errors": 0,
+      "invariants": [
+        "((v0 <= v2) && (v0 <= (v2 + 1)))"
+      ],
+      "loops": 1,
+      "queries": 5,
+      "rejection_class": "insufficient",
+      "rounds": 3,
+      "solver_ms": 284.74413105868734,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu29": {
+      "accepted": false,
+      "candidates_initial": [
+        12
+      ],
+      "candidates_remaining": [
+        0
+      ],
+      "errors": 0,
+      "invariants": [
+        "1"
+      ],
+      "loops": 1,
+      "queries": 4,
+      "rejection_class": "insufficient",
+      "rounds": 3,
+      "solver_ms": 94.27097502339166,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu30": {
+      "accepted": true,
+      "candidates_initial": [
+        48
+      ],
+      "candidates_remaining": [
+        10
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= v0) && (0 <= v0)) && (-1 <= v3)) && ((0 <= v3) && (v1 <= v2))) && ((((v1 <= (v2 + 1)) && (v2 <= v1)) && (v2 <= (v1 + 1))) && ((v3 <= v0) && (v3 <= (v0 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 566.5356509271078,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu32": {
+      "accepted": false,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        9
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= v0) && (0 <= v0)) && (1 <= v0)) && ((-1 <= v2) && (0 <= v2))) && (((-1 <= v1) && (0 <= v1)) && ((v1 <= v2) && (v1 <= (v2 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 6,
+      "rejection_class": "insufficient",
+      "rounds": 4,
+      "solver_ms": 1217.1892520273104,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu33": {
+      "accepted": true,
+      "candidates_initial": [
+        3
+      ],
+      "candidates_remaining": [
+        2
+      ],
+      "errors": 0,
+      "invariants": [
+        "((-1 <= v0) && (0 <= v0))"
+      ],
+      "loops": 1,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 37.994229001924396,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu34": {
+      "accepted": false,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        9
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= v0) && (0 <= v0)) && (-1 <= v1)) && ((0 <= v1) && (1 <= v1))) && (((v0 <= v1) && (v0 <= (v1 + 1))) && ((v2 <= v1) && (v2 <= (v1 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 7,
+      "rejection_class": "insufficient",
+      "rounds": 5,
+      "solver_ms": 839.7876858798554,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu35": {
+      "accepted": true,
+      "candidates_initial": [
+        3
+      ],
+      "candidates_remaining": [
+        2
+      ],
+      "errors": 0,
+      "invariants": [
+        "((-1 <= v0) && (0 <= v0))"
+      ],
+      "loops": 1,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 34.80637901520822,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu36": {
+      "accepted": true,
+      "candidates_initial": [
+        48
+      ],
+      "candidates_remaining": [
+        26
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((-1 <= v1) && (0 <= v1)) && ((-1 <= v2) && (0 <= v2))) && (((-1 <= v0) && (0 <= v0)) && (-1 <= v3))) && ((((0 <= v3) && (v1 <= v2)) && (v1 <= (v2 + 1))) && (((v1 <= v0) && (v1 <= (v0 + 1))) && (v1 <= v3)))) && (((((v1 <= (v3 + 1)) && (v2 <= v1)) && ((v2 <= (v1 + 1)) && (v2 <= v0))) && (((v2 <= (v0 + 1)) && (v2 <= v3)) && (v2 <= (v3 + 1)))) && ((((v3 <= v1) && (v3 <= (v1 + 1))) && (v3 <= v2)) && (((v3 <= (v2 + 1)) && (v3 <= v0)) && (v3 <= (v0 + 1))))))"
+      ],
+      "loops": 1,
+      "queries": 5,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 995.3754830203252,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "zilu37": {
+      "accepted": true,
+      "candidates_initial": [
+        12
+      ],
+      "candidates_remaining": [
+        8
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((-1 <= v0) && (0 <= v0)) && ((-1 <= v1) && (0 <= v1))) && (((v0 <= v1) && (v0 <= (v1 + 1))) && ((v1 <= v0) && (v1 <= (v0 + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 3,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 162.09831097512506,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    }
+  },
+  "max_rounds": 5,
+  "preregistered_max_rounds": 5,
+  "success_at_1": 19,
+  "tasks": 30
+}

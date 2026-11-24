@@ -1,0 +1,306 @@
+{
+  "experiment": "houdini",
+  "family": "`c <= v`, `v <= w + c` over the loop's scalar variables and length parameters, c \u2208 {\u22121, 0, 1}",
+  "kernels": {
+    "accumulate": {
+      "accepted": true,
+      "candidates_initial": [
+        48
+      ],
+      "candidates_remaining": [
+        12
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= a_len) && (0 <= a_len)) && (-1 <= n)) && (((0 <= n) && (-1 <= i)) && (0 <= i))) && ((((n <= a_len) && (n <= (a_len + 1))) && (i <= a_len)) && (((i <= (a_len + 1)) && (i <= n)) && (i <= (n + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 593.2807269964542,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "binary_search": {
+      "accepted": true,
+      "candidates_initial": [
+        75
+      ],
+      "candidates_remaining": [
+        20
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((-1 <= a_len) && (0 <= a_len)) && (-1 <= n)) && ((0 <= n) && (-1 <= lo))) && ((((0 <= lo) && (-1 <= hi)) && (n <= a_len)) && ((n <= (a_len + 1)) && (lo <= a_len)))) && (((((lo <= (a_len + 1)) && (lo <= n)) && (lo <= (n + 1))) && ((lo <= (hi + 1)) && (hi <= (a_len - 1)))) && ((((hi <= a_len) && (hi <= (a_len + 1))) && (hi <= (n - 1))) && ((hi <= n) && (hi <= (n + 1))))))"
+      ],
+      "loops": 1,
+      "queries": 7,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 3213.4238650087354,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "copy": {
+      "accepted": true,
+      "candidates_initial": [
+        48
+      ],
+      "candidates_remaining": [
+        18
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((-1 <= a_len) && (0 <= a_len)) && (-1 <= b_len)) && ((0 <= b_len) && (-1 <= n))) && (((0 <= n) && (-1 <= i)) && ((0 <= i) && (n <= a_len)))) && (((((n <= (a_len + 1)) && (n <= b_len)) && (n <= (b_len + 1))) && ((i <= a_len) && (i <= (a_len + 1)))) && (((i <= b_len) && (i <= (b_len + 1))) && ((i <= n) && (i <= (n + 1))))))"
+      ],
+      "loops": 1,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 688.0427050073195,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "count": {
+      "accepted": true,
+      "candidates_initial": [
+        75
+      ],
+      "candidates_remaining": [
+        20
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((-1 <= a_len) && (0 <= a_len)) && (-1 <= n)) && ((0 <= n) && (-1 <= counted))) && ((((0 <= counted) && (-1 <= i)) && (0 <= i)) && ((n <= a_len) && (n <= (a_len + 1))))) && (((((counted <= a_len) && (counted <= (a_len + 1))) && (counted <= n)) && ((counted <= (n + 1)) && (counted <= i))) && ((((counted <= (i + 1)) && (i <= a_len)) && (i <= (a_len + 1))) && ((i <= n) && (i <= (n + 1))))))"
+      ],
+      "loops": 1,
+      "queries": 8,
+      "rejection_class": "accepted",
+      "rounds": 4,
+      "solver_ms": 2334.39592897048,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "dot": {
+      "accepted": true,
+      "candidates_initial": [
+        75
+      ],
+      "candidates_remaining": [
+        18
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((-1 <= a_len) && (0 <= a_len)) && (-1 <= b_len)) && ((0 <= b_len) && (-1 <= n))) && (((0 <= n) && (-1 <= i)) && ((0 <= i) && (n <= a_len)))) && (((((n <= (a_len + 1)) && (n <= b_len)) && (n <= (b_len + 1))) && ((i <= a_len) && (i <= (a_len + 1)))) && (((i <= b_len) && (i <= (b_len + 1))) && ((i <= n) && (i <= (n + 1))))))"
+      ],
+      "loops": 1,
+      "queries": 8,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 2452.3049719809933,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "fill": {
+      "accepted": true,
+      "candidates_initial": [
+        48
+      ],
+      "candidates_remaining": [
+        12
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= a_len) && (0 <= a_len)) && (-1 <= n)) && (((0 <= n) && (-1 <= i)) && (0 <= i))) && ((((n <= a_len) && (n <= (a_len + 1))) && (i <= a_len)) && (((i <= (a_len + 1)) && (i <= n)) && (i <= (n + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 553.5996500002511,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "find": {
+      "accepted": true,
+      "candidates_initial": [
+        48
+      ],
+      "candidates_remaining": [
+        12
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= a_len) && (0 <= a_len)) && (-1 <= n)) && (((0 <= n) && (-1 <= i)) && (0 <= i))) && ((((n <= a_len) && (n <= (a_len + 1))) && (i <= a_len)) && (((i <= (a_len + 1)) && (i <= n)) && (i <= (n + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 560.1700619990879,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "matvec": {
+      "accepted": false,
+      "candidates_initial": [
+        108,
+        192
+      ],
+      "candidates_remaining": [
+        30,
+        46
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((-1 <= matrix_len) && (0 <= matrix_len)) && ((-1 <= x_len) && (0 <= x_len))) && (((1 <= x_len) && (-1 <= y_len)) && ((0 <= y_len) && (-1 <= rows)))) && ((((0 <= rows) && (-1 <= cols)) && ((0 <= cols) && (1 <= cols))) && (((-1 <= i) && (0 <= i)) && (rows <= matrix_len)))) && (((((rows <= (matrix_len + 1)) && (rows <= y_len)) && ((rows <= (y_len + 1)) && (cols <= x_len))) && (((cols <= (x_len + 1)) && (i <= matrix_len)) && ((i <= (matrix_len + 1)) && (i <= x_len)))) && ((((i <= (x_len + 1)) && (i <= y_len)) && ((i <= (y_len + 1)) && (i <= rows))) && (((i <= (rows + 1)) && (i <= cols)) && (i <= (cols + 1))))))",
+        "(((((((-1 <= matrix_len) && (0 <= matrix_len)) && (1 <= matrix_len)) && (((-1 <= x_len) && (0 <= x_len)) && (1 <= x_len))) && ((((-1 <= y_len) && (0 <= y_len)) && (1 <= y_len)) && (((-1 <= rows) && (0 <= rows)) && (1 <= rows)))) && (((((-1 <= cols) && (0 <= cols)) && (1 <= cols)) && (((-1 <= i) && (0 <= i)) && (-1 <= j))) && ((((0 <= j) && (rows <= matrix_len)) && (rows <= (matrix_len + 1))) && ((rows <= y_len) && (rows <= (y_len + 1)))))) && ((((((cols <= matrix_len) && (cols <= (matrix_len + 1))) && (cols <= x_len)) && (((cols <= (x_len + 1)) && (i <= (matrix_len - 1))) && (i <= matrix_len))) && ((((i <= (matrix_len + 1)) && (i <= x_len)) && (i <= (x_len + 1))) && (((i <= (y_len - 1)) && (i <= y_len)) && (i <= (y_len + 1))))) && (((((i <= (rows - 1)) && (i <= rows)) && (i <= (rows + 1))) && (((i <= cols) && (i <= (cols + 1))) && (j <= matrix_len))) && ((((j <= (matrix_len + 1)) && (j <= x_len)) && (j <= (x_len + 1))) && ((j <= cols) && (j <= (cols + 1)))))))"
+      ],
+      "loops": 2,
+      "queries": 37,
+      "rejection_class": "not-inductive",
+      "rounds": 5,
+      "solver_ms": 28538.694566999766,
+      "status": "round-limit",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "prefix_sum": {
+      "accepted": true,
+      "candidates_initial": [
+        27
+      ],
+      "candidates_remaining": [
+        15
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= a_len) && (0 <= a_len)) && ((1 <= a_len) && (-1 <= n))) && (((0 <= n) && (1 <= n)) && ((-1 <= i) && (0 <= i)))) && ((((1 <= i) && (n <= a_len)) && ((n <= (a_len + 1)) && (i <= a_len))) && (((i <= (a_len + 1)) && (i <= n)) && (i <= (n + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 475.459776005664,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "replace": {
+      "accepted": true,
+      "candidates_initial": [
+        75
+      ],
+      "candidates_remaining": [
+        12
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= a_len) && (0 <= a_len)) && (-1 <= n)) && (((0 <= n) && (-1 <= i)) && (0 <= i))) && ((((n <= a_len) && (n <= (a_len + 1))) && (i <= a_len)) && (((i <= (a_len + 1)) && (i <= n)) && (i <= (n + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 6,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 1625.5827589739056,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "reverse": {
+      "accepted": true,
+      "candidates_initial": [
+        48
+      ],
+      "candidates_remaining": [
+        20
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((-1 <= a_len) && (0 <= a_len)) && (-1 <= n)) && ((0 <= n) && (-1 <= half))) && ((((0 <= half) && (-1 <= i)) && (0 <= i)) && ((n <= a_len) && (n <= (a_len + 1))))) && (((((half <= a_len) && (half <= (a_len + 1))) && (half <= n)) && ((half <= (n + 1)) && (i <= a_len))) && ((((i <= (a_len + 1)) && (i <= n)) && (i <= (n + 1))) && ((i <= half) && (i <= (half + 1))))))"
+      ],
+      "loops": 1,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 1202.6441150046594,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "saxpy": {
+      "accepted": true,
+      "candidates_initial": [
+        75
+      ],
+      "candidates_remaining": [
+        18
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((-1 <= x_len) && (0 <= x_len)) && (-1 <= y_len)) && ((0 <= y_len) && (-1 <= n))) && (((0 <= n) && (-1 <= i)) && ((0 <= i) && (n <= x_len)))) && (((((n <= (x_len + 1)) && (n <= y_len)) && (n <= (y_len + 1))) && ((i <= x_len) && (i <= (x_len + 1)))) && (((i <= y_len) && (i <= (y_len + 1))) && ((i <= n) && (i <= (n + 1))))))"
+      ],
+      "loops": 1,
+      "queries": 6,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 1415.176607981266,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "sum": {
+      "accepted": true,
+      "candidates_initial": [
+        48
+      ],
+      "candidates_remaining": [
+        12
+      ],
+      "errors": 0,
+      "invariants": [
+        "(((((-1 <= a_len) && (0 <= a_len)) && (-1 <= n)) && (((0 <= n) && (-1 <= i)) && (0 <= i))) && ((((n <= a_len) && (n <= (a_len + 1))) && (i <= a_len)) && (((i <= (a_len + 1)) && (i <= n)) && (i <= (n + 1)))))"
+      ],
+      "loops": 1,
+      "queries": 5,
+      "rejection_class": "accepted",
+      "rounds": 3,
+      "solver_ms": 944.2068770003971,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    },
+    "swap_ranges": {
+      "accepted": true,
+      "candidates_initial": [
+        48
+      ],
+      "candidates_remaining": [
+        18
+      ],
+      "errors": 0,
+      "invariants": [
+        "((((((-1 <= a_len) && (0 <= a_len)) && (-1 <= b_len)) && ((0 <= b_len) && (-1 <= n))) && (((0 <= n) && (-1 <= i)) && ((0 <= i) && (n <= a_len)))) && (((((n <= (a_len + 1)) && (n <= b_len)) && (n <= (b_len + 1))) && ((i <= a_len) && (i <= (a_len + 1)))) && (((i <= b_len) && (i <= (b_len + 1))) && ((i <= n) && (i <= (n + 1))))))"
+      ],
+      "loops": 1,
+      "queries": 4,
+      "rejection_class": "accepted",
+      "rounds": 2,
+      "solver_ms": 722.3063289984566,
+      "status": "fixpoint",
+      "timeouts": 0,
+      "unknown": 0
+    }
+  },
+  "preregistered_max_rounds": 5,
+  "success_at_1": 13,
+  "tasks": 14
+}

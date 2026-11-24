@@ -1,0 +1,153 @@
+{
+  "profile": "pfc-eval-inputs-v1",
+  "kernel": "revcpyswp2",
+  "function": "revcpyswp2",
+  "program_sha256": "ad33dade47f87ec483e36351a5537159c200684f4690eec307240297ecdf3628",
+  "cases": 1000,
+  "arrays": {
+    "a": {
+      "length": [
+        2,
+        1024
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    },
+    "b": {
+      "length": [
+        2,
+        1024
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    },
+    "a_copy": {
+      "length": [
+        2,
+        1024
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    },
+    "b_copy": {
+      "length": [
+        2,
+        1024
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    }
+  },
+  "scalars": {
+    "SIZE": {
+      "kind": "prefix",
+      "low": 2,
+      "of": [
+        "a",
+        "b",
+        "a_copy",
+        "b_copy"
+      ]
+    }
+  },
+  "boundary": [
+    {
+      "arrays": {
+        "a": [
+          3,
+          -3
+        ],
+        "b": [
+          3,
+          -3
+        ],
+        "a_copy": [
+          3,
+          -3
+        ],
+        "b_copy": [
+          3,
+          -3
+        ]
+      },
+      "scalars": {
+        "SIZE": 2
+      }
+    },
+    {
+      "arrays": {
+        "a": [
+          1,
+          2,
+          3
+        ],
+        "b": [
+          1,
+          2,
+          3
+        ],
+        "a_copy": [
+          1,
+          2,
+          3
+        ],
+        "b_copy": [
+          1,
+          2,
+          3
+        ]
+      },
+      "scalars": {
+        "SIZE": 2
+      }
+    },
+    {
+      "arrays": {
+        "a": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "b": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "a_copy": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "b_copy": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "scalars": {
+        "SIZE": 5
+      }
+    }
+  ],
+  "stress": 0.1
+}

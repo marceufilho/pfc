@@ -1,0 +1,97 @@
+{
+  "profile": "pfc-eval-inputs-v1",
+  "kernel": "tcpy",
+  "function": "tcpy",
+  "program_sha256": "1849c098c341a5c2fa92294e4e1d272553b0b37c04b80c330a5f2e15ea9a64c9",
+  "cases": 1000,
+  "arrays": {
+    "a": {
+      "length": [
+        2,
+        1024
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    },
+    "acopy": {
+      "length": [
+        2,
+        1024
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    }
+  },
+  "scalars": {
+    "SIZE": {
+      "kind": "prefix",
+      "low": 2,
+      "of": [
+        "a",
+        "acopy"
+      ]
+    }
+  },
+  "boundary": [
+    {
+      "arrays": {
+        "a": [
+          3,
+          -3
+        ],
+        "acopy": [
+          3,
+          -3
+        ]
+      },
+      "scalars": {
+        "SIZE": 2
+      }
+    },
+    {
+      "arrays": {
+        "a": [
+          1,
+          2,
+          3
+        ],
+        "acopy": [
+          1,
+          2,
+          3
+        ]
+      },
+      "scalars": {
+        "SIZE": 2
+      }
+    },
+    {
+      "arrays": {
+        "a": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "acopy": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "scalars": {
+        "SIZE": 5
+      }
+    }
+  ],
+  "stress": 0.1
+}

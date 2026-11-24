@@ -1,0 +1,466 @@
+{
+  "budgets": [
+    1,
+    2,
+    5,
+    10,
+    30,
+    60
+  ],
+  "curve": {
+    "pfc": {
+      "1": {
+        "proved": 90,
+        "total": 90
+      },
+      "10": {
+        "proved": 90,
+        "total": 90
+      },
+      "2": {
+        "proved": 90,
+        "total": 90
+      },
+      "30": {
+        "proved": 90,
+        "total": 90
+      },
+      "5": {
+        "proved": 90,
+        "total": 90
+      },
+      "60": {
+        "proved": 90,
+        "total": 90
+      }
+    }
+  },
+  "experiment": "sweep",
+  "kernels": {
+    "zilupair01": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "zilupair02": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "zilupair03": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "zilupair04": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "zilupair05": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "zilupair06": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "zilupair07": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "zilupair08": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "zilupair09": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "zilupair10": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "zilupair11": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "zilupair12": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "zilupair13": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "zilupair14": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    },
+    "zilupair15": {
+      "pfc": {
+        "1": {
+          "proved": 6,
+          "total": 6
+        },
+        "10": {
+          "proved": 6,
+          "total": 6
+        },
+        "2": {
+          "proved": 6,
+          "total": 6
+        },
+        "30": {
+          "proved": 6,
+          "total": 6
+        },
+        "5": {
+          "proved": 6,
+          "total": 6
+        },
+        "60": {
+          "proved": 6,
+          "total": 6
+        }
+      }
+    }
+  },
+  "tools": [
+    "pfc"
+  ],
+  "wp_errors": 0,
+  "wp_skipped_reason": "not requested"
+}

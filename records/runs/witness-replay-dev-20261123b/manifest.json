@@ -1,0 +1,26 @@
+{
+  "files": {
+    "COMPLETE": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "configuration.json": "c89b505d604b41d33039afeeb9c88bc5b8f1075dc09bd0799c3c84c78e1118fe",
+    "environment.json": "f357778aba81fd49529f4bb96e70bf0a6866c32732333349c693b1829ad2bb25",
+    "observations.jsonl": "db683d986ff106c2fb98542e4a9c9a2792611257bb05cb140deb69e9985f9755",
+    "raw/witness/accumulate.jsonl": "e98d7380218a6f6538b49594bedfc322d25aa2139ae037561cd0adecf5db02bd",
+    "raw/witness/binary_search.jsonl": "09df2f45f7ef506c6452f3e601f8b37c1054dbf25146b162b08b9f1ad7100939",
+    "raw/witness/copy.jsonl": "20d8d046169a03e2aa342bb7c1a11abac92ce003f9236c480ca5b03857418547",
+    "raw/witness/count.jsonl": "a6c17095614937979817aa638fed0021375cb23809a39d1eead397da94023703",
+    "raw/witness/dot.jsonl": "04b0b4c706a0720cafc37e2947b250eac8773fdb6ea7df07dc00da585886d1f2",
+    "raw/witness/fill.jsonl": "013f727d8037f929a7ce4b51602f0b2b7e3e4c8242d215a17cec752717e301a6",
+    "raw/witness/find.jsonl": "78fedf1c611c8f2e1c14f160071442d5bf142c630fb344f0aa7e0d72563686f1",
+    "raw/witness/matvec.jsonl": "83efc786c778117a57f93c7e895be9801ba74256b045abbb84025b5aeca7f863",
+    "raw/witness/prefix_sum.jsonl": "77f28d79b43e530da60699f2574b1c844e71c6833b94aec06775c6c3812c7829",
+    "raw/witness/replace.jsonl": "2fe9150f649cd9d4662b469e630c1497b01b5ea7a10e66b3ac586cc80813359c",
+    "raw/witness/reverse.jsonl": "96a00978936b4ff424fff2edb52235a73cb34d561259623618d23cb3ac153469",
+    "raw/witness/saxpy.jsonl": "75f65f270af8774863974fd6ca46845aa3ec04d3e25b0818cd692e736e495134",
+    "raw/witness/sum.jsonl": "ea429159e726999daedf8972b148b7287a3156d7324b44e13e8ae64d14df161c",
+    "raw/witness/swap_ranges.jsonl": "3b66678d62f7b585dc66b06d6365ee8b03c4e84034609c17153048c79583b917",
+    "schema.json": "6278f590b77d84f7c1d63a031692f5ff5b038cf502436677fc9c6947ce2e1bbe",
+    "summary.json": "f2917b9b8d33b43f8a7dfbab8efafb2350db506acab3ce7487f292be30763c48",
+    "tables.md": "0b1648e47e6f26c3e0f3ef81737b5cc693f9363c04d8467c038ffa30decece14"
+  },
+  "schema_version": "pfc-eval-evidence-v1"
+}

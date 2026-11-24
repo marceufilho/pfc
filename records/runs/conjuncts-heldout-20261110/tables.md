@@ -1,0 +1,47 @@
+| kernel | conjuncts | sensitivity (guard restored / safety-witnessed) | specificity (identical / unwitnessed) | SEPARATED restrict withdrawn | annotation-dependent | anomalies | all as expected |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| add_2_n_u | 5 | 3/3 | n/a | 0/0 | 2 | 0 | yes |
+| add_3_n_u | 6 | 3/3 | n/a | 0/0 | 3 | 0 | yes |
+| copy_2_u | 3 | 2/2 | n/a | 0/0 | 1 | 0 | yes |
+| copy_3_n_u | 5 | 2/2 | n/a | 0/0 | 3 | 0 | yes |
+| copy_partial_2_n_u | 8 | 2/2 | 1/3 | 0/0 | 3 | 0 | no |
+| copy_partial_3_u | 5 | 4/4 | n/a | 0/0 | 1 | 0 | yes |
+| diff_2_n_u | 5 | 3/3 | n/a | 0/0 | 2 | 0 | yes |
+| diff_3_n_u | 6 | 3/3 | n/a | 0/0 | 3 | 0 | yes |
+| init_2_n_u | 3 | 1/1 | n/a | 0/0 | 2 | 0 | yes |
+| init_3_u | 2 | 1/1 | n/a | 0/0 | 1 | 0 | yes |
+| init_4_n_u | 5 | 1/1 | n/a | 0/0 | 4 | 0 | yes |
+| init_non_constant_2_n_u | 7 | 3/3 | 1/1 | 0/0 | 3 | 0 | yes |
+| init_non_constant_3_u | 2 | 1/1 | n/a | 0/0 | 1 | 0 | yes |
+| max_2_u | 2 | 1/1 | n/a | 0/0 | 1 | 0 | yes |
+| max_3_n_u | 4 | 1/1 | n/a | 0/0 | 3 | 0 | yes |
+| mbpr2 | 2 | 1/1 | n/a | 0/0 | 1 | 0 | yes |
+| mbpr3 | 2 | 1/1 | n/a | 0/0 | 1 | 0 | yes |
+| mbpr4 | 2 | 1/1 | n/a | 0/0 | 1 | 0 | yes |
+| min_2_u | 2 | 1/1 | n/a | 0/0 | 1 | 0 | yes |
+| min_3_n_u | 4 | 1/1 | n/a | 0/0 | 3 | 0 | yes |
+| nr2 | 2 | 1/1 | n/a | 0/0 | 1 | 0 | yes |
+| nr3 | 2 | 1/1 | n/a | 0/0 | 1 | 0 | yes |
+| nr4 | 2 | 1/1 | n/a | 0/0 | 1 | 0 | yes |
+| nr5 | 2 | 1/1 | 0/1 | 0/0 | 0 | 0 | no |
+| pnr2 | 4 | 2/2 | 1/1 | 0/0 | 1 | 0 | yes |
+| pnr3 | 4 | 2/2 | 1/1 | 0/0 | 1 | 0 | yes |
+| poly1 | 3 | 1/1 | 0/1 | 0/0 | 1 | 0 | no |
+| poly2 | 3 | 1/1 | 0/1 | 0/0 | 1 | 0 | no |
+| pr2 | 2 | 1/1 | n/a | 0/0 | 1 | 0 | yes |
+| pr3 | 2 | 1/1 | n/a | 0/0 | 1 | 0 | yes |
+| pr4 | 2 | 1/1 | n/a | 0/0 | 1 | 0 | yes |
+| pr5 | 2 | 1/1 | 0/1 | 0/0 | 0 | 0 | no |
+| rev_2_n_u | 4 | 2/2 | n/a | 0/0 | 2 | 0 | yes |
+| rev_3_u | 3 | 2/2 | n/a | 0/0 | 1 | 0 | yes |
+| revcpyswp2 | 6 | 4/4 | 1/1 | 0/0 | 1 | 0 | yes |
+| rew | 3 | 1/1 | 1/1 | 0/0 | 1 | 0 | yes |
+| rewnif | 3 | 1/1 | 1/1 | 0/0 | 1 | 0 | yes |
+| rewnifrev | 3 | 1/1 | 1/1 | 0/0 | 1 | 0 | yes |
+| rewnifrev2 | 3 | 1/1 | 1/1 | 0/0 | 1 | 0 | yes |
+| rewrev | 3 | 1/1 | 1/1 | 0/0 | 1 | 0 | yes |
+| skipped | 3 | 1/1 | 1/1 | 0/0 | 1 | 0 | yes |
+| tcpy | 4 | 2/2 | 1/1 | 0/0 | 1 | 0 | yes |
+| transpose_u | 3 | 2/2 | n/a | 0/0 | 1 | 0 | yes |
+
+Expected consequences come from a seeded small-domain witness search with the reference interpreter; absence of a witness is finite evidence, not proof of independence. Annotation-dependent conjuncts are those whose only witness falsifies a proof annotation or makes contract arithmetic undefined.

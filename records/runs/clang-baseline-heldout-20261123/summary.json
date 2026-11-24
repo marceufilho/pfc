@@ -1,0 +1,23 @@
+{
+  "flags_bench": [
+    "-std=c11",
+    "-O3",
+    "-march=native",
+    "-Wall",
+    "-Wextra",
+    "-Werror"
+  ],
+  "flags_o2": [
+    "-std=c11",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror"
+  ],
+  "guards_total": 209,
+  "programs": 43,
+  "programs_with_a_guard_removed_o2": 21,
+  "removed_by_clang_o2": 70,
+  "survive_bench": 139,
+  "survive_o2": 139
+}

@@ -1,0 +1,195 @@
+{
+  "seed": 0,
+  "evidence": {
+    "differential": [
+      "bench/eval/differential-20261110",
+      {
+        "path": "bench/eval/differential-heldout-20261110",
+        "stratum": "heldout"
+      }
+    ],
+    "conjuncts": [
+      "bench/eval/conjuncts-20261110",
+      {
+        "path": "bench/eval/conjuncts-zilu-20261110",
+        "stratum": "ported"
+      },
+      {
+        "path": "bench/eval/conjuncts-zilu-composed-20261110",
+        "stratum": "composed"
+      },
+      {
+        "path": "bench/eval/conjuncts-heldout-20261110",
+        "stratum": "heldout"
+      }
+    ],
+    "wp_z3": [
+      "bench/eval/wp-z3-20261109",
+      "bench/eval/wp-z3-20261112"
+    ],
+    "crosscheck": [
+      "bench/eval/crosscheck-20261109",
+      {
+        "path": "bench/eval/crosscheck-zilu-20261109",
+        "stratum": "ported"
+      },
+      {
+        "path": "bench/eval/crosscheck-zilu-composed-20261109",
+        "stratum": "composed"
+      },
+      {
+        "path": "bench/eval/crosscheck-heldout-20261110",
+        "stratum": "heldout"
+      }
+    ],
+    "inject": [
+      "bench/eval/inject-20261110",
+      {
+        "path": "bench/eval/inject-zilu-20261110",
+        "stratum": "ported"
+      },
+      {
+        "path": "bench/eval/inject-zilu-composed-20261110",
+        "stratum": "composed"
+      },
+      {
+        "path": "bench/eval/inject-heldout-20261110",
+        "stratum": "heldout"
+      }
+    ],
+    "houdini": [
+      "bench/eval/houdini-20261105",
+      {
+        "path": "bench/eval/houdini-zilu-20261109",
+        "stratum": "ported"
+      },
+      {
+        "path": "bench/eval/houdini-zilu-obfuscated-20261109",
+        "stratum": "obfuscated"
+      },
+      {
+        "path": "bench/eval/houdini-zilu-composed-20261109",
+        "stratum": "composed"
+      },
+      "bench/eval/houdini-b2-20261109",
+      {
+        "path": "bench/eval/houdini-b2-zilu-20261109",
+        "stratum": "ported"
+      },
+      {
+        "path": "bench/eval/houdini-b2-zilu-obfuscated-20261109",
+        "stratum": "obfuscated"
+      },
+      {
+        "path": "bench/eval/houdini-b2-zilu-composed-20261109",
+        "stratum": "composed"
+      },
+      {
+        "path": "bench/eval/houdini-heldout-20261110",
+        "stratum": "heldout"
+      },
+      {
+        "path": "bench/eval/houdini-b2-heldout-20261110",
+        "stratum": "heldout"
+      }
+    ],
+    "robustness": [
+      "bench/eval/robustness-20261110",
+      {
+        "path": "bench/eval/robustness-zilu-20261110",
+        "stratum": "ported"
+      },
+      {
+        "path": "bench/eval/robustness-zilu-composed-20261110",
+        "stratum": "composed"
+      },
+      {
+        "path": "bench/eval/robustness-heldout-20261110",
+        "stratum": "heldout"
+      }
+    ],
+    "sweep": [
+      "bench/eval/sweep-20261105",
+      {
+        "path": "bench/eval/sweep-zilu-20261109",
+        "stratum": "ported"
+      },
+      {
+        "path": "bench/eval/sweep-zilu-composed-20261109",
+        "stratum": "composed"
+      },
+      {
+        "path": "bench/eval/sweep-heldout-20261110",
+        "stratum": "heldout"
+      }
+    ],
+    "mutate": [
+      "bench/eval/mutate-20261110",
+      "bench/eval/mutate-20261111b",
+      "bench/eval/mutate-full-compiler-20261110",
+      "bench/eval/mutate-full-harness-20261110",
+      "bench/eval/mutate-full-extended-20261110",
+      "bench/eval/mutate-full-compiler-20261111b"
+    ],
+    "proposer": [
+      {
+        "path": "bench/eval/proposer-L1-dev-20261109",
+        "stratum": "development"
+      },
+      {
+        "path": "bench/eval/proposer-L1-acsl-20261109",
+        "stratum": "development"
+      },
+      {
+        "path": "bench/eval/proposer-L2-dev-20261109",
+        "stratum": "development"
+      },
+      {
+        "path": "bench/eval/proposer-L2-acsl-20261109",
+        "stratum": "development"
+      },
+      {
+        "path": "bench/eval/proposer-L1-zilu-20261109",
+        "stratum": "ported"
+      },
+      {
+        "path": "bench/eval/proposer-L2-zilu-20261109",
+        "stratum": "ported"
+      },
+      {
+        "path": "bench/eval/proposer-L1-zilu-obfuscated-20261109",
+        "stratum": "obfuscated"
+      },
+      {
+        "path": "bench/eval/proposer-L2-zilu-obfuscated-20261109",
+        "stratum": "obfuscated"
+      },
+      {
+        "path": "bench/eval/proposer-L1-zilu-composed-20261109",
+        "stratum": "composed"
+      },
+      {
+        "path": "bench/eval/proposer-L2-zilu-composed-20261109",
+        "stratum": "composed"
+      },
+      {
+        "path": "bench/eval/proposer-L1-heldout-20261110",
+        "stratum": "heldout"
+      },
+      {
+        "path": "bench/eval/proposer-L2-heldout-20261110",
+        "stratum": "heldout"
+      }
+    ],
+    "runtime": [
+      "bench/eval/runtime-20261110"
+    ],
+    "negative": [
+      "bench/eval/negative-20261110"
+    ],
+    "audit": [
+      "bench/eval/audit-verified-v5-20261110"
+    ]
+  },
+  "oracle": "bench/oracle/wp32-v4-20261105"
+}

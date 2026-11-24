@@ -1,0 +1,64 @@
+{
+  "profile": "pfc-eval-inputs-v1",
+  "kernel": "init_non_constant_3_u",
+  "function": "init_non_constant_3_u",
+  "program_sha256": "d5aaa382a2f2fe6727f57e16e2a09863242e2d29290c4497dd461f70751e5fa8",
+  "cases": 1000,
+  "arrays": {
+    "A": {
+      "length": [
+        1728,
+        4096
+      ],
+      "values": [
+        -1000000,
+        1000000
+      ],
+      "sorted": false
+    }
+  },
+  "scalars": {
+    "n": {
+      "kind": "range",
+      "low": 1,
+      "high": 12
+    },
+    "C": {
+      "kind": "range",
+      "low": -1000,
+      "high": 1000
+    }
+  },
+  "boundary": [
+    {
+      "arrays": {
+        "A": [
+          1
+        ]
+      },
+      "scalars": {
+        "n": 1,
+        "C": 7
+      }
+    },
+    {
+      "arrays": {
+        "A": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "scalars": {
+        "n": 2,
+        "C": 7
+      }
+    }
+  ],
+  "stress": 0.1
+}

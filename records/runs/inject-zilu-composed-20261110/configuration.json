@@ -1,0 +1,60 @@
+{
+  "experiment": "inject",
+  "provenance": {
+    "clang": "Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)",
+    "commit": "28e37047a2390a0397321464d3d76c7c7c88ab29",
+    "experiment": "inject",
+    "seed": 0,
+    "solver_version": "5.3.3.0",
+    "tag": null,
+    "timestamp": "2026-11-10T18:32:51+00:00",
+    "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+  },
+  "settings": {
+    "candidates_per_loop": 20,
+    "candidates_sha256": "267e23b26ed9640ccbba4b844ddcd9c9c197a24711e324fe5b9acdd09580c0ae",
+    "compiler": "/usr/lib/llvm-19/bin/clang",
+    "cpp": "cpp",
+    "kernels": [
+      "zilupair01",
+      "zilupair02",
+      "zilupair03",
+      "zilupair04",
+      "zilupair05",
+      "zilupair06",
+      "zilupair07",
+      "zilupair08",
+      "zilupair09",
+      "zilupair10",
+      "zilupair11",
+      "zilupair12",
+      "zilupair13",
+      "zilupair14",
+      "zilupair15"
+    ],
+    "near_miss_source": "pfc.corpus.NEAR_MISS_INVARIANTS",
+    "operators": [
+      "literal_false",
+      "near_miss",
+      "off_by_one",
+      "reversed",
+      "dropped",
+      "wrong_variable"
+    ],
+    "reconstruct_max_length": 4096,
+    "refutation_domain": {
+      "alias_probability": 0.3,
+      "equalities": "REQUIRES conjuncts `p == literal` and `p == q` are assigned after sampling (p a scalar parameter)",
+      "max_length": 6,
+      "scalar": [
+        -4,
+        8
+      ],
+      "value": 5
+    },
+    "refutation_draws": 1000,
+    "seed": 0,
+    "smt_encoding": "z3-int-shared-memory-v2; C division truncates to zero; division by zero totalized to 0",
+    "timeout_ms": 10000
+  }
+}

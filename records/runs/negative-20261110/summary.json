@@ -1,0 +1,245 @@
+{
+  "experiment": "negative",
+  "kernels": {
+    "accumulate": {
+      "operational_failures": 0,
+      "overflow": {
+        "cases": 20,
+        "checked_traps": 20,
+        "disagreements": 0,
+        "verified_traps": 20
+      },
+      "passed": true,
+      "precondition": {
+        "cases": 20,
+        "checked_traps": 13,
+        "disagreements": 0,
+        "skipped_conjunct_cases": 0,
+        "verified_traps": 20
+      }
+    },
+    "binary_search": {
+      "operational_failures": 0,
+      "overflow": {
+        "cases": 0,
+        "checked_traps": 0,
+        "disagreements": 0,
+        "verified_traps": 0
+      },
+      "passed": true,
+      "precondition": {
+        "cases": 20,
+        "checked_traps": 1,
+        "disagreements": 0,
+        "skipped_conjunct_cases": 0,
+        "verified_traps": 20
+      }
+    },
+    "copy": {
+      "operational_failures": 0,
+      "overflow": {
+        "cases": 0,
+        "checked_traps": 0,
+        "disagreements": 0,
+        "verified_traps": 0
+      },
+      "passed": true,
+      "precondition": {
+        "cases": 20,
+        "checked_traps": 9,
+        "disagreements": 0,
+        "skipped_conjunct_cases": 0,
+        "verified_traps": 20
+      }
+    },
+    "count": {
+      "operational_failures": 0,
+      "overflow": {
+        "cases": 0,
+        "checked_traps": 0,
+        "disagreements": 0,
+        "verified_traps": 0
+      },
+      "passed": true,
+      "precondition": {
+        "cases": 20,
+        "checked_traps": 9,
+        "disagreements": 0,
+        "skipped_conjunct_cases": 0,
+        "verified_traps": 20
+      }
+    },
+    "dot": {
+      "operational_failures": 0,
+      "overflow": {
+        "cases": 20,
+        "checked_traps": 20,
+        "disagreements": 0,
+        "verified_traps": 20
+      },
+      "passed": true,
+      "precondition": {
+        "cases": 20,
+        "checked_traps": 10,
+        "disagreements": 0,
+        "skipped_conjunct_cases": 0,
+        "verified_traps": 20
+      }
+    },
+    "fill": {
+      "operational_failures": 0,
+      "overflow": {
+        "cases": 0,
+        "checked_traps": 0,
+        "disagreements": 0,
+        "verified_traps": 0
+      },
+      "passed": true,
+      "precondition": {
+        "cases": 20,
+        "checked_traps": 8,
+        "disagreements": 0,
+        "skipped_conjunct_cases": 0,
+        "verified_traps": 20
+      }
+    },
+    "find": {
+      "operational_failures": 0,
+      "overflow": {
+        "cases": 0,
+        "checked_traps": 0,
+        "disagreements": 0,
+        "verified_traps": 0
+      },
+      "passed": true,
+      "precondition": {
+        "cases": 20,
+        "checked_traps": 5,
+        "disagreements": 0,
+        "skipped_conjunct_cases": 0,
+        "verified_traps": 20
+      }
+    },
+    "matvec": {
+      "operational_failures": 0,
+      "overflow": {
+        "cases": 20,
+        "checked_traps": 20,
+        "disagreements": 0,
+        "verified_traps": 20
+      },
+      "passed": true,
+      "precondition": {
+        "cases": 20,
+        "checked_traps": 12,
+        "disagreements": 0,
+        "skipped_conjunct_cases": 0,
+        "verified_traps": 20
+      }
+    },
+    "prefix_sum": {
+      "operational_failures": 0,
+      "overflow": {
+        "cases": 20,
+        "checked_traps": 20,
+        "disagreements": 0,
+        "verified_traps": 20
+      },
+      "passed": true,
+      "precondition": {
+        "cases": 20,
+        "checked_traps": 10,
+        "disagreements": 0,
+        "skipped_conjunct_cases": 0,
+        "verified_traps": 20
+      }
+    },
+    "replace": {
+      "operational_failures": 0,
+      "overflow": {
+        "cases": 0,
+        "checked_traps": 0,
+        "disagreements": 0,
+        "verified_traps": 0
+      },
+      "passed": true,
+      "precondition": {
+        "cases": 20,
+        "checked_traps": 11,
+        "disagreements": 0,
+        "skipped_conjunct_cases": 0,
+        "verified_traps": 20
+      }
+    },
+    "reverse": {
+      "operational_failures": 0,
+      "overflow": {
+        "cases": 0,
+        "checked_traps": 0,
+        "disagreements": 0,
+        "verified_traps": 0
+      },
+      "passed": true,
+      "precondition": {
+        "cases": 20,
+        "checked_traps": 10,
+        "disagreements": 0,
+        "skipped_conjunct_cases": 0,
+        "verified_traps": 20
+      }
+    },
+    "saxpy": {
+      "operational_failures": 0,
+      "overflow": {
+        "cases": 20,
+        "checked_traps": 20,
+        "disagreements": 0,
+        "verified_traps": 20
+      },
+      "passed": true,
+      "precondition": {
+        "cases": 20,
+        "checked_traps": 11,
+        "disagreements": 0,
+        "skipped_conjunct_cases": 0,
+        "verified_traps": 20
+      }
+    },
+    "sum": {
+      "operational_failures": 0,
+      "overflow": {
+        "cases": 20,
+        "checked_traps": 20,
+        "disagreements": 0,
+        "verified_traps": 20
+      },
+      "passed": true,
+      "precondition": {
+        "cases": 20,
+        "checked_traps": 10,
+        "disagreements": 0,
+        "skipped_conjunct_cases": 0,
+        "verified_traps": 20
+      }
+    },
+    "swap_ranges": {
+      "operational_failures": 0,
+      "overflow": {
+        "cases": 0,
+        "checked_traps": 0,
+        "disagreements": 0,
+        "verified_traps": 0
+      },
+      "passed": true,
+      "precondition": {
+        "cases": 20,
+        "checked_traps": 9,
+        "disagreements": 0,
+        "skipped_conjunct_cases": 0,
+        "verified_traps": 20
+      }
+    }
+  },
+  "passed": true,
+  "statement": "Expected traps: overflow cases trap in both instrumented builds; precondition violations trap in verified when a rendered conjunct is false; skipped-conjunct cases are the disclosed gap. SIGILL on Linux/x86 is the trap. Agreement never counts a compile, timeout or other-signal outcome."
+}

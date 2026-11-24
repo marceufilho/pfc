@@ -1,0 +1,86 @@
+{
+  "experiment": "houdini",
+  "provenance": {
+    "clang": "Ubuntu clang version 19.1.1 (1ubuntu1~24.04.2)",
+    "commit": "28e37047a2390a0397321464d3d76c7c7c88ab29",
+    "experiment": "houdini",
+    "seed": null,
+    "solver_version": "5.3.3.0",
+    "tag": null,
+    "timestamp": "2026-11-09T19:43:23+00:00",
+    "vc_model": "vc-v4: mathematical integers on defined C executions; target limits not instantiated; shared typed memory; typed reads are representable; substantive obligations; entry consistency"
+  },
+  "settings": {
+    "b2": {
+      "cap": 40,
+      "constant_bound": 8,
+      "fuzz_domain": {
+        "alias_probability": 0.3,
+        "equalities": "REQUIRES conjuncts `p == literal` and `p == q` are assigned after sampling (p a scalar parameter)",
+        "max_length": 6,
+        "scalar": [
+          -4,
+          8
+        ],
+        "value": 5
+      },
+      "min_states": 20,
+      "multipliers": [
+        -2,
+        -1,
+        2
+      ],
+      "samples_fuzz": 200,
+      "samples_profile": 200,
+      "seed": 0
+    },
+    "chunk": 24,
+    "compiler": "/usr/lib/llvm-19/bin/clang",
+    "constants": [
+      -1,
+      0,
+      1
+    ],
+    "cpp": "cpp",
+    "family": "dynamic inference over loop-head states: `v == c`, `v == w + c`, `v == a*w + b` (a in {-2, -1, 2}), `c <= v`, `v <= c`, `v <= w + c` with observed extremes, `v == w + x`, `v == w - x`, `v == w * x`, and implications `cond => e` from call-free scalar branch conditions in the loop body (written as disjunctions); every literal of absolute value at most 8; at most 40 candidates per loop; 200 fuzz draws plus 200 profile draws when a profile binds; a loop with fewer than 20 observed head states gets no candidate",
+    "family_label": "b2",
+    "kernels": [
+      "zilu01",
+      "zilu02",
+      "zilu04",
+      "zilu05",
+      "zilu06",
+      "zilu08",
+      "zilu11",
+      "zilu12",
+      "zilu13",
+      "zilu14",
+      "zilu15",
+      "zilu16",
+      "zilu17",
+      "zilu18",
+      "zilu19",
+      "zilu20",
+      "zilu22",
+      "zilu23",
+      "zilu24",
+      "zilu25",
+      "zilu26",
+      "zilu27",
+      "zilu29",
+      "zilu30",
+      "zilu32",
+      "zilu33",
+      "zilu34",
+      "zilu35",
+      "zilu36",
+      "zilu37"
+    ],
+    "max_rounds": 5,
+    "preregistered_max_rounds": 5,
+    "probe_parameter": "pfc_probe",
+    "seed": null,
+    "smt_encoding": "z3-int-shared-memory-v2; C division truncates to zero; division by zero totalized to 0",
+    "timeout_ms": 10000
+  }
+}
